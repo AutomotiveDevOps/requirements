@@ -1,3 +1,3 @@
 # Requirements
 
-https://automotivedevops.github.io/requirements/
+https://automotivedevops.github.io/requirements/html/
