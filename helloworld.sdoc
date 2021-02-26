@@ -1,0 +1,18 @@
+[DOCUMENT]
+TITLE: StrictDoc
+
+[REQUIREMENT]
+TITLE: Requirements management
+STATEMENT: This is a requirement.
+
+[REQUIREMENT]
+UID: REQ-001
+STATEMENT: StrictDoc shall enable requirements management.
+
+[REQUIREMENT]
+UID: REQ-002
+REFS:
+- TYPE: Parent
+    VALUE: REQ-001
+TITLE: Requirement #2's title
+STATEMENT: Requirement #2 statement
