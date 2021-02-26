@@ -5,7 +5,12 @@ TITLE: Minimal Example with Sections
 TITLE: High Level Section
 
 [SECTION]
+TITLE: Mid Level Section
+
+[SECTION]
 TITLE: Low Level Section
+
+[/SECTION]
 
 [/SECTION]
 
