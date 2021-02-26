@@ -1,4 +1,4 @@
-name: GitHub Pages deploy
+name: strictdoc github pages publish
 on:
   push:
     branches:
@@ -9,30 +9,30 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
+      - name: Checkout
+        uses: actions/checkout@v2
         
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install strictdoc
-        python -m pip install pygments
-        
-    - name: Run Strict Doc
-      run: |
-        strictdoc export --output-dir docs/ *.sdoc
-        
-    - name: Deploy to GitHub Pages
-      uses: Cecilapp/GitHub-Pages-deploy@v3
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        build_dir: output/html
-        email: autobotivedevops@domain.tld
-        branch: gh-pages   # optional
-        jekyll: no        # optional
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install strictdoc
+          python -m pip install pygments
+          
+      - name: Run Strict Doc
+        run: |
+          strictdoc export --output-dir docs/ *.sdoc
+          
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          build_dir: output/html
+          email: autobotivedevops@domain.tld
+          branch: gh-pages   # optional
+          jekyll: no        # optional
