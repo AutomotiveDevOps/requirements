@@ -1,21 +1,7 @@
 [DOCUMENT]
-TITLE: StrictDoc
+TITLE: Hello World
 
 [REQUIREMENT]
+UID: SDOC-HIGH-REQS-MANAGEMENT2
 TITLE: Requirements management
-STATEMENT: This is a requirement.
-
-[REQUIREMENT]
-UID: REQ-001
-TITLE: REQ-001 Title
 STATEMENT: StrictDoc shall enable requirements management.
-COMMENT: Clarify the meaning or give additional information here.
-RATIONALE: The presence of the REQ-001 is justified.
-
-[REQUIREMENT]
-UID: REQ-002
-REFS:
-- TYPE: Parent
-    VALUE: REQ-001
-TITLE: Requirement #2's title
-STATEMENT: Requirement #2 statement

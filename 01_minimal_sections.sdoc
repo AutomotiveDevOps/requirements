@@ -1,0 +1,12 @@
+[DOCUMENT]
+TITLE: Minimal Example with Sections
+
+[SECTION]
+TITLE: High Level Section
+
+[SECTION]
+TITLE: Low Level Section
+
+[/SECTION]
+
+[/SECTION]
