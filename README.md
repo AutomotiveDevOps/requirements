@@ -1,6 +1,6 @@
 # Requirements
 
-Github actions example/template to automatically generate `strictdoc` documentation and publish it to GitHub pages.
+Github actions example/template to automatically generate [`strictdoc`](https://github.com/strictdoc-project/strictdoc) documentation and publish it to GitHub pages.
 
 Output: https://automotivedevops.github.io/requirements/
 
