@@ -4,7 +4,7 @@ An experimental capture of some Vehicle Cybersecurity Requirements based on http
 
 Browsable HTML Output here: https://nmfta-repo.github.io/vcr-experiment/
 
-[![Requirements Publish](https://github.com/nmfta-report/vcr-experiment/actions/workflows/publish.yml/badge.svg)](https://github.com/nmfta-report/vcr-experiment/actions/workflows/publish.yml)
+[![Requirements Publish](https://github.com/nmfta-repo/vcr-experiment/actions/workflows/publish.yml/badge.svg)](https://github.com/nmfta-repo/vcr-experiment/actions/workflows/publish.yml)
 
 This document is an experimental capture of a list of security requirements for the gateway devices which are prevalent and proliferating in heavy vehicle network architectures.
 
