@@ -1,0 +1,282 @@
+[DOCUMENT]
+TITLE: Vehicle Network Gateway Devices Security Requirements
+
+[FREETEXT]
+This document is an experimental capture of a list of security requirements for the gateway devices which are prevalent and proliferating in heavy vehicle network architectures.
+
+The collection of requirements captured here in ``strictdoc`` form were developed in a breakout session at the NMFTA CTSRP November 2021 workshop. The breakout session group discussed a) the workable definition of a gateway device -- focusing especially on the attacker's perspective -- b) possible security requirements for those devices that are gateways (intentional or not) and c) attempted to tie those back to the security requirements for vehicle gateways which were outline by a vehicle network security expert whose presentation on the subject was delivered earlier that day. The workshop participants and the expert cannot be revealed here, except by their own actions since the workshop was held -- as is tradition -- under Chatham house rules.
+
+The reason why gateway devices were considered is because the previous work of the RFPCTL working group focused on telematics devices (ultimately releasing the TSRM) and the next most relevant device from a security point of view are devices that enable pivoting/lateral-movement in attacks: gateways. Indeed, the interim result of the VCRWG is that there are multiple likely present devices in modern heavy duty vehicle which are gateway devices.
+
+This experimental capture of the requirements as ``strictdoc`` ``STATEMENT`` blocks was performed because the completion of the work by the RFPCTL working group yielded a large number of requirements that need to be periodically updated, refined, reviewed etc. And furthermore the requirements need to be processed on each release to produce printable references and questionnaires for use by the fleets in the procurement processes. We expect that by the completion of the work by the VCRWG that there will be even more requirements to manage in ongoing releases and to produce more products such as in the TSRM. It is clear that machine readable form for specifying the requirements is necessary. An alternative considered was `doorstop` but the multi-file approach of doorstop was estimated to cause more friction in development and review of the requirements by the VCRWG.
+[/FREETEXT]
+
+[SECTION]
+TITLE: Security Requirements for Abstract Unintended Gateways
+
+[FREETEXT]
+The group discussed what security requirements would need to be satisfied by any device which *could be* a gateway (due to malicious code) but is not intended to be one.
+[/FREETEXT]
+
+[REQUIREMENT]
+UID: NGW-S-001
+REFS:
+- TYPE: Parent
+  VALUE: NGW-F-001
+TITLE: Security Assurance
+STATEMENT: These devices shall satisfy a comphrehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+
+[/SECTION]
+
+[SECTION]
+TITLE: Security Requirements for Abstract (Intended) Gateways
+
+[FREETEXT]
+The group discussed what security requirements would need to be satisfied by a device intended to be a gateway: a device which is intended to move/translate etc (see section *Devices Intended to be a Gateway*) infromation from an untrusted domain, d1, to a trusted domain, d2.
+[/FREETEXT]
+
+[REQUIREMENT]
+UID: AGW-S-001
+TITLE: Prevents OTA
+STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from d1 to d2, unless with explicit configuration and authorization.
+
+[REQUIREMENT]
+UID: AGW-S-002
+TITLE: Prevents DoS
+STATEMENT: The device SHALL prevent Denial of Service (DoS) on d1 and furthermore prevent DoS of the bidirectional d1<->d2 operation.
+
+[REQUIREMENT]
+UID: AGW-S-003
+TITLE: Prevents Spoofing
+STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto d2
+
+[REQUIREMENT]
+UID: AGW-S-004
+TITLE: Prevents Exfiltration
+STATEMENT: The device SHALL prevent exfiltration of data fom d2 to d1
+
+[REQUIREMENT]
+UID: AGW-S-005
+TITLE: Prevents Elevation
+STATEMENT: The device SHALL prevent abuse of d2 network domain functionality from d1 to d2, unless with explicit configuration and authorization.
+
+[REQUIREMENT]
+UID: AGW-S-006
+TITLE: Prevents Data Loss
+STATEMENT: The device SHALL prevent all data loss and/or corruption of information in the bidirectional d1<->d2 operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002).
+
+[REQUIREMENT]
+UID: AGW-S-007
+TITLE: Preserves High Side Operation
+STATEMENT: The device SHALL prevent degration of any d2 operation due to d1 activity.
+
+[REQUIREMENT]
+UID: AGW-S-008
+REFS:
+- TYPE: Parent
+  VALUE: NGW-F-001
+TITLE: Security Assurance
+STATEMENT: These devices shall satisfy a comphrehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+
+[REQUIREMENT]
+UID: AGW-S-009
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
+TITLE: Preserves Performance
+STATEMENT: The device SHALL be scoped to suffcicient detail to preserve network domain performance guarantees in d2.
+
+[REQUIREMENT]
+UID: AGW-S-010
+TITLE: Mode Switch
+STATEMENT: The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicit configuration and authorization." The means must be impossible to use without explicit authorization by the vehicle owner.
+
+[REQUIREMENT]
+UID: AGW-S-011
+TITLE: Mode Switch Indicated
+STATEMENT: The device shall indicate to all domains that it is not performing normal operations.
+
+[SECTION]
+TITLE: Security Requirements for CAN Gateways
+
+[FREETEXT]
+The group discussed what security requirements would need to be satisfied by CAN gateways specifically. Ideally these would all map back to Abstract (Intended) Gateway requirements. Most of these are from the security gateway requirements presented by the expert earlier in the workshop.
+[/FREETEXT]
+
+[REQUIREMENT]
+UID: CGW-S-001
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-009
+TITLE: Performant
+STATEMENT: The device SHALL process and move CAN frames quickly enough to preserve performance on all network domains.
+
+[REQUIREMENT]
+UID: CGW-S-002
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-004
+TITLE: Re-write / Masking
+STATEMENT: The device SHALL provide a means of masking or otherwise re-writing CAN frames to prevent exfiltration of sensitive information from d2 to d1.
+
+[REQUIREMENT]
+UID: CGW-S-003
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-001
+TITLE: Physical Mode Switch Interlock
+STATEMENT: The device SHALL have a physical switch to switch into modes which allow OTA, spoofing, etc. from d1 to d2.
+
+[REQUIREMENT]
+UID: CGW-S-004
+TITLE: Gateway Configuration Authenticated
+STATEMENT: The device SHALL accept and react only to configuration changes which are correctly authorized and authenticated, regardless of origin of network domain.
+
+[REQUIREMENT]
+UID: CGW-S-005
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
+TITLE: Preserves Atomic Multicast
+STATEMENT: The device SHALL preserve the atomic multicast property of CAN buses.
+
+[REQUIREMENT]
+UID: CGW-S-006
+REFS:
+- TYPE: Parent
+  VALUE: CGW-S-005
+TITLE: Won't Drop Frames
+STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional d1<->d2 operation.
+
+[REQUIREMENT]
+UID: CGW-S-007
+REFS:
+- TYPE: Parent
+  VALUE: CGW-S-005
+TITLE: No Priority Inversion
+STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional d1<->d2 operation, to prevent priority inversion.
+
+[REQUIREMENT]
+UID: CGW-S-008
+REFS:
+- TYPE: Parent
+  VALUE: CGW-S-005
+TITLE: Preserves Ordering
+STATEMENT: The device SHALL preserve ordering egress frames wrt their ingress order within an equivalence class of CAN arbitration ID priorities, to prevent out-of-order delivery.
+
+[REQUIREMENT]
+UID: CGW-S-009
+REFS:
+- TYPE: Parent
+  VALUE: CGW-S-005
+TITLE: FIFO but Also Priority
+STATEMENT: The device SHALL schedule egress for in-order send but not across CAN arbitration ID priorities.
+
+[REQUIREMENT]
+UID: CGW-S-010
+REFS:
+- TYPE: Parent
+  VALUE: CGW-S-005
+TITLE: Preserves Jitter
+STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) low enough to not affect the d2 network domain performance requirements in the worst case.
+
+[REQUIREMENT]
+UID: CGW-S-100
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-002
+TITLE: Impervious to Address Claim Attacks
+STATEMENT: The device shall not be susceptible to address claim attacks.
+
+[/SECTION]
+
+[/SECTION]
+
+[SECTION]
+TITLE: Vehicle Gateway (Functional) Requirements
+
+[FREETEXT]
+The group discussed some of the non-security related requirements of a gateway.
+
+**NB: These are capture here only as a demonstration of some of the ``strictdoc`` features, and probably only temporarily.**
+
+What are gateways? A: anything that is connected to two or more vehicle networks
+
+Could be on heterogeneous vehicle networks (e.g. J1939 and J1708)
+
+We discussed the simple dualism: Devices ”intended to be a gateway” and those “not intended to be a gateway.”
+
+[/FREETEXT]
+
+[SECTION]
+TITLE: Devices Intended to be a Gateway
+
+[REQUIREMENT]
+UID: AGW-F-001
+TITLE: Transports
+STATEMENT: These devices shall transport/'move' information between two separate network 'domains,' **bi-bidirectionally.**
+
+[REQUIREMENT]
+UID: AGW-F-002
+TITLE: Translates
+STATEMENT: These devices shall translate/transform the information between the separate network domains but intentions of the data are preserved.
+
+[REQUIREMENT]
+UID: AGW-F-003
+TITLE: Filters
+STATEMENT: These devices may select which information is transported and/or translated between the network domains.
+
+[REQUIREMENT]
+UID: AGW-F-004
+TITLE: Encapsulates
+STATEMENT: These devices may encapsulate information as it is transported and/or translated between the network domains.
+
+[REQUIREMENT]
+UID: AGW-F-005
+REFS:
+- TYPE: Parent
+  VALUE: AGW-F-004
+TITLE: Protect Confidentiality
+STATEMENT: These devices may encapsulate and/or translate information as it is transported between the network domains for the purposes of protecting confidentiality of the information in the domain to which the information is moved.
+
+[REQUIREMENT]
+UID: AGW-F-006
+REFS:
+- TYPE: Parent
+  VALUE: AGW-F-003
+TITLE: Rate Limits
+STATEMENT: These devices may select which information is transported in a time varying fashion for the purposes of limiting the rate at which the information is put on a network domain.
+
+[REQUIREMENT]
+UID: AGW-F-007
+TITLE: Controllable
+STATEMENT: These devices shall be controllable by users with necessary authentication and authorization.
+
+[REQUIREMENT]
+UID: AGW-F-008
+TITLE: Configurable
+STATEMENT: These devices shall be configurable by users with necessary authentication and authorization.
+
+[REQUIREMENT]
+UID: AGW-F-009
+TITLE: Reports
+STATEMENT: These devices shall report status of operation to users with necessary authentication and authorization.
+
+[REQUIREMENT]
+UID: AGW-F-010
+TITLE: Diagnoses
+STATEMENT: These devices shall provide diagnostic commands to users with necessary authentication and authorization.
+
+[/SECTION]
+
+[SECTION]
+TITLE: Devices NOT Intended to be a Gateway
+
+[REQUIREMENT]
+UID: NGW-F-001
+TITLE: Won't be Gateways
+STATEMENT: These devices shall not allow/enable/admit any of the gateway features (see Section *Devices Intended to be a Gateway*)
+
+[/SECTION]
+
+[/SECTION]
