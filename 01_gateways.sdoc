@@ -125,13 +125,13 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-001
 TITLE: Physical Mode Switch Interlock
-STATEMENT: The device SHALL demand explicit end user consent to switch into modes witch allow OTA, spoofing, etc. from d1 to d2. Consent process should have authenticity assurance (examples include but not limited to a physical switch, out of band communication not exisiting on d1, fully authenticated communication originating on d1).
+STATEMENT: The device SHALL demand explicit end user consent to switch into modes which allow OTA, spoofing, etc. from d1 to d2. Consent process should have authenticity assurance (examples include but not limited to a physical switch, out of band communication not exisiting on d1, fully authenticated communication originating on d1).
 COMMENT: >>>
 Three examples:
 
 A) Phsyical switch on dash
 
-B) Consent on Insrument cluster or infotainment device (and thus internal networks - possibly but not necessarily d2)
+B) Consent on Instrument cluster or infotainment device (and thus internal networks - possibly but not necessarily d2)
 
 C) Consent from third party device / application that is signed with infrastructure OEM has access to verify
 <<<
