@@ -3,6 +3,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0 0;
   place-items: stretch stretch;
+  /*
+    for vertical line in 'current' column:
+    .content_item[data-role="current"]::before
+  */
+  overflow: hidden;
+}
+
+.document-view .content {
+  background-color: var(--color-bg-contrast);
+  max-width: 900px;
+  padding: calc(var(--base-padding)*2);
 }
 
 .traceability-view .content {
@@ -10,14 +21,17 @@
                           minmax(var(--card-width), calc(2*var(--card-width)))
                           minmax(min-content, max-content);
   gap: var(--traceability-arrow) 0;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
+.requirements-coverage-view .content,
 .deep-traceability-view .content {
   grid-template-columns:  minmax(min-content, max-content)
                           max-content
                           minmax(min-content, max-content);
   gap: var(--traceability-arrow) 0;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -25,7 +39,9 @@
   grid-template-columns:  minmax(250px, 25%)
                           minmax(300px, 45%)
                           minmax(250px, 30%);
-  gap: 2px 2px;
+  gap: 2px;
+  background-color: #ddd;
+  border: 2px solid #ddd;
 }
 
 .document-view .content {
@@ -38,6 +54,11 @@
 
 .content_item {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: stretch;
 }
 
 /* traceability */
@@ -50,8 +71,29 @@
   grid-column: 2 / 3;
 }
 
+.deep-traceability-view .content_item[data-role="current"] {
+  /* central column */
+  width: var(--card-width);
+}
+
+.requirements-coverage-view .content_item[data-role="current"] {
+  /* central column */
+  width: calc(var(--card-width)*0.75);
+}
+
 .content_item[data-role="children"] {
   grid-column: 3 / 4;
+}
+
+.deep-traceability-view .content_item[data-role="current"]::before,
+.traceability-view .content_item[data-role="current"]::before {
+  /* for vertical line in 'current' culumn */
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: calc(var(--traceability-arrow)*(-1));
+  left: 50%;
+  border-left: 1px dotted #000;
 }
 
 /* .table-view */
@@ -62,6 +104,11 @@
 
 .table-view [data-section="meta"] {
   grid-column: 1 / 2;
+}
+
+.table-view [data-section="meta"].docsection_section:only-child {
+  grid-column: 1 / -1;
+  background-color: var(--color-bg-main);
 }
 
 .table-view [data-section="description"] {
@@ -78,21 +125,4 @@
 
 .table-view [data-col="0"] {
   grid-column: 1 / -1;
-}
-
-/* article header */
-article header {
-  display: none;
-}
-.table-view article header {
-  /*
-    TODO: Displaying table headers very often produces visual noise.
-    Consider deleting headers altogether or find a better visual presentation.
-    *display: contents;
-  */
-  display: none;
-}
-.docsection + .docsection header,
-.requirement + .requirement header {
-  display: none;
 }

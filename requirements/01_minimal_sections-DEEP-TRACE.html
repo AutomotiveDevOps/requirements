@@ -1,35 +1,55 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   
   <meta charset="UTF-8"/>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+
+  <link rel="shortcut icon" href="../_static/favicon.ico" type="image/x-icon"/>
+
+  
   
   <link rel="stylesheet" href="../_static/_base.css"/>
   <link rel="stylesheet" href="../_static/_layout.css"/>
   <link rel="stylesheet" href="../_static/_content.css"/>
+  <link rel="stylesheet" href="../_static/_requirement.css"/>
   <link rel="stylesheet" href="../_static/_element.css"/>
   
+  <link rel="stylesheet" href="../_static/_requirement-tree.css"/>
+
+
   
+  <script type="text/javascript" src="../_static/toc.js"></script>
   <script type="text/javascript" src="../_static/jquery.min.js"></script>
   <script type="text/javascript" src="../_static/pan-with-space.js"></script>
   
-  <script type="text/javascript" src="../_static/toc.js"></script>
+  
+  
   
 
+
   <title>Minimal Example with Sections - Deep Traceability</title>
+
   
 </head>
 
-<body class="deep-traceability-view"><div class="layout" id="layout">
+<body class="deep-traceability-view">
+<script>document.body.dataset.state = sessionStorage.getItem('tocState') || 'open';</script>
+
+  <div class="layout" id="layout">
 
     <aside class="layout_aside-header">
-      <div>Table of Contents</div><a class="index-link" href="../index.html">To Index</a></aside>
+      
+  <a class="index-link" href="../index.html">To Index</a>
+
+    </aside>
 
     <aside class="layout_aside">
       
+  
+    <div>Table of Contents</div>
     <ul class="toc"><li><span class="toc-title-no-link" title="Section has no requirements">
               <span class="section-number">
                 1
@@ -48,35 +68,42 @@
             </span></li></ul>
             </li></ul>
             </li></ul>
+
     </aside>
 
-    <a class="layout_toggler layout_button" id="layout_toggle"></a><nav class="layout_nav">
-        <a
-        class="layout_nav-btn layout_button btn-document"
-        title="Go to Document view"
-        href="../01_minimal_sections.sdoc/01_minimal_sections.html">
-        DOC
-      </a>
-      <a
-        class="layout_nav-btn layout_button btn-table"
-        title="Go to Table view"
-        href="../01_minimal_sections.sdoc/01_minimal_sections - TABLE.html">
-        TBL
-      </a>
-      <a
-        class="layout_nav-btn layout_button btn-traceability"
-        title="Go to Traceability view"
-        href="../01_minimal_sections.sdoc/01_minimal_sections - TRACE.html">
-        TR
-      </a>
-      <a
-        class="layout_nav-btn layout_button btn-deep-traceability"
-        title="Go to Deep Traceability view"
-        href="../01_minimal_sections.sdoc/01_minimal_sections - DEEP-TRACE.html">
-        DTR
-      </a>
-      </nav><header class="layout_header">
-      <p>Minimal Example with Sections <span class="document-view-type">Deep Traceability</span></p>
+    
+  <a class="layout_toggler layout_button" id="layout_toggle"></a><nav class="layout_nav">
+    <a
+    class="layout_nav-btn layout_button btn-document"
+    title="Go to Document view"
+    href="../requirements/01_minimal_sections.html">
+    DOC
+  </a>
+  <a
+    class="layout_nav-btn layout_button btn-table"
+    title="Go to Table view"
+    href="../requirements/01_minimal_sections-TABLE.html">
+    TBL
+  </a>
+  <a
+    class="layout_nav-btn layout_button btn-traceability"
+    title="Go to Traceability view"
+    href="../requirements/01_minimal_sections-TRACE.html">
+    TR
+  </a>
+  <a
+    class="layout_nav-btn layout_button btn-deep-traceability"
+    title="Go to Deep Traceability view"
+    href="../requirements/01_minimal_sections-DEEP-TRACE.html">
+    DTR
+  </a>
+  </nav>
+
+
+    <header class="layout_header">
+      
+  <p>Minimal Example with Sections <span class="document-view-type">Deep Traceability</span></p>
+
     </header>
 
     <main class="layout_main">
