@@ -56,6 +56,14 @@ TITLE: Prevents Exfiltration
 STATEMENT: The device SHALL prevent exfiltration of data fom d2 to d1
 
 [REQUIREMENT]
+UID: AGW-S-021
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-004
+TITLE: Protect Confidentiality
+STATEMENT: These devices may encapsulate and/or translate (e.g. encrypt) information as it is transported between the network domains for the purposes of protecting confidentiality of the information in the domain to which the information is moved.
+
+[REQUIREMENT]
 UID: AGW-S-005
 TITLE: Prevents Elevation
 STATEMENT: The device SHALL prevent abuse of d2 network domain functionality from d1 to d2, unless with explicit configuration and authorization.
@@ -243,14 +251,6 @@ STATEMENT: These devices may select which information is transported and/or tran
 UID: AGW-F-004
 TITLE: Encapsulates
 STATEMENT: These devices may encapsulate information as it is transported and/or translated between the network domains.
-
-[REQUIREMENT]
-UID: AGW-F-005
-REFS:
-- TYPE: Parent
-  VALUE: AGW-F-004
-TITLE: Protect Confidentiality
-STATEMENT: These devices may encapsulate and/or translate information as it is transported between the network domains for the purposes of protecting confidentiality of the information in the domain to which the information is moved.
 
 [REQUIREMENT]
 UID: AGW-F-006
