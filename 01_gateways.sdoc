@@ -86,10 +86,34 @@ REFS:
 TITLE: Preserves Performance
 STATEMENT: The device SHALL be scoped to suffcicient detail to preserve network domain performance guarantees in d2.
 
-[REQUIREMENT]
+[COMPOSITE_REQUIREMENT]
+TITLE: Mode Switch Interlock
+STATEMENT: The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicit configuration and authorization." The means must be impossible to use without explicit authorization by the vehicle owner. The device SHALL satisfy one or more of these requirements to enable a switch into modes which allow OTA, spoofing, etc. from d1 to d2. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
 UID: AGW-S-010
-TITLE: Mode Switch
-STATEMENT: The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicit configuration and authorization." The means must be impossible to use without explicit authorization by the vehicle owner.
+
+[REQUIREMENT]
+UID: AGW-S-010A
+TITLE: Physical Mode Switch Interlock
+STATEMENT: The device SHALL have at least on physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from d1 to d2.
+COMMENT: >>>
+Example:
+
+A) Phsyical switch on dash
+<<<
+
+[REQUIREMENT]
+UID: AGW-S-010B
+TITLE: Virtual Mode Switch Interlock
+STATEMENT: The device SHALL allow an authenticated input over a connection to enable a switch into modes which allow OTA, spoofing, etc. from d1 to d2.
+COMMENT: >>>
+Examples:
+
+A) Consent on Instrument cluster or infotainment device (and thus internal networks - possibly but not necessarily d2)
+
+B) Consent from third party device / application that is signed with infrastructure OEM has access to verify
+<<<
+
+[/COMPOSITE_REQUIREMENT]
 
 [REQUIREMENT]
 UID: AGW-S-011
@@ -118,38 +142,6 @@ REFS:
   VALUE: AGW-S-004
 TITLE: Re-write / Masking
 STATEMENT: The device SHALL provide a means of masking or otherwise re-writing CAN frames to prevent exfiltration of sensitive information from d2 to d1.
-
-[COMPOSITE_REQUIREMENT]
-TITLE: Mode Switch Interlock
-STATEMENT: The device SHALL satisfy one or more of these requirements to enable a switch into modes which allow OTA, spoofing, etc. from d1 to d2. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
-UID: CGW-S-003
-REFS:
-- TYPE: Parent
-  VALUE: AGW-S-001
-
-[REQUIREMENT]
-UID: CGW-S-003A
-TITLE: Physical Mode Switch Interlock
-STATEMENT: The device SHALL have at least on physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from d1 to d2.
-COMMENT: >>>
-Example:
-
-A) Phsyical switch on dash
-<<<
-
-[REQUIREMENT]
-UID: CGW-S-003B
-TITLE: Virtual Mode Switch Interlock
-STATEMENT: The device SHALL allow an authenticated input over a connection to enable a switch into modes which allow OTA, spoofing, etc. from d1 to d2.
-COMMENT: >>>
-Examples:
-
-A) Consent on Instrument cluster or infotainment device (and thus internal networks - possibly but not necessarily d2)
-
-B) Consent from third party device / application that is signed with infrastructure OEM has access to verify
-<<<
-
-[/COMPOSITE_REQUIREMENT]
 
 [REQUIREMENT]
 UID: CGW-S-004
