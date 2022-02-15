@@ -72,9 +72,6 @@ STATEMENT: The device SHALL prevent degration of any d2 operation due to d1 acti
 
 [REQUIREMENT]
 UID: AGW-S-008
-REFS:
-- TYPE: Parent
-  VALUE: NGW-F-001
 TITLE: Security Assurance
 STATEMENT: These devices shall satisfy a comphrehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
 
