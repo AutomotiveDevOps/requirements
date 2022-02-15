@@ -55,18 +55,22 @@ UID: AGW-S-003
 TITLE: Prevents Spoofing
 STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto d2
 
-[REQUIREMENT]
+[COMPOSITE_REQUIREMENT]
 UID: AGW-S-004
 TITLE: Prevents Exfiltration
-STATEMENT: The device SHALL prevent exfiltration of data fom d2 to d1
+STATEMENT: The device SHALL prevent exfiltration of data fom d2 to d1 by satisfying one or more of these requirements.
 
 [REQUIREMENT]
-UID: AGW-S-021
-REFS:
-- TYPE: Parent
-  VALUE: AGW-S-004
+UID: AGW-S-004A
 TITLE: Protect Confidentiality
 STATEMENT: These devices may encapsulate and/or translate (e.g. encrypt) information as it is transported between the network domains for the purposes of protecting confidentiality of the information in the domain to which the information is moved.
+
+[REQUIREMENT]
+UID: AGW-S-004B
+TITLE: Re-Write / Masking
+STATEMENT: The device SHALL provide a means of masking or otherwise re-writing data to prevent exfiltration of sensitive information from d2 to d1.
+
+[/COMPOSITE_REQUIREMENT]
 
 [REQUIREMENT]
 UID: AGW-S-005
@@ -144,14 +148,6 @@ REFS:
   VALUE: AGW-S-009
 TITLE: Performant
 STATEMENT: The device SHALL process and move CAN frames quickly enough to preserve performance on all network domains.
-
-[REQUIREMENT]
-UID: CGW-S-002
-REFS:
-- TYPE: Parent
-  VALUE: AGW-S-004
-TITLE: Re-write / Masking
-STATEMENT: The device SHALL provide a means of masking or otherwise re-writing CAN frames to prevent exfiltration of sensitive information from d2 to d1.
 
 [REQUIREMENT]
 UID: CGW-S-005
