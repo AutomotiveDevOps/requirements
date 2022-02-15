@@ -36,6 +36,11 @@ The group discussed what security requirements would need to be satisfied by a d
 [/FREETEXT]
 
 [REQUIREMENT]
+UID: AGW-S-000
+TITLE: Gateway Configuration Authenticated
+STATEMENT: The device SHALL accept and react only to configuration changes which are correctly authorized and authenticated, regardless of origin of network domain.
+
+[REQUIREMENT]
 UID: AGW-S-001
 TITLE: Prevents OTA
 STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from d1 to d2, unless with explicit configuration and authorization.
@@ -147,11 +152,6 @@ REFS:
   VALUE: AGW-S-004
 TITLE: Re-write / Masking
 STATEMENT: The device SHALL provide a means of masking or otherwise re-writing CAN frames to prevent exfiltration of sensitive information from d2 to d1.
-
-[REQUIREMENT]
-UID: CGW-S-004
-TITLE: Gateway Configuration Authenticated
-STATEMENT: The device SHALL accept and react only to configuration changes which are correctly authorized and authenticated, regardless of origin of network domain.
 
 [REQUIREMENT]
 UID: CGW-S-005
