@@ -24,7 +24,7 @@ REFS:
 - TYPE: Parent
   VALUE: NGW-F-001
 TITLE: Security Assurance
-STATEMENT: These devices SHALL satisfy a comphrehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
 
 [/SECTION]
 
@@ -32,7 +32,7 @@ STATEMENT: These devices SHALL satisfy a comphrehensive set of product security 
 TITLE: Security Requirements for Abstract (Intended) Gateways
 
 [FREETEXT]
-The group discussed what security requirements would need to be satisfied by a device intended to be a gateway: a device which is intended to move/translate etc (see section *Devices Intended to be a Gateway*) infromation from an untrusted domain, d1, to a trusted domain, d2.
+The group discussed what security requirements would need to be satisfied by a device intended to be a gateway: a device which is intended to move/translate etc (see section *Devices Intended to be a Gateway*) information from an untrusted domain, d1, to a trusted domain, d2.
 [/FREETEXT]
 
 [REQUIREMENT]
@@ -43,7 +43,7 @@ STATEMENT: The device SHALL accept and react only to configuration changes which
 [REQUIREMENT]
 UID: AGW-S-001
 TITLE: Prevents OTA
-STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from d1 to d2, unless with explicity authorized and authenticated configuration changes via the mode switch.
+STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from d1 to d2, unless with explicitly authorized and authenticated configuration changes via the mode switch.
 
 [REQUIREMENT]
 UID: AGW-S-002
@@ -58,7 +58,7 @@ STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto d2
 [COMPOSITE_REQUIREMENT]
 UID: AGW-S-004
 TITLE: Prevents Exfiltration
-STATEMENT: The device SHALL prevent exfiltration of data fom d2 to d1 by satisfying one or more of these requirements.
+STATEMENT: The device SHALL prevent exfiltration of data from d2 to d1 by satisfying one or more of these requirements.
 
 [REQUIREMENT]
 UID: AGW-S-004A
@@ -85,12 +85,12 @@ STATEMENT: The device SHALL prevent all data loss and/or corruption of informati
 [REQUIREMENT]
 UID: AGW-S-007
 TITLE: Preserves High Side Operation
-STATEMENT: The device SHALL prevent degration of any d2 operation due to d1 activity.
+STATEMENT: The device SHALL prevent degradation of any d2 operation due to d1 activity.
 
 [REQUIREMENT]
 UID: AGW-S-008
 TITLE: Security Assurance
-STATEMENT: These devices SHALL satisfy a comphrehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
 
 [REQUIREMENT]
 UID: AGW-S-009
@@ -98,7 +98,7 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-007
 TITLE: Preserves Performance
-STATEMENT: The device SHALL be scoped to suffcicient detail to preserve network domain performance guarantees in d2.
+STATEMENT: The device SHALL be scoped to sufficient detail to preserve network domain performance guarantees in d2.
 
 [COMPOSITE_REQUIREMENT]
 TITLE: Mode Switch Interlock
@@ -112,7 +112,7 @@ STATEMENT: The device SHALL have at least on physical input that when grounded e
 COMMENT: >>>
 Example:
 
-A) Phsyical switch on dash
+A) Physical switch on dash
 <<<
 
 [REQUIREMENT]
