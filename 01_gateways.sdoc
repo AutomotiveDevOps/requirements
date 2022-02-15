@@ -238,23 +238,27 @@ UID: AGW-F-002
 TITLE: Translates
 STATEMENT: These devices shall translate/transform the information between the separate network domains but intentions of the data are preserved.
 
-[REQUIREMENT]
+[COMPOSITE_REQUIREMENT]
 UID: AGW-F-003
 TITLE: Filters
-STATEMENT: These devices may select which information is transported and/or translated between the network domains.
+STATEMENT: These devices may select which information is transported and/or translated between the network domains by satisfying one or more of these requirements
+
+[REQUIREMENT]
+UID: AGW-F-003A
+TITLE: Drops
+STATEMENT: These devices may select which information is transported based on rules matching content or metadata before (ingress) or after (egress) processing steps in preparation for transport/translate/encapsulate or other forwarding actions.
+
+[REQUIREMENT]
+UID: AGW-F-003B
+TITLE: Rate Limits
+STATEMENT: These devices may select which information is transported in a time varying fashion for the purposes of limiting the rate at which the information is put on a network domain.
+
+[/COMPOSITE_REQUIREMENT]
 
 [REQUIREMENT]
 UID: AGW-F-004
 TITLE: Encapsulates
 STATEMENT: These devices may encapsulate information as it is transported and/or translated between the network domains.
-
-[REQUIREMENT]
-UID: AGW-F-006
-REFS:
-- TYPE: Parent
-  VALUE: AGW-F-003
-TITLE: Rate Limits
-STATEMENT: These devices may select which information is transported in a time varying fashion for the purposes of limiting the rate at which the information is put on a network domain.
 
 [REQUIREMENT]
 UID: AGW-F-007
