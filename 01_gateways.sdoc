@@ -37,13 +37,13 @@ The group discussed what security requirements would need to be satisfied by a d
 
 [REQUIREMENT]
 UID: AGW-S-000
-TITLE: Gateway Configuration Authenticated
+TITLE: Gateway Configuration Protected
 STATEMENT: The device SHALL accept and react only to configuration changes which are correctly authorized and authenticated, regardless of origin of network domain.
 
 [REQUIREMENT]
 UID: AGW-S-001
 TITLE: Prevents OTA
-STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from d1 to d2, unless with explicit configuration and authorization.
+STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from d1 to d2, unless with explicity authorized and authenticated configuration changes via the mode switch.
 
 [REQUIREMENT]
 UID: AGW-S-002
@@ -75,7 +75,7 @@ STATEMENT: The device SHALL provide a means of masking or otherwise re-writing d
 [REQUIREMENT]
 UID: AGW-S-005
 TITLE: Prevents Elevation
-STATEMENT: The device SHALL prevent abuse of d2 network domain functionality from d1 to d2, unless with explicit configuration and authorization.
+STATEMENT: The device SHALL prevent abuse of d2 network domain functionality from d1 to d2, unless with explicity authorized and authenticated configuration changes via the mode switch.
 
 [REQUIREMENT]
 UID: AGW-S-006
@@ -102,7 +102,7 @@ STATEMENT: The device SHALL be scoped to suffcicient detail to preserve network 
 
 [COMPOSITE_REQUIREMENT]
 TITLE: Mode Switch Interlock
-STATEMENT: The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicit configuration and authorization." The means must be impossible to use without explicit authorization by the vehicle owner. The device SHALL satisfy one or more of these requirements to enable a switch into modes which allow OTA, spoofing, etc. from d1 to d2. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
+STATEMENT: The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicity authorized and authenticated configuration changes via the mode switch" The means must be impossible to use without explicit authorization by the vehicle owner. The device SHALL satisfy one or more of these requirements to enable a switch into modes which allow OTA, spoofing, etc. from d1 to d2. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
 UID: AGW-S-010
 
 [REQUIREMENT]
@@ -118,7 +118,7 @@ A) Phsyical switch on dash
 [REQUIREMENT]
 UID: AGW-S-010B
 TITLE: Virtual Mode Switch Interlock
-STATEMENT: The device SHALL allow an authenticated input over a connection to enable a switch into modes which allow OTA, spoofing, etc. from d1 to d2.
+STATEMENT: The device SHALL allow a explicitly authorized and authenticated input over a connection to enable a switch into modes which allow OTA, spoofing, etc. from d1 to d2.
 COMMENT: >>>
 Examples:
 
