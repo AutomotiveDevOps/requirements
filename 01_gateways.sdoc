@@ -32,7 +32,7 @@ STATEMENT: These devices SHALL satisfy a comprehensive set of product security r
 TITLE: Security Requirements for Abstract (Intended) Gateways
 
 [FREETEXT]
-The group discussed what security requirements would need to be satisfied by a device intended to be a gateway: a device which is intended to move/translate etc (see section *Devices Intended to be a Gateway*) information from an untrusted domain, *OUTSIDE*, to a trusted domain, *INSIDE*.
+The group discussed what security requirements would need to be satisfied by a device intended to be a gateway: a device which is intended to move/translate etc (see section *Devices Intended to be a Gateway*) information from an Untrusted Network Domain (*UND*) to a Trusted Network Domain (*TND*).
 [/FREETEXT]
 
 [REQUIREMENT]
@@ -43,22 +43,22 @@ STATEMENT: The device SHALL accept and react only to configuration changes which
 [REQUIREMENT]
 UID: AGW-S-001
 TITLE: Prevents OTA
-STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from *OUTSIDE* to *INSIDE*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
+STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
 
 [REQUIREMENT]
 UID: AGW-S-002
 TITLE: Prevents DoS
-STATEMENT: The device SHALL prevent generating Denial of Service (DoS) on *INSIDE* from messages originating on *OUTSIDE*.
+STATEMENT: The device SHALL prevent generating Denial of Service (DoS) on *TND* from messages originating on *UND*.
 
 [REQUIREMENT]
 UID: AGW-S-003
 TITLE: Prevents Spoofing
-STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto *INSIDE*
+STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto *TND*
 
 [COMPOSITE_REQUIREMENT]
 UID: AGW-S-004
 TITLE: Prevents Exfiltration
-STATEMENT: The device SHALL prevent exfiltration of data from *INSIDE* to *OUTSIDE*, or vice-versa, by satisfying one or more of these requirements.
+STATEMENT: The device SHALL prevent exfiltration of data from *TND* to *UND*, or vice-versa, by satisfying one or more of these requirements.
 
 [REQUIREMENT]
 UID: AGW-S-004A
@@ -68,24 +68,24 @@ STATEMENT: These devices MAY encapsulate and/or translate (e.g. encrypt) informa
 [REQUIREMENT]
 UID: AGW-S-004B
 TITLE: Re-Write / Masking
-STATEMENT: The device SHALL provide a means of masking or otherwise re-writing data to prevent exfiltration of sensitive information from *INSIDE* to *OUTSIDE*.
+STATEMENT: The device SHALL provide a means of masking or otherwise re-writing data to prevent exfiltration of sensitive information from *TND* to *UND*.
 
 [/COMPOSITE_REQUIREMENT]
 
 [REQUIREMENT]
 UID: AGW-S-005
 TITLE: Prevents Elevation
-STATEMENT: The device SHALL prevent abuse of *INSIDE* network domain functionality from *OUTSIDE* to *INSIDE*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
+STATEMENT: The device SHALL prevent abuse of *TND* network domain functionality from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
 
 [REQUIREMENT]
 UID: AGW-S-006
 TITLE: Prevents Data Loss
-STATEMENT: The device SHALL prevent all data loss and/or corruption of information in the bidirectional *OUTSIDE*<->*INSIDE* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002).
+STATEMENT: The device SHALL prevent all data loss and/or corruption of information in the bidirectional *UND*<->*TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002).
 
 [REQUIREMENT]
 UID: AGW-S-007
 TITLE: Preserves High Side Operation
-STATEMENT: The device SHALL prevent degradation of any *INSIDE* operation due to *OUTSIDE* activity.
+STATEMENT: The device SHALL prevent degradation of any *TND* operation due to *UND* activity.
 
 [REQUIREMENT]
 UID: AGW-S-008
@@ -98,17 +98,17 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-007
 TITLE: Preserves Performance
-STATEMENT: The device SHALL be scoped to sufficient detail to preserve network domain performance guarantees in *INSIDE*.
+STATEMENT: The device SHALL be scoped to sufficient detail to preserve network domain performance guarantees in *TND*.
 
 [COMPOSITE_REQUIREMENT]
 TITLE: Mode Switch Interlock
-STATEMENT: The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicity authorized and authenticated configuration changes via the mode switch" The means must be impossible to use without explicit authorization by the vehicle owner. The device SHALL satisfy one or more of these requirements to enable a switch into modes which allow OTA, spoofing, etc. from *OUTSIDE* to *INSIDE*. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
+STATEMENT: The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicity authorized and authenticated configuration changes via the mode switch" The means must be impossible to use without explicit authorization by the vehicle owner. The device SHALL satisfy one or more of these requirements to enable a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
 UID: AGW-S-010
 
 [REQUIREMENT]
 UID: AGW-S-010A
 TITLE: Physical Mode Switch Interlock
-STATEMENT: The device SHALL have at least on physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from *OUTSIDE* to *INSIDE*.
+STATEMENT: The device SHALL have at least on physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
 COMMENT: >>>
 Example:
 
@@ -118,11 +118,11 @@ A) Phsyical switch on dash
 [REQUIREMENT]
 UID: AGW-S-010B
 TITLE: Virtual Mode Switch Interlock
-STATEMENT: The device SHALL allow a explicitly authorized and authenticated input over a connection to enable a switch into modes which allow OTA, spoofing, etc. from *OUTSIDE* to *INSIDE*.
+STATEMENT: The device SHALL allow a explicitly authorized and authenticated input over a connection to enable a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
 COMMENT: >>>
 Examples:
 
-A) Consent on Instrument cluster or infotainment device (and thus internal networks - possibly but not necessarily *INSIDE*)
+A) Consent on Instrument cluster or infotainment device (and thus internal networks - possibly but not necessarily *TND*)
 
 B) Consent from third party device / application that is signed with infrastructure OEM has access to verify
 <<<
@@ -163,7 +163,7 @@ REFS:
 - TYPE: Parent
   VALUE: CGW-S-005
 TITLE: Won't Drop Frames
-STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional *OUTSIDE*<->*INSIDE* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
+STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional *UND*<->*TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
 
 [REQUIREMENT]
 UID: CGW-S-007
@@ -171,7 +171,7 @@ REFS:
 - TYPE: Parent
   VALUE: CGW-S-005
 TITLE: No Priority Inversion
-STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional *OUTSIDE*<->*INSIDE* operation, to prevent priority inversion.
+STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional *UND*<->*TND* operation, to prevent priority inversion.
 
 [REQUIREMENT]
 UID: CGW-S-008
@@ -195,7 +195,7 @@ REFS:
 - TYPE: Parent
   VALUE: CGW-S-005
 TITLE: Preserves Jitter
-STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) low enough to not affect the *INSIDE* network domain performance requirements in the worst case.
+STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) low enough to not affect the *TND* network domain performance requirements in the worst case.
 
 [REQUIREMENT]
 UID: CGW-S-100
