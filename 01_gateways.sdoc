@@ -58,7 +58,7 @@ STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto *INSIDE
 [COMPOSITE_REQUIREMENT]
 UID: AGW-S-004
 TITLE: Prevents Exfiltration
-STATEMENT: The device SHALL prevent exfiltration of data from *INSIDE* to *OUTSIDE* by satisfying one or more of these requirements.
+STATEMENT: The device SHALL prevent exfiltration of data from *INSIDE* to *OUTSIDE*, or vice-versa, by satisfying one or more of these requirements.
 
 [REQUIREMENT]
 UID: AGW-S-004A
