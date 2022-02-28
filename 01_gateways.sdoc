@@ -241,7 +241,7 @@ STATEMENT: These devices SHALL translate/transform the information between the s
 [COMPOSITE_REQUIREMENT]
 UID: AGW-F-003
 TITLE: Filters
-STATEMENT: These devices MAY select which information is transported and/or translated between the network domains by satisfying one or more of these requirements
+STATEMENT: These devices MAY select which information is transported and/or translated between the network domains by satisfying all of these requirements:
 
 [REQUIREMENT]
 UID: AGW-F-003A
