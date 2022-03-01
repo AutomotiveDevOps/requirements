@@ -24,7 +24,7 @@ REFS:
 - TYPE: Parent
   VALUE: NGW-F-001
 TITLE: Security Assurance
-STATEMENT: These devices shall satisfy a comphrehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
 
 [/SECTION]
 
@@ -32,51 +32,65 @@ STATEMENT: These devices shall satisfy a comphrehensive set of product security 
 TITLE: Security Requirements for Abstract (Intended) Gateways
 
 [FREETEXT]
-The group discussed what security requirements would need to be satisfied by a device intended to be a gateway: a device which is intended to move/translate etc (see section *Devices Intended to be a Gateway*) infromation from an untrusted domain, d1, to a trusted domain, d2.
+The group discussed what security requirements would need to be satisfied by a device intended to be a gateway: a device which is intended to move/translate etc (see section *Devices Intended to be a Gateway*) information from an Untrusted Network Domain (*UND*) to a Trusted Network Domain (*TND*).
 [/FREETEXT]
+
+[REQUIREMENT]
+UID: AGW-S-000
+TITLE: Gateway Configuration Protected
+STATEMENT: The device SHALL accept and react only to configuration changes which are correctly authorized and authenticated, regardless of origin of network domain.
 
 [REQUIREMENT]
 UID: AGW-S-001
 TITLE: Prevents OTA
-STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from d1 to d2, unless with explicit configuration and authorization.
+STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
 
 [REQUIREMENT]
 UID: AGW-S-002
 TITLE: Prevents DoS
-STATEMENT: The device SHALL prevent generating Denial of Service (DoS) on d2 from messages originating on d1.
+STATEMENT: The device SHALL prevent generating Denial of Service (DoS) on *TND* from messages originating on *UND*.
 
 [REQUIREMENT]
 UID: AGW-S-003
 TITLE: Prevents Spoofing
-STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto d2
+STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto *TND*
 
-[REQUIREMENT]
+[COMPOSITE_REQUIREMENT]
 UID: AGW-S-004
 TITLE: Prevents Exfiltration
-STATEMENT: The device SHALL prevent exfiltration of data fom d2 to d1
+STATEMENT: The device SHALL prevent exfiltration of data from *TND* to *UND*, or vice-versa, by satisfying one or more of these requirements.
+
+[REQUIREMENT]
+UID: AGW-S-004A
+TITLE: Protect Confidentiality
+STATEMENT: These devices MAY encapsulate and/or translate (e.g. encrypt) information as it is transported between the network domains for the purposes of protecting confidentiality of the information in the domain to which the information is moved.
+
+[REQUIREMENT]
+UID: AGW-S-004B
+TITLE: Re-Write / Masking
+STATEMENT: The device SHALL provide a means of masking or otherwise re-writing data to prevent exfiltration of sensitive information from *TND* to *UND*.
+
+[/COMPOSITE_REQUIREMENT]
 
 [REQUIREMENT]
 UID: AGW-S-005
 TITLE: Prevents Elevation
-STATEMENT: The device SHALL prevent abuse of d2 network domain functionality from d1 to d2, unless with explicit configuration and authorization.
+STATEMENT: The device SHALL prevent abuse of *TND* network domain functionality from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
 
 [REQUIREMENT]
 UID: AGW-S-006
 TITLE: Prevents Data Loss
-STATEMENT: The device SHALL prevent all data loss and/or corruption of information in the bidirectional d1<->d2 operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002).
+STATEMENT: The device SHALL prevent all data loss and/or corruption of information in the bidirectional *UND*<->*TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002).
 
 [REQUIREMENT]
 UID: AGW-S-007
 TITLE: Preserves High Side Operation
-STATEMENT: The device SHALL prevent degration of any d2 operation due to d1 activity.
+STATEMENT: The device SHALL prevent degradation of any *TND* operation due to *UND* activity.
 
 [REQUIREMENT]
 UID: AGW-S-008
-REFS:
-- TYPE: Parent
-  VALUE: NGW-F-001
 TITLE: Security Assurance
-STATEMENT: These devices shall satisfy a comphrehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
 
 [REQUIREMENT]
 UID: AGW-S-009
@@ -84,17 +98,41 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-007
 TITLE: Preserves Performance
-STATEMENT: The device SHALL be scoped to suffcicient detail to preserve network domain performance guarantees in d2.
+STATEMENT: The device SHALL be scoped to sufficient detail to preserve network domain performance guarantees in *TND*.
+
+[COMPOSITE_REQUIREMENT]
+TITLE: Mode Switch Interlock
+STATEMENT: The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicity authorized and authenticated configuration changes via the mode switch" The means must be impossible to use without explicit authorization by the vehicle owner. The device SHALL satisfy one or more of these requirements to enable a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
+UID: AGW-S-010
 
 [REQUIREMENT]
-UID: AGW-S-010
-TITLE: Mode Switch
-STATEMENT: The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicit configuration and authorization." The means must be impossible to use without explicit authorization by the vehicle owner.
+UID: AGW-S-010A
+TITLE: Physical Mode Switch Interlock
+STATEMENT: The device SHALL have at least on physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
+COMMENT: >>>
+Example:
+
+A) Phsyical switch on dash
+<<<
+
+[REQUIREMENT]
+UID: AGW-S-010B
+TITLE: Virtual Mode Switch Interlock
+STATEMENT: The device SHALL allow a explicitly authorized and authenticated input over a connection to enable a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
+COMMENT: >>>
+Examples:
+
+A) Consent on Instrument cluster or infotainment device (and thus internal networks - possibly but not necessarily *TND*)
+
+B) Consent from third party device / application that is signed with infrastructure OEM has access to verify
+<<<
+
+[/COMPOSITE_REQUIREMENT]
 
 [REQUIREMENT]
 UID: AGW-S-011
 TITLE: Mode Switch Indicated
-STATEMENT: The device shall indicate to all domains that it is not performing normal operations.
+STATEMENT: The device SHALL indicate to all domains that it is not performing normal operations.
 
 [SECTION]
 TITLE: Security Requirements for CAN Gateways
@@ -112,51 +150,6 @@ TITLE: Performant
 STATEMENT: The device SHALL process and move CAN frames quickly enough to preserve performance on all network domains.
 
 [REQUIREMENT]
-UID: CGW-S-002
-REFS:
-- TYPE: Parent
-  VALUE: AGW-S-004
-TITLE: Re-write / Masking
-STATEMENT: The device SHALL provide a means of masking or otherwise re-writing CAN frames to prevent exfiltration of sensitive information from d2 to d1.
-
-[COMPOSITE_REQUIREMENT]
-TITLE: Mode Switch Interlock
-STATEMENT: The device SHALL satisfy one or more of these requirements to enable a switch into modes which allow OTA, spoofing, etc. from d1 to d2. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
-UID: CGW-S-003
-REFS:
-- TYPE: Parent
-  VALUE: AGW-S-001
-
-[REQUIREMENT]
-UID: CGW-S-003A
-TITLE: Physical Mode Switch Interlock
-STATEMENT: The device SHALL have at least on physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from d1 to d2.
-COMMENT: >>>
-Example:
-
-A) Phsyical switch on dash
-<<<
-
-[REQUIREMENT]
-UID: CGW-S-003B
-TITLE: Virtual Mode Switch Interlock
-STATEMENT: The device SHALL allow an authenticated input over a connection to enable a switch into modes which allow OTA, spoofing, etc. from d1 to d2.
-COMMENT: >>>
-Examples:
-
-A) Consent on Instrument cluster or infotainment device (and thus internal networks - possibly but not necessarily d2)
-
-B) Consent from third party device / application that is signed with infrastructure OEM has access to verify
-<<<
-
-[/COMPOSITE_REQUIREMENT]
-
-[REQUIREMENT]
-UID: CGW-S-004
-TITLE: Gateway Configuration Authenticated
-STATEMENT: The device SHALL accept and react only to configuration changes which are correctly authorized and authenticated, regardless of origin of network domain.
-
-[REQUIREMENT]
 UID: CGW-S-005
 REFS:
 - TYPE: Parent
@@ -170,7 +163,7 @@ REFS:
 - TYPE: Parent
   VALUE: CGW-S-005
 TITLE: Won't Drop Frames
-STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional d1<->d2 operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
+STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional *UND*<->*TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
 
 [REQUIREMENT]
 UID: CGW-S-007
@@ -178,7 +171,7 @@ REFS:
 - TYPE: Parent
   VALUE: CGW-S-005
 TITLE: No Priority Inversion
-STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional d1<->d2 operation, to prevent priority inversion.
+STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional *UND*<->*TND* operation, to prevent priority inversion.
 
 [REQUIREMENT]
 UID: CGW-S-008
@@ -202,7 +195,7 @@ REFS:
 - TYPE: Parent
   VALUE: CGW-S-005
 TITLE: Preserves Jitter
-STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) low enough to not affect the d2 network domain performance requirements in the worst case.
+STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) low enough to not affect the *TND* network domain performance requirements in the worst case.
 
 [REQUIREMENT]
 UID: CGW-S-100
@@ -210,7 +203,7 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-002
 TITLE: Impervious to Address Claim Attacks
-STATEMENT: The device shall not be susceptible to address claim attacks.
+STATEMENT: The device SHALL not be susceptible to address claim attacks.
 
 [/SECTION]
 
@@ -238,58 +231,54 @@ TITLE: Devices Intended to be a Gateway
 [REQUIREMENT]
 UID: AGW-F-001
 TITLE: Transports
-STATEMENT: These devices shall transport/'move' information between two separate network 'domains,' **bi-bidirectionally.**
+STATEMENT: These devices SHALL transport/'move' information between two separate network 'domains,' **bi-bidirectionally.**
 
 [REQUIREMENT]
 UID: AGW-F-002
 TITLE: Translates
-STATEMENT: These devices shall translate/transform the information between the separate network domains but intentions of the data are preserved.
+STATEMENT: These devices SHALL translate/transform the information between the separate network domains but intentions of the data are preserved.
 
-[REQUIREMENT]
+[COMPOSITE_REQUIREMENT]
 UID: AGW-F-003
 TITLE: Filters
-STATEMENT: These devices may select which information is transported and/or translated between the network domains.
+STATEMENT: These devices MAY select which information is transported and/or translated between the network domains by satisfying all of these requirements:
+
+[REQUIREMENT]
+UID: AGW-F-003A
+TITLE: Drops
+STATEMENT: These devices MAY select which information is transported based on rules matching content or metadata before (ingress) or after (egress) processing steps in preparation for transport/translate/encapsulate or other forwarding actions.
+
+[REQUIREMENT]
+UID: AGW-F-003B
+TITLE: Rate Limits
+STATEMENT: These devices MAY select which information is transported in a time varying fashion for the purposes of limiting the rate at which the information is put on a network domain.
+
+[/COMPOSITE_REQUIREMENT]
 
 [REQUIREMENT]
 UID: AGW-F-004
 TITLE: Encapsulates
-STATEMENT: These devices may encapsulate information as it is transported and/or translated between the network domains.
-
-[REQUIREMENT]
-UID: AGW-F-005
-REFS:
-- TYPE: Parent
-  VALUE: AGW-F-004
-TITLE: Protect Confidentiality
-STATEMENT: These devices may encapsulate and/or translate information as it is transported between the network domains for the purposes of protecting confidentiality of the information in the domain to which the information is moved.
-
-[REQUIREMENT]
-UID: AGW-F-006
-REFS:
-- TYPE: Parent
-  VALUE: AGW-F-003
-TITLE: Rate Limits
-STATEMENT: These devices may select which information is transported in a time varying fashion for the purposes of limiting the rate at which the information is put on a network domain.
+STATEMENT: These devices MAY encapsulate information as it is transported and/or translated between the network domains.
 
 [REQUIREMENT]
 UID: AGW-F-007
 TITLE: Controllable
-STATEMENT: These devices shall be controllable by users with necessary authentication and authorization.
+STATEMENT: These devices SHALL be controllable by users with necessary authentication and authorization.
 
 [REQUIREMENT]
 UID: AGW-F-008
 TITLE: Configurable
-STATEMENT: These devices shall be configurable by users with necessary authentication and authorization.
+STATEMENT: These devices SHALL be configurable by users with necessary authentication and authorization.
 
 [REQUIREMENT]
 UID: AGW-F-009
 TITLE: Reports
-STATEMENT: These devices shall report status of operation to users with necessary authentication and authorization.
+STATEMENT: These devices SHALL report status of operation to users with necessary authentication and authorization.
 
 [REQUIREMENT]
 UID: AGW-F-010
 TITLE: Diagnoses
-STATEMENT: These devices shall provide diagnostic commands to users with necessary authentication and authorization.
+STATEMENT: These devices SHALL provide diagnostic commands to users with necessary authentication and authorization.
 
 [/SECTION]
 
@@ -299,7 +288,7 @@ TITLE: Devices NOT Intended to be a Gateway
 [REQUIREMENT]
 UID: NGW-F-001
 TITLE: Won't be Gateways
-STATEMENT: These devices shall not allow/enable/admit any of the gateway features (see Section *Devices Intended to be a Gateway*)
+STATEMENT: These devices SHALL not allow/enable/admit any of the gateway features (see Section *Devices Intended to be a Gateway*)
 
 [/SECTION]
 
