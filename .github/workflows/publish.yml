@@ -30,9 +30,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install git+https://github.com/strictdoc-project/strictdoc/
-          python -m pip install toml
-          python -m pip install pygments
+          git clone https://github.com/strictdoc-project/strictdoc/
+          python -m pip install -r strictdoc/requirements.txt
+          python -m pip install strictdoc/
 
       - name: Run Strict Doc
         run: |
