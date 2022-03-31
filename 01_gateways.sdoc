@@ -34,9 +34,15 @@ TITLE: Security Requirements for Abstract (Intended) Gateways
 [FREETEXT]
 The group discussed what security requirements would need to be satisfied by a device intended to be a gateway: a device which is intended to move/translate etc (see section *Devices Intended to be a Gateway*) information from an Untrusted Network Domain (*UND*) to a Trusted Network Domain (*TND*).
 
-A *UND* is network segment that is a) wireless, OR where b) aftermarket devices may be installed, OR c) there is at least one host/ECU telematics device or multi-homed/unintended gateway that does not completely satisfy the HD VCR requirements. 
+Untrusted Network Domain (*UND*)
+    A *UND* is a network domain (or segment) that contains any of the following:
+  a) wireless communication or reachable wirelessly (e.g J2497)
+  b) an interface for aftermarket devices or operator access (e.g. an OBD port)
+  c) a telematics device that does not satisfy the HD VCR requirements
+  d) a multi-network device (e.g. intended or unintended gateway) that does not satisfy the HD VCR requirements
 
-A *TND* is a network segment where none of the hosts/ECUs are: a) telematics devices, b) multi-homed/unintended-gateways, c) or aftermarket devices. A *TND* may also be a network segment in which all multi-homed/unintended-gateways and other devices completely satisfy the HD VCR requirements. 
+Trusted Network Domain (*TND*)
+   A *TND* is a network domain (or segment) that does not meet the criteria for being considered a *UND*.
 
 [/FREETEXT]
 
