@@ -36,13 +36,14 @@ The group discussed what security requirements would need to be satisfied by a d
 
 Untrusted Network Domain (*UND*)
     A *UND* is a network domain (or segment) that contains any of the following:
-  a) wireless communication or reachable wirelessly (e.g J2497)
-  b) an interface for aftermarket devices or operator access (e.g. an OBD port)
-  c) a telematics device that does not satisfy the HD VCR requirements
-  d) a multi-network device (e.g. intended or unintended gateway) that does not satisfy the HD VCR requirements
+
+    a) wireless communication or reachable wirelessly (e.g J2497)
+    b) an interface for aftermarket devices or operator access (e.g. an OBD port)
+    c) a telematics device that does not satisfy the HD VCR requirements
+    d) a multi-network device (e.g. intended or unintended gateway) that does not satisfy the HD VCR requirements
 
 Trusted Network Domain (*TND*)
-   A *TND* is a network domain (or segment) that does not meet the criteria for being considered a *UND*.
+    A *TND* is a network domain (or segment) that does not meet the criteria for being considered a *UND*.
 
 [/FREETEXT]
 
