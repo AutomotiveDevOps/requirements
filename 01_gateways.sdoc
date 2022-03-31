@@ -55,22 +55,16 @@ UID: AGW-S-003
 TITLE: Prevents Spoofing
 STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto *TND*
 
-[COMPOSITE_REQUIREMENT]
+[REQUIREMENT]
 UID: AGW-S-004
 TITLE: Prevents Exfiltration
-STATEMENT: The device SHALL prevent exfiltration of data from *TND* to *UND*, or vice-versa, by satisfying one or more of these requirements.
+STATEMENT: >>>
+The device SHALL prevent exfiltration of data from *TND* to *UND*, or vice-versa, by satisfying one or more of these methods:
 
-[REQUIREMENT]
-UID: AGW-S-004A
-TITLE: Protect Confidentiality
-STATEMENT: These devices MAY encapsulate and/or translate (e.g. encrypt) information as it is transported between the network domains for the purposes of protecting confidentiality of the information in the domain to which the information is moved.
+* Protect Confidentiality: These devices MAY encapsulate and/or translate (e.g. encrypt) information as it is transported between the network domains for the purposes of protecting confidentiality of the information in the domain to which the information is moved.
+* Re-Write / Masking: The device SHALL provide a means of masking or otherwise re-writing data to prevent exfiltration of sensitive information from *TND* to *UND*.
 
-[REQUIREMENT]
-UID: AGW-S-004B
-TITLE: Re-Write / Masking
-STATEMENT: The device SHALL provide a means of masking or otherwise re-writing data to prevent exfiltration of sensitive information from *TND* to *UND*.
-
-[/COMPOSITE_REQUIREMENT]
+<<<
 
 [REQUIREMENT]
 UID: AGW-S-005
@@ -100,34 +94,23 @@ REFS:
 TITLE: Preserves Performance
 STATEMENT: The device SHALL be scoped to sufficient detail to preserve network domain performance guarantees in *TND*.
 
-[COMPOSITE_REQUIREMENT]
-TITLE: Mode Switch Interlock
-STATEMENT: The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicity authorized and authenticated configuration changes via the mode switch" The means must be impossible to use without explicit authorization by the vehicle owner. The device SHALL satisfy one or more of these requirements to enable a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
+[REQUIREMENT]
 UID: AGW-S-010
+TITLE: Mode Switch Interlock
+STATEMENT: >>>
+The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicity authorized and authenticated configuration changes via the mode switch" The means must be impossible to use without explicit authorization by the vehicle owner. The device SHALL satisfy one or more of these methods to enable a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
 
-[REQUIREMENT]
-UID: AGW-S-010A
-TITLE: Physical Mode Switch Interlock
-STATEMENT: The device SHALL have at least on physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
-COMMENT: >>>
-Example:
+* Physical Mode Switch Interlock: The device SHALL have at least on physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
 
-A) Phsyical switch on dash
+  * Example: Physical switch on dash
+
+* Virtual Mode Switch Interlock: The device SHALL allow a explicitly authorized and authenticated input over a connection to enable a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
+
+  * Example: Consent on Instrument cluster or infotainment device (and thus internal networks - possibly but not necessarily *TND*)
+
+  * Example: Consent from third party device / application that is signed with infrastructure OEM has access to verify
+
 <<<
-
-[REQUIREMENT]
-UID: AGW-S-010B
-TITLE: Virtual Mode Switch Interlock
-STATEMENT: The device SHALL allow a explicitly authorized and authenticated input over a connection to enable a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
-COMMENT: >>>
-Examples:
-
-A) Consent on Instrument cluster or infotainment device (and thus internal networks - possibly but not necessarily *TND*)
-
-B) Consent from third party device / application that is signed with infrastructure OEM has access to verify
-<<<
-
-[/COMPOSITE_REQUIREMENT]
 
 [REQUIREMENT]
 UID: AGW-S-011
