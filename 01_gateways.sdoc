@@ -149,7 +149,7 @@ REFS:
 TITLE: Performant
 STATEMENT: The device SHALL process and move CAN frames quickly enough to preserve performance on all network domains.
 
-[REQUIREMENT]
+[COMPOSITE_REQUIREMENT]
 UID: CGW-S-005
 REFS:
 - TYPE: Parent
@@ -158,44 +158,31 @@ TITLE: Preserves Atomic Multicast
 STATEMENT: The device SHALL preserve the atomic multicast property of CAN buses.
 
 [REQUIREMENT]
-UID: CGW-S-006
-REFS:
-- TYPE: Parent
-  VALUE: CGW-S-005
+UID: CGW-S-005a
 TITLE: Won't Drop Frames
 STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional *UND*<->*TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
 
 [REQUIREMENT]
-UID: CGW-S-007
-REFS:
-- TYPE: Parent
-  VALUE: CGW-S-005
+UID: CGW-S-005b
 TITLE: No Priority Inversion
 STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional *UND*<->*TND* operation, to prevent priority inversion.
 
 [REQUIREMENT]
-UID: CGW-S-008
-REFS:
-- TYPE: Parent
-  VALUE: CGW-S-005
+UID: CGW-S-005c
 TITLE: Preserves Ordering
 STATEMENT: The device SHALL preserve ordering egress frames wrt their ingress order within an equivalence class of CAN arbitration ID priorities, to prevent out-of-order delivery.
 
 [REQUIREMENT]
-UID: CGW-S-009
-REFS:
-- TYPE: Parent
-  VALUE: CGW-S-005
+UID: CGW-S-005d
 TITLE: FIFO but Also Priority
 STATEMENT: The device SHALL schedule egress for in-order send but not across CAN arbitration ID priorities.
 
 [REQUIREMENT]
-UID: CGW-S-010
-REFS:
-- TYPE: Parent
-  VALUE: CGW-S-005
+UID: CGW-S-005e
 TITLE: Preserves Jitter
 STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) low enough to not affect the *TND* network domain performance requirements in the worst case.
+
+[/COMPOSITE_REQUIREMENT]
 
 [REQUIREMENT]
 UID: CGW-S-100
