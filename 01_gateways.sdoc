@@ -45,6 +45,31 @@ Untrusted Network Domain (*UND*)
 Trusted Network Domain (*TND*)
     A *TND* is a network domain (or segment) that does not meet the criteria for being considered a *UND*.
 
+Some Examples:
+
+The RP1226 connector is made for connecting aftermarket devices; therefore the databuses there are UNDs.
+::
+
+
+            ┌───────────────┐                 ┌──────────────┐                     ┌─┐
+            │  Gateway sat  │                 │              │                     │┼│
+    ────────┤   all HDVCR   ├─────────────────┤    RP1226    ├─────────────────────┼┼│
+      TND   │  requirements │     UND         │   Connector  │      UND            │┼│
+            └───────────────┘                 └──────────────┘                     └─┘
+
+
+The OBD connector is _the_ operator access port; therefore the databuses there are UNDs.
+::
+
+
+            ┌───────────────┐                 ┌──────────────┐                     ┌─┐
+            │  Gateway sat  │                 │              │                     │┼│
+    ────────┤   all HDVCR   ├─────────────────┤      OBD     ├─────────────────────┼┼│
+      TND   │  requirements │     UND         │   Connector  │      UND            │┼│
+            └───────────────┘                 └──────────────┘                     └─┘
+
+
+
 [/FREETEXT]
 
 [REQUIREMENT]
