@@ -1,0 +1,484 @@
+[DOCUMENT]
+TITLE: NMFTA Telematics (Mobile App Component) Security Requirements
+
+[GRAMMAR]
+ELEMENTS:
+- TAG: REQUIREMENT
+  FIELDS:
+  - TITLE: UID
+    TYPE: String
+    REQUIRED: False
+  - TITLE: LEVEL
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATUS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: TAGS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: REFS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: TITLE
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: False
+  - TITLE: RATIONALE
+    TYPE: String
+    REQUIRED: False
+  - TITLE: COMMENT
+    TYPE: String
+    REQUIRED: False
+
+[REQUIREMENT]
+UID: MOBILE-AC-010
+REFS:
+- TYPE: Parent
+  VALUE: AC-010
+STATEMENT: >>>
+This Mobile App component must satisfy requirement AC-010
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-AC-030
+REFS:
+- TYPE: Parent
+  VALUE: AC-030
+STATEMENT: >>>
+This Mobile App component must satisfy requirement AC-030
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-AC-040
+REFS:
+- TYPE: Parent
+  VALUE: AC-040
+STATEMENT: >>>
+This Mobile App component must satisfy requirement AC-040
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-AC-041
+REFS:
+- TYPE: Parent
+  VALUE: AC-041
+STATEMENT: >>>
+This Mobile App component must satisfy requirement AC-041
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-AC-050
+REFS:
+- TYPE: Parent
+  VALUE: AC-050
+STATEMENT: >>>
+This Mobile App component must satisfy requirement AC-050
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-AC-080
+REFS:
+- TYPE: Parent
+  VALUE: AC-080
+STATEMENT: >>>
+This Mobile App component must satisfy requirement AC-080
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-CM-020
+REFS:
+- TYPE: Parent
+  VALUE: CM-020
+STATEMENT: >>>
+This Mobile App component must satisfy requirement CM-020
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-CM-030
+REFS:
+- TYPE: Parent
+  VALUE: CM-030
+STATEMENT: >>>
+This Mobile App component must satisfy requirement CM-030
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-CM-040
+REFS:
+- TYPE: Parent
+  VALUE: CM-040
+STATEMENT: >>>
+This Mobile App component must satisfy requirement CM-040
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-IA-010
+REFS:
+- TYPE: Parent
+  VALUE: IA-010
+STATEMENT: >>>
+This Mobile App component must satisfy requirement IA-010
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-IA-030
+REFS:
+- TYPE: Parent
+  VALUE: IA-030
+STATEMENT: >>>
+This Mobile App component must satisfy requirement IA-030
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-IR-010
+REFS:
+- TYPE: Parent
+  VALUE: IR-010
+STATEMENT: >>>
+This Mobile App component must satisfy requirement IR-010
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-M-010
+REFS:
+- TYPE: Parent
+  VALUE: M-010
+STATEMENT: >>>
+This Mobile App component must satisfy requirement M-010
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-PS-010
+REFS:
+- TYPE: Parent
+  VALUE: PS-010
+STATEMENT: >>>
+This Mobile App component must satisfy requirement PS-010
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-RA-010
+REFS:
+- TYPE: Parent
+  VALUE: RA-010
+STATEMENT: >>>
+This Mobile App component must satisfy requirement RA-010
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-RA-020
+REFS:
+- TYPE: Parent
+  VALUE: RA-020
+STATEMENT: >>>
+This Mobile App component must satisfy requirement RA-020
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SAA-010
+REFS:
+- TYPE: Parent
+  VALUE: SAA-010
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SAA-010
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SAA-020
+REFS:
+- TYPE: Parent
+  VALUE: SAA-020
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SAA-020
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SAA-030
+REFS:
+- TYPE: Parent
+  VALUE: SAA-030
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SAA-030
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SAA-040
+REFS:
+- TYPE: Parent
+  VALUE: SAA-040
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SAA-040
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SAA-050
+REFS:
+- TYPE: Parent
+  VALUE: SAA-050
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SAA-050
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SCP-010
+REFS:
+- TYPE: Parent
+  VALUE: SCP-010
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SCP-010
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SCP-011
+REFS:
+- TYPE: Parent
+  VALUE: SCP-011
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SCP-011
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SCP-020
+REFS:
+- TYPE: Parent
+  VALUE: SCP-020
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SCP-020
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SCP-030
+REFS:
+- TYPE: Parent
+  VALUE: SCP-030
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SCP-030
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SCP-040
+REFS:
+- TYPE: Parent
+  VALUE: SCP-040
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SCP-040
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SCP-090
+REFS:
+- TYPE: Parent
+  VALUE: SCP-090
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SCP-090
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SCP-091
+REFS:
+- TYPE: Parent
+  VALUE: SCP-091
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SCP-091
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SCP-120
+REFS:
+- TYPE: Parent
+  VALUE: SCP-120
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SCP-120
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SCP-130
+REFS:
+- TYPE: Parent
+  VALUE: SCP-130
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SCP-130
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SCP-140
+REFS:
+- TYPE: Parent
+  VALUE: SCP-140
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SCP-140
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-010
+REFS:
+- TYPE: Parent
+  VALUE: SII-010
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-010
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-011
+REFS:
+- TYPE: Parent
+  VALUE: SII-011
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-011
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-020
+REFS:
+- TYPE: Parent
+  VALUE: SII-020
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-020
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-021
+REFS:
+- TYPE: Parent
+  VALUE: SII-021
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-021
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-030
+REFS:
+- TYPE: Parent
+  VALUE: SII-030
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-030
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-070
+REFS:
+- TYPE: Parent
+  VALUE: SII-070
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-070
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-071
+REFS:
+- TYPE: Parent
+  VALUE: SII-071
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-071
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-080
+REFS:
+- TYPE: Parent
+  VALUE: SII-080
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-080
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-081
+REFS:
+- TYPE: Parent
+  VALUE: SII-081
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-081
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-090
+REFS:
+- TYPE: Parent
+  VALUE: SII-090
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-090
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-120
+REFS:
+- TYPE: Parent
+  VALUE: SII-120
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-120
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-130
+REFS:
+- TYPE: Parent
+  VALUE: SII-130
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-130
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-140
+REFS:
+- TYPE: Parent
+  VALUE: SII-140
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-140
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-150
+REFS:
+- TYPE: Parent
+  VALUE: SII-150
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-150
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-170
+REFS:
+- TYPE: Parent
+  VALUE: SII-170
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-170
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-171
+REFS:
+- TYPE: Parent
+  VALUE: SII-171
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-171
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-180
+REFS:
+- TYPE: Parent
+  VALUE: SII-180
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-180
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-190
+REFS:
+- TYPE: Parent
+  VALUE: SII-190
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-190
+<<<
+
+[REQUIREMENT]
+UID: MOBILE-SII-200
+REFS:
+- TYPE: Parent
+  VALUE: SII-200
+STATEMENT: >>>
+This Mobile App component must satisfy requirement SII-200
+<<<
