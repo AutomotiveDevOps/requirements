@@ -174,40 +174,54 @@ REFS:
 TITLE: Performant
 STATEMENT: The device SHALL process and move CAN frames quickly enough to preserve performance on all network domains.
 
-[COMPOSITE_REQUIREMENT]
-UID: CGW-S-005
-REFS:
-- TYPE: Parent
-  VALUE: AGW-S-007
-TITLE: Preserves Atomic Multicast
-STATEMENT: The device SHALL preserve the atomic multicast property of CAN buses.
+[SECTION]
+TITLE: Preserves Atomic Multicast: CGW-S-005* Series
+
+[FREETEXT]
+The device SHALL preserve the atomic multicast property of CAN buses. All CGW-S-005* requirements must be satisfied.
+[/FREETEXT]
 
 [REQUIREMENT]
 UID: CGW-S-005a
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
 TITLE: Won't Drop Frames
 STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional *UND*<->*TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
 
 [REQUIREMENT]
 UID: CGW-S-005b
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
 TITLE: No Priority Inversion
 STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional *UND*<->*TND* operation, to prevent priority inversion.
 
 [REQUIREMENT]
 UID: CGW-S-005c
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
 TITLE: Preserves Ordering
 STATEMENT: The device SHALL preserve ordering egress frames wrt their ingress order within an equivalence class of CAN arbitration ID priorities, to prevent out-of-order delivery.
 
 [REQUIREMENT]
 UID: CGW-S-005d
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
 TITLE: FIFO but Also Priority
 STATEMENT: The device SHALL schedule egress for in-order send but not across CAN arbitration ID priorities.
 
 [REQUIREMENT]
 UID: CGW-S-005e
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
 TITLE: Preserves Jitter
 STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) low enough to not affect the *TND* network domain performance requirements in the worst case.
 
-[/COMPOSITE_REQUIREMENT]
+[/SECTION]
 
 [REQUIREMENT]
 UID: CGW-S-100
@@ -250,22 +264,24 @@ UID: AGW-F-002
 TITLE: Translates
 STATEMENT: These devices SHALL translate/transform the information between the separate network domains but intentions of the data are preserved.
 
-[COMPOSITE_REQUIREMENT]
-UID: AGW-F-003
-TITLE: Filters
-STATEMENT: These devices MAY select which information is transported and/or translated between the network domains by satisfying all of these requirements:
+[SECTION]
+TITLE: Filters: AGW-F-003* Series
+
+[FREETEXT]
+These devices MAY select which information is transported and/or translated between the network domains by satisfying all of these AGW-F-003* requirements:
+[/FREETEXT]
 
 [REQUIREMENT]
-UID: AGW-F-003A
+UID: AGW-F-003a
 TITLE: Drops
 STATEMENT: These devices MAY select which information is transported based on rules matching content or metadata before (ingress) or after (egress) processing steps in preparation for transport/translate/encapsulate or other forwarding actions.
 
 [REQUIREMENT]
-UID: AGW-F-003B
+UID: AGW-F-003b
 TITLE: Rate Limits
 STATEMENT: These devices MAY select which information is transported in a time varying fashion for the purposes of limiting the rate at which the information is put on a network domain.
 
-[/COMPOSITE_REQUIREMENT]
+[/SECTION]
 
 [REQUIREMENT]
 UID: AGW-F-004
