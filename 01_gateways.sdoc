@@ -210,7 +210,74 @@ STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) 
 
 [/SECTION]
 
+[SECTION]
+TITLE: Prevents CAN Attacks
+
+[REQUIREMENT]
+UID: CGW-S-006
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-002
+TITLE: Prevents Bus Flood Attacks
+STATEMENT: The device SHALL prevent generating bus flood attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.1 for a description of the bus flood attack.
+
+[REQUIREMENT]
+UID: CGW-S-007
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-003
+TITLE: Prevents (Simple) Frame Spoofing
+STATEMENT: The device SHALL prevent generating simple frame spoofing attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.2 for a description of simple frame spoofing attack.
+
+[REQUIREMENT]
+UID: CGW-S-008
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-003
+TITLE: Prevents Adaptive Frame Spoofing
+STATEMENT: The device SHALL prevent generating adaptive frame spoofing attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.3 for a description of adaptive frame spoofing attack.
+
+[REQUIREMENT]
+UID: CGW-S-009
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
+TITLE: Prevents Error Passive Attack Step
+STATEMENT: The device SHALL prevent generating attacks that drive a ECU on *TND* into error passive state from messages originating on *UND*. This will in turn prevent error passive spoofing attacks c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.4 for a description of error passive spoofing attack.
+
+[REQUIREMENT]
+UID: CGW-S-010
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
+TITLE: Prevents Double Receive Attack
+STATEMENT: The device SHALL prevent generating double receive attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.5 for a description of the double receive attack.
+
+[REQUIREMENT]
+UID: CGW-S-011
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-002
+TITLE: Prevents Bus-Off Attack
+STATEMENT: The device SHALL prevent generating bus-off attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.6 for a description of the bus-off attack.
+
+[REQUIREMENT]
+UID: CGW-S-012
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-002
+TITLE: Prevents Freeze Doom Loop Attack
+STATEMENT: The device SHALL prevent generating freeze doom loop attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.7 for a description of the freeze doom loop attack.
+
 [/SECTION]
+
+[REQUIREMENT]
+UID: CGW-S-013
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-008
+TITLE: Impervious to Janus Attack
+STATEMENT: The device SHALL not be susceptible to janus attacks on any of its interfaces (e.g. *TND* and *UND*). c.f. https://kentindell.github.io/2021/07/15/janus-attack/ for a description of the janus attack.
 
 [/SECTION]
 
@@ -227,7 +294,7 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-002
 TITLE: Prevents Address Claim Attacks
-STATEMENT: The device SHALL prevent generating address claim attacks on *TND* from messages originating on *UND*.
+STATEMENT: The device SHALL prevent generating address claim attacks on *TND* from messages originating on *UND*. c.f. https://www.aut.upt.ro/~bgroza/Papers/j1939.pdf and https://doi.org/10.4271/02-14-03-0026 for a description of the address claim attack.
 
 [REQUIREMENT]
 UID: J1939GW-S-089
@@ -236,6 +303,8 @@ REFS:
   VALUE: AGW-S-008
 TITLE: Impervious to Address Claim Attacks
 STATEMENT: The device SHALL not be susceptible to address claim attacks on any of its interfaces (e.g. *TND* and *UND*)
+
+[/SECTION]
 
 [/SECTION]
 
