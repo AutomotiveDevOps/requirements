@@ -210,15 +210,32 @@ STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) 
 
 [/SECTION]
 
+[/SECTION]
+
+[/SECTION]
+
+[SECTION]
+TITLE: Security Requirements for J1939 Gateways
+
+[FREETEXT]
+J1939 Gateways are expected to meet all of the CGW-S-* CAN Gateway Security Requirements and to also satisfy the J1939GW-S-* Security requirements of this section
+[/FREETEXT]
+
 [REQUIREMENT]
-UID: CGW-S-100
+UID: J1939GW-S-029
 REFS:
 - TYPE: Parent
   VALUE: AGW-S-002
-TITLE: Impervious to Address Claim Attacks
-STATEMENT: The device SHALL not be susceptible to address claim attacks.
+TITLE: Prevents Address Claim Attacks
+STATEMENT: The device SHALL prevent generating address claim attacks on *TND* from messages originating on *UND*.
 
-[/SECTION]
+[REQUIREMENT]
+UID: J1939GW-S-089
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-008
+TITLE: Impervious to Address Claim Attacks
+STATEMENT: The device SHALL not be susceptible to address claim attacks on any of its interfaces (e.g. *TND* and *UND*)
 
 [/SECTION]
 
