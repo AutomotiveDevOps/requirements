@@ -37,6 +37,7 @@ jobs:
       - name: Run Strict Doc
         run: |
           bash -x runme
+          bash -x toreqif.sh
 
       - name: Deploy to GitHub Pages
         uses: Cecilapp/GitHub-Pages-deploy@v3
