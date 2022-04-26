@@ -128,7 +128,7 @@ TITLE: Mode Switch Interlock
 STATEMENT: >>>
 The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicity authorized and authenticated configuration changes via the mode switch" The means must be impossible to use without explicit authorization by the vehicle owner. The device SHALL satisfy one or more of these methods to enable a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
 
-* Physical Mode Switch Interlock: The device SHALL have at least on physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
+* Physical Mode Switch Interlock: The device SHALL have at least one physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
 
   * Example: Physical switch on dash
 
