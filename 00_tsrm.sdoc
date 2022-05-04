@@ -35,10 +35,10 @@ ELEMENTS:
   - TITLE: CATEGORY
     TYPE: String
     REQUIRED: False
-  - TITLE: PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS
+  - TITLE: PUB_REF
     TYPE: String
     REQUIRED: False
-  - TITLE: VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS
+  - TITLE: VERIFICATION
     TYPE: String
     REQUIRED: False
   - TITLE: CRITICALITY
@@ -56,7 +56,7 @@ Ideally the logs are immutable,  backed up, and retained for a certain period of
 CATEGORY: >>>
 Audit and Accountability
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 AU-2 – EVENT LOGGING 
 a. Identify the types of events that the system is capable of logging in support of the audit function: [Assignment: organization-defined event types that the system is capable of logging];
 b. Coordinate the event logging function with other organizational entities requiring audit related information to guide and inform the selection criteria for events to be logged;
@@ -66,7 +66,7 @@ e. Review and update the event types selected for logging [Assignment: organizat
 
 CTIA CCTPID 4.7 Audit Log
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing locations where audit logs are stored and the types of events logged.
 <<<
 CRITICALITY: >>>
@@ -84,7 +84,7 @@ e.g. a Linux system with MAC configured to deny access to the processes dealing 
 CATEGORY: >>>
 Protecting Data on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-16 - MEMORY PROTECTION 
 Implement the following controls to protect the system memory from unauthorized
 code execution: [Assignment: organization-defined controls].
@@ -104,7 +104,7 @@ Implement a reference monitor for [Assignment: organization-defined access contr
 
 UL 1376 3.9 Least privilege: Systems must implement 'least privilege', or utilize hardware based features to protect sensitive code and data
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied design documentation detailing the privilege separation of the device. Ensure that 1) a Mandatory Access Control scheme is employed 2) there are separate domains/users/roles (whichever is applicable to the MAC) for dealing with the sensitive information (vendor defined, see SCP-030) and finally 3) accounts for running system tasks (e.g. crond, portmap, systemd) are not in the separate domains/users/roles for dealing with sensitive information.
 <<<
 CRITICALITY: >>>
@@ -122,7 +122,7 @@ This principle underpins system security
 CATEGORY: >>>
 Protecting Actions on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 AC-6 – LEAST PRIVILEGE 
 Employ the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) that are necessary to accomplish assigned organizational tasks.
 
@@ -135,7 +135,7 @@ CTIA CCTPID 5.17 Design-In Features “designed to isolate critical functions fr
 
 OWASP E5 – Identity Management
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation or a demonstration by the vendor that details how software privileges are assigned in vendor systems. Ensure that principles of least privilege are met.
 <<<
 CRITICALITY: >>>
@@ -155,7 +155,7 @@ e.g. PINs, single-sign on with carrier’s identity provider (SAML or other), ve
 CATEGORY: >>>
 Access Control
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 AC-6 – LEAST PRIVILEGE
 Employ the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) that are necessary to accomplish assigned organizational tasks.
 
@@ -168,7 +168,7 @@ UL 1376 4.1 Sensitive services require authentication: Sensitive services must r
 
 UL 1376 6.3 Authentication for remote communications: Connections to remote services must implement cryptographic authentication
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation detailing the methods used to authenticate users. Ensure that an acceptable method of authentication is available for all components which be interfaced-to by carrier staff and systems.
 
 In the case of single-sign-on delegation, ensure that your (carrier) system requirements are met with respect to security assertions (e.g. SAML is supported).
@@ -185,7 +185,7 @@ The vendor shall identify all instances where the telematics system includes act
 CATEGORY: >>>
 Access Control
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 AC-14 – PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION 
 a. Identify [Assignment: organization-defined user actions] that can be performed on the system without identification or authentication consistent with organizational mission and business functions; and
 b. Document and provide supporting rationale in the security plan for the system, user actions not requiring identification or authentication.
@@ -193,7 +193,7 @@ b. Document and provide supporting rationale in the security plan for the system
 NIST 800-53 r5 AC-6 – LEAST PRIVILEGE 
 Employ the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) that are necessary to accomplish assigned organizational tasks.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation listing system actions and interfaces that do not require authentication. Ensure that the list is short, that each entry in the list is acceptable to you (the carrier), and there is a justifiable reason for no-authentication on each item in the list.
 <<<
 CRITICALITY: >>>
@@ -211,12 +211,12 @@ e.g. it should not be possible to identify the device type nor firmware version 
 CATEGORY: >>>
 Access Control
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 AC-14 – PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION 
 a. Identify [Assignment: organization-defined user actions] that can be performed on the system without identification or authentication consistent with organizational mission and business functions; and
 b. Document and provide supporting rationale in the security plan for the system, user actions not requiring identification or authentication.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation listing system actions and interfaces that do not require authentication. Ensure that no information leaks are possible from these unauthenticated actions.
 <<<
 CRITICALITY: >>>
@@ -231,12 +231,12 @@ All remote access methods and possible remote actions to/on telematics system sh
 CATEGORY: >>>
 Access Control
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 AC-17 – REMOTE ACCESS 
 a. Establish and document usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed; and
 b. Authorize each type of remote access to the system prior to allowing such connections
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation listing the methods of remote access and the actions that can be performed. Ensure that the remote access methods and actions are justifiable and also ensure that all remote methods require authentication (i.e. ensure none of them are listed in vendor documentation for AC-040)
 <<<
 CRITICALITY: >>>
@@ -254,12 +254,12 @@ e.g. Bluetooth, cellular, satellite, Wi-Fi hotspot, Wi-Fi client, infrared, NFC,
 CATEGORY: >>>
 Access Control
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 AC-18 – WIRELESS ACCESS 
 a. Establish configuration requirements, connection requirements, and implementation guidance for each type of wireless access; and
 b. Authorize each type of wireless access to the system prior to allowing such connections.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing what wireless communications hardware is present, which wireless communications methods can be disabled, and how wireless communications enablement or disablement is managed.
 <<<
 CRITICALITY: >>>
@@ -274,12 +274,12 @@ The vendor shall not use any deprecated encryption+authentication on any WiFi in
 CATEGORY: >>>
 Access Control
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 FMCSA GDL 39 Only use WPA2 authentication / encryption. Never use WEP, WPS, or “open” Wi-Fi.
 
 UL 1376 6.2 Industry standard Wi-Fi security: Device must support industry accepted wireless security defaults for any Wi-Fi connections
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Test that the device will not connect to WEP, WPS or open Wi-Fi hotspots.
 <<<
 CRITICALITY: >>>
@@ -294,12 +294,12 @@ The vendor shall implement, for all bluetooth interfaces,  pairing that must be 
 CATEGORY: >>>
 Access Control
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 FMCSA GDL 44 Make sure Bluetooth devices support and use Secure Simple Pairing (SSP) rather than legacy pairing.
 
 FMCSA GDL 45 Numeric Comparison is preferred to Passkey Entry for pairing.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Test that it is not possible to pair with the device 5 minutes after enabling pairing on the device. Test that pairing does not support SSP or passkey, only numeric comparison.
 <<<
 CRITICALITY: >>>
@@ -314,7 +314,7 @@ Any and all software or firmware implementing wireless interface encrytion+authe
 CATEGORY: >>>
 Access Control
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation confirming upgradability of the software implementing encryption+authentication of wireless interfaces.
 <<<
 CRITICALITY: >>>
@@ -329,7 +329,7 @@ Authentication attempts to the vendor’s devices and backends shall be rate-lim
 CATEGORY: >>>
 Identification and Authentication
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 AC-7 - UNSUCCESSFUL LOGON ATTEMPTS 
 a. Enforce a limit of [Assignment: organization-defined number] consecutive invalid logon attempts by a user during a [Assignment: organization-defined time period]; and
 b. Automatically [Selection (one or more): lock the account or node for an [Assignment: organization-defined time period]; lock the account or node until released by an administrator; delay next logon prompt per [Assignment: organization-defined delay algorithm]; notify system administrator; take other [Assignment: organization-defined action]] when the maximum 
@@ -339,7 +339,7 @@ CTIA CCTPID 5.2 Password Management Test
 
 UL 1376 2.8 Brute force protection: Implement protection against brute force attacks
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the methods used to enforce rate limiting.
 <<<
 CRITICALITY: >>>
@@ -357,7 +357,7 @@ This requirement applies to many common facilities found on devices. e.g. local 
 CATEGORY: >>>
 Device-Local Authentication
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 ETSI EN 303 645 V2.1.0 Provision 5.1-1 Where passwords are used and in any state other than the factory default, all consumer IoT device passwords shall be unique per device or defined by the user.
 
 FMCSA GDL 32 Make sure local wireless interfaces like Bluetooth or Wi-Fi don't provide admin access without authentication.
@@ -366,7 +366,7 @@ FMCSA GDL 40 Always use a complex, unique password per device.
 
 FMCSA GDL 43 Always use a complex, unique password per device.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the local authentication and how the unique credential is generated. Ensure that the generation of this credential cannot be guessed from public information.
 <<<
 CRITICALITY: >>>
@@ -384,7 +384,7 @@ E.g. this is particularly true of unauthenticated or unencrypted transport servi
 CATEGORY: >>>
 Protecting Actions on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 CM-7 – LEAST FUNCTIONALITY 
 a. Configure the system to provide only [Assignment: organization-defined mission essential capabilities]; and
 b. Prohibit or restrict the use of the following functions, ports, protocols, software, and/or services: [Assignment: organization-defined prohibited or restricted functions, system ports, protocols, software, and/or services].
@@ -401,7 +401,7 @@ UL 1376 3.3 Unwanted functionality can be disabled: Customer access to disable u
 
 UL 1376 3.6 Unwanted / Unnecessary features removed: Unwanted / unnecessary features are removed
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation asserting that unnecessary software or services are not present or disabled on the device.
 <<<
 CRITICALITY: >>>
@@ -419,7 +419,7 @@ Deploying with test or debug facilities enabled is egregious
 CATEGORY: >>>
 Configuration Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 CM-7 – LEAST FUNCTIONALITY 
 a. Configure the system to provide only [Assignment: organization-defined mission essential capabilities]; and
 b. Prohibit or restrict the use of the following functions, ports, protocols, software, and/or services: [Assignment: organization-defined prohibited or restricted functions, system ports, protocols, software, and/or services].
@@ -428,7 +428,7 @@ FMCSA GDL 54 Disable unnecessary debugging interfaces in production.
 
 FMCSA GDL 55 Authenticate debugging and diagnostic interfaces.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing all services (listening ports or outbound connections) available on deployed devices.
 
 Ensure that none of the services available are without authentication (see AC-030) and furthermore that any troubleshooting functionality is ideally disabled, or at least the service available requires unique credentials for authorization of that feature.
@@ -450,7 +450,7 @@ Functionality that allows for the direct execution of scripts or commands by the
 CATEGORY: >>>
 Configuration Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 CM-7 – LEAST FUNCTIONALITY
 a. Configure the system to provide only [Assignment: organization-defined mission essential capabilities]; and
 b. Prohibit or restrict the use of the following functions, ports, protocols, software, and/or services: [Assignment: organization-defined prohibited or restricted functions, system ports, protocols, software, and/or services].
@@ -469,7 +469,7 @@ UL 1376 3.1 Protect communication and debug ports: Communication and debug ports
 
 UL 1376 4.4 No direct execution of commands / scripts: No direct execution of scripts / commands using system interfaces and or user-facing components
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing all service (listening ports or outbound connections) available on deployed devices.
 
 Ensure that there are no services for test or debug active in the device. Ideally, look for assurances that any test or debug executables cannot be run on the device.
@@ -489,10 +489,10 @@ Sufficient customer guidance should be provided to allow for that customer to un
 CATEGORY: >>>
 Configuration Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 UL 1376 3.2 Systems configured to secure defaults: Systems must be configured to secure defaults
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation confirming that a) all device configuration options have their security tradeoffs documented and that b) the device’s default configuration is the most-secure.
 <<<
 CRITICALITY: >>>
@@ -510,11 +510,11 @@ e.g. that a remote system authenticate the other remote parties by referring to 
 CATEGORY: >>>
 Identification and Authentication
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 IA-3 – DEVICE IDENTIFICATION AND AUTHENTICATION 
 Uniquely identify and authenticate [Assignment: organization-defined devices and/or types of devices] before establishing a [Selection (one or more): local; remote; network] connection.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing how devices and components are uniquely identified.
 
 Ensure that interfacing systems can query and/or inspect these unique identifiers.
@@ -533,11 +533,11 @@ Where public information is any information that is visible (externally or inter
 CATEGORY: >>>
 Identification and Authentication
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 IA-3 – DEVICE IDENTIFICATION AND AUTHENTICATION 
 Uniquely identify and authenticate [Assignment: organization-defined devices and/or types of devices] before establishing a [Selection (one or more): local; remote; network] connection.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation detailing the inputs to the authenticator generation process per device. Ensure that no input is information that can be easily-guessed from simple facts about the device.
 <<<
 CRITICALITY: >>>
@@ -559,7 +559,7 @@ e.g.
 CATEGORY: >>>
 Identification and Authentication
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-57 Part 3 r1 - 2.3.3 Cryptographic Modules
 3. Ensure that relying party and user cryptographic modules are validated as meeting FIPS 140-2 Level 1 or higher.
 
@@ -567,7 +567,7 @@ UL 1376 2.4 Industry-standard cryptography: Industry standard cryptographic algo
 
 UL 1376 2.5 RNG with sufficient entropy: Random number generation must ensure sufficient entropy
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing their procurement requirements for cryptographic modules. 
 
 Ensure that their procurement processes require that all cryptographic modules are FIPS 140-2 compliant.
@@ -587,7 +587,7 @@ TSPs must demonstrate this level of maturity to be trusted with business critica
 CATEGORY: >>>
 Incidence Response
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 IR-8 - INCIDENT RESPONSE PLAN 
 a. Develop an incident response plan that:
   1. Provides the organization with a roadmap for implementing its incident response capability;
@@ -607,7 +607,7 @@ e. Protect the incident response plan from unauthorized disclosure and modificat
 
 FMCSA GDL 14 Employ an incident response process.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the vendor’s incident response process.
 
 Ensure that it documents the methods that can be used to notify the vendor of a security incident.
@@ -624,7 +624,7 @@ The vendor shall have procedures in place to ensure that components outside of t
 CATEGORY: >>>
 Maintenance
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 MA-2 – CONTROLLED MAINTENANCE 
 a. Schedule, document, and review records of maintenance, repair, and replacement on system components in accordance with manufacturer or vendor specifications and/or organizational requirements;
 b. Approve and monitor all maintenance activities, whether performed on site or remotely and whether the system or system components are serviced on site or removed to another location;
@@ -633,7 +633,7 @@ d. Sanitize equipment to remove the following information from associated media 
 e. Check all potentially impacted controls to verify that the controls are still functioning properly following maintenance, repair, or replacement actions; and
 f. Include the following information in organizational maintenance records: [Assignment: organization-defined information].
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing their maintenance/release process.
 
 Ensure that there is a process where you (the carrier) are contacted and coordinated-with before the systems upon which you rely undergo maintenance procedures.
@@ -653,7 +653,7 @@ TSPs must demonstrate this level of maturity to be trusted with business critica
 CATEGORY: >>>
 Maintenance
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 CP-4 - CONTINGENCY PLAN TESTING 
 a. Test the contingency plan for the system [Assignment: organization-defined frequency] using the following tests to determine the effectiveness of the plan and the readiness to execute the plan: [Assignment: organization-defined tests].
 b. Review the contingency plan test results; and
@@ -664,7 +664,7 @@ Test backup information [Assignment: organization-defined frequency] to verify m
 
 CAIQ BCR-11.7 Do you test your backup or redundancy mechanisms at least annually?
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing backup and restore procedures.
 <<<
 CRITICALITY: >>>
@@ -679,12 +679,12 @@ The vendor must have a disposal of goods policy which covers the management of a
 CATEGORY: >>>
 Disposal of Goods
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 ISO 27001 A.8.3.2 Disposal of Media
 
 NIST 800-88 R1
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing their disposal of goods procedures; confirm the presence of specific mention of handling of their customer's information.
 <<<
 CRITICALITY: >>>
@@ -699,12 +699,12 @@ The vendor's disposal of goods policy must forbid disposal in skips, dumps or la
 CATEGORY: >>>
 Disposal of Goods
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 ISO 27001 A.8.3.2 Disposal of Media
 
 NIST 800-88 R1
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing their disposal of goods procedures; confirm that disposal of systems in skips or landfills is not allowed unless the systems have been purged or cleared.
 <<<
 CRITICALITY: >>>
@@ -719,10 +719,10 @@ The vendor's processes to remove previously stored information must include acce
 CATEGORY: >>>
 Disposal of Goods
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-88 R1 Appendix A -- Minimum Sanitization Recommendations
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing their disposal of goods procedures; confirm that there are procedures that cover all of magnetic media, solid-state media, printers, scanners, laptops, smartphones, server and desktop computers
 <<<
 CRITICALITY: >>>
@@ -737,10 +737,10 @@ Vendors must provide manual backup/override capabilities to their safety related
 CATEGORY: >>>
 Maintenance
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 UL 1376 4.3 Manual back-up / override for safety critical operations: Manual backup/override must be provided for safety related services
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the system’s safety related services and the manual backup/override associated with them. Test the manual override capabilities to confirm their functionality.
 <<<
 CRITICALITY: >>>
@@ -755,7 +755,7 @@ The vendor shall have a System Security Plan (SSP) which details a clear and con
 CATEGORY: >>>
 Planning
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 PL-2 - SECURITY AND PRIVACY PLANS 
 a. Develop security and privacy plans for the system that:
   1. Are consistent with the organization’s enterprise architecture;
@@ -778,7 +778,7 @@ c. Review the plans [Assignment: organization-defined frequency];
 d. Update the plans to address changes to the system and environment of operation or problems identified during plan implementation or control assessments; and
 e. Protect the plans from unauthorized disclosure and modification.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied SSP document that details the authorization boundaries of telematics system.
 
 Ensure that the document details which entity has responsibility for each component of the system, the system baseline and security posture within the boundaries.
@@ -795,7 +795,7 @@ The vendor shall have a documented Information Security Architecture (ISA) for t
 CATEGORY: >>>
 Planning
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 PL-8 - SECURITY AND PRIVACY ARCHITECTURES 
 a. Develop security and privacy architectures for the system that:
   1. Describe the requirements and approach to be taken for protecting the confidentiality, integrity, and availability of organizational information;
@@ -805,7 +805,7 @@ a. Develop security and privacy architectures for the system that:
 b. Review and update the architectures [Assignment: organization-defined frequency] to reflect changes in the enterprise architecture; and
 c. Reflect planned architecture changes in security and privacy plans, Concept of Operations (CONOPS), criticality analysis, organizational procedures, and procurements and acquisitions.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied ISA documentation.
 
 Ensure that the ISA document at a minimum includes:
@@ -832,12 +832,12 @@ Telematics is business critical to the carriers, failover is needed for this ser
 CATEGORY: >>>
 Planning
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 CAIQ BCR-01.1 Does your organization have a plan or framework for business continuity management or disaster recovery management?
 
 CAIQ BCR-01.6 Do you provide a tenant-triggered failover option?
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the interfaces (APIs) offered by the vendor.
 
 Ensure that your (carrier) systems can failover to other providers with the same interfaces (APIs).
@@ -854,7 +854,7 @@ The vendor shall have personnel security policies & procedures, position risk ca
 CATEGORY: >>>
 Personnel Security
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 PS-1 - POLICY AND PROCEDURES 
 a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]:
   1. [Selection (one or more): Organization-level; Mission/business process-level; System level] personnel security policy that:
@@ -873,7 +873,7 @@ c. Document personnel security requirements;
 d. Require external providers to notify [Assignment: organization-defined personnel or roles] of any personnel transfers or terminations of external personnel who possess organizational credentials and/or badges, or who have system privileges within [Assignment: organization defined time period]; and
 e. Monitor provider compliance with personnel security requirements.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documents detailing their personal security policies & procedures.
 <<<
 CRITICALITY: >>>
@@ -888,7 +888,7 @@ Vendor shall have risk assessments conducted at an industry accepted rate. Resul
 CATEGORY: >>>
 Risk Assessment
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 RA-3 – RISK ASSESSMENT 
 a. Conduct a risk assessment, including:
   1. Identifying threats to and vulnerabilities in the system;
@@ -902,7 +902,7 @@ f. Update the risk assessment [Assignment: organization-defined frequency] or wh
 
 FMCSA GDL 1 Conduct architectural analysis and/or threat modeling during system design
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation stating their previous and planned risk assessment dates and detailing the documentation requirements of their risk assessments.
 <<<
 CRITICALITY: >>>
@@ -917,7 +917,7 @@ The vendor shall use the results of risk assessments to influence systems develo
 CATEGORY: >>>
 Risk Assessment
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 RA-3 – RISK ASSESSMENT 
 a. Conduct a risk assessment, including:
   1. Identifying threats to and vulnerabilities in the system;
@@ -933,7 +933,7 @@ CAIQ GRM-08.1 Do risk assessment results include updates to security policies, p
 
 FMCSA GDL 1 Conduct architectural analysis and/or threat modeling during system design
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied statement of the use of risk assessments in influencing the ongoing development of their products.
 <<<
 CRITICALITY: >>>
@@ -955,7 +955,7 @@ Vulnerability management plan, Incident response plan (see IR-010 for authoritat
 CATEGORY: >>>
 Security Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 CA-2 - CONTROL ASSESSMENTS 
 a. Select the appropriate assessor or assessment team for the type of assessment to be conducted;
 b. Develop a control assessment plan that describes the scope of the assessment including:
@@ -997,7 +997,7 @@ CAIQ GRM-04.2 Do you review your Information Security Management Program (ISMP) 
 
 ISO/IEC 27001 ISMS
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing their ISMP/ISMS.
 
 Note that an ISMP is broad and includes aspects which are covered by other requirements in this document. In cases where there is both a requirement here and in the ISMP, ensure that the requirement in this document is satisfied over what is stated in an ISMP.
@@ -1019,7 +1019,7 @@ Periodic pentesting keeps everyone honest
 CATEGORY: >>>
 Security Assessment and Authorization
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-115 Technical Guide to Information Security Testing and Assessment – All sections
 
 NIST 800-53 r5 CA-8 – PENETRATION TESTING 
@@ -1033,7 +1033,7 @@ CAIQ AAC-02.3 Do you conduct application penetration tests of your cloud infrast
 
 FMCSA GDL 3  Perform adversarial testing before a product is finalized
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of 3rd party documentation or a demonstration by the vendor that asserts the dates of penetration tests.
 
 Note that due to the sensitive nature of these reports, you (carriers) should be prepared to enter into NDAs to review these documents.
@@ -1050,7 +1050,7 @@ Vendor shall have Security Testing and Evaluation (ST&E) of the system and/or co
 CATEGORY: >>>
 System and Service Acquisition
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SA-11 – DEVELOPER TESTING AND EVALUATION
 Require the developer of the system, system component, or system service, at all post design stages of the system development life cycle, to:
 a. Develop and implement a plan for ongoing security and privacy control assessments;
@@ -1060,7 +1060,7 @@ evaluation;
 d. Implement a verifiable flaw remediation process; and
 e. Correct flaws identified during testing and evaluation.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing their product release and quality controls.
 
 Ensure that the product release process includes ST&E steps and that these feed-back into product development.
@@ -1077,13 +1077,13 @@ The vendor shall perform due diligence to ensure its suppliers also meet the ven
 CATEGORY: >>>
 System and Service Acquisition
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SR-6 - SUPPLIER ASSESSMENTS AND REVIEWS
 Assess and review the supply chain-related risks associated with suppliers or contractors and the system, system component, or system service they provide [Assignment: organization-defined frequency].
 
 FMCSA GDL 6 Perform your own security due diligence, which involves but is not limited to ensuring that third-party devices in the supply chain meet your basic security requirements.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation detailing supplier review and acceptance processes and criteria.
 <<<
 CRITICALITY: >>>
@@ -1098,12 +1098,12 @@ Cryptographic keys used in the vendors’ systems must be generated, stored and 
 CATEGORY: >>>
 Security Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 UL 1376 2.6 Industry best practice key management: Cryptographic keys must be managed to industry best practice
 
 NIST 800-57
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the adherence to industry best practices.
 <<<
 CRITICALITY: >>>
@@ -1125,7 +1125,7 @@ The default configuration must be secure in order to prevent downgrade attacks.
 CATEGORY: >>>
 Protecting Communications paths for systems
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SC-8 (1) - TRANSMISSION CONFIDENTIALITY AND INTEGRITY | CRYPTOGRAPHIC PROTECTION 
 Implement cryptographic mechanisms to [Selection (one or more): prevent unauthorized disclosure of information; detect changes to information] during transmission.
 
@@ -1143,7 +1143,7 @@ UL 1376 6.1 Communications robust against replay and MITM attacks: Security sens
 
 UL 1376 6.4 Secure defaults and downgrade prevention: Security protocols must implement secure defaults, and prevent downgrade attacks
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of a 3rd party implementation review report or a demonstration by the vendor that asserts the use of cryptographic protections for the confidentiality and integrity of all external communications channels. The cryptographic protections must be industry standard.
 
 Ensure that any implementations of TLS clients are not still susceptible to replay and MiTM attacks.
@@ -1162,10 +1162,10 @@ Communication path cryptographic protections must not use identities, keys or sh
 CATEGORY: >>>
 Protecting Communication paths for systems
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST Special Publication 800-133 - Recommendation for Cryptographic Key Generation
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor design documentation detailing the creation use and distribution of identities, keys and shared secrets. Ensure that these are segmented in deployed systems such that a compromise of one piece of information in turn compromises a limited number of deployed devices.
 <<<
 CRITICALITY: >>>
@@ -1189,7 +1189,7 @@ NB: ideally these systems should be designed to minimize the collection of PII.
 CATEGORY: >>>
 Protecting Data on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SC-28 - PROTECTION OF INFORMATION AT REST
 Protect the [Selection (one or more): confidentiality; integrity] of the following information at rest: [Assignment: organization-defined information at rest].
 
@@ -1203,7 +1203,7 @@ OWASP E4 – Securing Sensitive Information
 
 UL 1376 3.8 Logs or errors do not expose sensitive data: Logging and error messages must not expose sensitive data without authentication
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of a 3rd party implementation review report or a demonstration by the vendor that asserts the use of cryptographic confidentiality protections on storage of sensitive data (class defined by vendor, see SCP-030). The protections must be industry standard and keys must be managed to protect them from leaks as well. (rationale: cryptography must be validated by experts in the subject)
 <<<
 CRITICALITY: >>>
@@ -1220,7 +1220,7 @@ Vendors are encouraged to expand the list of categories of data which will be pr
 CATEGORY: >>>
 Protecting Data on Devices
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation describing what data is protected at rest by cryptography. Ensure that the types of data that put your business at risk are protected.
 <<<
 CRITICALITY: >>>
@@ -1237,7 +1237,7 @@ Public information is any information that is visible (externally or internally)
 CATEGORY: >>>
 Protecting Data on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SC-12 - CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT 
 Establish and manage cryptographic keys when cryptography is employed within the system in accordance with the following key management requirements: [Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction].
 
@@ -1252,7 +1252,7 @@ Produce, control, and distribute asymmetric cryptographic keys using [Selection:
 
 NIST Special Publication 800-133 - Recommendation for Cryptographic Key Generation
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation detailing the inputs to the cryptographic key generation process per device. Ensure that no input is information that can be easily-guessed from simple facts about the device.
 <<<
 CRITICALITY: >>>
@@ -1270,7 +1270,7 @@ Otherwise could cause PII breaches and incur strong penalties
 CATEGORY: >>>
 Protecting Data in the Backend
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SC-4 - INFORMATION IN SHARED SYSTEM RESOURCES
 Prevent unauthorized and unintended information transfer via shared system resources.
 
@@ -1279,7 +1279,7 @@ Prevent unauthorized information transfer via shared resources in accordance wit
 
 CAIQ IVS-09.4 Do you have the ability to logically segment or encrypt customer data such that data may be produced for a single tenant only, without inadvertently accessing another tenant's data?
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied design documentation or a demonstration by the vendor that details  backend data storage and access. Ensure that either design aspects such as storage instances are per-customer or the cryptographic confidentiality protections are used to ensure one customer instance cannot read data from another. NB: Some or multiple may apply.
 <<<
 CRITICALITY: >>>
@@ -1297,7 +1297,7 @@ Vehicle network protection is paramount
 CATEGORY: >>>
 Protecting Vehicle Network Escalation from Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-10 – INFORMATION INPUT VALIDATION
 Check the validity of the following information inputs: [Assignment: organization defined information inputs to the system].
 
@@ -1308,7 +1308,7 @@ FMCSA GDL 27 Limit telematics units' access to the CAN bus, and whitelist the CA
 
 FMCSA GDL 37 It is recommended to isolate safety-critical ECUs on their own CAN bus, with some sort of gateway between them and other ECUs
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of 3rd party implementation review or a demonstration by the vendor that asserts that there are protections in place which limit what data can be sent from the telematics device to the vehicle network. Ensure that the protections are ‘layered’ (follow defense-in-depth) so that the compromise of software leading to sending vehicle network data cannot also bypass the protections.
 <<<
 CRITICALITY: >>>
@@ -1336,7 +1336,7 @@ Certificate pinning in clients -- when combined with the other requirement for e
 CATEGORY: >>>
 System and Communication Protocols
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SC-23 – SESSION AUTHENTICITY 
 Protect the authenticity of communications sessions.
 
@@ -1353,7 +1353,7 @@ CAIQ DSI-03.2 Do you utilize open encryption methodologies any time your infrast
 
 CTIA CCTPID 4.8 Encryption of Data in Transit
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the session management mechanism employed in vendor systems.
 
 Ensure that certificate pinning is in use in communication path between telematics device and vendor’s infrastructure.
@@ -1372,12 +1372,12 @@ The vendor shall implement checks for expired certificates and ensure the abilit
 CATEGORY: >>>
 System and Communication Protocols
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 FMCSA GDL 51 Check whether keys have expired or been revoked.
 
 FMCSA GDL 52 Ensure the ability to remove a Root CA’s certificate.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Test that root certificate trust can be removed. This should result in failure to establish communications or a failure to validate updates, depending on which system is being tested.
 <<<
 CRITICALITY: >>>
@@ -1392,10 +1392,10 @@ The vendors’ systems shall implement protection of remote communication sessio
 CATEGORY: >>>
 System and Communication Protocols
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 UL 1376 4.5 Sensitive services implement session management: System management services accessible over wireless and IP interfaces must implement session management to limit multiple sessions, and ensure on-going authentication
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 For each role used in the cloud or back-end system: test that a session for a user with that role is automatically disconnected / de-authenticated after no more than five minutes of inactivity, or a documented maximum inactivity delay. This test is especially important for high-privilege or admin roles.
 <<<
 CRITICALITY: >>>
@@ -1410,14 +1410,14 @@ The vendor's system shall separate execution domains and/or processes (i.e. proc
 CATEGORY: >>>
 System and Communication Protocols
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SC-39 - PROCESS ISOLATION 
 Maintain a separate execution domain for each executing system process.
 
 NIST 800-53 r5 SC-39 (2) - PROCESS ISOLATION | SEPARATE EXECUTION DOMAIN PER THREAD
 Maintain a separate execution domain for each thread in [Assignment: organization defined multi-threaded processing].
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the software architecture.
 <<<
 CRITICALITY: >>>
@@ -1437,10 +1437,10 @@ e.g. csv, txt, json formats
 CATEGORY: >>>
 System and Communication Protocols
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 CAIQ IPY-02.1 Is unstructured customer data available on request in an industry-standard format (e.g., .doc, .xls, or .pdf)?
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the interfaces (APIs) offered by the vendor.
 
 Ensure that there is an interface (API) such that you (carrier) can download all data in an unstructured format.
@@ -1457,7 +1457,7 @@ The vendor’s software shall not contain any credentials that are shared among 
 CATEGORY: >>>
 Unique API Keys and API Passwords
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 OWASP ASVS Service Authentication Requirements 2.10.4
 a. Verify passwords, integrations with databases and third-party systems, seeds and internal secrets, and API keys are managed securely and not included in the source code or stored within source code repositories. Such storage SHOULD resist offline attacks. The use of a secure software key store (L1), hardware trusted platform module (TPM), or a hardware security module (L3) is recommended for password storage.
 
@@ -1469,7 +1469,7 @@ FMCSA GDL 48 Use a unique, complex password on each device, vehicle, or applicat
 
 OWASP E4 – Securing Sensitive Information
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of 3rd party documentation or a demonstration by the vendor that asserts the absence of any hard-coded API keys in the client software. E.g. proof that any and all information from the backend is inaccessible without both valid user credentials and any client identifiers such as API keys.
 <<<
 CRITICALITY: >>>
@@ -1484,14 +1484,14 @@ Vendors shall limit hardware support for deprecated or insecure communications p
 CATEGORY: >>>
 System and Communication Protocols
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 FMCSA GDL 23 Follow best practices for securing cellular or satellite interfaces.
 
 FMCSA GDL 24 Don’t support 2G on cellular modems unless operationally necessary.
 
 FMCSA GDL 25 Assume satellite communication channels have unknown security vulnerabilities and might become compromised at any time.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation confirming secured configuration of any wireless and or satellite interfaces. Confirm especially that there are no downgrades of communications protocols possible.
 <<<
 CRITICALITY: >>>
@@ -1506,10 +1506,10 @@ Vendors must ensure that their authentication mechanism is protected against bru
 CATEGORY: >>>
 Protecting Data on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 UL 1376 2.8 Brute force protection: Implement protection against brute force attacks
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of 3rd party documentation of a demonstration by the vendor that asserts that hash cracking the stored passwords (hashes) is too expensive to be practical..
 <<<
 CRITICALITY: >>>
@@ -1529,7 +1529,7 @@ This is a leniently-worded requirement that a process to update device firmware 
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-2 - FLAW REMEDIATION
 a. Identify, report, and correct system flaws;
 b. Test software and firmware updates related to flaw remediation for effectiveness and potential side effects before installation;
@@ -1539,7 +1539,7 @@ d. Incorporate flaw remediation into the organizational configuration management
 NIST 800-53 r5 SI-2 (5) - FLAW REMEDIATION | AUTOMATIC SOFTWARE AND FIRMWARE UPDATES 
 Install [Assignment: organization-defined security-relevant software and firmware updates] automatically to [Assignment: organization-defined system components].
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing their flaw remediation process for backend systems.
 
 Inspection of vendor-supplied documentation detailing the distribution and installation of new firmware, taking note of any responsibilities the carrier has. Ideally, firmware upgrades should require minimal effort on part of the carrier and automated by the vendor.
@@ -1556,7 +1556,7 @@ The vendor shall implement/deploy secure over the air update systems including a
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 FASTR Connectivity and Cloud Work Group, 2018, SOTA recommendations
 
 FMCSA GDL 33 Make sure that the update has not been altered during transit (integrity).
@@ -1573,7 +1573,7 @@ UL 1376 1.1 Remote software updates supported: Software updates must be supporte
 
 UL 1376 1.3 Software update authentication: Software updates must be cryptographically authenticated, and provide anti-roll back features
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Test that a) a modified update is rejected b) a modified update signed by any key other than the manufacturer is rejected c) a previous version cannot be reinstalled.
 
 If this facility is not in motor freight carrier control; then inspection of a report from the vendor showing tests of the above.
@@ -1590,7 +1590,7 @@ The vendor shall have a capability to mitigate vulnerabilities across all of the
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-2 - FLAW REMEDIATION
 a. Identify, report, and correct system flaws;
 b. Test software and firmware updates related to flaw remediation for effectiveness and potential side effects before installation;
@@ -1608,7 +1608,7 @@ CTIA CCTPID 5.5 Patch Management
 
 FMCSA GDL 8 Decide early who is in charge of creating, implementing and maintaining software/firmware updates for a device when a vulnerability emerges and ensure these guidelines are met.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor supplied documentation detailing the methods used to update software components across vendor’s infrastructure. Look for evidence of automation in deployment of patches.
 <<<
 CRITICALITY: >>>
@@ -1625,7 +1625,7 @@ Vendors shall provide a document that defines vulnerabilities severities (e.g. C
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-2 - FLAW REMEDIATION
 a. Identify, report, and correct system flaws;
 b. [...]
@@ -1645,7 +1645,7 @@ UL 1376 3.5 Software free from known vulnerabilities: System software should be 
 
 UL 1376 7.1 Documented patch / update process: A documented process for the distribution of patches/updates must be maintained
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor supplied documentation detailing the methods used to update software components across vendor’s infrastructure. Ensure that it is possible to remediate a vulnerability with an identified high severity (30d).
 <<<
 CRITICALITY: >>>
@@ -1663,7 +1663,7 @@ Note may just want to make this one vendor shall utilize digitally signed firmwa
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-3 - MALICIOUS CODE PROTECTION
 a. Implement [Selection (one or more): signature based; non-signature based] malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code;
 b. [...]
@@ -1680,7 +1680,7 @@ CTIA CCTPID 3.6 Software Upgrades CTIA CCTPID 5.6 Software Upgrades
 
 FMCSA GDL 30 If the device can be updated from local media (USB, SD cards, etc.), make sure the updates are digitally-signed and authorization is required
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation demonstrating that only cryptographically signed software is allowed to be executed/run on telematics devices. Ensure that signature verification is performed before load/execute/run and not solely at time of installation.
 <<<
 CRITICALITY: >>>
@@ -1698,7 +1698,7 @@ Secure boot underpins the access control which protects the vehicle networks
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-7 (5) - SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS 
 Automatically [Selection (one or more): shut the system down; restart the system; implement [Assignment: organization-defined controls]] when integrity violations are discovered.
 
@@ -1714,7 +1714,7 @@ Implement the following mechanisms to protect the integrity of boot firmware in 
 NIST 800-53 r5 SI-7 (15) - SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CODE AUTHENTICATION 
 Implement cryptographic mechanisms to authenticate the following software or firmware components prior to installation: [Assignment: organization-defined software or firmware components].
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of a 3rd party implementation review report or a demonstration by the vendor that asserts the use of cryptographic protections for the integrity of the boot process. The cryptographic protections must employ asymmetric industry standard algorithms. (rationale: cryptography must be validated by experts in the subject)
 <<<
 CRITICALITY: >>>
@@ -1729,12 +1729,12 @@ Vendors shall implement a hardware based root of trust for boot authentication o
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 UL 1376 1.5 Hardware root of trust: Device implements a hardware based root of trust for updates and boot authentication
 
 SAE J3101 9.1 Authenticated Boot
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the implementation of a hardware based root of trust for secure boot of the device.
 <<<
 CRITICALITY: >>>
@@ -1752,7 +1752,7 @@ Is a rare feature to find deployed and is nice-to-have over and above secure boo
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-7 (12) - SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | INTEGRITY VERIFICATION 
 Require that the integrity of the following user-installed software be verified prior to execution: [Assignment: organization-defined user-installed software].
 
@@ -1762,7 +1762,7 @@ Implement cryptographic mechanisms to authenticate the following software or fir
 NIST 800-53 r5 SC-3 - SECURITY FUNCTION ISOLATION
 Isolate security functions from nonsecurity functions
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation detailing the process of verifying the firmware on a device. Ensure that these steps can be executed by your (carrier) staff to gain your own assurance of device firmware state.
 <<<
 CRITICALITY: >>>
@@ -1780,7 +1780,7 @@ Without any of these, exploitation is trivial
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-16 – MEMORY PROTECTION 
 Implement the following controls to protect the system memory from unauthorized code execution: [Assignment: organization-defined controls].
 
@@ -1790,7 +1790,7 @@ FMCSA GDL 22 Leverage security controls built in to the operating system
 
 OWASP E1 – Buffer and Stack Overflow Protection
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of a 3rd party implementation review report or a demonstration by the vendor that asserts the presence of an array of code safety features (such as those listed in the requirement SII-070 or at the CITL safety features list). 
 
 (rationale: measuring the presence of these mitigations requires binary analysis by experts in the subject)
@@ -1807,14 +1807,14 @@ The vendor shall use the techniques of sanitizing/filtering inputs, segmenting m
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 FMCSA GDL 26 Filter input to any device or interface that gets digitally processed.
 
 OWASP E1 – Buffer and Stack Overflow Protection
 
 OWASP E2 - Injection Prevention
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation detailing the filtering performed on inputs to the software.
 <<<
 CRITICALITY: >>>
@@ -1829,7 +1829,7 @@ The vendor shall design security components that fail-secure to protect integrit
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-17 - FAIL-SAFE PROCEDURES 
 Implement the indicated fail-safe procedures when the indicated failures occur: [Assignment: organization-defined list of failure conditions and associated fail-safe procedures].
 
@@ -1840,7 +1840,7 @@ CTIA CCTPID 5.17 Design-In Features “device was designed to fail secure”
 
 FMCSA GDL 4 Security problems will happen; fail safely
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation detailing how software components and the systems are designed to fail-secure.
 <<<
 CRITICALITY: >>>
@@ -1858,7 +1858,7 @@ Not well defined enough to make this of critical importance to TSPs or carriers
 CATEGORY: >>>
 Protecting Firmware on Devices
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-3 - MALICIOUS CODE PROTECTION
 a. Implement [Selection (one or more): signature based; non-signature based] malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code;
 b. Automatically update malicious code protection mechanisms as new releases are available in accordance with organizational configuration management policy and procedures;
@@ -1867,7 +1867,7 @@ c. Configure malicious code protection mechanisms to:
   2. [Selection (one or more): block malicious code; quarantine malicious code; take [Assignment: organization-defined action]]; and send alert to [Assignment: organization defined personnel or roles] in response to malicious code detection; and
 d. Address the receipt of false positives during malicious code detection and eradication and the resulting potential impact on the availability of the system.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor documentation detailing the operation of software protections for prevent the runtime modification of code.
 <<<
 CRITICALITY: >>>
@@ -1884,7 +1884,7 @@ Vulnerability programs should include sufficient legal provisions to provide for
 CATEGORY: >>>
 Vulnerability Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-5 - SECURITY ALERTS, ADVISORIES, AND DIRECTIVES 
 a. Receive system security alerts, advisories, and directives from [Assignment: organization defined external organizations] on an ongoing basis;
 [...]
@@ -1905,7 +1905,7 @@ DHS BOD 20-01 Required Action, Develop and Publish a Vulnerability Disclosure Po
 
 DHS BOD 20-01 Required Action, Vulnerability Disclosure Handling Procedures
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Demonstration, by vendor, that disclosure instructions are published on their public website and are readily accessible.
 
 Demonstration, by vendor, of an active security@[vendor domain] email, that will provide a known contact point for disclosure.
@@ -1927,13 +1927,13 @@ e.g. SIEM, IDS, WAF, Application monitoring
 CATEGORY: >>>
 Incident Response
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-4 – SYSTEM MONITORING 
 a. Monitor the system to detect: […]
 
 FMCSA GDL 28 Enable security monitoring of the telematics system(s) using native tools.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation which asserts the use and active monitoring of their systems for intrusion.
 <<<
 CRITICALITY: >>>
@@ -1948,7 +1948,7 @@ The vendor conducts regular vulnerability scans of operating environment to veri
 CATEGORY: >>>
 Vulnerability Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 RA-5 – VULNERABILITY MONITORING AND SCANNING
 a. Monitor and scan for vulnerabilities in the system and hosted applications [Assignment: organization-defined frequency and/or randomly in accordance with organization-defined process] and when new vulnerabilities potentially affecting the system are identified and reported;
 b. Employ vulnerability monitoring tools and techniques that facilitate interoperability among tools and automate parts of the vulnerability management process by using standards for:
@@ -1962,7 +1962,7 @@ f. Employ vulnerability monitoring tools that include the capability to readily 
 
 OWASP E10 – Third Party Code and Components
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documents stating the frequency, method, and scope of vulnerability scans.
 <<<
 CRITICALITY: >>>
@@ -1980,7 +1980,7 @@ This requirement, if satisfied, shows process maturity but is nice-to-have over 
 CATEGORY: >>>
 Vulnerability Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-2 - FLAW REMEDIATION 
 a. Identify, report, and correct system flaws;
 b. Test software and firmware updates related to flaw remediation for effectiveness and potential side effects before installation;
@@ -1994,7 +1994,7 @@ CAIQ CCC-03.3 Are there policies and procedures in place to triage and remedy re
 
 FMCSA GDL 8 Decide early who is in charge of creating, implementing and maintaining software/firmware updates for a device when a vulnerability emerges, and ensure these guidelines are met
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation describing their triage process.
 <<<
 CRITICALITY: >>>
@@ -2013,7 +2013,7 @@ Dependency Scanning for known vulnerabilities in third party components
 CATEGORY: >>>
 Vulnerability Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SA-11 (1) - DEVELOPER TESTING AND EVALUATION | STATIC CODE ANALYSIS 
 Require the developer of the system, system component, or system service to employ static code analysis tools to identify common flaws and document the results of the analysis.
 
@@ -2024,7 +2024,7 @@ FMCSA GDL 2 Follow secure coding best practices.
 
 OWASP E10 – Third Party Code and Components
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing their release process and quality controls.
 
 Ensure that the process ensures that code is subject to static analysis prior to production release.
@@ -2044,7 +2044,7 @@ e.g. whitelisting, anti-malware scanning, cryptographic protections
 CATEGORY: >>>
 Vulnerability Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-3 – MALICIOUS CODE PROTECTION 
 a. Implement [Selection (one or more): signature based; non-signature based] malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code;
 b. Automatically update malicious code protection mechanisms as new releases are available in accordance with organizational configuration management policy and procedures;
@@ -2055,7 +2055,7 @@ d. Address the receipt of false positives during malicious code detection and er
 
 FMCSA GDL 28 Enable security monitoring of the telematics system(s) using native tools
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the methods used to protect systems and devices from malicious code.
 <<<
 CRITICALITY: >>>
@@ -2070,7 +2070,7 @@ The vendor shall verify code according to best-practice coding standards
 CATEGORY: >>>
 Vulnerability Management
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SA-15 (7) - DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | AUTOMATED VULNERABILITY ANALYSIS
 Require the developer of the system, system component, or system service [Assignment: organization-defined frequency] to:
 (a) Perform an automated vulnerability analysis using [Assignment: organization-defined tools];
@@ -2078,7 +2078,7 @@ Require the developer of the system, system component, or system service [Assign
 (c) Determine potential risk mitigations for delivered vulnerabilities; and
 (d) Deliver the outputs of the tools and results of the analysis to [Assignment: organization-defined personnel or roles].
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor-supplied documentation detailing the software development processes of the vendor.
 
 Ensure that the vendor has coding standards that encourage secure code development.
@@ -2095,7 +2095,7 @@ The vendor shall actively monitor resources such as NIST Common Vulnerabilities 
 CATEGORY: >>>
 System and Information Integrity
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-5 - SECURITY ALERTS, ADVISORIES, AND DIRECTIVES 
 a. Receive system security alerts, advisories, and directives from [Assignment: organization defined external organizations] on an ongoing basis;
 b. Generate internal security alerts, advisories, and directives as deemed necessary;
@@ -2104,7 +2104,7 @@ d. Implement security directives in accordance with established time frames, or 
 
 FMCSA GDL 8 Decide early who is in charge of creating, implementing, and maintaining software/firmware updates for a device when a vulnerability emerges, and ensure these guidelines are met.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor process documentation detailing whether alerts, advisories, and directives are monitored and how these items are consumed e.g. email, ticketing system.
 <<<
 CRITICALITY: >>>
@@ -2119,14 +2119,14 @@ The vendor shall notify their customers of any vulnerabilities discovered in the
 CATEGORY: >>>
 System and Information Integrity
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SI-5 - SECURITY ALERTS, ADVISORIES, AND DIRECTIVES 
 a. Receive system security alerts, advisories, and directives from [Assignment: organization defined external organizations] on an ongoing basis;
 b. Generate internal security alerts, advisories, and directives as deemed necessary;
 c. Disseminate security alerts, advisories, and directives to: [Selection (one or more): [Assignment: organization-defined personnel or roles]; [Assignment: organization-defined elements within the organization]; [Assignment: organization-defined external organizations]]; and
 d. Implement security directives in accordance with established time frames, or notify the issuing organization of the degree of noncompliance.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor process documentation detailing how customers are notified. Confirm that the timelines stated in the vendors notification procedures are acceptable.
 <<<
 CRITICALITY: >>>
@@ -2141,7 +2141,7 @@ Remediation SLA or objectives are defined and are adhered to by the security and
 CATEGORY: >>>
 Secure Software Development Lifecycle (SDLC)
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 NIST 800-53 r5 SA-3 - SYSTEM DEVELOPMENT LIFE CYCLE
 a. Acquire, develop, and manage the system using [Assignment: organization-defined system development life cycle] that incorporates information security and privacy considerations;
 b. Define and document information security and privacy roles and responsibilities throughout the system development life cycle;
@@ -2171,7 +2171,7 @@ b. Compliance should be periodically assessed by the QA, Internal Audit, or Info
 
 c. Compliance remediation activities should be periodically reviewed to ensure teams are making appropriate progress, as well as assuring remediation strategies will be effective in achieving compliance.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 ·         Inspection of vendor documentation detailing:
 
 System Development Lifecycle
@@ -2195,7 +2195,7 @@ This is a nice-to-have. Mature solutions that process sensitive information in d
 CATEGORY: >>>
 Software Resiliency / Code Protections
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 BSIMM [SE3.2: 13] Use Code Protection
 a. To protect intellectual property and make exploit development harder, the organization erects barriers to reverse engineering its software (e.g., anti-tamper, debug protection, anti-piracy features, runtime integrity). This is particularly important for widely distributed mobile applications. For some software, obfuscation techniques could be applied as part of the production build and release process. In other cases, these protections could be applied at the software-defined network or software orchestration layer when applications are being dynamically regenerated post-deployment. On some platforms, employing Data Execution Prevention (DEP), Safe Structured Handling (SafeSEH), and Address Space Layout Randomization (ASLR) can be a good start at making exploit development more difficult.
 
@@ -2238,7 +2238,7 @@ a. If the goal of obfuscation is to protect sensitive computations, an obfuscati
 OWASP MASVS MSTG‑RESILIENCE‑13 
 a. As a defense in depth, next to having solid hardening of the communicating parties, application level payload encryption can be applied to further impede eavesdropping.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of 3rd party documentation or a demonstration by the vendor that asserts the presence of anti-reverse-engineering in the vendor software. Ideally executed following the testing steps detailed in the OWASP MSTG 'Android Anti-Reversing Defenses' or 'iOS Anti-Reversing Defenses' sections
 <<<
 CRITICALITY: >>>
@@ -2253,12 +2253,44 @@ The vendor shall participate in a cybersecurity information sharing and analysis
 CATEGORY: >>>
 System and Information Integrity
 <<<
-PUBLIC_REQUIREMENTS_REFERENCES_OR_DESCRIPTIONS: >>>
+PUB_REF: >>>
 FMCSA GDL 13 Share cybersecurity information with heavy vehicle the industry.
 <<<
-VERIFICATION_INSPECTION__DEMONSTRATION__TEST__OR_ANALYSIS: >>>
+VERIFICATION: >>>
 Inspection of vendor process documentation confirming participation in information sharing group.
 <<<
 CRITICALITY: >>>
 Low
 <<<
+
+[SECTION]
+TITLE: NMFTA Telematics (Cloud Component) Security Requirements
+
+[FRAGMENT_FROM_FILE]
+FILE: cloud_tsrm.sinc
+
+[/SECTION]
+
+[SECTION]
+TITLE: NMFTA Telematics (Connectivity or Communications Component) Security Requirements
+
+[FRAGMENT_FROM_FILE]
+FILE: connectivity_tsrm.sinc
+
+[/SECTION]
+
+[SECTION]
+TITLE: NMFTA Telematics (Vehicle Connection Component) Security Requirements
+
+[FRAGMENT_FROM_FILE]
+FILE: vehicle_connection_tsrm.sinc
+
+[/SECTION]
+
+[SECTION]
+TITLE: NMFTA Telematics (Mobile App Component) Security Requirements
+
+[FRAGMENT_FROM_FILE]
+FILE: mobile_app_tsrm.sinc
+
+[/SECTION]
