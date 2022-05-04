@@ -229,8 +229,20 @@ REFS:
 TITLE: Prevents (Simple) Frame Spoofing
 STATEMENT: The device SHALL prevent generating simple frame spoofing attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.2 for a description of simple frame spoofing attack.
 
+[SECTION]
+TITLE: Prevents CAN Protocol Attacks: CGW-S-008* Series
+
+[FREETEXT]
+The CAN gateways must prevent CAN protocol attacks in *TND*. At the time of drafting these requirements this can be accomplished by satisfying all of the CGW-S-008* requirements that follow.
+
+CAN Protocol Attack
+    Attacks on CAN networks requiring GPIO control of CAN_TX (and optionally CAN_RX) pins.
+
+c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.1 for further definition of CAN protocol attacks.
+[/FREETEXT]
+
 [REQUIREMENT]
-UID: CGW-S-008
+UID: CGW-S-008a
 REFS:
 - TYPE: Parent
   VALUE: AGW-S-003
@@ -238,7 +250,7 @@ TITLE: Prevents Adaptive Frame Spoofing
 STATEMENT: The device SHALL prevent generating adaptive frame spoofing attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.3 for a description of adaptive frame spoofing attack.
 
 [REQUIREMENT]
-UID: CGW-S-009
+UID: CGW-S-008b
 REFS:
 - TYPE: Parent
   VALUE: AGW-S-007
@@ -246,7 +258,7 @@ TITLE: Prevents Error Passive Attack Step
 STATEMENT: The device SHALL prevent generating attacks that drive a ECU on *TND* into error passive state from messages originating on *UND*. This will in turn prevent error passive spoofing attacks c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.4 for a description of error passive spoofing attack.
 
 [REQUIREMENT]
-UID: CGW-S-010
+UID: CGW-S-008c
 REFS:
 - TYPE: Parent
   VALUE: AGW-S-007
@@ -254,7 +266,7 @@ TITLE: Prevents Double Receive Attack
 STATEMENT: The device SHALL prevent generating double receive attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.5 for a description of the double receive attack.
 
 [REQUIREMENT]
-UID: CGW-S-011
+UID: CGW-S-008d
 REFS:
 - TYPE: Parent
   VALUE: AGW-S-002
@@ -262,7 +274,7 @@ TITLE: Prevents Bus-Off Attack
 STATEMENT: The device SHALL prevent generating bus-off attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.6 for a description of the bus-off attack.
 
 [REQUIREMENT]
-UID: CGW-S-012
+UID: CGW-S-008e
 REFS:
 - TYPE: Parent
   VALUE: AGW-S-002
@@ -278,6 +290,8 @@ REFS:
   VALUE: AGW-S-008
 TITLE: Impervious to Janus Attack
 STATEMENT: The device SHALL not be susceptible to janus attacks on any of its interfaces (e.g. *TND* and *UND*). c.f. https://kentindell.github.io/2021/07/15/janus-attack/ for a description of the janus attack.
+
+[/SECTION]
 
 [/SECTION]
 
