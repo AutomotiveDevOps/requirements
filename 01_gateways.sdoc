@@ -289,7 +289,7 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-008
 TITLE: Impervious to Janus Attack
-STATEMENT: The device SHALL not be susceptible to janus attacks on any of its interfaces (e.g. *TND* and *UND*). c.f. https://kentindell.github.io/2021/07/15/janus-attack/ for a description of the janus attack.
+STATEMENT: The device SHALL not be susceptible to janus attacks on its *UND* interface. c.f. https://kentindell.github.io/2021/07/15/janus-attack/ for a description of the janus attack.
 
 [/SECTION]
 
