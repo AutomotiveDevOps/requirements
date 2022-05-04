@@ -9,6 +9,8 @@ The collection of requirements captured here in ``strictdoc`` form were develope
 The reason why gateway devices were considered is because the previous work of the RFPCTL working group focused on telematics devices (ultimately releasing the TSRM) and the next most relevant device from a security point of view are devices that enable pivoting/lateral-movement in attacks: gateways. Indeed, the interim result of the VCRWG is that there are multiple likely present devices in modern heavy duty vehicle which are gateway devices.
 
 This experimental capture of the requirements as ``strictdoc`` ``STATEMENT`` blocks was performed because the completion of the work by the RFPCTL working group yielded a large number of requirements that need to be periodically updated, refined, reviewed etc. And furthermore the requirements need to be processed on each release to produce printable references and questionnaires for use by the fleets in the procurement processes. We expect that by the completion of the work by the VCRWG that there will be even more requirements to manage in ongoing releases and to produce more products such as in the TSRM. It is clear that machine readable form for specifying the requirements is necessary. An alternative considered was `doorstop` but the multi-file approach of doorstop was estimated to cause more friction in development and review of the requirements by the VCRWG.
+
+This document contains requirements where the working group cannot reasonably require a particular implementation option, only that one of the satisfactory ways to satisfy the requirement is implemented. Modelling these 'options' requirements is not possible nor reccomended: the sheer number of requirements which will be captured for heavy vehicles means that the requirements must remain machine readable and there is no machine readable way to communicate options to implementors (for good reason). The approach that is taken is to a) include the options as notes to the implementers of these requirements and b) to tag all requirements with `CONTAINS_OPTIONS` so the entire list of requirements containing notes to the implementers can be indexed for easy reference by them.
 [/FREETEXT]
 
 [SECTION]
@@ -107,6 +109,7 @@ The device SHALL prevent exfiltration of data from *TND* to *UND*, or vice-versa
 * Re-Write / Masking: The device SHALL provide a means of masking or otherwise re-writing data to prevent exfiltration of sensitive information from *TND* to *UND*.
 
 <<<
+TAGS: CONTAINS_OPTIONS
 
 [REQUIREMENT]
 UID: AGW-S-005
@@ -153,6 +156,7 @@ The device SHALL have a means to temporarily disable the preventions listed prev
   * Example: Consent from third party device / application that is signed with infrastructure OEM has access to verify
 
 <<<
+TAGS: CONTAINS_OPTIONS
 
 [REQUIREMENT]
 UID: AGW-S-011
