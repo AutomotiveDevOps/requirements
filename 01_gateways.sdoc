@@ -14,23 +14,6 @@ This document contains requirements where the working group cannot reasonably re
 [/FREETEXT]
 
 [SECTION]
-TITLE: Security Requirements for Abstract Unintended Gateways
-
-[FREETEXT]
-The group discussed what security requirements would need to be satisfied by any device which *could be* a gateway (due to malicious code) but is not intended to be one.
-[/FREETEXT]
-
-[REQUIREMENT]
-UID: NGW-S-001
-REFS:
-- TYPE: Parent
-  VALUE: NGW-F-001
-TITLE: Security Assurance
-STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
-
-[/SECTION]
-
-[SECTION]
 TITLE: Security Requirements for Abstract (Intended) Gateways
 
 [FREETEXT]
@@ -226,6 +209,57 @@ STATEMENT: The device SHALL not be susceptible to address claim attacks.
 [/SECTION]
 
 [SECTION]
+TITLE: Security Requirements for Abstract Unintended Gateways
+
+[FREETEXT]
+Security requirements that must be satisfied by any device which *could be* a gateway (due to malicious code) but is not intended to be one.
+[/FREETEXT]
+
+[REQUIREMENT]
+UID: NGW-S-001
+TITLE: Security Assurance
+STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+
+[SECTION]
+TITLE: Prevents Gateway Functions
+
+[REQUIREMENT]
+UID: NGW-S-002
+REFS:
+- TYPE: Parent
+  VALUE: NGW-S-001
+TITLE: Won't Transport
+STATEMENT: These devices SHALL NOT transport/'move' information between two separate network 'domains,' in either bidirection.
+
+[REQUIREMENT]
+UID: NGW-S-003
+REFS:
+- TYPE: Parent
+  VALUE: NGW-S-001
+TITLE: Won't Translate
+STATEMENT: These devices SHALL NOT translate/transform the information between the separate network domains.
+
+[REQUIREMENT]
+UID: NGW-S-004
+REFS:
+- TYPE: Parent
+  VALUE: NGW-S-001
+TITLE: Won't Filter, Drop or Rate Limit
+STATEMENT: These devices SHALL NOT select which information is transported and/or translated between the network domains.
+
+[REQUIREMENT]
+UID: NGW-S-005
+REFS:
+- TYPE: Parent
+  VALUE: NGW-S-001
+TITLE: Won't Encapsulate
+STATEMENT: These devices SHALL NOT encapsulate information as it is transported and/or translated between the network domains.
+
+[/SECTION]
+
+[/SECTION]
+
+[SECTION]
 TITLE: Vehicle Gateway (Functional) Requirements
 
 [FREETEXT]
@@ -295,16 +329,6 @@ STATEMENT: These devices SHALL report status of operation to users with necessar
 UID: AGW-F-010
 TITLE: Diagnoses
 STATEMENT: These devices SHALL provide diagnostic commands to users with necessary authentication and authorization.
-
-[/SECTION]
-
-[SECTION]
-TITLE: Devices NOT Intended to be a Gateway
-
-[REQUIREMENT]
-UID: NGW-F-001
-TITLE: Won't be Gateways
-STATEMENT: These devices SHALL not allow/enable/admit any of the gateway features (see Section *Devices Intended to be a Gateway*)
 
 [/SECTION]
 
