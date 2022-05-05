@@ -143,7 +143,7 @@ STATEMENT: The device SHALL prevent abuse of *TND* network domain functionality 
 [REQUIREMENT]
 UID: AGW-S-006
 TITLE: Prevents Data Loss
-STATEMENT: The device SHALL prevent all data loss and/or corruption of information in the bidirectional *UND*<->*TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002).
+STATEMENT: The device SHALL prevent all data loss and/or corruption of information in the bidirectional *UND* ↔ *TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002).
 
 [REQUIREMENT]
 UID: AGW-S-007
@@ -215,7 +215,7 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-007
 TITLE: Won't Drop Frames
-STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional *UND*<->*TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
+STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional *UND* ↔ *TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
 
 [REQUIREMENT]
 UID: CGW-S-005b
@@ -223,7 +223,7 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-007
 TITLE: No Priority Inversion
-STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional *UND*<->*TND* operation, to prevent priority inversion.
+STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional *UND* ↔ *TND* operation, to prevent priority inversion.
 
 [REQUIREMENT]
 UID: CGW-S-005c
