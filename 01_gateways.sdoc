@@ -108,21 +108,25 @@ The following requirements must be satisfied by any device intended to be a gate
 UID: AGW-S-000
 TITLE: Gateway Configuration Protected
 STATEMENT: The device SHALL accept and react only to configuration changes which are correctly authorized and authenticated, regardless of origin of network domain.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-001
 TITLE: Prevents OTA
 STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-002
 TITLE: Prevents DoS
 STATEMENT: The device SHALL prevent generating Denial of Service (DoS) on *TND* from messages originating on *UND*.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-003
 TITLE: Prevents Spoofing
 STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto *TND*
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-004
@@ -135,26 +139,31 @@ The device SHALL prevent exfiltration of data from *TND* to *UND*, or vice-versa
 
 <<<
 TAGS: CONTAINS_OPTIONS
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-005
 TITLE: Prevents Elevation
 STATEMENT: The device SHALL prevent abuse of *TND* network domain functionality from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-006
 TITLE: Prevents Data Loss
 STATEMENT: The device SHALL prevent all data loss and/or corruption of information in the bidirectional *UND* ↔ *TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002).
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-007
 TITLE: Preserves High Side Operation
 STATEMENT: The device SHALL prevent degradation of any *TND* operation due to *UND* activity.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-008
 TITLE: Security Assurance
 STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-009
@@ -163,6 +172,7 @@ REFS:
   VALUE: AGW-S-007
 TITLE: Preserves Performance
 STATEMENT: The device SHALL be scoped to sufficient detail to preserve network domain performance guarantees in *TND*.
+CRITICALITY: Medium
 
 [REQUIREMENT]
 UID: AGW-S-010
@@ -182,11 +192,13 @@ The device SHALL have a means to temporarily disable the preventions listed prev
 
 <<<
 TAGS: CONTAINS_OPTIONS
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-011
 TITLE: Mode Switch Indicated
 STATEMENT: The device SHALL indicate to all domains that it is not performing normal operations.
+CRITICALITY: Medium
 
 [SECTION]
 TITLE: Security Requirements for CAN Gateways
@@ -202,6 +214,7 @@ REFS:
   VALUE: AGW-S-009
 TITLE: Performant
 STATEMENT: The device SHALL process and move CAN frames quickly enough to preserve performance on all network domains.
+CRITICALITY: Medium
 
 [SECTION]
 TITLE: Preserves Atomic Multicast: CGW-S-005* Series
@@ -217,6 +230,7 @@ REFS:
   VALUE: AGW-S-007
 TITLE: Won't Drop Frames
 STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional *UND* ↔ *TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: CGW-S-005b
@@ -225,6 +239,7 @@ REFS:
   VALUE: AGW-S-007
 TITLE: No Priority Inversion
 STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional *UND* ↔ *TND* operation, to prevent priority inversion.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: CGW-S-005c
@@ -233,6 +248,7 @@ REFS:
   VALUE: AGW-S-007
 TITLE: Preserves Ordering
 STATEMENT: The device SHALL preserve ordering egress frames wrt their ingress order within an equivalence class of CAN arbitration ID priorities, to prevent out-of-order delivery.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: CGW-S-005d
@@ -241,6 +257,7 @@ REFS:
   VALUE: AGW-S-007
 TITLE: FIFO but Also Priority
 STATEMENT: The device SHALL schedule egress for in-order send but not across CAN arbitration ID priorities.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: CGW-S-005e
@@ -249,6 +266,7 @@ REFS:
   VALUE: AGW-S-007
 TITLE: Preserves Jitter
 STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) low enough to not affect the *TND* network domain performance requirements in the worst case.
+CRITICALITY: Medium
 
 [/SECTION]
 
@@ -396,6 +414,7 @@ Security requirements that must be satisfied by any device which *could be* a ga
 UID: NGW-S-001
 TITLE: Security Assurance
 STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+CRITICALITY: High
 
 [SECTION]
 TITLE: Prevents Gateway Functions
@@ -407,6 +426,7 @@ REFS:
   VALUE: NGW-S-001
 TITLE: Won't Transport
 STATEMENT: These devices SHALL NOT transport/'move' information between two separate network 'domains,' in either bidirection.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: NGW-S-003
@@ -415,6 +435,7 @@ REFS:
   VALUE: NGW-S-001
 TITLE: Won't Translate
 STATEMENT: These devices SHALL NOT translate/transform the information between the separate network domains.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: NGW-S-004
@@ -423,6 +444,7 @@ REFS:
   VALUE: NGW-S-001
 TITLE: Won't Filter, Drop or Rate Limit
 STATEMENT: These devices SHALL NOT select which information is transported and/or translated between the network domains.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: NGW-S-005
@@ -431,6 +453,7 @@ REFS:
   VALUE: NGW-S-001
 TITLE: Won't Encapsulate
 STATEMENT: These devices SHALL NOT encapsulate information as it is transported and/or translated between the network domains.
+CRITICALITY: High
 
 [/SECTION]
 
