@@ -337,7 +337,8 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-008
 TITLE: Impervious to Janus Attack
-STATEMENT: The device SHALL not be susceptible to janus attacks on its *UND* interface. c.f. https://kentindell.github.io/2021/07/15/janus-attack/ for a description of the janus attack.
+STATEMENT: The device SHALL not enable Janus Attacks in any group of OEM supplied components on any of its interface. c.f. https://kentindell.github.io/2021/07/15/janus-attack/ for a description of the Janus Attack.
+COMMENT: Susceptibility to Janus Attacks is a property of a network of devices, not only of a single device. The entire *TND* is expected to be impervious to Janus Attacks since it should all be OEM supplied components there. In *UND* it is not possible to require that this device nor all the devices are impervious to Janus Attacks since *UND* is explicitly permitted to contain non-OEM supplied components. What is required of this device on *UND* is that if there are other OEM supplied devices on *UND* then this device cannot enable Janus Attacks on that collection of all those OEM supplied devices on *UND*.
 CRITICALITY: Medium
 
 [/SECTION]
