@@ -357,7 +357,7 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-003
 TITLE: Prevents J1939 Address Spoofing
-STATEMENT: The device shall prevent the gatewaying (e.g. transport, translate, filter, or encapsulate) of any traffic onto *TND* with a J1939 address which is claimed by any of the devices in *TND*.
+STATEMENT: The device shall prevent the gatewaying (any of transport, translate, filter, or encapsulate) of any traffic onto *TND* with a J1939 address which is claimed by any of the devices in *TND*.
 CRITICALITY: Medium
 
 [REQUIREMENT]
@@ -367,6 +367,7 @@ REFS:
   VALUE: AGW-S-002
 TITLE: Prevents Address Claim Attacks
 STATEMENT: The device SHALL prevent generating address claim attacks on *TND* from messages originating on *UND*. c.f. https://www.aut.upt.ro/~bgroza/Papers/j1939.pdf and https://doi.org/10.4271/02-14-03-0026 for a description of the address claim attack.
+COMMENT: **Note to implementors**: Performing no gatewaying (any of transport, translate, filter, or encapsulate) of address claims onto *TND* would satisfy this requirement.
 CRITICALITY: High
 
 [REQUIREMENT]
