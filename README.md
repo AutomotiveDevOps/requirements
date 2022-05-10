@@ -3,6 +3,7 @@
 An experimental capture of some Vehicle Cybersecurity Requirements based on https://github.com/AutomotiveDevOps/requirements template using https://github.com/strictdoc-project/strictdoc.
 
 Browsable HTML Output here: https://nmfta-repo.github.io/vcr-experiment/
+Download the ReqIF export of the requirements here: https://nmfta-repo.github.io/vcr-experiment/vcr-experiment.reqif
 
 [![Requirements Publish](https://github.com/nmfta-repo/vcr-experiment/actions/workflows/publish.yml/badge.svg)](https://github.com/nmfta-repo/vcr-experiment/actions/workflows/publish.yml)
 

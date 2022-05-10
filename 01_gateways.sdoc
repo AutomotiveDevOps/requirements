@@ -43,33 +43,26 @@ ELEMENTS:
     REQUIRED: False
 
 [FREETEXT]
-This document is an experimental capture of a list of security requirements for the gateway devices which are prevalent and proliferating in heavy vehicle network architectures.
+This document captures security requirements for vehicle network gateway devices: both devices intended to be gateways and those devices which *could be a gateway* (due to malicious code).
 
-The collection of requirements captured here in ``strictdoc`` form were developed in a breakout session at the NMFTA CTSRP November 2021 workshop. The breakout session group discussed a) the workable definition of a gateway device -- focusing especially on the attacker's perspective -- b) possible security requirements for those devices that are gateways (intentional or not) and c) attempted to tie those back to the security requirements for vehicle gateways which were outline by a vehicle network security expert whose presentation on the subject was delivered earlier that day. The workshop participants and the expert cannot be revealed here, except by their own actions since the workshop was held -- as is tradition -- under Chatham house rules.
+Intended Gateway:
+    A device which had connections to multiple vehicle network domains (or segments) and is intended to transport, translate, filter/drop/rate-limit or encapsulate information from an Untrusted Network Domain (*UND*) to a Trusted Network Domain (*TND*). Any device which performs one or more of these functions is an intended gateway. See the section *Abstract (Intended) Gateway Core Functional Requirements* for more details.
 
-The reason why gateway devices were considered is because the previous work of the RFPCTL working group focused on telematics devices (ultimately releasing the TSRM) and the next most relevant device from a security point of view are devices that enable pivoting/lateral-movement in attacks: gateways. Indeed, the interim result of the VCRWG is that there are multiple likely present devices in modern heavy duty vehicle which are gateway devices.
+Unintended Gateway:
+    A device which could be a gateway (due to malicious code) but is not intended to be one. See the section *Prevents Gateway Functions* for details on the security assurance necessary to prevent gateway functionality on unintended gateways.
 
-This experimental capture of the requirements as ``strictdoc`` ``STATEMENT`` blocks was performed because the completion of the work by the RFPCTL working group yielded a large number of requirements that need to be periodically updated, refined, reviewed etc. And furthermore the requirements need to be processed on each release to produce printable references and questionnaires for use by the fleets in the procurement processes. We expect that by the completion of the work by the VCRWG that there will be even more requirements to manage in ongoing releases and to produce more products such as in the TSRM. It is clear that machine readable form for specifying the requirements is necessary. An alternative considered was `doorstop` but the multi-file approach of doorstop was estimated to cause more friction in development and review of the requirements by the VCRWG.
+Intended gateways are designed to transport, translate etc. between two separate network domains (or segments). They do so asymmetrically, treating one segment as trustworthy.
 
-This document contains requirements where the working group cannot reasonably require a particular implementation option, only that one of the satisfactory ways to satisfy the requirement is implemented. Modelling these 'options' requirements is not possible nor reccomended: the sheer number of requirements which will be captured for heavy vehicles means that the requirements must remain machine readable and there is no machine readable way to communicate options to implementors (for good reason). The approach that is taken is to a) include the options as notes to the implementers of these requirements and b) to tag all requirements with `CONTAINS_OPTIONS` so the entire list of requirements containing notes to the implementers can be indexed for easy reference by them.
-[/FREETEXT]
-
-[SECTION]
-TITLE: Security Requirements for Abstract (Intended) Gateways
-
-[FREETEXT]
-The group discussed what security requirements would need to be satisfied by a device intended to be a gateway: a device which is intended to move/translate etc (see section *Devices Intended to be a Gateway*) information from an Untrusted Network Domain (*UND*) to a Trusted Network Domain (*TND*).
-
-Untrusted Network Domain (*UND*)
-    A *UND* is a network domain (or segment) that contains ***any*** of the following:
+Untrusted Network Domain (*UND*):
+    A *UND* is a network domain (or segment) that contains **any** of the following:
 
     a) wireless communication or reachable wirelessly (e.g J2497)
     b) an interface for aftermarket devices or operator access (e.g. an OBD port)
     c) a telematics device that does not satisfy the HD VCR requirements
     d) a multi-network device (e.g. intended or unintended gateway) that does not satisfy the HD VCR requirements
 
-Trusted Network Domain (*TND*)
-    A *TND* is a network domain (or segment) that ***does not contain any*** of the following:
+Trusted Network Domain (*TND*):
+    A *TND* is a network domain (or segment) that **does not contain any** of the following:
 
     a) wireless communication or reachable wirelessly (e.g J2497)
     b) an interface for aftermarket devices or operator access (e.g. an OBD port)
@@ -101,27 +94,39 @@ The OBD connector is _the_ operator access port; therefore the databuses there a
 
 
 
+Note on options for requirements: This document contains requirements where the working group cannot reasonably require a particular implementation option, only that one of the satisfactory ways to satisfy the requirement is implemented. Modelling these 'options' requirements is not possible nor reccomended: the sheer number of requirements which will be captured for heavy vehicles means that the requirements must remain machine readable and there is no machine readable way to communicate options to implementors (for good reason). The approach that is taken is to a) include the options as notes to the implementers of these requirements and b) to tag all requirements with `CONTAINS_OPTIONS` so the entire list of requirements containing notes to the implementers can be indexed for easy reference by them.
+[/FREETEXT]
+
+[SECTION]
+TITLE: Security Requirements for Abstract (Intended) Gateways
+
+[FREETEXT]
+The following requirements must be satisfied by any device intended to be a gateway on *any type of* vehicle networks. There are CAN-specific and J1939-sepcific requirements in the CGW- and J1939GW- series below.
 [/FREETEXT]
 
 [REQUIREMENT]
 UID: AGW-S-000
 TITLE: Gateway Configuration Protected
 STATEMENT: The device SHALL accept and react only to configuration changes which are correctly authorized and authenticated, regardless of origin of network domain.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-001
 TITLE: Prevents OTA
 STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-002
 TITLE: Prevents DoS
 STATEMENT: The device SHALL prevent generating Denial of Service (DoS) on *TND* from messages originating on *UND*.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-003
 TITLE: Prevents Spoofing
 STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto *TND*
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-004
@@ -134,26 +139,31 @@ The device SHALL prevent exfiltration of data from *TND* to *UND*, or vice-versa
 
 <<<
 TAGS: CONTAINS_OPTIONS
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-005
 TITLE: Prevents Elevation
 STATEMENT: The device SHALL prevent abuse of *TND* network domain functionality from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-006
 TITLE: Prevents Data Loss
-STATEMENT: The device SHALL prevent all data loss and/or corruption of information in the bidirectional *UND*<->*TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002).
+STATEMENT: The device SHALL prevent all data loss and/or corruption of information in the bidirectional *UND* ↔ *TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002).
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-007
 TITLE: Preserves High Side Operation
 STATEMENT: The device SHALL prevent degradation of any *TND* operation due to *UND* activity.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-008
 TITLE: Security Assurance
 STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-009
@@ -162,6 +172,7 @@ REFS:
   VALUE: AGW-S-007
 TITLE: Preserves Performance
 STATEMENT: The device SHALL be scoped to sufficient detail to preserve network domain performance guarantees in *TND*.
+CRITICALITY: Medium
 
 [REQUIREMENT]
 UID: AGW-S-010
@@ -181,17 +192,19 @@ The device SHALL have a means to temporarily disable the preventions listed prev
 
 <<<
 TAGS: CONTAINS_OPTIONS
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: AGW-S-011
 TITLE: Mode Switch Indicated
 STATEMENT: The device SHALL indicate to all domains that it is not performing normal operations.
+CRITICALITY: Medium
 
 [SECTION]
 TITLE: Security Requirements for CAN Gateways
 
 [FREETEXT]
-The group discussed what security requirements would need to be satisfied by CAN gateways specifically. Ideally these would all map back to Abstract (Intended) Gateway requirements. Most of these are from the security gateway requirements presented by the expert earlier in the workshop.
+The following security requirements must be satisfied by CAN gateways specifically. These CAN gateways are expected to meet all of the AGW-S-* Abstract Gateway security requirements and to also satisfy the CGW-S-* security requirements of this section.
 [/FREETEXT]
 
 [REQUIREMENT]
@@ -201,6 +214,7 @@ REFS:
   VALUE: AGW-S-009
 TITLE: Performant
 STATEMENT: The device SHALL process and move CAN frames quickly enough to preserve performance on all network domains.
+CRITICALITY: Medium
 
 [SECTION]
 TITLE: Preserves Atomic Multicast: CGW-S-005* Series
@@ -215,7 +229,8 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-007
 TITLE: Won't Drop Frames
-STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional *UND*<->*TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
+STATEMENT: The device SHALL NOT drop CAN frames in its bidirectional *UND* ↔ *TND* operation, unless with explicit configuration for rate limiting (AGW-F-006) or translation (AGW-F-002)
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: CGW-S-005b
@@ -223,7 +238,8 @@ REFS:
 - TYPE: Parent
   VALUE: AGW-S-007
 TITLE: No Priority Inversion
-STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional *UND*<->*TND* operation, to prevent priority inversion.
+STATEMENT: The device SHALL schedule egress frames according to the CAN arbitration ID priority in it bidirectional *UND* ↔ *TND* operation, to prevent priority inversion.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: CGW-S-005c
@@ -232,6 +248,7 @@ REFS:
   VALUE: AGW-S-007
 TITLE: Preserves Ordering
 STATEMENT: The device SHALL preserve ordering egress frames wrt their ingress order within an equivalence class of CAN arbitration ID priorities, to prevent out-of-order delivery.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: CGW-S-005d
@@ -240,6 +257,7 @@ REFS:
   VALUE: AGW-S-007
 TITLE: FIFO but Also Priority
 STATEMENT: The device SHALL schedule egress for in-order send but not across CAN arbitration ID priorities.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: CGW-S-005e
@@ -248,6 +266,7 @@ REFS:
   VALUE: AGW-S-007
 TITLE: Preserves Jitter
 STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) low enough to not affect the *TND* network domain performance requirements in the worst case.
+CRITICALITY: Medium
 
 [/SECTION]
 
@@ -395,6 +414,7 @@ Security requirements that must be satisfied by any device which *could be* a ga
 UID: NGW-S-001
 TITLE: Security Assurance
 STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
+CRITICALITY: High
 
 [SECTION]
 TITLE: Prevents Gateway Functions
@@ -406,6 +426,7 @@ REFS:
   VALUE: NGW-S-001
 TITLE: Won't Transport
 STATEMENT: These devices SHALL NOT transport/'move' information between two separate network 'domains,' in either bidirection.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: NGW-S-003
@@ -414,6 +435,7 @@ REFS:
   VALUE: NGW-S-001
 TITLE: Won't Translate
 STATEMENT: These devices SHALL NOT translate/transform the information between the separate network domains.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: NGW-S-004
@@ -422,6 +444,7 @@ REFS:
   VALUE: NGW-S-001
 TITLE: Won't Filter, Drop or Rate Limit
 STATEMENT: These devices SHALL NOT select which information is transported and/or translated between the network domains.
+CRITICALITY: High
 
 [REQUIREMENT]
 UID: NGW-S-005
@@ -430,29 +453,21 @@ REFS:
   VALUE: NGW-S-001
 TITLE: Won't Encapsulate
 STATEMENT: These devices SHALL NOT encapsulate information as it is transported and/or translated between the network domains.
+CRITICALITY: High
 
 [/SECTION]
 
 [/SECTION]
 
 [SECTION]
-TITLE: Vehicle Gateway (Functional) Requirements
+TITLE: Abstract (Intended) Gateway Functional Requirements
+
+[SECTION]
+TITLE: Abstract (Intended) Gateway Core Functional Requirements
 
 [FREETEXT]
-The group discussed some of the non-security related requirements of a gateway.
-
-**NB: These are capture here only as a demonstration of some of the ``strictdoc`` features, and probably only temporarily.**
-
-What are gateways? A: anything that is connected to two or more vehicle networks
-
-Could be on heterogeneous vehicle networks (e.g. J1939 and J1708)
-
-We discussed the simple dualism: Devices ”intended to be a gateway” and those “not intended to be a gateway.”
-
+The following are the functional requirements assumed to be the core of functionality of a vehicle gateway. As is mentioned above, any device which performs one or more of these functions is a gateway device and, furthermore, devices which are not intended to be gateways must have assurances that malicious code will not enable any one of these functionalities.
 [/FREETEXT]
-
-[SECTION]
-TITLE: Devices Intended to be a Gateway
 
 [REQUIREMENT]
 UID: AGW-F-001
@@ -487,6 +502,15 @@ STATEMENT: These devices MAY select which information is transported in a time v
 UID: AGW-F-004
 TITLE: Encapsulates
 STATEMENT: These devices MAY encapsulate information as it is transported and/or translated between the network domains.
+
+[/SECTION]
+
+[SECTION]
+TITLE: Abstract (Intended) Gateway Additional Functional Requirements
+
+[FREETEXT]
+The following are the functional requirements assumed to also be features of intended gateways; however, devices which perform one or more of these functions are not necessarily assumed to be gateway devices -- as was the case with the requirements of the *Abstract (Intended) Gateway Core Functional Requirements* section.
+[/FREETEXT]
 
 [REQUIREMENT]
 UID: AGW-F-007
