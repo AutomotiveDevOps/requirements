@@ -1,6 +1,47 @@
 [DOCUMENT]
 TITLE: Vehicle Network Gateway Devices Security Requirements
 
+[GRAMMAR]
+ELEMENTS:
+- TAG: REQUIREMENT
+  FIELDS:
+  - TITLE: UID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: LEVEL
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATUS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: TAGS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: REFS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: TITLE
+    TYPE: String
+    REQUIRED: False
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: False
+  - TITLE: RATIONALE
+    TYPE: String
+    REQUIRED: False
+  - TITLE: COMMENT
+    TYPE: String
+    REQUIRED: False
+  - TITLE: PUB_REFS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: VERIFICATION
+    TYPE: String
+    REQUIRED: False
+  - TITLE: CRITICALITY
+    TYPE: String
+    REQUIRED: False
+
 [FREETEXT]
 This document is an experimental capture of a list of security requirements for the gateway devices which are prevalent and proliferating in heavy vehicle network architectures.
 
@@ -128,7 +169,7 @@ TITLE: Mode Switch Interlock
 STATEMENT: >>>
 The device SHALL have a means to temporarily disable the preventions listed previously and as noted with "unless with explicity authorized and authenticated configuration changes via the mode switch" The means must be impossible to use without explicit authorization by the vehicle owner. The device SHALL satisfy one or more of these methods to enable a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*. If more than one is satisfied then the effects of either switch could be in effect concurrently (i.e. a logical OR operation).
 
-* Physical Mode Switch Interlock: The device SHALL have at least on physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
+* Physical Mode Switch Interlock: The device SHALL have at least one physical input that when grounded enables a switch into modes which allow OTA, spoofing, etc. from *UND* to *TND*.
 
   * Example: Physical switch on dash
 
@@ -210,13 +251,134 @@ STATEMENT: The device SHALL have ingress-to-egress latency variability (jitter) 
 
 [/SECTION]
 
+[SECTION]
+TITLE: Prevents CAN Attacks
+
 [REQUIREMENT]
-UID: CGW-S-100
+UID: CGW-S-006
 REFS:
 - TYPE: Parent
   VALUE: AGW-S-002
+TITLE: Prevents Bus Flood Attacks
+STATEMENT: The device SHALL prevent generating bus flood attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.1 for a description of the bus flood attack.
+CRITICALITY: High
+
+[REQUIREMENT]
+UID: CGW-S-007
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-003
+TITLE: Prevents (Simple) Frame Spoofing
+STATEMENT: The device SHALL prevent generating simple frame spoofing attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.2 for a description of simple frame spoofing attack.
+CRITICALITY: High
+
+[SECTION]
+TITLE: Prevents CAN Protocol Attacks: CGW-S-008* Series
+
+[FREETEXT]
+The CAN gateways must prevent CAN protocol attacks in *TND*. At the time of drafting these requirements this can be accomplished by satisfying all of the CGW-S-008* requirements that follow.
+
+CAN Protocol Attack
+    Attacks on CAN networks requiring GPIO control of CAN_TX (and optionally CAN_RX) pins.
+
+c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.1 for further definition of CAN protocol attacks.
+[/FREETEXT]
+
+[REQUIREMENT]
+UID: CGW-S-008a
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-003
+TITLE: Prevents Adaptive Frame Spoofing
+STATEMENT: The device SHALL prevent generating adaptive frame spoofing attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.3 for a description of adaptive frame spoofing attack.
+CRITICALITY: High
+
+[REQUIREMENT]
+UID: CGW-S-008b
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
+TITLE: Prevents Error Passive Attack Step
+STATEMENT: The device SHALL prevent generating attacks that drive a ECU on *TND* into error passive state from messages originating on *UND*. This will in turn prevent error passive spoofing attacks c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.4 for a description of error passive spoofing attack.
+CRITICALITY: High
+
+[REQUIREMENT]
+UID: CGW-S-008c
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-007
+TITLE: Prevents Double Receive Attack
+STATEMENT: The device SHALL prevent generating double receive attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.5 for a description of the double receive attack.
+CRITICALITY: High
+
+[REQUIREMENT]
+UID: CGW-S-008d
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-002
+TITLE: Prevents Bus-Off Attack
+STATEMENT: The device SHALL prevent generating bus-off attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.6 for a description of the bus-off attack.
+CRITICALITY: High
+
+[REQUIREMENT]
+UID: CGW-S-008e
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-002
+TITLE: Prevents Freeze Doom Loop Attack
+STATEMENT: The device SHALL prevent generating freeze doom loop attacks on *TND* from messages originating on *UND*. c.f. https://canislabs.com/wp-content/uploads/2020/05/1901-2019-11-29-White-Paper-CAN-Security.pdf section 2.7 for a description of the freeze doom loop attack.
+CRITICALITY: High
+
+[/SECTION]
+
+[REQUIREMENT]
+UID: CGW-S-013
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-008
+TITLE: Impervious to Janus Attack
+STATEMENT: The device SHALL not enable Janus Attacks in any group of OEM supplied components on any of its interface. c.f. https://kentindell.github.io/2021/07/15/janus-attack/ for a description of the Janus Attack.
+COMMENT: Susceptibility to Janus Attacks is a property of a network of devices, not only of a single device. The entire *TND* is expected to be impervious to Janus Attacks since it should all be OEM supplied components there. In *UND* it is not possible to require that this device nor all the devices are impervious to Janus Attacks since *UND* is explicitly permitted to contain non-OEM supplied components. What is required of this device on *UND* is that if there are other OEM supplied devices on *UND* then this device cannot enable Janus Attacks on that collection of all those OEM supplied devices on *UND*.
+CRITICALITY: Medium
+
+[/SECTION]
+
+[/SECTION]
+
+[SECTION]
+TITLE: Security Requirements for J1939 Gateways
+
+[FREETEXT]
+J1939 Gateways are expected to meet all of the CGW-S-* CAN Gateway Security Requirements and to also satisfy the J1939GW-S-* Security requirements of this section
+[/FREETEXT]
+
+[REQUIREMENT]
+UID: J1939GW-S-039
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-003
+TITLE: Prevents J1939 Address Spoofing
+STATEMENT: The device shall prevent the gatewaying (any of transport, translate, filter, or encapsulate) of any traffic onto *TND* with a J1939 address which is claimed by any of the devices in *TND*.
+CRITICALITY: Medium
+
+[REQUIREMENT]
+UID: J1939GW-S-029
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-002
+TITLE: Prevents Address Claim Attacks
+STATEMENT: The device SHALL prevent generating address claim attacks on *TND* from messages originating on *UND*. c.f. https://www.aut.upt.ro/~bgroza/Papers/j1939.pdf and https://doi.org/10.4271/02-14-03-0026 for a description of the address claim attack.
+COMMENT: **Note to implementors**: Performing no gatewaying (any of transport, translate, filter, or encapsulate) of address claims onto *TND* would satisfy this requirement.
+CRITICALITY: High
+
+[REQUIREMENT]
+UID: J1939GW-S-089
+REFS:
+- TYPE: Parent
+  VALUE: AGW-S-008
 TITLE: Impervious to Address Claim Attacks
-STATEMENT: The device SHALL not be susceptible to address claim attacks.
+STATEMENT: The device SHALL not be susceptible to address claim attacks on any of its interfaces (e.g. *TND* and *UND*)
+CRITICALITY: High
 
 [/SECTION]
 
