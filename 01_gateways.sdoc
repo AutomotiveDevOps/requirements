@@ -43,21 +43,15 @@ ELEMENTS:
     REQUIRED: False
 
 [FREETEXT]
-This document captures security requirements for vehicle network gateway devices: both devices intended to be gateways and those devices which *could be a gateway* (due to malicious code).
+This document captures security requirements for vehicle network gateway devices: both devices intended to be gateways and those devices which *could be a gateway* (due to malicious code). There will be devices which are connected to multiple vehicle networks but not all of them are intended to perform gatewaying functions. The design intent of the device dictactes what security requirements it must satisfy.
 
-Intended Gateway:
-    A device which had connections to multiple vehicle network domains (or segments) and is intended to transport, translate, filter/drop/rate-limit or encapsulate information from an Untrusted Network Domain (*UND*) to a Trusted Network Domain (*TND*). Any device which performs one or more of these functions is an intended gateway. See the section *Abstract (Intended) Gateway Core Functional Requirements* for more details.
-
-Unintended Gateway:
-    A device which could be a gateway (due to malicious code) but is not intended to be one. See the section *Prevents Gateway Functions* for details on the security assurance necessary to prevent gateway functionality on unintended gateways.
-
-Intended gateways are designed to transport, translate etc. between two separate network domains (or segments). They do so asymmetrically, treating one segment as trustworthy.
+First let us define the two types of network domains (or segments) to which the Gateway devices will connect:
 
 Untrusted Network Domain (*UND*):
     A *UND* is a network domain (or segment) that contains **any** of the following:
 
-    a) wireless communication or reachable wirelessly (e.g J2497)
-    b) an interface for aftermarket devices or operator access (e.g. an OBD port)
+    a) wireless communication or reachable wirelessly (e.g J2497, ISO 15118, BlueTooth, WiFi)
+    b) an interface for aftermarket devices or operator access (e.g. an OBD port, RP1226 connector)
     c) a telematics device that does not satisfy the HD VCR requirements
     d) a multi-network device (e.g. intended or unintended gateway) that does not satisfy the HD VCR requirements
 
@@ -69,7 +63,7 @@ Trusted Network Domain (*TND*):
     c) a telematics device that does not satisfy the HD VCR requirements
     d) a multi-network device (e.g. intended or unintended gateway) that does not satisfy the HD VCR requirements
 
-Some Examples:
+Some Examples of TND and UND:
 
 The RP1226 connector is made for connecting aftermarket devices; therefore the databuses there are UNDs.
 ::
@@ -92,7 +86,45 @@ The OBD connector is _the_ operator access port; therefore the databuses there a
       TND   │  requirements │     UND         │   Connector  │      UND            │┼│
             └───────────────┘                 └──────────────┘                     └─┘
 
+The TPMS gateways on RP1226 databus connect to a wireless medium and are on the aftermarket bus; therefore the databuses there are UNDs.
+::
 
+
+            ┌───────────────┐                 ┌──────────────┐                  ┌──────────────┐
+            │  Gateway sat  │                 │              │                  │              │     Wireless
+    ────────┤   all HDVCR   ├─────────────────┤    RP1226    ├──────────────────┤     TPMS     ├───────~~)))
+      TND   │  requirements │     UND         │   Connector  │      UND         │   Gateway    │      UND
+            └───────────────┘                 └──────────────┘                  └──────────────┘
+
+
+Then we can define (Intended) Gateways
+
+(Intended) Gateway:
+    A device which has connections to multiple vehicle network domains (or segments) and performs one or more gateway functions between a Untrusted Network Domain (*UND*) and Trusted Network Domains (*TND*). (Intended) Gateways must satisfy the requirements in section *Security Requirements for Abstract (Intended) Gateways*.
+
+Unintended Gateway:
+    A device which has connections to multiple vehicle network domains (or segments) and performs none of the gateway functions. These devices could perform gateway functions (due to malicious code) but are not intended to. Unintended Gateways must satisfy the requirements in section *Security Requirements for Abstract Unintended Gateways*.
+
+The gateway functions that duck type the gateway devices are as follows:
+
+Transports:
+    These devices transport/'move' information between two separate network 'domains,' **bi-bidirectionally.**
+
+Translates:
+    These devices translate/transform the information between the separate network domains but intentions of the data are preserved.
+
+Filter/Drop/Rate-Limit:
+    These devices select which information is transported based on rules matching content or metadata before (ingress) or after (egress) processing steps in preparation for transport/translate/encapsulate or other forwarding actions. These devices select which information is transported in a time varying fashion for the purposes of limiting the rate at which the information is put on a network domain.
+
+Encapsulates:
+    These devices encapsulate information as it is transported and/or translated between the network domains.
+
+Note that (Intended) Gateways may optionally perform the following functions as well -- and to do so would be beneficial; however, performing one or more of these functions does not make a device a gateway as were the case with the gateway functions above.
+
+* These devices may be controllable by users with necessary authentication and authorization
+* These devices may be configurable by users with necessary authentication and authorization
+* These devices may report status of operation to users with necessary authentication and authorization
+* These devices may provide diagnostic commands to users with necessary authentication and authorization
 
 Note on options for requirements: This document contains requirements where the working group cannot reasonably require a particular implementation option, only that one of the satisfactory ways to satisfy the requirement is implemented. Modelling these 'options' requirements is not possible nor reccomended: the sheer number of requirements which will be captured for heavy vehicles means that the requirements must remain machine readable and there is no machine readable way to communicate options to implementors (for good reason). The approach that is taken is to a) include the options as notes to the implementers of these requirements and b) to tag all requirements with `CONTAINS_OPTIONS` so the entire list of requirements containing notes to the implementers can be indexed for easy reference by them.
 [/FREETEXT]
@@ -458,81 +490,3 @@ CRITICALITY: High
 [/SECTION]
 
 [/SECTION]
-
-[SECTION]
-TITLE: Abstract (Intended) Gateway Functional Requirements
-
-[SECTION]
-TITLE: Abstract (Intended) Gateway Core Functional Requirements
-
-[FREETEXT]
-The following are the functional requirements assumed to be the core of functionality of a vehicle gateway. As is mentioned above, any device which performs one or more of these functions is a gateway device and, furthermore, devices which are not intended to be gateways must have assurances that malicious code will not enable any one of these functionalities.
-[/FREETEXT]
-
-[REQUIREMENT]
-UID: AGW-F-001
-TITLE: Transports
-STATEMENT: These devices SHALL transport/'move' information between two separate network 'domains,' **bi-bidirectionally.**
-
-[REQUIREMENT]
-UID: AGW-F-002
-TITLE: Translates
-STATEMENT: These devices SHALL translate/transform the information between the separate network domains but intentions of the data are preserved.
-
-[SECTION]
-TITLE: Filters: AGW-F-003* Series
-
-[FREETEXT]
-These devices MAY select which information is transported and/or translated between the network domains by satisfying all of these AGW-F-003* requirements:
-[/FREETEXT]
-
-[REQUIREMENT]
-UID: AGW-F-003a
-TITLE: Drops
-STATEMENT: These devices MAY select which information is transported based on rules matching content or metadata before (ingress) or after (egress) processing steps in preparation for transport/translate/encapsulate or other forwarding actions.
-
-[REQUIREMENT]
-UID: AGW-F-003b
-TITLE: Rate Limits
-STATEMENT: These devices MAY select which information is transported in a time varying fashion for the purposes of limiting the rate at which the information is put on a network domain.
-
-[/SECTION]
-
-[REQUIREMENT]
-UID: AGW-F-004
-TITLE: Encapsulates
-STATEMENT: These devices MAY encapsulate information as it is transported and/or translated between the network domains.
-
-[/SECTION]
-
-[SECTION]
-TITLE: Abstract (Intended) Gateway Additional Functional Requirements
-
-[FREETEXT]
-The following are the functional requirements assumed to also be features of intended gateways; however, devices which perform one or more of these functions are not necessarily assumed to be gateway devices -- as was the case with the requirements of the *Abstract (Intended) Gateway Core Functional Requirements* section.
-[/FREETEXT]
-
-[REQUIREMENT]
-UID: AGW-F-007
-TITLE: Controllable
-STATEMENT: These devices SHALL be controllable by users with necessary authentication and authorization.
-
-[REQUIREMENT]
-UID: AGW-F-008
-TITLE: Configurable
-STATEMENT: These devices SHALL be configurable by users with necessary authentication and authorization.
-
-[REQUIREMENT]
-UID: AGW-F-009
-TITLE: Reports
-STATEMENT: These devices SHALL report status of operation to users with necessary authentication and authorization.
-
-[REQUIREMENT]
-UID: AGW-F-010
-TITLE: Diagnoses
-STATEMENT: These devices SHALL provide diagnostic commands to users with necessary authentication and authorization.
-
-[/SECTION]
-
-[/SECTION]
-
