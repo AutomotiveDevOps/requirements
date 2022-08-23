@@ -171,6 +171,9 @@ UID: AGW-S-003
 TITLE: Prevents Spoofing
 STATEMENT: The device SHALL prevent spoofing/masquerading/injection onto *TND*
 CRITICALITY: High
+PUB_REFS: >>> 
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, a. Isolation/partitioning of systems that have external access (e.g., Wi Fi, Bluetooth, OBD) from safety-critical systems and systems that can have important impacts on the operation of the vehicle.
+<<<
 
 [REQUIREMENT]
 UID: AGW-S-004
@@ -194,6 +197,8 @@ TITLE: Prevents Elevation
 STATEMENT: The device SHALL prevent abuse of *TND* network domain functionality from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
 CRITICALITY: High
 PUB_REFS: >>>
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, a. Isolation/partitioning of systems that have external access (e.g., Wi Fi, Bluetooth, OBD) from safety-critical systems and systems that can have important impacts on the operation of the vehicle.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, b. Access control mechanisms to restrict access to critical ECUs, critical modes of every ECU (diagnostic mode), and their data.
 SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, e. Central gateway or domain controller based architectures.
 <<<
 
@@ -210,6 +215,8 @@ STATEMENT: The device SHALL prevent degradation of any *TND* operation due to *U
 CRITICALITY: High
 PUB_REFS: >>>
 SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, a. Isolation/partitioning of systems that have external access (e.g., Wi Fi, Bluetooth, OBD) from safety-critical systems and systems that can have important impacts on the operation of the vehicle.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, b. Access control mechanisms to restrict access to critical ECUs, critical modes of every ECU (diagnostic mode), and their data.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, e. Central gateway or domain controller based architectures.
 <<<
 
 [REQUIREMENT]
