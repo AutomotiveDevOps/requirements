@@ -141,18 +141,30 @@ UID: AGW-S-000
 TITLE: Gateway Configuration Protected
 STATEMENT: The device SHALL accept and react only to configuration changes which are correctly authorized and authenticated, regardless of origin of network domain.
 CRITICALITY: High
+PUB_REFS: >>>    
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, b. Access control mechanisms to restrict access to critical ECUs, critical modes of every ECU (diagnostic mode), and their data.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, g. Mechanisms that effectively secure maintenance operations, including both diagnostic procedures and update procedures.
+<<<
+
 
 [REQUIREMENT]
 UID: AGW-S-001
 TITLE: Prevents OTA
 STATEMENT: The device SHALL prevent Over The Air updates (OTA) (including parameter flash) from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
 CRITICALITY: High
+PUB_REFS: >>>    
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, b. Access control mechanisms to restrict access to critical ECUs, critical modes of every ECU (diagnostic mode), and their data.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, g. Mechanisms that effectively secure maintenance operations, including both diagnostic procedures and update procedures.
+<<<
 
 [REQUIREMENT]
 UID: AGW-S-002
 TITLE: Prevents DoS
 STATEMENT: The device SHALL prevent generating Denial of Service (DoS) on *TND* from messages originating on *UND*.
 CRITICALITY: High
+PUB_REFS: >>> 
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, a. Isolation/partitioning of systems that have external access (e.g., Wi Fi, Bluetooth, OBD) from safety-critical systems and systems that can have important impacts on the operation of the vehicle.
+<<<
 
 [REQUIREMENT]
 UID: AGW-S-003
@@ -172,12 +184,18 @@ The device SHALL prevent exfiltration of data from *TND* to *UND*, or vice-versa
 <<<
 TAGS: CONTAINS_OPTIONS
 CRITICALITY: High
+PUB_REFS: >>>
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, c. Access control mechanisms that tend to restrict access to information about the operational state of the vehicle, privacy sensitive information, financially sensitive information, detailed design information, etc.
+<<<
 
 [REQUIREMENT]
 UID: AGW-S-005
 TITLE: Prevents Elevation
 STATEMENT: The device SHALL prevent abuse of *TND* network domain functionality from *UND* to *TND*, unless with explicitly authorized and authenticated configuration changes via the mode switch.
 CRITICALITY: High
+PUB_REFS: >>>
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, e. Central gateway or domain controller based architectures.
+<<<
 
 [REQUIREMENT]
 UID: AGW-S-006
@@ -190,12 +208,20 @@ UID: AGW-S-007
 TITLE: Preserves High Side Operation
 STATEMENT: The device SHALL prevent degradation of any *TND* operation due to *UND* activity.
 CRITICALITY: High
+PUB_REFS: >>>
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, a. Isolation/partitioning of systems that have external access (e.g., Wi Fi, Bluetooth, OBD) from safety-critical systems and systems that can have important impacts on the operation of the vehicle.
+<<<
 
 [REQUIREMENT]
 UID: AGW-S-008
 TITLE: Security Assurance
 STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
 CRITICALITY: High
+PUB_REFS: >>>
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, b. Access control mechanisms to restrict access to critical ECUs, critical modes of every ECU (diagnostic mode), and their data.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, c. Access control mechanisms that tend to restrict access to information about the operational state of the vehicle, privacy sensitive information, financially sensitive information, detailed design information, etc.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, g. Mechanisms that effectively secure maintenance operations, including both diagnostic procedures and update procedures.
+<<<
 
 [REQUIREMENT]
 UID: AGW-S-009
@@ -225,6 +251,11 @@ The device SHALL have a means to temporarily disable the preventions listed prev
 <<<
 TAGS: CONTAINS_OPTIONS
 CRITICALITY: High
+PUB_REFS: >>>
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, b. Access control mechanisms to restrict access to critical ECUs, critical modes of every ECU (diagnostic mode), and their data.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, c. Access control mechanisms that tend to restrict access to information about the operational state of the vehicle, privacy sensitive information, financially sensitive information, detailed design information, etc.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, g. Mechanisms that effectively secure maintenance operations, including both diagnostic procedures and update procedures.
+<<<
 
 [REQUIREMENT]
 UID: AGW-S-011
@@ -447,6 +478,11 @@ UID: NGW-S-001
 TITLE: Security Assurance
 STATEMENT: These devices SHALL satisfy a comprehensive set of product security requirements to yield high assurance of correct operation in the face of adversarial inputs to the device.
 CRITICALITY: High
+PUB_REFS: >>>
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, b. Access control mechanisms to restrict access to critical ECUs, critical modes of every ECU (diagnostic mode), and their data.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, c. Access control mechanisms that tend to restrict access to information about the operational state of the vehicle, privacy sensitive information, financially sensitive information, detailed design information, etc.
+SAE J3061: Appendix F - VEHICLE LEVEL CONSIDERATIONS, Security Mechanisms, g. Mechanisms that effectively secure maintenance operations, including both diagnostic procedures and update procedures.
+<<<
 
 [SECTION]
 TITLE: Prevents Gateway Functions
@@ -459,6 +495,7 @@ REFS:
 TITLE: Won't Transport
 STATEMENT: These devices SHALL NOT transport/'move' information between two separate network 'domains,' in either bidirection.
 CRITICALITY: High
+
 
 [REQUIREMENT]
 UID: NGW-S-003
