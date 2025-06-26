@@ -1,91 +1,142 @@
-/**
- * This code written by Claude Sonnet 4 (claude-3-5-sonnet-20241022)
- * Generated via Cursor IDE (cursor.sh) with AI assistance
- * Model: Anthropic Claude 3.5 Sonnet
- * Generation timestamp: 2025-06-26T14:41:00Z
- * Context: Conversion of MIL-STD-498 SSS.html.md to StrictDoc format
- * 
- * Technical details:
- * - LLM: Claude 3.5 Sonnet (2024-10-22)
- * - IDE: Cursor (cursor.sh)
- * - Generation method: AI-assisted pair programming
- * - Code style: StrictDoc format, MIL-STD-498 SSS structure
- * - Dependencies: StrictDoc 0.9.1
- */
-
-DOCUMENT
+[DOCUMENT]
 TITLE: MIL-STD-498 SSS (System/Subsystem Specification)
-UID: MIL-STD-498-SSS
-VERSION: 1.0
-CLASSIFICATION: Public
-REQ_TYPE: Specification
-
-CONTENT
-{FREE_TEXT}
-This document is a conversion of the MIL-STD-498 System/Subsystem Specification (SSS) template from Markdown to StrictDoc format. It preserves the original structure and intent, mapping major sections to StrictDoc sections and requirements for traceability and compliance.
-{FREE_TEXT}
 
 [SECTION]
 TITLE: 1. Scope
-UID: SSS-1
-STATEMENT: This section shall be divided into the following paragraphs.
 
-REQUIREMENT
-UID: SSS-1.1
+[SECTION]
 TITLE: 1.1 Identification
-STATEMENT: This paragraph shall contain a full identification of the system to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).
 
-REQUIREMENT
-UID: SSS-1.2
+[/SECTION]
+
+[SECTION]
 TITLE: 1.2 System overview
-STATEMENT: This paragraph shall briefly state the purpose of the system to which this document applies. It shall describe the general nature of the system; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, developer, and support agencies; identify current and planned operating sites; and list other relevant documents.
 
-REQUIREMENT
-UID: SSS-1.3
+[/SECTION]
+
+[SECTION]
 TITLE: 1.3 Document overview
-STATEMENT: This paragraph shall summarize the purpose and contents of this document and shall describe any security or privacy considerations associated with its use.
+
+[/SECTION]
+
+[/SECTION]
 
 [SECTION]
 TITLE: 2. Referenced documents
-UID: SSS-2
-STATEMENT: This section shall list the number, title, revision, and date of all documents referenced in this specification. This section shall also identify the source for all documents not available through normal Government stocking activities.
+
+[/SECTION]
 
 [SECTION]
 TITLE: 3. Requirements
-UID: SSS-3
-STATEMENT: This section shall be divided into the following paragraphs to specify the system requirements, that is, those characteristics of the system that are conditions for its acceptance. Each requirement shall be assigned a project-unique identifier to support testing and traceability and shall be stated in such a way that an objective test can be defined for it. Each requirement shall be annotated with associated qualification method(s) and, for subsystems, traceability to system requirements, if not provided in those sections.
 
 [SECTION]
 TITLE: 3.1 Required states and modes
-UID: SSS-3.1
-STATEMENT: If the system is required to operate in more than one state or mode having requirements distinct from other states or modes, this paragraph shall identify and define each state and mode. If no states or modes are required, this paragraph shall so state. If states and/or modes are required, each requirement or group of requirements in this specification shall be correlated to the states and modes.
+
+[/SECTION]
 
 [SECTION]
 TITLE: 3.2 System capability requirements
-UID: SSS-3.2
-STATEMENT: This paragraph shall be divided into subparagraphs to itemize the requirements associated with each capability of the system. A "capability" is defined as a group of related requirements. The requirements shall specify required behavior of the system and shall include applicable parameters, such as response times, throughput times, other timing constraints, sequencing, accuracy, capacities, priorities, continuous operation requirements, and allowable deviations based on operating conditions.
+
+[/SECTION]
 
 [SECTION]
 TITLE: 3.3 System external interface requirements
-UID: SSS-3.3
-STATEMENT: This paragraph shall be divided into subparagraphs to specify the requirements, if any, for the system's external interfaces. This paragraph may reference one or more Interface Requirements Specifications (IRSs) or other documents containing these requirements.
 
-REQUIREMENT
-UID: SSS-3.3.1
+[SECTION]
 TITLE: 3.3.1 Interface identification and diagrams
-STATEMENT: This paragraph shall identify the required external interfaces of the system. The identification of each interface shall include a project-unique identifier and shall designate the interfacing entities by name, number, version, and documentation references, as applicable. One or more interface diagrams shall be provided to depict the interfaces.
+
+[/SECTION]
+
+[/SECTION]
 
 [SECTION]
 TITLE: 3.4 System internal interface requirements
-UID: SSS-3.4
-STATEMENT: This paragraph shall specify the requirements, if any, imposed on interfaces internal to the system. If all internal interfaces are left to the design or to requirement specifications for system components, this fact shall be so stated.
+
+[/SECTION]
 
 [SECTION]
 TITLE: 3.5 System internal data requirements
-UID: SSS-3.5
-STATEMENT: This paragraph shall specify the requirements, if any, imposed on data internal to the system. Included shall be requirements, if any, on databases and data files to be included in the system.
+
+[/SECTION]
 
 [SECTION]
 TITLE: 3.6 Adaptation requirements
-UID: SSS-3.6
-STATEMENT: This paragraph shall specify the requirements, if any, concerning installation-dependent data that the system is required to provide and operational parameters that the system is required to use that may vary according to operational needs. 
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.7 Sizing and timing requirements
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.8 Safety requirements
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.9 Security and privacy requirements
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.10 Environment requirements
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.11 Computer resource requirements
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.12 System quality factors
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.13 Design and implementation constraints
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.14 Personnel-related requirements
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.15 Training-related requirements
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.16 Logistics-related requirements
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.17 Other requirements
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.18 Packaging requirements
+
+[/SECTION]
+
+[/SECTION]
+
+[SECTION]
+TITLE: 4. Qualification provisions
+
+[/SECTION]
+
+[SECTION]
+TITLE: 5. Requirements traceability
+
+[/SECTION]
+
+[SECTION]
+TITLE: 6. Notes
+
+[/SECTION]
