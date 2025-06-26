@@ -1,0 +1,52 @@
+[DOCUMENT]
+TITLE: MIL-STD-498 DBDD (Database Design Description)
+
+[SECTION]
+TITLE: 1. Scope
+
+[SECTION]
+TITLE: 1.1 Identification
+
+[/SECTION]
+
+[SECTION]
+TITLE: 1.2 Database overview
+
+[/SECTION]
+
+[SECTION]
+TITLE: 1.3 Document overview
+
+[/SECTION]
+
+[/SECTION]
+
+[SECTION]
+TITLE: 2. Referenced documents
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3. Database-wide design decisions
+
+[/SECTION]
+
+[SECTION]
+TITLE: 4. Detailed design of the database
+
+[/SECTION]
+
+[SECTION]
+TITLE: 5. Detailed design of software units used for database access or manipulation
+
+[/SECTION]
+
+[SECTION]
+TITLE: 6. Requirements traceability
+
+[/SECTION]
+
+[SECTION]
+TITLE: 7. Notes
+
+[/SECTION]
