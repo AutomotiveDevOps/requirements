@@ -1,7 +1,7 @@
 :root {
   --requirement-tree-line-width: 1px;
   --requirement-tree-line-color: var(--color-border);
-  --requirement-tree-margin: 2rem;
+  --requirement-tree-margin: var(--tree-gap);
   --requirement-tree-downward-margin: calc(var(--requirement-tree-margin)*.5);
   --requirement-tree-downward-string-margin: calc(var(--requirement-tree-downward-margin)*0.25);
   --requirement-tree-line: var(--requirement-tree-line-width) solid;
@@ -70,7 +70,7 @@
   max-width: var(--card-width);
 }
 
-.requirements-coverage-view .requirement-tree_node {
+[data-viewtype="requirements-coverage"] .requirement-tree_node {
   width: calc(var(--card-width)*0.75);
 }
 
@@ -89,6 +89,7 @@
   border-left: var(--requirement-tree-line);
   transform-origin: top left;
   transform: rotate(-45deg);
+  z-index: 2;
 }
 
 .requirement-tree_left .requirement-tree_node::before {
@@ -104,6 +105,7 @@
   border-left: var(--requirement-tree-line);
   transform-origin: top left;
   transform: rotate(-45deg);
+  z-index: 2;
 }
 
 /* corner connector to node */
@@ -205,7 +207,7 @@
   line-height: 1.2;
 }
 
-.requirement-tree_downward .requirement-tree_downward_node {
+.requirement-tree_downward_node {
   position: relative;
   border-left: var(--requirement-tree-downward-line);
 }
@@ -246,7 +248,8 @@
   /* margin-left: calc(var(--requirement-tree-downward-margin) + var(--requirement-tree-downward-string-margin)); */
   margin-left: calc(var(--requirement-tree-downward-margin) - 0.25rem);
 
-  
+  border-radius: 4px;
+  overflow: clip;
   border: 1px solid var(--requirement-tree-line-color);
   background-color: var(--color-bg-main);
 
@@ -272,9 +275,9 @@
 
 /* hover */
 
-.requirement-tree_node:hover + .requirement-tree::before,
+/* .requirement-tree_node:hover + .requirement-tree::before,
 .requirement-tree_node:hover + .requirement-tree .requirement-tree::before,
 .requirement-tree_node:hover + .requirement-tree .requirement-tree_branch::before,
 .requirement-tree_node:hover + .requirement-tree .requirement-tree_branch::after {
   border-width: 2px;
-}
+} */
