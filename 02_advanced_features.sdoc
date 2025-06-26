@@ -1,0 +1,86 @@
+[DOCUMENT]
+TITLE: Advanced StrictDoc Features Example
+
+[SECTION]
+TITLE: System Overview
+
+This document demonstrates advanced StrictDoc features including requirements, links, references, and structured content.
+
+[REQUIREMENT]
+UID: REQ-001
+TITLE: System Authentication
+STATEMENT: The system shall provide secure user authentication using multi-factor authentication (MFA).
+RATIONALE: Security is critical for protecting user data and system integrity.
+TAGS: security, authentication, mfa
+LEVEL: High
+STATUS: Draft
+
+[REQUIREMENT]
+UID: REQ-002
+TITLE: Data Encryption
+STATEMENT: All sensitive data shall be encrypted at rest and in transit using AES-256 encryption.
+RATIONALE: Data protection compliance and security best practices require encryption.
+TAGS: security, encryption, compliance
+LEVEL: High
+STATUS: Approved
+
+[/SECTION]
+
+[SECTION]
+TITLE: Technical Requirements
+
+[REQUIREMENT]
+UID: REQ-003
+TITLE: API Response Time
+STATEMENT: The API shall respond within 200ms for 95% of requests under normal load conditions.
+RATIONALE: User experience requires fast response times for interactive applications.
+TAGS: performance, api, user-experience
+LEVEL: Medium
+STATUS: In Review
+
+[REQUIREMENT]
+UID: REQ-004
+TITLE: Database Backup
+STATEMENT: The system shall perform automated daily backups with point-in-time recovery capability.
+RATIONALE: Data protection and disaster recovery require reliable backup mechanisms.
+TAGS: backup, disaster-recovery, data-protection
+LEVEL: High
+STATUS: Approved
+
+[/SECTION]
+
+[SECTION]
+TITLE: User Interface Requirements
+
+[REQUIREMENT]
+UID: REQ-005
+TITLE: Responsive Design
+STATEMENT: The user interface shall be responsive and work on devices with screen sizes from 320px to 1920px width.
+RATIONALE: Users access the system from various devices including mobile phones and desktop computers.
+TAGS: ui, responsive, accessibility
+LEVEL: Medium
+STATUS: Draft
+
+[REQUIREMENT]
+UID: REQ-006
+TITLE: Accessibility Compliance
+STATEMENT: The user interface shall comply with WCAG 2.1 AA standards for accessibility.
+RATIONALE: Ensuring accessibility for users with disabilities is both a legal requirement and good practice.
+TAGS: accessibility, compliance, wcag
+LEVEL: High
+STATUS: In Review
+
+[/SECTION]
+
+[SECTION]
+TITLE: References and Links
+
+This section demonstrates how to include references and links in StrictDoc documentation.
+
+REFERENCE: https://www.w3.org/WAI/WCAG21/quickref/
+TITLE: WCAG 2.1 Quick Reference
+
+REFERENCE: https://owasp.org/www-project-top-ten/
+TITLE: OWASP Top 10 Security Risks
+
+[/SECTION] 
