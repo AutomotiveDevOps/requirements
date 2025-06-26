@@ -1,0 +1,3 @@
+[console_scripts]
+pyspdxtools = spdx_tools.spdx.clitools.pyspdxtools:main
+pyspdxtools3 = spdx_tools.spdx3.clitools.pyspdxtools3:main

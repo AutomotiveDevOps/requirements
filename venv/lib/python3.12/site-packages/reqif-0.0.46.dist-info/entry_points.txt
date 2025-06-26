@@ -1,0 +1,2 @@
+[console_scripts]
+reqif = reqif.cli.main:main

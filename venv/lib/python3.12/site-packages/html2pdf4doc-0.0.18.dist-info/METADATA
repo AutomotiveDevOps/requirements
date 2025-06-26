@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: html2pdf4doc
+Version: 0.0.18
+Summary: Python client for HTML2PDF4Doc JavaScript library.
+Project-URL: Changelog, https://github.com/mettta/html2pdf_python/releases/
+Project-URL: Homepage, https://github.com/mettta/html2pdf_python/
+Project-URL: Source, https://github.com/mettta/html2pdf_python/
+Author-email: Stanislav Pankevich <s.pankevich@gmail.com>, Maryna Balioura <mettta@gmail.com>
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: requests
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Provides-Extra: development
+Requires-Dist: invoke>=1.4.1; extra == 'development'
+Requires-Dist: tox>=4.4.8; extra == 'development'

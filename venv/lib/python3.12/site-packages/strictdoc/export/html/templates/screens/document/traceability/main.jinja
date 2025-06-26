@@ -1,0 +1,55 @@
+{%- if view_object.has_any_nodes() -%}
+  <div class="main">
+    {% include "_shared/tags.jinja.html" %}
+      <div class="content">
+        {%- for node, _ in view_object.document_content_iterator() %}
+          {%- if node.is_section() %}
+            <section class="content_section">
+              <div class="content_item" data-role="parents"></div>
+              <div class="content_item" data-role="current">
+                {%- set section = node %}
+                {% include "components/section/card_extends_card.jinja" %}
+              </div>
+              <div class="content_item" data-role="children"></div>
+            </section>
+          {%- elif node.is_requirement() %}
+            {%- if node.is_text_node() %}
+              <section class="content_section">
+                <div class="content_item" data-role="parents"></div>
+                <div class="content_item" data-role="current">
+                  {%- set text_node = node %}
+                  {% include "components/text_node/card_extends_card.jinja" %}
+                </div>
+                <div class="content_item" data-role="children"></div>
+              </section>
+            {% else %}
+              <section class="content_section">
+                <div class="content_item" data-role="parents">
+                  {%- with requirement=node, requirement_partial="components/node_content/card_extends_card.jinja" -%}
+                    {% include "_shared/requirement_tree_left.jinja.html" %}
+                  {%- endwith -%}
+                </div>
+                <div class="content_item" data-role="current">
+                  {%- set requirement = node %}
+                  {% include "components/node_content/card_extends_card.jinja" %}
+                </div>
+                <div class="content_item" data-role="children">
+                  {%- with requirement=node, requirement_partial="components/node_content/card_extends_card.jinja" -%}
+                    {% include "_shared/requirement_tree_right.jinja.html" %}
+                  {%- endwith -%}
+                </div>
+              </section>
+            {% endif %}
+          {%- endif %}
+        {%- endfor %}
+      </div>
+  </div>
+  {# /.main #}
+{%- else -%}
+  <sdoc-main-placeholder data-testid="document-main-placeholder">
+    This view is empty because
+    <br/>
+    the document has no content.
+  </sdoc-main-placeholder>
+{%- endif -%}
+

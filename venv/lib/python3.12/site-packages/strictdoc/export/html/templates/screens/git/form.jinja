@@ -1,0 +1,44 @@
+<sdoc-form sticky diff>
+  <form
+    action="/diff"
+    method="GET"
+  >
+
+        <input
+          type="text"
+          {% if view_object.left_revision is not none %}
+          value="{{ view_object.left_revision }}"
+          {% else %}
+          value=""
+          {% endif %}
+          placeholder="Enter the LHS revision here"
+          id="left_revision"
+          name="left_revision"
+          data-testid="diff-screen-field-lhs"
+        />
+        {% include "components/button/diff.jinja" %}
+        <input
+          type="text"
+          {% if view_object.right_revision is not none %}
+          value="{{ view_object.right_revision }}"
+          {% else %}
+          value=""
+          {% endif %}
+          placeholder="Enter the RHS revision here"
+          id="right_revision"
+          name="right_revision"
+          data-testid="diff-screen-field-rhs"
+        />
+        <input
+          type="hidden"
+          value="{{ view_object.tab }}"
+          name="tab"
+        />
+
+  </form>
+
+  {% if view_object.error_message is not none %}
+    <div class="sdoc-form-error">{{ view_object.error_message }}</div>
+  {% endif %}
+
+</sdoc-form>

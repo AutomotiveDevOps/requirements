@@ -1,0 +1,70 @@
+{%- extends "components/form/row/index.jinja" %}
+
+{% assert text_field_row_context is defined, "row_with_text: row_context must be defined." %}
+{% assert text_field_row_context.errors is defined, "row_with_text: errors must be defined." %}
+{% assert text_field_row_context.field is defined, "row_with_text: field must be defined." %}
+{% assert text_field_row_context.field_type is defined, "row_with_text: field_type must be defined." %}
+{% assert text_field_row_context.field_type in ("singleline", "multiline"), "row_with_text: field_type must be singleline or multiline." %}
+
+{%- set row_context = text_field_row_context -%}
+{# FIXME: Rewrite everything to just form_object. #}
+{%- set form_object = text_field_row_context -%}
+
+{% block row_form_attributes %}
+{# Explicitly no attributes. #}
+{% endblock row_form_attributes %}
+
+{% block row_left %}
+  {# Explicitly nothing. #}
+{% endblock row_left %}
+
+{% block row_content scoped %}
+
+  {%- if form_object.errors|length > 0 -%}
+    {%- for error_ in form_object.errors -%}
+    <sdoc-form-error>
+      {{ error_ }}
+    </sdoc-form-error>
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- set placeholder_name = text_field_row_context.field.field_name %}
+
+  {%- with
+    mid = text_field_row_context.field.field_mid,
+    field_class_name = none,
+    field_editable = text_field_row_context.field_editable,
+    field_input_name = text_field_row_context.field.get_input_field_name(),
+    field_label = text_field_row_context.field.field_name,
+    field_placeholder = "Enter "~placeholder_name~" here...",
+    field_type = text_field_row_context.field_type,
+    field_value = text_field_row_context.field.field_value,
+    testid_postfix = text_field_row_context.field.field_name
+  %}
+    {%- if text_field_row_context.field.is_autocompletable() -%}
+      {#- Setting autocomplete_len to "0" will cause the sdoc-autocompletable
+          to act like a drop-down, (i.e. show all options on click) -#}
+      {%- with
+        autocomplete_url = "/autocomplete/field?document_mid="~document_mid~"&element_type="~element_type~"&field_name="~field_label,
+        result_class_name = "requirement__link",
+        autocomplete_len = "0",
+        autocomplete_multiplechoice = text_field_row_context.field.is_multiplechoice()
+      %}
+        {%- include "components/form/field/autocompletable/index.jinja" %}
+      {%- endwith -%}
+    {%- else -%}
+      {%- include "components/form/field/contenteditable/index.jinja" %}
+    {%- endif -%}
+  {%- endwith -%}
+
+  <input
+    type="hidden"
+    name="{{ text_field_row_context.field.get_input_field_type_name() }}"
+    value="{{ text_field_row_context.field.field_name }}"
+  />
+
+{% endblock row_content %}
+
+{% block row_right %}
+  {# Explicitly nothing. #}
+{% endblock row_right %}

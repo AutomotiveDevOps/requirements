@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: strictdoc
+Version: 0.9.1
+Summary: StrictDoc is open-source software for technical documentation and requirements management.
+Project-URL: Changelog, https://github.com/strictdoc-project/strictdoc/blob/main/CHANGELOG.md
+Project-URL: Homepage, https://strictdoc.readthedocs.io/en/stable/
+Project-URL: Source, https://github.com/strictdoc-project/strictdoc
+Author-email: Stanislav Pankevich <s.pankevich@gmail.com>, Maryna Balioura <mettta@gmail.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+License-File: NOTICE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: beautifulsoup4==4.*,>=4.12.0
+Requires-Dist: docutils==0.*,>=0.16
+Requires-Dist: fastapi>=0.83.0
+Requires-Dist: html2pdf4doc>=0.0.18
+Requires-Dist: html5lib>=1.1
+Requires-Dist: jinja2>=2.11.2
+Requires-Dist: lark>=1.2.2
+Requires-Dist: openpyxl>=3.1.0
+Requires-Dist: pygments==2.*,>=2.10.0
+Requires-Dist: python-datauri==2.*,>=2.1.1
+Requires-Dist: python-multipart
+Requires-Dist: reqif==0.*,>=0.0.39
+Requires-Dist: robotframework>=4.0.0
+Requires-Dist: spdx-tools
+Requires-Dist: textx==4.*,>=4.0.0
+Requires-Dist: toml
+Requires-Dist: tree-sitter
+Requires-Dist: tree-sitter-cpp
+Requires-Dist: tree-sitter-python
+Requires-Dist: uvicorn[standard]>=0.14.0
+Requires-Dist: websockets
+Requires-Dist: xlrd==2.*,>=2.0.1
+Requires-Dist: xlsxwriter==1.*,>=1.3.7
+Provides-Extra: development
+Requires-Dist: invoke>=1.4.1; extra == 'development'
+Requires-Dist: tox>=4.4.8; extra == 'development'
+Provides-Extra: nuitka
+Requires-Dist: nuitka; extra == 'nuitka'
+Requires-Dist: ordered-set; extra == 'nuitka'
+Description-Content-Type: text/markdown
+
+# StrictDoc
+
+The documentation is hosted on Read the Docs:
+[StrictDoc documentation](https://strictdoc.readthedocs.io/en/stable/).

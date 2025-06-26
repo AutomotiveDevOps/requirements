@@ -1,0 +1,35 @@
+{% set requirement_change = view_object.change_stats.find_change(requirement) %}
+
+<details
+  class="diff_node"
+  {% if requirement_change is not none %}
+    modified="{{ side }}"
+  {% endif %}
+>
+  <summary>
+    {%- with badge_text = "TEXT" if requirement.is_text_node() else "R" -%}
+      {%- include "components/badge/index.jinja" -%}
+    {%- endwith -%}
+    <span>
+      {{ requirement.context.title_number_string if requirement.context.title_number_string else "&nbsp;"|safe * (requirement.ng_level * 2 - 1) }}
+    </span>
+    {%- if requirement.reserved_title is not none -%}
+      <span>
+        {{ requirement.reserved_title }}
+      </span>
+    {%- endif -%}
+    {%- if tab == "diff" -%}
+      {%- if requirement_change is not none -%}
+        {%- set requirement_token = requirement_change.requirement_token -%}
+        {%- if requirement_token is not none -%}
+          {%- with uid=requirement_token -%}
+            {%- include "screens/git/sync/button.jinja" -%}
+          {%- endwith -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  </summary>
+
+  {% include "screens/git/fields/requirement_fields.jinja" %}
+
+</details>

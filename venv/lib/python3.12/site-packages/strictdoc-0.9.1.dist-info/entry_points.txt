@@ -1,0 +1,2 @@
+[console_scripts]
+strictdoc = strictdoc.cli.main:main

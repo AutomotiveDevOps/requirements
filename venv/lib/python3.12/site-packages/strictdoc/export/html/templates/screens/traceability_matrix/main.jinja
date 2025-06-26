@@ -1,0 +1,100 @@
+<div
+  class="main"
+  js-pan_with_space="true"
+>
+
+  <table class="traceability_matrix">
+    <thead class="traceability_matrix__thead">
+      <tr>
+        <th>
+          Node
+        </th>
+
+        {% for known_relation_ in view_object.known_relations_list %}
+          <th>
+          {{ known_relation_[0] }}
+          {% if known_relation_[1] is not none %}
+          [{{ known_relation_[1] }}]
+          {% endif %}
+          </th>
+        {% endfor %}
+      </tr>
+    </thead>
+
+    <tbody>
+    {%- for document in view_object.iterate_documents() -%}
+      <tr class="traceability_matrix__anchor" id="{{ loop.index }}">
+        <td class="traceability_matrix__document" colspan="100">
+          <div class="traceability_matrix__document_line">
+          {% include "_res/svg_ico16_document.jinja.html" %}
+            {{ document.title }}
+            <div class="traceability_matrix__document_stat">
+              {# <span class="badge" text="88%"></span> #}
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      {%- set document_iterator = view_object.traceability_index.get_document_iterator(document) -%}
+
+      {%- for section_or_requirement, _ in document_iterator.all_content(print_fragments=True, print_fragments_from_files=False) %}
+        {%- if section_or_requirement.is_requirement() and not section_or_requirement.is_text_node() %}
+          <tr>
+            <td>
+              {%- set requirement = section_or_requirement %}
+              {%- with
+                anchor=view_object.render_local_anchor(section_or_requirement)
+              -%}
+                {% include "screens/traceability_matrix/requirement.jinja.html" %}
+              {%- endwith -%}
+            </td>
+
+            {% for known_relation_ in view_object.known_relations_list %}
+              <td>
+              {% if known_relation_[0] == "Parent" %}
+                {% for parent_requirement_, _ in view_object.traceability_index.get_parent_relations_with_role(requirement, known_relation_[1]) %}
+                  {%- with
+                    relation_type="parent",
+                    anchor=view_object.render_local_anchor(parent_requirement_),
+                    requirement=parent_requirement_
+                  -%}
+                    {% include "screens/traceability_matrix/requirement.jinja.html" %}
+                  {%- endwith -%}
+                {% endfor %}
+
+                {% for child_requirement_, _ in view_object.traceability_index.get_child_relations_with_role(requirement, known_relation_[1]) %}
+                  {%- with
+                    relation_type="child",
+                    anchor=view_object.render_local_anchor(child_requirement_),
+                    requirement=child_requirement_
+                  -%}
+                    {% include "screens/traceability_matrix/requirement.jinja.html" %}
+                  {%- endwith -%}
+                {% endfor %}
+              {% elif known_relation_[0] == "File" %}
+                {% if view_object.project_config.is_activated_requirements_to_source_traceability() %}
+                  {% include "screens/traceability_matrix/file.jinja" %}
+                {% endif %}
+              {% endif %}
+              </td>
+            {% endfor %}
+
+          </tr>
+        {%- endif %}
+      {%- endfor %}
+
+      {%- if not document.has_any_requirements() %}
+        <tr>
+          <td colspan="100"><div class="traceability_matrix__placeholder">No traceable content.</div></td>
+        </tr>
+      {%- endif %}
+
+      <tr>
+        <td class="traceability_matrix__null" colspan="100"></td>
+      </tr>
+
+    {%- endfor %}
+    </tbody>
+  </table>
+</div>
+{# /.main #}

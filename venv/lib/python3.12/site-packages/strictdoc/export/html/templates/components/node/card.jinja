@@ -1,0 +1,24 @@
+{# needs sdoc_entity #}
+
+  <sdoc-node
+    node-style="card"
+    node-role="{{ sdoc_entity.get_type_string() }}"
+    data-testid="node-{{ sdoc_entity.get_type_string() }}"
+  >
+
+    {# anchor #}
+    {% include "components/anchor/index.jinja" %}
+
+    {# sdoc_entity #}
+    {% block sdoc_entity %}
+    {# {% include "components/"~sdoc_entity.get_type_string()~"/card.jinja" %} #}
+    {% endblock sdoc_entity %}
+
+    {# node_controls #}
+    {%- if view_object.project_config.is_running_on_server -%}
+      {%- if node_controls is defined -%}
+      {% include "components/node/node_controls/card.jinja" %}
+      {%- endif -%}
+    {%- endif -%}
+
+  </sdoc-node>

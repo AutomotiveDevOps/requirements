@@ -1,0 +1,19 @@
+{#
+  render_source_file_link --- works in documents
+  render_source_file_link_from_root --- works in files
+#}
+
+{%- set requirement_file_links = view_object.traceability_index.get_requirement_file_links(requirement) %}
+{%- if requirement_file_links %}
+
+  {%- for link, markers in requirement_file_links %}
+    {%- for marker in markers %}
+        <div class="traceability_matrix__file" with_relation="file">
+          <a data-turbo="false" class="" href="{{ view_object.link_renderer.render_source_file_link_from_root(link) }}#{{ requirement.reserved_uid }}#{{ marker.ng_range_line_begin }}#{{ marker.ng_range_line_end }}">
+            <b>[ {{ marker.ng_range_line_begin }}-{{ marker.ng_range_line_end }} ]</b> {{ link }}
+          </a>
+        </div>
+    {%- endfor -%}
+  {%- endfor -%}
+
+{%- endif %}

@@ -1,0 +1,134 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "strictdoc/__init__.py"
+
+[tool.hatch.build]
+include = [
+    "/strictdoc/",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "pyproject.toml"
+]
+
+exclude = [
+    # Without this, the folder is still included to the output tar.gz because it has a Markdown file.
+    "/developer",
+]
+
+[project]
+name = "strictdoc"
+dynamic = ["version"]
+description = "StrictDoc is open-source software for technical documentation and requirements management."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.8"
+authors = [
+    { name = "Stanislav Pankevich", email = "s.pankevich@gmail.com" },
+    { name = "Maryna Balioura", email = "mettta@gmail.com" },
+]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+# @sdoc[SDOC-SRS-89]
+dependencies = [
+    "textx >= 4.0.0, == 4.*",
+    "lark >= 1.2.2",
+
+    "jinja2 >= 2.11.2",
+    # Reading project config from strictdoc.toml file.
+    "toml",
+
+    # Parsing and rendering RST.
+    "docutils >= 0.16, == 0.*",
+
+    # Tree Sitter is used for language/AST-aware parsing of Python, C and other files.
+    "tree-sitter",
+    "tree_sitter_cpp",
+    "tree-sitter-python",
+
+    # Requirements-to-source traceability. Colored syntax for source files.
+    "pygments >= 2.10.0, == 2.*",
+
+    # Static HTML export with embedded assets.
+    "beautifulsoup4 >= 4.12.0, == 4.*",
+    "html5lib>=1.1",  # Used by beautifulsoup4 as an optional plugin.
+    "python-datauri >= 2.1.1, == 2.*",
+
+    # Excel
+    "XlsxWriter >= 1.3.7, == 1.*",
+    "xlrd >= 2.0.1, == 2.*",
+    "openpyxl >= 3.1.0",
+
+    # ReqIF
+    "reqif >= 0.0.39, == 0.*",
+
+    # SPDX
+    "spdx-tools",
+
+    # Web server dependencies
+    "fastapi >= 0.83.0",
+    # FastAPI: To receive uploaded files and/or form data, first install python-multipart.
+    "python-multipart",
+    "uvicorn[standard] >= 0.14.0",
+    "WebSockets",
+
+    # HTML2PDF dependencies
+    "html2pdf4doc >= 0.0.18",
+
+    # Robot Framework dependencies
+    "robotframework >= 4.0.0",
+]
+# @sdoc[/SDOC-SRS-89]
+
+[project.optional-dependencies]
+development = [
+    # Development tasks
+    "invoke>=1.4.1",
+    "tox>=4.4.8",
+]
+nuitka = [
+    # Nuitka:WARNING: Using very slow fallback for ordered sets, please install
+    # 'ordered-set' PyPI package for best Python compile time performance.
+    "nuitka",
+    "ordered-set",
+]
+
+[project.scripts]
+strictdoc = "strictdoc.cli.main:main"
+
+[project.urls]
+Changelog = "https://github.com/strictdoc-project/strictdoc/blob/main/CHANGELOG.md"
+Homepage = "https://strictdoc.readthedocs.io/en/stable/"
+Source = "https://github.com/strictdoc-project/strictdoc"
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+pythonpath = [
+  "."
+]
+
+[tool.fixit]
+enable = [
+    ".developer.fixit.check_comments",
+    ".developer.fixit.check_docstrings",
+]
+
+# FIXME: Remove disable.
+disable = [
+    "fixit.rules"
+]

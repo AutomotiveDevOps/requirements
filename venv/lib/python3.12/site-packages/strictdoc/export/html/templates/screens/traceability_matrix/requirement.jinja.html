@@ -1,0 +1,30 @@
+{% assert requirement is defined and requirement is not none %}
+
+<sdoc-node
+  node-style="card"
+  node-role="requirement"
+  js-requirements-coverage
+  {%- if requirement.reserved_status %}
+  data-status='{{ requirement.reserved_status.lower() }}'
+  {%- endif %}
+  {%- if requirement.reserved_uid %}
+  data-uid='{{ requirement.reserved_uid }}'
+  {%- endif %}
+>
+  <div
+    class="traceability_matrix__requirement"
+    {% if relation_type is defined %}
+    with_relation="{{ relation_type }}"
+    {% endif %}
+    data-level="{{ requirement.context.title_number_string }}"
+  >
+    <small><b {% if requirement.reserved_uid is none %}style="color:red"{% endif %}>{{ requirement.reserved_uid if requirement.reserved_uid else '[No UID]' }}</b></small>
+    <br/>
+    {%- if requirement.reserved_title -%}
+      {%- if requirement.context.title_number_string %}
+        {{ requirement.context.title_number_string }}.&nbsp;
+      {%- endif -%}
+      {{ requirement.reserved_title }}
+    {%- endif %}
+  </div>
+</sdoc-node>

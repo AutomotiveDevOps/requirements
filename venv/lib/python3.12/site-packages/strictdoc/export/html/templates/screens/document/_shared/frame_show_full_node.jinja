@@ -1,0 +1,6 @@
+{% extends "components/modal/index.jinja" %}
+{%- block modal_container %}
+  {%- set sdoc_entity = requirement -%}
+  {%- set node = requirement -%}
+  {% include "components/node_content/index_extends_readonly.jinja" %}
+{% endblock modal_container %}

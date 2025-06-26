@@ -1,0 +1,60 @@
+{% set template_type = "Project index" %}
+
+{% extends "base.jinja.html" %}
+
+{% block head_css %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ view_object.render_static_url('project_tree.css') }}"/>
+{% endblock head_css %}
+
+{% block head_scripts %}
+  <script src="{{ view_object.render_static_url_with_prefix('stimulus_umd.min.js') }}"></script>
+  <script>
+    Stimulus.application = Stimulus.Application.start();
+  </script>
+
+  <script src="{{ view_object.render_static_url('collapsible_tree.js') }}"></script>
+  <script src="{{ view_object.render_static_url('stable_uri_forwarder.js') }}" id="stable_uri_forwarder"></script>
+
+  {# FIXME by @mettta:
+       Right now, project_tree.js only contains a switch for
+       showing/hiding included documents, so disabling the whole
+       project.js file is ok. When it does more, find a way to
+       deactivate the "included documents" switch with a more
+       fine-grained approach.
+  #}
+  <script src="{{ view_object.render_static_url('project_tree.js') }}"></script>
+{%- if view_object.project_config.is_running_on_server and not view_object.standalone -%}
+  <script type="module">
+    import hotwiredTurbo from "{{ view_object.render_static_url_with_prefix('turbo.min.js') }}";
+  </script>
+  <script src="{{ view_object.render_static_url('controllers/editable_field_controller.js') }}"></script>
+  <script src="{{ view_object.render_static_url('controllers/modal_controller.js') }}"></script>
+{%- endif -%}
+{% endblock head_scripts %}
+
+{% block title %}
+  {{ view_object.project_config.project_title }} - {{ template_type }}
+{% endblock title %}
+
+{% block viewtype %}document-tree{% endblock viewtype %}
+
+{% block layout_nav %}
+  {% include "_shared/nav.jinja.html" %}
+{% endblock layout_nav %}
+
+{% block toc_content %}
+{% endblock toc_content %}
+
+{% block header_content %}
+  {%- with
+      header__pagetype=template_type,
+      header__last="screens/project_index/actions.jinja"
+  -%}
+    {% include "components/header/index.jinja" %}
+  {%- endwith -%}
+{% endblock header_content %}
+
+{% block main_content %}
+  {% include "screens/project_index/main.jinja" %}
+{% endblock main_content %}

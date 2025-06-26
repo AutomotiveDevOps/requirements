@@ -1,0 +1,11 @@
+<turbo-frame id="diff_result">
+{% if view_object.results %}
+  <div class="changelog preloaded">
+
+      {%- with tab="changelog" -%}
+        {% include "screens/git/changelog_content.jinja" %}
+      {%- endwith -%}
+
+  </div>
+{% endif %}
+</turbo-frame>

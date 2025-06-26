@@ -1,0 +1,27 @@
+{# needs sdoc_entity, see README.txt #}
+  {%- if view_object.project_config.is_activated_requirements_to_source_traceability() -%}
+    {%- set requirement_file_links = view_object.traceability_index.get_requirement_file_links(sdoc_entity) %}
+    {%- if requirement_file_links is not none and requirement_file_links|length > 0 %}
+      <sdoc-node-field-label>file relations:</sdoc-node-field-label>
+      <sdoc-node-field data-field-label="file relations">
+        <ul class="requirement__link">
+          {%- for link, markers in requirement_file_links %}
+            {%- for marker in markers %}
+              <li>
+                <a data-turbo="false" class="requirement__link-file" href="{{ view_object.link_renderer.render_source_file_link(sdoc_entity, link) }}#{{ sdoc_entity.reserved_uid }}#{{ marker.ng_range_line_begin }}#{{ marker.ng_range_line_end }}">
+                  {{ link }}, <i>lines: {{ marker.ng_range_line_begin }}-{{ marker.ng_range_line_end }}</i>
+                  {%- set description = marker.get_description() -%}
+                  {%- if description -%}
+                    , {{ description }}
+                  {%- endif -%}
+                  {% if marker.role is not none %}
+                      <span class="requirement__type-tag">({{ marker.role }})</span>
+                  {% endif %}
+                </a>
+              </li>
+            {%- endfor -%}
+          {%- endfor -%}
+        </ul>
+      </sdoc-node-field>
+    {%- endif %}
+  {%- endif %}

@@ -1,0 +1,2 @@
+[console_scripts]
+html2pdf4doc = html2pdf4doc.html2pdf4doc:main

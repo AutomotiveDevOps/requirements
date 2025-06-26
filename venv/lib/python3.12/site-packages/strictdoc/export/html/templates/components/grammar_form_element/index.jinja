@@ -1,0 +1,98 @@
+{% extends "components/modal/form.jinja" %}
+{% set form = "sdoc_modal_form" %}
+{% block modal__context %}form{% endblock modal__context %}
+{% block modal_form__header %}
+<turbo-frame>
+  <a
+    href="/actions/document/edit_grammar?document_mid={{ form_object.document_mid }}"
+    data-testid="back-link-grammar-element"
+    class="sdoc-modal-header-back-button"
+    data-turbo="true"
+    data-turbo-action="replace"
+  >←</a>Edit grammar element: {{ form_object.element_name }}
+</turbo-frame>
+{% endblock modal_form__header %}
+{% block modal_form__content %}
+  <form
+    id="{{ form }}"  {# defined in the parent template #}
+    method="POST"
+    data-turbo="true"
+    action="/actions/document/save_grammar_element"
+    data-controller="tabs"
+    >
+    <input type="hidden" id="document_mid" name="document_mid" value="{{ form_object.document_mid }}"/>
+    <input type="hidden" id="element_mid" name="element_mid" value="{{ form_object.element_mid }}"/>
+
+    {# Fields TAB #}
+    <sdoc-tab-content id="Fields" active>
+      <sdoc-form-descr>
+        <b>StrictDoc conventions:</b>
+        <br/>
+        The requirements fields above the reserved "TITLE" field are dedicated to meta information and will be rendered as single-line. The fields below the reserved "STATEMENT" field are multiline and should be used for fields with more descriptive text.
+      </sdoc-form-descr>
+
+      <sdoc-form-grid>
+        <div style="display: contents;" id="document__editable_grammar_fields">
+          {%- for field_ in form_object.fields -%}
+            {%- if field_.reserved -%}
+              {{ form_object.render_row_with_reserved_field(field_) }}
+            {%- else -%}
+              {{ form_object.render_row_with_custom_field(field_) }}
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </sdoc-form-grid>
+
+      <sdoc-form-footer>
+        <a
+          class="action_button"
+          href="/actions/document/add_grammar_field?document_mid={{ form_object.document_mid }}"
+          data-turbo="true"
+          data-action-type="add_field"
+          data-testid="form-action-add-grammar-field"
+          {# TODO: https://github.com/strictdoc-project/strictdoc/issues/884 #}
+          onclick="setTimeout(()=> {this.scrollIntoView()}, 100)"
+        >{% include "_res/svg_ico16_add.jinja.html" %} Add grammar field</a>
+      </sdoc-form-footer>
+
+    </sdoc-tab-content>
+
+    {# Relations TAB #}
+    <sdoc-tab-content id="Relations">
+
+      {# <sdoc-form-descr>
+      </sdoc-form-descr> #}
+
+      <sdoc-form-grid>
+        <div style="display: contents;" id="document__editable_grammar_relations">
+          {%- set errors_ = form_object.get_errors("Relations_Row") %}
+          {%- if errors_|length > 0 -%}
+            {%- for error_ in errors_ -%}
+            <sdoc-form-error>
+              {{ error_ }}
+            </sdoc-form-error>
+            {%- endfor -%}
+          {%- endif -%}
+
+          {%- for relation_ in form_object.relations -%}
+            {{ form_object.render_row_with_relation(relation_) }}
+          {%- endfor -%}
+        </div>
+      </sdoc-form-grid>
+
+      <sdoc-form-footer>
+        <a
+          class="action_button"
+          href="/actions/document/add_grammar_relation?document_mid={{ form_object.document_mid }}"
+          data-turbo="true"
+          data-action-type="add_relation"
+          data-testid="form-action-add-grammar-relation"
+          {# TODO: https://github.com/strictdoc-project/strictdoc/issues/884 #}
+          onclick="setTimeout(()=> {this.scrollIntoView()}, 100)"
+        >{% include "_res/svg_ico16_add.jinja.html" %} Add grammar relation</a>
+      </sdoc-form-footer>
+
+    </sdoc-tab-content>
+
+  </form>
+{% endblock modal_form__content %}

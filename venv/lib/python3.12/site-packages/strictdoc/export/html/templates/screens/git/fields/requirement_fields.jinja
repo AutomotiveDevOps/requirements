@@ -1,0 +1,84 @@
+{% assert requirement_change is defined %}
+
+<div class="diff_node_fields">
+  {%- for requirement_field_triple_ in requirement.enumerate_all_fields() -%}
+    {%- set is_multiline = requirement_field_triple_[0].is_multiline() -%}
+
+    {% if requirement_change is not none -%}
+      {%- set field_change = requirement_change.get_field_change(requirement_field_triple_[0]) -%}
+    {% else %}
+      {%- set field_change = none -%}
+    {% endif %}
+    <div
+      class="diff_node_field"
+      {% if is_multiline %}
+        multiline
+      {% endif %}
+      {% if field_change is not none or (requirement_change is not none and not requirement_change.is_paired_change()) %}
+        modified="{{ side }}"
+      {% endif %}
+    >
+      {%- with badge_text = requirement_field_triple_[1] -%}
+        {%- include "components/badge/index.jinja" -%}
+      {%- endwith -%}
+      <span class="sdoc_pre_content">
+      {%- if field_change is not none -%}
+        {%- set colored_diff = field_change.get_colored_free_text_diff(side) -%}
+        {%- if colored_diff is not none -%}
+          {{ field_change.get_colored_free_text_diff(side) }}
+        {%- else -%}
+          {{ requirement_field_triple_[2] }}
+        {%- endif -%}
+      {%- else -%}
+        {{ requirement_field_triple_[2] }}
+      {%- endif -%}
+      </span>
+    </div>
+  {%- endfor -%}
+
+  {%- if traceability_index.has_parent_requirements(requirement) %}
+    {%- for parent_requirement_, relation_role_ in traceability_index.get_parent_relations_with_roles(requirement) %}
+      {# Relations are rendered one field at a time with its own label, not a group of fields: #}
+      <div class="diff_node_field"
+        {% if requirement_change is not none and not other_stats.contains_requirement_relations(requirement, parent_requirement_.reserved_uid, relation_role_) %}
+          modified="{{ side }}"
+        {% endif %}
+      >
+        {%- with badge_text = "relation" -%}
+          {%- include "components/badge/index.jinja" -%}
+        {%- endwith -%}
+        <div class="sdoc_pre_content">
+          {%- if true -%}
+<b>{{ parent_requirement_.reserved_uid }}</b>{# Warning, we're inside a PRE and the line break here is significant: #}
+{{ parent_requirement_.reserved_title if parent_requirement_.reserved_title else "" }}
+          {%- endif -%}
+          {%- if relation_role_ is not none -%}
+            <span class="requirement__type-tag">({{ relation_role_ }})</span>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if traceability_index.has_children_requirements(requirement) %}
+    {%- for child_requirement_, relation_role_ in traceability_index.get_child_relations_with_roles(requirement) %}
+      <div class="diff_node_field"
+        {% if requirement_change is not none and not other_stats.contains_requirement_relations(requirement, child_requirement_.reserved_uid, relation_role_) %}
+modified="{{ side }}"
+        {% endif %}
+>
+        {%- with badge_text = "child-relation" -%}
+          {%- include "components/badge/index.jinja" -%}
+        {%- endwith -%}
+        <div class="sdoc_pre_content">
+          {%- if true -%}
+<b>{{ child_requirement_.reserved_uid }}</b>{# Warning, we're inside a PRE and the line break here is significant: #}
+{{ child_requirement_.reserved_title if child_requirement_.reserved_title else "" }}
+          {%- endif -%}
+          {%- if relation_role_ is not none -%}
+            <span class="requirement__type-tag">({{ relation_role_ }})</span>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  {%- endif -%}
+</div>{# //.diff_node_fields #}

@@ -1,0 +1,47 @@
+{#
+  * strictdoc/export/html/_static/project_coverage.js
+  Each col.project_coverage-col-line and div.project_coverage-sort_handler
+  needs a data-id corresponding to a column to sort correctly.
+#}
+
+<colgroup>
+  <col />
+  <col data-id="lines_percent" class="project_coverage-col-line" />
+  <col data-id="lines_covered" class="project_coverage-col-line" />
+  <col data-id="lines_total" class="project_coverage-col-line" />
+  <col data-id="lines_all" class="project_coverage-col-line" />
+  <col data-id="func_percent" class="project_coverage-col-func" />
+  <col data-id="func_covered" class="project_coverage-col-func" />
+  <col data-id="func_total" class="project_coverage-col-func" />
+</colgroup>
+<thead>
+  <tr>
+    <th rowspan="2"><div class="project_coverage-sort_reset">File path</div></th>
+    <th colspan="4" class="project_coverage-col-line">Code lines covered by&nbsp;requirements</th>
+    <th colspan="3" class="project_coverage-col-func">Functions covered by&nbsp;requirements</th>
+  </tr>
+  <tr>
+    {# <th>File</th> #}
+    <th class="project_coverage-col-line">
+      <div data-id="lines_percent" class="project_coverage-sort_handler">%</div>
+    </th>
+    <th class="project_coverage-col-line">
+      <div data-id="lines_covered" class="project_coverage-sort_handler">#</div>
+    </th>
+    <th class="project_coverage-col-line">
+      <div data-id="lines_total" class="project_coverage-sort_handler">Code LOC</div>
+    </th>
+    <th class="project_coverage-col-line color-secondary">
+      <div data-id="lines_all" class="project_coverage-sort_handler">Total LOC</div>
+    </th>
+    <th class="project_coverage-col-func">
+      <div data-id="func_percent" class="project_coverage-sort_handler">%</div>
+    </th>
+    <th class="project_coverage-col-func">
+      <div data-id="func_covered" class="project_coverage-sort_handler">#</div>
+    </th>
+    <th class="project_coverage-col-func">
+      <div data-id="func_total" class="project_coverage-sort_handler">Total func.</div>
+    </th>
+  </tr>
+</thead>

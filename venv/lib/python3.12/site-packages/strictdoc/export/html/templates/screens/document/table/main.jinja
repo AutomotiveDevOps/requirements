@@ -1,0 +1,172 @@
+{%- if view_object.has_any_nodes() -%}
+  <div class="main">
+    {% include "_shared/tags.jinja.html" %}
+      <div class="content">
+        <sdoc-node>
+        {% include "components/node_field/document_title/index.jinja" %}
+        {% include "components/node_field/document_meta/index.jinja" %}
+
+        </sdoc-node>
+        <table class="content-view-table">
+          <thead>
+            <tr>
+              <th class="content-view-th">Type</th>
+              <th class="content-view-th">Level</th>
+              {%- for meta_field_title in view_object.document.enumerate_meta_field_titles() -%}
+                <th class="content-view-th">{{ meta_field_title }}</th>
+              {%- endfor -%}
+              <th class="content-view-th">REFS</th>
+              <th class="content-view-th">Title</th>
+              <th class="content-view-th">Statement</th>
+              <th class="content-view-th">Rationale</th>
+              <th class="content-view-th">Comment</th>
+              {%- for meta_field_title in view_object.document.enumerate_custom_content_field_titles() -%}
+                <th class="content-view-th">{{ meta_field_title }}</th>
+              {%- endfor -%}
+            </tr>
+          </thead>
+          {%- for node, _ in view_object.document_content_iterator() %}
+            {%- if node.is_requirement() %}
+              {%- set requirement = node %}
+              <tr>
+                <td class="content-view-td content-view-td-type">
+                  {%- if node.is_text_node() %}
+                    Text
+                  {%- else %}
+                    Requirement
+                  {%- endif -%}
+                </td>
+                <td class="content-view-td content-view-td-meta">
+                  {{ requirement.context.title_number_string }}
+                </td>
+                {%- for meta_field_title in view_object.document.enumerate_meta_field_titles() -%}
+                  {%- set field_value = requirement.get_meta_field_value_by_title(meta_field_title) %}
+                  <td class="content-view-td content-view-td-meta">
+                    {%- if field_value -%}
+                      {{ field_value }}
+                    {%- endif -%}
+                  </td>
+                {%- endfor -%}
+                <td class="content-view-td content-view-td-meta content-view-td-related">
+                  {%- if view_object.traceability_index.has_parent_requirements(requirement) %}
+                    Parents:
+                    <ul class="requirement__link">
+                      {%- for requirement in view_object.traceability_index.get_parent_requirements(requirement) %}
+                        <li>
+                          <a class="requirement__link-parent"
+                            href="{{ view_object.render_node_link(requirement) }}">
+                            {%- if requirement.reserved_uid %}
+                              <span class="requirement__parent-uid">{{ requirement.reserved_uid }}</span>
+                            {%- endif %}
+                            {{ requirement.reserved_title if requirement.reserved_title else "" }}
+                          </a>
+                        </li>
+                      {%- endfor %}
+                    </ul>
+                  {%- endif %}
+                  {%- if view_object.traceability_index.has_children_requirements(requirement) %}
+                    Children:
+                    <ul class="requirement__link">
+                      {%- for requirement in view_object.traceability_index.get_children_requirements(requirement) %}
+                        <li>
+                          <a class="requirement__link-child"
+                            href="{{ view_object.render_node_link(requirement) }}">
+                            {%- if requirement.reserved_uid %}
+                              <span class="requirement__child-uid">{{ requirement.reserved_uid }}</span>
+                            {%- endif %}
+                            {{ requirement.reserved_title if requirement.reserved_title else "" }}
+                          </a>
+                        </li>
+                      {%- endfor %}
+                    </ul>
+                  {%- endif %}
+                  {%- if view_object.project_config.is_activated_requirements_to_source_traceability() -%}
+                    {%- set requirement_file_links = view_object.traceability_index.get_requirement_file_links(requirement) %}
+                    {%- if requirement_file_links %}
+                      Source files:
+                      <ul class="requirement__link">
+                        {%- for link, markers in requirement_file_links %}
+                          {%- for marker in markers %}
+                            <li>
+                              <a class="requirement__link-file"
+                                  href="{{ view_object.link_renderer.render_source_file_link(requirement, link) }}#{{ requirement.reserved_uid }}#{{ marker.ng_range_line_begin }}#{{ marker.ng_range_line_end }}">
+                                {{ link }}, <i>lines: {{ marker.ng_range_line_begin }}-{{ marker.ng_range_line_end }}</i>
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif %}
+                  {%- endif %}
+                </td>
+                <td class="content-view-td content-view-td-title">
+                  {%- if requirement.reserved_title %}
+                    {%- with sdoc_entity=requirement -%}
+                      {% include "components/anchor/index.jinja" %}
+                    {%- endwith %}
+                    <div class="requirement__title">{{ requirement.reserved_title }}</div>
+                  {%- endif -%}
+                </td>
+                <td class="content-view-td content-view-td-content">
+                  {%- if requirement.has_reserved_statement() -%}
+                    <sdoc-autogen>{{ view_object.render_node_statement(requirement) }}</sdoc-autogen>
+                  {%- endif -%}
+                </td>
+                <td class="content-view-td content-view-td-content">
+                  {%- if requirement.rationale -%}
+                    <sdoc-autogen>{{ view_object.render_node_rationale(requirement) }}</sdoc-autogen>
+                  {%- endif -%}
+                </td>
+                <td class="content-view-td content-view-td-content">
+                  {%- for comment_field_ in requirement.get_comment_fields() -%}
+                  <sdoc-autogen>{{ view_object.render_node_field(comment_field_) }}</sdoc-autogen>
+                  {%- endfor -%}
+                </td>
+                {%- for meta_field_title in view_object.document.enumerate_custom_content_field_titles() -%}
+                  {%- set field_value = requirement.get_meta_field_value_by_title(meta_field_title) %}
+                  <td class="content-view-td">
+                    {%- if field_value %}
+                      {{ field_value }}
+                    {%- endif -%}
+                  </td>
+                {%- endfor -%}
+              </tr>
+            {%- elif node.is_section() %}
+              {%- set section = node %}
+              <tr>
+                <td class="content-view-td content-view-td-type">Section</td>
+                <td class="content-view-td content-view-td-meta">{{ section.context.title_number_string }}</td>
+                {%- for meta_field_title in view_object.document.enumerate_meta_field_titles() -%}
+                  <td class="content-view-td content-view-td-meta"></td>
+                {%- endfor -%}
+                <td class="content-view-td content-view-td-meta">{# Children & Parents #}</td>
+                <td class="content-view-td content-view-td-title" colspan="4">
+                  {%- if section.title %}
+                    {%- with sdoc_entity=section -%}
+                      {% include "components/anchor/index.jinja" %}
+                    {%- endwith %}
+                    <div class="requirement__title">
+                      {{ section.title }}
+                    </div>
+                    {%- for meta_field_title in view_object.document.enumerate_custom_content_field_titles() -%}
+                      <td class="content-view-td">
+                      </td>
+                    {%- endfor -%}
+                  {%- endif -%}
+                </td>
+              </tr>
+            {%- endif %}
+          {%- endfor %}
+        </table>
+      </div>
+      {# /.content #}
+  </div>
+  {# /.main #}
+{%- else -%}
+  <sdoc-main-placeholder data-testid="document-main-placeholder">
+  This view is empty because
+  <br />
+  the document has no content.
+  </sdoc-main-placeholder>
+{%- endif -%}
+

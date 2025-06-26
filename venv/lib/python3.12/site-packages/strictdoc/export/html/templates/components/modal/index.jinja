@@ -1,0 +1,15 @@
+{#
+    Has an empty container and a Close button.
+#}
+<turbo-frame data-controller="modal_controller">
+  <sdoc-backdrop>
+      <sdoc-modal context="{%- block modal__context -%}{%- endblock -%}">
+        <sdoc-modal-container>
+        {%- block modal_container %}{% endblock -%}
+        </sdoc-modal-container>
+        {%- with cancel_name="Close" -%}
+          {% include "components/button/cancel.jinja" %}
+        {%- endwith -%}
+      </sdoc-modal>
+  </sdoc-backdrop>
+</turbo-frame>

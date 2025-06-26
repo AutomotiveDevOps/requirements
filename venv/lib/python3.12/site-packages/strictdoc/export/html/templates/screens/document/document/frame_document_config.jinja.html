@@ -1,0 +1,8 @@
+{% extends "components/node/root.jinja" %}
+{%- set sdoc_entity = view_object.document -%}
+{% block sdoc_entity %}
+
+  {% include "components/node_field/document_title/index.jinja" %}
+  {% include "components/node_field/document_meta/index.jinja" %}
+
+{% endblock sdoc_entity %}
