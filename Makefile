@@ -25,7 +25,7 @@ install: venv
 
 # Generate documentation
 docs: install
-	venv/bin/strictdoc export --output-dir docs/ *.sdoc
+	venv/bin/strictdoc export --output-dir docs/ mil-std-498-strictdoc/*.sdoc
 
 # Serve documentation locally (requires Python http.server)
 serve: docs
