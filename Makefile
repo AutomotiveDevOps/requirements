@@ -14,16 +14,15 @@ help:
 	@echo "  serve-milstd - Serve StrictDoc documentation locally"
 	@echo "  clean    - Clean generated files and virtual environment"
 
-# Create virtual environment
+# Create virtual environment and install uv
 venv:
 	python3 -m venv venv
-
-# Install dependencies
-install: venv
 	venv/bin/pip install --upgrade pip
-	venv/bin/pip install strictdoc
-	venv/bin/pip install toml
-	venv/bin/pip install pygments
+	venv/bin/pip install uv
+
+# Install dependencies using uv for parallel installation
+install: venv
+	venv/bin/uv pip install strictdoc toml pygments
 
 # Generate HTML documentation
 docs: install
