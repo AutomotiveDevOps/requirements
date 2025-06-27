@@ -36,8 +36,8 @@ jobs:
 
       - name: Run Strict Doc
         run: |
-          # Build all StrictDoc documents from the strictdoc folder
-          strictdoc export --output-dir docs/ strictdoc/*.sdoc
+          # Build all StrictDoc documents from all .sdoc files in the project
+          strictdoc export --output-dir docs/ $(find . -type f -name '*.sdoc' | grep -v './venv/' | grep -v './docs/')
 
       - name: Deploy to GitHub Pages
         uses: Cecilapp/GitHub-Pages-deploy@v3
