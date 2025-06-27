@@ -1,5 +1,5 @@
 [DOCUMENT]
-TITLE: MIL-STD-498 IRS (Interface Requirements Specification)
+TITLE: MIL-STD-498 IDD (Interface Design Description)
 
 [SECTION]
 TITLE: 1. Scope
@@ -27,7 +27,7 @@ TITLE: 2. Referenced documents
 [/SECTION]
 
 [SECTION]
-TITLE: 3. Requirements
+TITLE: 3. Interface design
 
 [SECTION]
 TITLE: 3.1 Interface identification and diagrams
@@ -37,16 +37,11 @@ TITLE: 3.1 Interface identification and diagrams
 [/SECTION]
 
 [SECTION]
-TITLE: 4. Qualification provisions
+TITLE: 4. Requirements traceability
 
 [/SECTION]
 
 [SECTION]
-TITLE: 5. Requirements traceability
-
-[/SECTION]
-
-[SECTION]
-TITLE: 6. Notes
+TITLE: 5. Notes
 
 [/SECTION]

@@ -1,5 +1,5 @@
 [DOCUMENT]
-TITLE: MIL-STD-498 SDP (Software Development Plan)
+TITLE: MIL-STD-498 STRP (Software Transition Plan)
 
 [SECTION]
 TITLE: 1. Scope
@@ -32,46 +32,61 @@ TITLE: 2. Referenced documents
 [/SECTION]
 
 [SECTION]
-TITLE: 3. Overview of required work
+TITLE: 3. Software support resources
+
+[SECTION]
+TITLE: 3.1 Facilities
 
 [/SECTION]
 
 [SECTION]
-TITLE: 4. Plans for performing general software development activities
-
-[SECTION]
-TITLE: 4.1 Software development process
+TITLE: 3.2 Hardware
 
 [/SECTION]
 
 [SECTION]
-TITLE: 4.2 General plans for software development
+TITLE: 3.3 Software
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.4 Other documentation
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.5 Personnel
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.6 Other resources
+
+[/SECTION]
+
+[SECTION]
+TITLE: 3.7 Interrelationship of components
 
 [/SECTION]
 
 [/SECTION]
 
 [SECTION]
-TITLE: 5. Plans for performing detailed software development activities
-
-[SECTION]
-TITLE: 5.1 Project planning and oversight
-
-[/SECTION]
+TITLE: 4. Recommended procedures
 
 [/SECTION]
 
 [SECTION]
-TITLE: 6. Plans for performing integral activities
+TITLE: 5. Training
 
 [/SECTION]
 
 [SECTION]
-TITLE: 7. Plans for performing supporting activities
+TITLE: 6. Anticipated areas of change
 
 [/SECTION]
 
 [SECTION]
-TITLE: 8. Notes
+TITLE: 7. Transition planning
 
 [/SECTION]

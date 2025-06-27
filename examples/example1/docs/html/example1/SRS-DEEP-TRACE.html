@@ -1,0 +1,3709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+  <meta name="keywords" content="strictdoc, documentation, documentation-tool, requirements-management, requirements, documentation-generator, requirement-specifications, requirements-engineering, technical-documentation, requirements-specification"/>
+  <meta name="description" content="strictdoc. Software for technical documentation and requirements management."/><meta name="strictdoc-export-type" content="static"><link rel="shortcut icon" href="../_static/favicon.ico" type="image/x-icon"/>
+
+  
+  
+  <link rel="stylesheet" href="../_static/base.css"/>
+  <link rel="stylesheet" href="../_static/layout.css"/>
+  <link rel="stylesheet" href="../_static/content.css"/>
+  <link rel="stylesheet" href="../_static/node.css"/>
+  <link rel="stylesheet" href="../_static/node_content.css"/>
+  <link rel="stylesheet" href="../_static/element.css"/>
+  <link rel="stylesheet" href="../_static/form.css"/>
+  <link rel="stylesheet" href="../_static/requirement__temporary.css"/>
+  <link rel="stylesheet" href="../_static/autogen.css"/>
+  
+  <link rel="stylesheet" href="../_static/requirement-tree.css"/>
+
+
+  
+  <script src="../_static/stimulus_umd.min.js"></script>
+  <script>
+    Stimulus.application = Stimulus.Application.start();
+  </script>
+
+  <script src="../_static/viewtype_menu.js"></script>
+  <script src="../_static/resizable_bar.js"></script>
+  <script src="../_static/collapsible_toc.js"></script>
+  <script src="../_static/toc_highlighting.js"></script>
+  <script src="../_static/zoomable.js"></script>
+  
+  
+  
+
+
+  <title>MIL-STD-498 SRS (Software Requirements Specification) - Deep Traceability</title>
+
+  
+</head>
+
+<body data-viewtype="deep_traceability" data-turbo="false">
+
+<div class="mars">
+  
+</div>
+
+  <div class="layout" id="layout">
+
+    <nav class="layout_nav">
+      <div class="nav">
+
+
+
+  <a
+    data-link="index"
+    class="nav_button"
+    href="../index.html"
+    title="Project index">
+    <svg class="svg_icon" width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <line x1="9" y1="4" x2="7" y2="4"></line>
+  <line x1="12" y1="9" x2="12" y2="7"></line>
+  <line x1="6" y1="10" x2="10" y2="6"></line>
+  <circle cx="4" cy="12" r="2.25"></circle>
+  <circle cx="12" cy="4" r="2.25"></circle>
+  <circle cx="4" cy="4" r="2.25"></circle>
+  <circle cx="12" cy="12" r="2.25"></circle>
+</svg>
+  </a></div>
+    </nav><aside class="layout_tree">
+      
+  
+
+
+
+<div
+  js-resizable_bar="tree"
+  data-state="open"
+  data-position="left"
+>
+<div class="tree">
+    
+        
+        <a
+          href="../example1/SRS.html"
+          class="tree_item"
+          
+          active="true"
+          
+          data-folder="example1"
+          data-testid="tree-document-link"
+        >
+          <svg class="svg_icon" width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d=" M13,13 L13,8 C13,7.5 12.6,7 12,7 L9,7 C8.5,7 8,6.5 8,6 L8,3 C8,2.5 7.5,2 7,2 L4,2 C3.5,2 3,2.5 3,3 L3,13 C3,13.5 3.5,14 4,14 L12,14 C12.6,14 13,13.5 13,13 Z M13,9 L13,8 C13,7.5 13,7 12.5,6.5 L8.5,2.5 C8,2 7.5,2 7,2 L6,2"></path>
+</svg>
+          <div
+            class="document_title"
+            title="MIL-STD-498 SRS (Software Requirements Specification)"
+            data-file_name="SRS.sdoc"
+          >MIL-STD-498 SRS (Software Requirements Specification)</div>
+        </a>
+        
+        
+        
+        
+      </div>
+</div>
+
+    </aside><aside
+        data-position="right"
+        class="layout_toc"
+      >
+        
+  
+
+
+
+<div
+  js-resizable_bar="toc"
+  data-state="open"
+  data-position="right"
+>
+<turbo-frame
+  id="frame-toc"
+  style="display: contents"
+>
+      <ul
+      data-testid="toc-list"
+      js-collapsible_list="list"
+      class="toc"
+      id="toc"
+      data-controller="draggable_list"><li data-nodeid="0f81da451b1e4ba6b61319565c4dd05f"><a
+              href="#1-1-Scope"
+              anchor="1-1-Scope"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                1
+              </span>1. Scope
+              
+            </a><ul><li data-nodeid="c6b56e32020544f3953e92aa949d5390"><a
+              href="#1.1-1-1-Identification"
+              anchor="1.1-1-1-Identification"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                1.1
+              </span>1.1 Identification
+              
+            </a><ul><li data-nodeid="102adce670604200847e4af8082e342d">
+        <a
+          href="#SRS-001"
+          anchor="SRS-001"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            1.1.1
+          </span>Software Identification
+            </a></li></ul>
+            </li><li data-nodeid="0445502bea9c4cdcbbc800ba8a1557e6"><a
+              href="#1.2-1-2-System-overview"
+              anchor="1.2-1-2-System-overview"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                1.2
+              </span>1.2 System overview
+              
+            </a><ul><li data-nodeid="afe2a2aed9954b3bbfd26cc0b05046a5">
+        <a
+          href="#SRS-002"
+          anchor="SRS-002"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            1.2.1
+          </span>System Overview
+            </a></li></ul>
+            </li><li data-nodeid="c5eb7a366ca9480689e4fe38347c3de5"><a
+              href="#1.3-1-3-Document-overview"
+              anchor="1.3-1-3-Document-overview"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                1.3
+              </span>1.3 Document overview
+              
+            </a><ul><li data-nodeid="68393f3df3d44eae8a4dc1bf59c46970">
+        <a
+          href="#SRS-003"
+          anchor="SRS-003"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            1.3.1
+          </span>Document Structure
+            </a></li></ul>
+            </li></ul>
+            </li><li data-nodeid="a34908542d8e43869cf6f249e2046c39"><a
+              href="#2-2-Referenced-documents"
+              anchor="2-2-Referenced-documents"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                2
+              </span>2. Referenced documents
+              
+            </a><ul><li data-nodeid="216cba215daf40319d479dee901d4481">
+        <a
+          href="#SRS-004"
+          anchor="SRS-004"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            2.1
+          </span>Reference Standards
+            </a></li></ul>
+            </li><li data-nodeid="13be5f822e8e45c8a808f600525ec9d6"><a
+              href="#3-3-Requirements"
+              anchor="3-3-Requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3
+              </span>3. Requirements
+              
+            </a><ul><li data-nodeid="b55f4f5afc6e4daf8e5a8b986140b1d3"><a
+              href="#3.1-3-1-Required-states-and-modes"
+              anchor="3.1-3-1-Required-states-and-modes"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.1
+              </span>3.1 Required states and modes
+              
+            </a><ul><li data-nodeid="8cfb8925f65b4b5085928df1309d47e3">
+        <a
+          href="#SRS-005"
+          anchor="SRS-005"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.1.1
+          </span>Operational States
+            </a></li><li data-nodeid="25db968f94e7473cadce2ae55128b447">
+        <a
+          href="#SRS-006"
+          anchor="SRS-006"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.1.2
+          </span>Mode Transitions
+            </a></li></ul>
+            </li><li data-nodeid="6aff9c1877f94c078c7164f1a4a1a6b0"><a
+              href="#3.2-3-2-CSCI-capability-requirements"
+              anchor="3.2-3-2-CSCI-capability-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.2
+              </span>3.2 CSCI capability requirements
+              
+            </a><ul><li data-nodeid="3e304aa75e3b42d8beb097d9a97e4740">
+        <a
+          href="#SRS-007"
+          anchor="SRS-007"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.2.1
+          </span>Network Management
+            </a></li><li data-nodeid="8d8c5d1b5d3b46a09df50a1396204cdf">
+        <a
+          href="#SRS-008"
+          anchor="SRS-008"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.2.2
+          </span>Security Management
+            </a></li><li data-nodeid="dcdeb6d6cc9e4ffc8af951c222b23604">
+        <a
+          href="#SRS-009"
+          anchor="SRS-009"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.2.3
+          </span>Traffic Routing
+            </a></li><li data-nodeid="a1b6700d0f954082953832d831e5c07e">
+        <a
+          href="#SRS-010"
+          anchor="SRS-010"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.2.4
+          </span>Monitoring and Alerting
+            </a></li></ul>
+            </li><li data-nodeid="1f00dd88e99649e8ad41fbfe83a5b1ae"><a
+              href="#3.3-3-3-CSCI-external-interface-requirements"
+              anchor="3.3-3-3-CSCI-external-interface-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.3
+              </span>3.3 CSCI external interface requirements
+              
+            </a><ul><li data-nodeid="270f453703c144aa9796b86620eba437"><a
+              href="#3.3.1-3-3-1-Interface-identification-and-diagrams"
+              anchor="3.3.1-3-3-1-Interface-identification-and-diagrams"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.3.1
+              </span>3.3.1 Interface identification and diagrams
+              
+            </a><ul><li data-nodeid="0cbd4123e52c407f8e914998e60d128b">
+        <a
+          href="#SRS-011"
+          anchor="SRS-011"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.3.1.1
+          </span>User Interface
+            </a></li><li data-nodeid="8411115f953c428387c6e3fac7255a15">
+        <a
+          href="#SRS-012"
+          anchor="SRS-012"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.3.1.2
+          </span>API Interface
+            </a></li><li data-nodeid="614ddc4bff4941ceb01ce5cba69fe348">
+        <a
+          href="#SRS-013"
+          anchor="SRS-013"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.3.1.3
+          </span>Database Interface
+            </a></li></ul>
+            </li></ul>
+            </li><li data-nodeid="bcaffc451e2340fb97e20e97f694e6fe"><a
+              href="#3.4-3-4-CSCI-internal-interface-requirements"
+              anchor="3.4-3-4-CSCI-internal-interface-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.4
+              </span>3.4 CSCI internal interface requirements
+              
+            </a><ul><li data-nodeid="28c2fbce9b2a412ea6dd2981177a74ec">
+        <a
+          href="#SRS-014"
+          anchor="SRS-014"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.4.1
+          </span>Internal Communication
+            </a></li></ul>
+            </li><li data-nodeid="111a02c61c1043ac851add8eb1bf07b8"><a
+              href="#3.5-3-5-CSCI-internal-data-requirements"
+              anchor="3.5-3-5-CSCI-internal-data-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.5
+              </span>3.5 CSCI internal data requirements
+              
+            </a><ul><li data-nodeid="1041148853304fac8cf465bad6976565">
+        <a
+          href="#SRS-015"
+          anchor="SRS-015"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.5.1
+          </span>Data Storage
+            </a></li></ul>
+            </li><li data-nodeid="3a4b5ae31adc4ce084045832a2f311c8"><a
+              href="#3.6-3-6-Adaptation-requirements"
+              anchor="3.6-3-6-Adaptation-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.6
+              </span>3.6 Adaptation requirements
+              
+            </a><ul><li data-nodeid="f74140e443804049a9875572cff2a9b5">
+        <a
+          href="#SRS-016"
+          anchor="SRS-016"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.6.1
+          </span>Configuration Management
+            </a></li></ul>
+            </li><li data-nodeid="1007adc3f26f4110a87f6c96a252380e"><a
+              href="#3.7-3-7-Sizing-and-timing-requirements"
+              anchor="3.7-3-7-Sizing-and-timing-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.7
+              </span>3.7 Sizing and timing requirements
+              
+            </a><ul><li data-nodeid="f1054982309341a9a17f36e01aad8884">
+        <a
+          href="#SRS-017"
+          anchor="SRS-017"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.7.1
+          </span>Performance Requirements
+            </a></li><li data-nodeid="79b2e738514a4ebbb9701c1a63989c7b">
+        <a
+          href="#SRS-018"
+          anchor="SRS-018"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.7.2
+          </span>Scalability Requirements
+            </a></li></ul>
+            </li><li data-nodeid="eebda4514b8749f3aefbb8f5767cb6a5"><a
+              href="#3.8-3-8-Safety-requirements"
+              anchor="3.8-3-8-Safety-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.8
+              </span>3.8 Safety requirements
+              
+            </a><ul><li data-nodeid="e51a186f8bf54f7f91d748582bd584ea">
+        <a
+          href="#SRS-019"
+          anchor="SRS-019"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.8.1
+          </span>Safety Controls
+            </a></li></ul>
+            </li><li data-nodeid="3117ba51a7264d568abef63f758db409"><a
+              href="#3.9-3-9-Security-and-privacy-requirements"
+              anchor="3.9-3-9-Security-and-privacy-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.9
+              </span>3.9 Security and privacy requirements
+              
+            </a><ul><li data-nodeid="ee583d662f3640828c672b1954af4a74">
+        <a
+          href="#SRS-020"
+          anchor="SRS-020"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.9.1
+          </span>Authentication and Authorization
+            </a></li><li data-nodeid="311161b256f345a7b38324952a5c8d1a">
+        <a
+          href="#SRS-021"
+          anchor="SRS-021"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.9.2
+          </span>Data Protection
+            </a></li><li data-nodeid="1f4425a504954638ad5280436f601d38">
+        <a
+          href="#SRS-022"
+          anchor="SRS-022"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.9.3
+          </span>Audit Logging
+            </a></li></ul>
+            </li><li data-nodeid="477223282be44edeb410eeb45871715b"><a
+              href="#3.10-3-10-Environment-requirements"
+              anchor="3.10-3-10-Environment-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.10
+              </span>3.10 Environment requirements
+              
+            </a><ul><li data-nodeid="ec47499ede1f4819a486abec45cb434c">
+        <a
+          href="#SRS-023"
+          anchor="SRS-023"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.10.1
+          </span>Operating Environment
+            </a></li></ul>
+            </li><li data-nodeid="661782908d7e4709a8646ddbd8600947"><a
+              href="#3.11-3-11-Computer-resource-requirements"
+              anchor="3.11-3-11-Computer-resource-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.11
+              </span>3.11 Computer resource requirements
+              
+            </a><ul><li data-nodeid="4daadd32d08542eb8f74d9a1aff248cd">
+        <a
+          href="#SRS-024"
+          anchor="SRS-024"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.11.1
+          </span>Hardware Requirements
+            </a></li></ul>
+            </li><li data-nodeid="6d0c64a5cc314c4898356aae62f4ccd8"><a
+              href="#3.12-3-12-Software-quality-factors"
+              anchor="3.12-3-12-Software-quality-factors"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.12
+              </span>3.12 Software quality factors
+              
+            </a><ul><li data-nodeid="e31a34c9891545b2a0ad63274141b768">
+        <a
+          href="#SRS-025"
+          anchor="SRS-025"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.12.1
+          </span>Reliability
+            </a></li><li data-nodeid="f4e9e54c123840319f6136f10890eec6">
+        <a
+          href="#SRS-026"
+          anchor="SRS-026"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.12.2
+          </span>Maintainability
+            </a></li><li data-nodeid="8ccfd6428a3f45d3bdd9f09eb3d81302">
+        <a
+          href="#SRS-027"
+          anchor="SRS-027"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.12.3
+          </span>Usability
+            </a></li></ul>
+            </li><li data-nodeid="93a8d4834c6e4b038d95037cf0371d40"><a
+              href="#3.13-3-13-Design-and-implementation-constraints"
+              anchor="3.13-3-13-Design-and-implementation-constraints"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.13
+              </span>3.13 Design and implementation constraints
+              
+            </a><ul><li data-nodeid="113ac46c5a78425191670800cc564a5f">
+        <a
+          href="#SRS-028"
+          anchor="SRS-028"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.13.1
+          </span>Technology Constraints
+            </a></li></ul>
+            </li><li data-nodeid="1909e7dae8944406bc8926d0eb9c06f4"><a
+              href="#3.14-3-14-Personnel-related-requirements"
+              anchor="3.14-3-14-Personnel-related-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.14
+              </span>3.14 Personnel-related requirements
+              
+            </a><ul><li data-nodeid="f806298346eb468e8cbc5d62888e505a">
+        <a
+          href="#SRS-029"
+          anchor="SRS-029"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.14.1
+          </span>Training Requirements
+            </a></li></ul>
+            </li><li data-nodeid="8345bb1e5c0f4509a7b42d4e2b018c9c"><a
+              href="#3.15-3-15-Training-related-requirements"
+              anchor="3.15-3-15-Training-related-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.15
+              </span>3.15 Training-related requirements
+              
+            </a><ul><li data-nodeid="7d1469c439c1480a97559a5f1935bda1">
+        <a
+          href="#SRS-030"
+          anchor="SRS-030"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.15.1
+          </span>Training System
+            </a></li></ul>
+            </li><li data-nodeid="38b37579f23c44f6a4f9f6da310addc1"><a
+              href="#3.16-3-16-Logistics-related-requirements"
+              anchor="3.16-3-16-Logistics-related-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.16
+              </span>3.16 Logistics-related requirements
+              
+            </a><ul><li data-nodeid="45b9358c361f482f8bf77de3cabf2d20">
+        <a
+          href="#SRS-031"
+          anchor="SRS-031"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.16.1
+          </span>Deployment Support
+            </a></li></ul>
+            </li><li data-nodeid="50b8d8f0b08246c3b28bc44289773bed"><a
+              href="#3.17-3-17-Other-requirements"
+              anchor="3.17-3-17-Other-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.17
+              </span>3.17 Other requirements
+              
+            </a><ul><li data-nodeid="3b2b7925dcfc4f5eb539d0db09dea131">
+        <a
+          href="#SRS-032"
+          anchor="SRS-032"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.17.1
+          </span>Compliance Requirements
+            </a></li></ul>
+            </li><li data-nodeid="13eec639b3364bc48a4128d9b52397cd"><a
+              href="#3.18-3-18-Packaging-requirements"
+              anchor="3.18-3-18-Packaging-requirements"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3.18
+              </span>3.18 Packaging requirements
+              
+            </a><ul><li data-nodeid="dc058a8c0944441ca6bafb83cecca557">
+        <a
+          href="#SRS-033"
+          anchor="SRS-033"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.18.1
+          </span>Software Packaging
+            </a></li></ul>
+            </li></ul>
+            </li><li data-nodeid="db56882dab0542ae80a1958ee4c595f2"><a
+              href="#4-4-Qualification-provisions"
+              anchor="4-4-Qualification-provisions"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                4
+              </span>4. Qualification provisions
+              
+            </a><ul><li data-nodeid="f6cee4d8475b4e3a9ba52f4ed3ce26d4">
+        <a
+          href="#SRS-034"
+          anchor="SRS-034"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            4.1
+          </span>Testing Requirements
+            </a></li></ul>
+            </li><li data-nodeid="a4b197b71840464a8cd3e90143c8bab7"><a
+              href="#5-5-Requirements-traceability"
+              anchor="5-5-Requirements-traceability"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                5
+              </span>5. Requirements traceability
+              
+            </a><ul><li data-nodeid="720307befaf94280a8fee6914a0510cc">
+        <a
+          href="#SRS-035"
+          anchor="SRS-035"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            5.1
+          </span>Traceability Matrix
+            </a></li></ul>
+            </li><li data-nodeid="9d09414fe3d148a4ab6456e1b510222c"><a
+              href="#6-6-Notes"
+              anchor="6-6-Notes"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                6
+              </span>6. Notes
+              
+            </a><ul><li data-nodeid="3f931aefd4a941a5ab1852b2995e7936">
+        <a
+          href="#SRS-036"
+          anchor="SRS-036"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            6.1
+          </span>Document Notes
+            </a></li></ul>
+            </li></ul>
+</turbo-frame>
+</div>
+
+      </aside><header class="layout_header">
+      <div class="header">
+
+  
+  <svg class="svg_icon" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <polyline points="14 5 14 10.5 8 15 2 10.5 2 5 8 1 14 5 8 9.5"></polyline>
+  <polyline points="2.5 5.5 8 9.5 8 15"></polyline>
+</svg>
+  <div
+    class="header__project_name"
+    title="Untitled Project"
+  >Untitled Project
+  </div>
+
+  
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" class="sc-gLvsXj bpkaBy"><path stroke="currentColor" d="M12.5 4.5l-5 11" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <turbo-frame id="header_document_title">
+  <svg class="svg_icon" width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d=" M13,13 L13,8 C13,7.5 12.6,7 12,7 L9,7 C8.5,7 8,6.5 8,6 L8,3 C8,2.5 7.5,2 7,2 L4,2 C3.5,2 3,2.5 3,3 L3,13 C3,13.5 3.5,14 4,14 L12,14 C12.6,14 13,13.5 13,13 Z M13,9 L13,8 C13,7.5 13,7 12.5,6.5 L8.5,2.5 C8,2 7.5,2 7,2 L6,2"></path>
+</svg>
+  <div
+    class="header__document_title"
+    title="MIL-STD-498 SRS (Software Requirements Specification)"
+  >
+    MIL-STD-498 SRS (Software Requirements Specification)
+  </div>
+</turbo-frame>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" class="sc-gLvsXj bpkaBy"><path stroke="currentColor" d="M12.5 4.5l-5 11" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <div class="viewtype">
+  <div
+    id="viewtype_handler"
+    class="viewtype__handler"
+    aria-expanded="false"
+    aria-controls="viewtype_menu"
+  >
+    <span>Deep Traceability</span>
+    <svg class="svg_icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M5 10l3 3 3-3M5 6l3-3 3 3"></path>
+</svg>
+  </div>
+  <menu
+    id="viewtype_menu"
+    class="viewtype__menu"
+    aria-hidden="true"
+    aria-labelledby="viewtype_handler"
+  >
+    <li class="viewtype__menu_header">VIEWS</li>
+    <li>
+      <a
+        data-viewtype_link="document"
+        class="viewtype__menu_item"
+        title="Go to Document view"
+        href="../example1/SRS.html#_TOP">
+      Document</a>
+    </li><li>
+      <a
+        data-viewtype_link="table"
+        class="viewtype__menu_item"
+        title="Go to Table view"
+        href="../example1/SRS-TABLE.html#_TOP">
+      Table</a>
+    </li><li>
+      <a
+        data-viewtype_link="traceability"
+        class="viewtype__menu_item"
+        title="Go to Traceability view"
+        href="../example1/SRS-TRACE.html#_TOP">
+      Traceability</a>
+    </li><li>
+      <a
+        data-viewtype_link="deep_traceability"
+        class="viewtype__menu_item"
+        title="Go to Deep Traceability view"
+        href="../example1/SRS-DEEP-TRACE.html#_TOP">
+      Deep Traceability</a>
+    </li></menu>
+</div>
+    </div>
+    </header>
+
+    <main class="layout_main">
+      
+  <div
+    class="main"
+    js-pan_with_space="true"
+  >
+    
+<div class="tags">
+</div>
+    <div class="content">
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="1-1-Scope"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="1"
+>
+
+<sdoc-autogen>1.&nbsp;1. Scope</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="1.1-1-1-Identification"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="1.1"
+>
+
+<sdoc-autogen>1.1.&nbsp;1.1 Identification</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-001"
+  node-role="requirement"
+  data-uid="SRS-001"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="1.1.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="1.1.1"
+  >
+    
+
+<sdoc-autogen>Software Identification</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-001</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall be identified as the Satellite Communication Management System (SCMS) Software Requirements Specification, version 1.0.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="1.2-1-2-System-overview"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="1.2"
+>
+
+<sdoc-autogen>1.2.&nbsp;1.2 System overview</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-002"
+  node-role="requirement"
+  data-uid="SRS-002"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="1.2.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="1.2.1"
+  >
+    
+
+<sdoc-autogen>System Overview</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-002</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The SCMS software shall provide comprehensive management and control of satellite communication networks through a distributed, secure, and automated platform.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="1.3-1-3-Document-overview"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="1.3"
+>
+
+<sdoc-autogen>1.3.&nbsp;1.3 Document overview</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-003"
+  node-role="requirement"
+  data-uid="SRS-003"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="1.3.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="1.3.1"
+  >
+    
+
+<sdoc-autogen>Document Structure</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-003</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>This document shall be organized into six major sections covering scope, referenced documents, requirements, qualification provisions, traceability, and notes.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="2-2-Referenced-documents"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="2"
+>
+
+<sdoc-autogen>2.&nbsp;2. Referenced documents</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-004"
+  node-role="requirement"
+  data-uid="SRS-004"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="2.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="2.1"
+  >
+    
+
+<sdoc-autogen>Reference Standards</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-004</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall comply with MIL-STD-498, IEEE 830, ISO/IEC 25010, and DoD cybersecurity requirements for software development and quality assurance.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3-3-Requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3"
+>
+
+<sdoc-autogen>3.&nbsp;3. Requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.1-3-1-Required-states-and-modes"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.1"
+>
+
+<sdoc-autogen>3.1.&nbsp;3.1 Required states and modes</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-005"
+  node-role="requirement"
+  data-uid="SRS-005"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.1.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.1.1"
+  >
+    
+
+<sdoc-autogen>Operational States</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-005</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall support normal operation, emergency operation, maintenance mode, degraded operation, and shutdown states with appropriate state transitions.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-006"
+  node-role="requirement"
+  data-uid="SRS-006"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.1.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.1.2"
+  >
+    
+
+<sdoc-autogen>Mode Transitions</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-006</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall provide automatic and manual mode transitions with appropriate safety checks and user notifications.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.2-3-2-CSCI-capability-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.2"
+>
+
+<sdoc-autogen>3.2.&nbsp;3.2 CSCI capability requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-007"
+  node-role="requirement"
+  data-uid="SRS-007"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.2.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.2.1"
+  >
+    
+
+<sdoc-autogen>Network Management</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-007</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall provide automated satellite network configuration, monitoring, and control capabilities for up to 100 satellite nodes simultaneously.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-008"
+  node-role="requirement"
+  data-uid="SRS-008"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.2.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.2.2"
+  >
+    
+
+<sdoc-autogen>Security Management</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-008</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall implement comprehensive security controls including authentication, authorization, encryption, and intrusion detection for all system communications.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-009"
+  node-role="requirement"
+  data-uid="SRS-009"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.2.3"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.2.3"
+  >
+    
+
+<sdoc-autogen>Traffic Routing</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-009</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall provide intelligent traffic routing with automatic load balancing, failover, and priority-based routing for different types of communication traffic.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-010"
+  node-role="requirement"
+  data-uid="SRS-010"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.2.4"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.2.4"
+  >
+    
+
+<sdoc-autogen>Monitoring and Alerting</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-010</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall provide real-time monitoring of system health, performance metrics, and security events with configurable alerting and notification capabilities.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.3-3-3-CSCI-external-interface-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.3"
+>
+
+<sdoc-autogen>3.3.&nbsp;3.3 CSCI external interface requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.3.1-3-3-1-Interface-identification-and-diagrams"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.3.1"
+>
+
+<sdoc-autogen>3.3.1.&nbsp;3.3.1 Interface identification and diagrams</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-011"
+  node-role="requirement"
+  data-uid="SRS-011"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.3.1.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.3.1.1"
+  >
+    
+
+<sdoc-autogen>User Interface</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-011</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall provide a web-based user interface accessible via standard browsers with role-based access control and responsive design for desktop and mobile devices.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-012"
+  node-role="requirement"
+  data-uid="SRS-012"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.3.1.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.3.1.2"
+  >
+    
+
+<sdoc-autogen>API Interface</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-012</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall provide RESTful API interfaces for integration with external systems, supporting JSON data exchange and OAuth 2.0 authentication.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-013"
+  node-role="requirement"
+  data-uid="SRS-013"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.3.1.3"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.3.1.3"
+  >
+    
+
+<sdoc-autogen>Database Interface</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-013</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall interface with PostgreSQL databases for persistent data storage with support for read replicas and automated backup capabilities.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.4-3-4-CSCI-internal-interface-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.4"
+>
+
+<sdoc-autogen>3.4.&nbsp;3.4 CSCI internal interface requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-014"
+  node-role="requirement"
+  data-uid="SRS-014"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.4.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.4.1"
+  >
+    
+
+<sdoc-autogen>Internal Communication</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-014</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall use secure internal communication protocols between components with message queuing and event-driven architecture for loose coupling.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.5-3-5-CSCI-internal-data-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.5"
+>
+
+<sdoc-autogen>3.5.&nbsp;3.5 CSCI internal data requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-015"
+  node-role="requirement"
+  data-uid="SRS-015"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.5.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.5.1"
+  >
+    
+
+<sdoc-autogen>Data Storage</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-015</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall store configuration data, operational logs, security events, and performance metrics with appropriate data retention and archival policies.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.6-3-6-Adaptation-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.6"
+>
+
+<sdoc-autogen>3.6.&nbsp;3.6 Adaptation requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-016"
+  node-role="requirement"
+  data-uid="SRS-016"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.6.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.6.1"
+  >
+    
+
+<sdoc-autogen>Configuration Management</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-016</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall support dynamic configuration updates without system restart, including network parameters, security policies, and operational rules.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.7-3-7-Sizing-and-timing-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.7"
+>
+
+<sdoc-autogen>3.7.&nbsp;3.7 Sizing and timing requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-017"
+  node-role="requirement"
+  data-uid="SRS-017"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.7.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.7.1"
+  >
+    
+
+<sdoc-autogen>Performance Requirements</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-017</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall process up to 10,000 concurrent connections, respond to user interface requests within 2 seconds, and handle real-time data updates with latency under 100 milliseconds.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-018"
+  node-role="requirement"
+  data-uid="SRS-018"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.7.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.7.2"
+  >
+    
+
+<sdoc-autogen>Scalability Requirements</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-018</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall support horizontal scaling to accommodate growth from 100 to 1000 satellite nodes without architectural changes.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.8-3-8-Safety-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.8"
+>
+
+<sdoc-autogen>3.8.&nbsp;3.8 Safety requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-019"
+  node-role="requirement"
+  data-uid="SRS-019"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.8.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.8.1"
+  >
+    
+
+<sdoc-autogen>Safety Controls</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-019</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall implement safety controls to prevent unauthorized satellite control commands, ensure graceful degradation during failures, and maintain system stability under all conditions.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.9-3-9-Security-and-privacy-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.9"
+>
+
+<sdoc-autogen>3.9.&nbsp;3.9 Security and privacy requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-020"
+  node-role="requirement"
+  data-uid="SRS-020"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.9.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.9.1"
+  >
+    
+
+<sdoc-autogen>Authentication and Authorization</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-020</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall implement multi-factor authentication, role-based access control, and session management with automatic timeout and secure session termination.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-021"
+  node-role="requirement"
+  data-uid="SRS-021"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.9.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.9.2"
+  >
+    
+
+<sdoc-autogen>Data Protection</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-021</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall encrypt all sensitive data at rest and in transit using AES-256 encryption, implement secure key management, and provide data integrity verification.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-022"
+  node-role="requirement"
+  data-uid="SRS-022"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.9.3"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.9.3"
+  >
+    
+
+<sdoc-autogen>Audit Logging</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-022</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall maintain comprehensive audit logs of all user actions, system events, and security incidents with tamper-evident logging and automated log analysis.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.10-3-10-Environment-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.10"
+>
+
+<sdoc-autogen>3.10.&nbsp;3.10 Environment requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-023"
+  node-role="requirement"
+  data-uid="SRS-023"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.10.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.10.1"
+  >
+    
+
+<sdoc-autogen>Operating Environment</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-023</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall operate on Linux-based systems with containerization support, cloud deployment capabilities, and compatibility with DoD-approved hardware platforms.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.11-3-11-Computer-resource-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.11"
+>
+
+<sdoc-autogen>3.11.&nbsp;3.11 Computer resource requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-024"
+  node-role="requirement"
+  data-uid="SRS-024"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.11.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.11.1"
+  >
+    
+
+<sdoc-autogen>Hardware Requirements</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-024</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall operate on systems with minimum 16GB RAM, 8 CPU cores, 500GB storage, and network connectivity supporting 1Gbps bandwidth.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.12-3-12-Software-quality-factors"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.12"
+>
+
+<sdoc-autogen>3.12.&nbsp;3.12 Software quality factors</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-025"
+  node-role="requirement"
+  data-uid="SRS-025"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.12.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.12.1"
+  >
+    
+
+<sdoc-autogen>Reliability</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-025</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall achieve 99.9% uptime with automatic failover capabilities and comprehensive error handling to prevent system crashes.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-026"
+  node-role="requirement"
+  data-uid="SRS-026"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.12.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.12.2"
+  >
+    
+
+<sdoc-autogen>Maintainability</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-026</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall be designed with modular architecture, comprehensive documentation, and automated testing to facilitate maintenance and updates.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-027"
+  node-role="requirement"
+  data-uid="SRS-027"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.12.3"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.12.3"
+  >
+    
+
+<sdoc-autogen>Usability</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-027</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall provide intuitive user interfaces with consistent design patterns, comprehensive help documentation, and accessibility compliance.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.13-3-13-Design-and-implementation-constraints"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.13"
+>
+
+<sdoc-autogen>3.13.&nbsp;3.13 Design and implementation constraints</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-028"
+  node-role="requirement"
+  data-uid="SRS-028"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.13.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.13.1"
+  >
+    
+
+<sdoc-autogen>Technology Constraints</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-028</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall be developed using approved programming languages (Python, JavaScript, SQL), frameworks, and libraries that comply with DoD security requirements.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.14-3-14-Personnel-related-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.14"
+>
+
+<sdoc-autogen>3.14.&nbsp;3.14 Personnel-related requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-029"
+  node-role="requirement"
+  data-uid="SRS-029"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.14.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.14.1"
+  >
+    
+
+<sdoc-autogen>Training Requirements</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-029</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall include comprehensive training materials, user guides, and online help to minimize training requirements for system operators and administrators.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.15-3-15-Training-related-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.15"
+>
+
+<sdoc-autogen>3.15.&nbsp;3.15 Training-related requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-030"
+  node-role="requirement"
+  data-uid="SRS-030"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.15.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.15.1"
+  >
+    
+
+<sdoc-autogen>Training System</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-030</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall include a training mode with simulated satellite networks and realistic operational scenarios for user training and system familiarization.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.16-3-16-Logistics-related-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.16"
+>
+
+<sdoc-autogen>3.16.&nbsp;3.16 Logistics-related requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-031"
+  node-role="requirement"
+  data-uid="SRS-031"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.16.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.16.1"
+  >
+    
+
+<sdoc-autogen>Deployment Support</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-031</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall support automated deployment, configuration management, and version control to facilitate system installation and updates across multiple locations.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.17-3-17-Other-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.17"
+>
+
+<sdoc-autogen>3.17.&nbsp;3.17 Other requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-032"
+  node-role="requirement"
+  data-uid="SRS-032"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.17.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.17.1"
+  >
+    
+
+<sdoc-autogen>Compliance Requirements</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-032</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall comply with relevant military standards, cybersecurity requirements, and regulatory frameworks applicable to satellite communication systems.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3.18-3-18-Packaging-requirements"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3.18"
+>
+
+<sdoc-autogen>3.18.&nbsp;3.18 Packaging requirements</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-033"
+  node-role="requirement"
+  data-uid="SRS-033"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.18.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.18.1"
+  >
+    
+
+<sdoc-autogen>Software Packaging</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-033</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall be packaged as containerized applications with automated build processes, version tagging, and deployment automation for consistent delivery.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="4-4-Qualification-provisions"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="4"
+>
+
+<sdoc-autogen>4.&nbsp;4. Qualification provisions</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-034"
+  node-role="requirement"
+  data-uid="SRS-034"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="4.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="4.1"
+  >
+    
+
+<sdoc-autogen>Testing Requirements</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-034</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The software shall undergo comprehensive testing including unit tests, integration tests, system tests, security tests, and performance tests with minimum 90% code coverage.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="5-5-Requirements-traceability"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="5"
+>
+
+<sdoc-autogen>5.&nbsp;5. Requirements traceability</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-035"
+  node-role="requirement"
+  data-uid="SRS-035"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="5.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="5.1"
+  >
+    
+
+<sdoc-autogen>Traceability Matrix</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-035</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>All software requirements shall be traceable to system requirements, design elements, test cases, and implementation components through a comprehensive traceability matrix.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="6-6-Notes"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="6"
+>
+
+<sdoc-autogen>6.&nbsp;6. Notes</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SRS-036"
+  node-role="requirement"
+  data-uid="SRS-036"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="6.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="6.1"
+  >
+    
+
+<sdoc-autogen>Document Notes</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SRS-036</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>This document shall be maintained under configuration control with version history and change tracking to ensure requirement consistency and traceability.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section></div> 
+  </div> 
+
+    </main>
+
+    <footer class="layout_footer">
+      <div class="footer">
+        Built with
+        <a
+          class="strictdoc__link"
+          href="https://github.com/strictdoc-project/strictdoc"
+          target="_blank"
+        >StrictDoc</a>
+        <a
+          class="strictdoc__version"
+          href="https://github.com/strictdoc-project/strictdoc/releases/tag/0.9.1"
+          target="_blank"
+        >
+          <svg height="16" viewBox="0 0 16 16" version="1.1" width="16" >
+            <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/>
+          </svg>
+          0.9.1
+        </a>
+      </div>
+    </footer>
+
+    <aside class="layout_aside">
+      
+    </aside>
+
+  </div>
+  
+  <div id="modal"></div>
+  <div id="confirm"></div>
+  
+</body>
+</html>

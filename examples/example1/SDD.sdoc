@@ -1,178 +1,204 @@
 [DOCUMENT]
-TITLE: MIL-STD-498 SDD (Software Design Description) - ADAS Control Module
+TITLE: MIL-STD-498 SDD (Software Design Description)
+
 [SECTION]
-TITLE: 1
- Scope
+TITLE: 1. Scope
+
 [SECTION]
-TITLE: 1
-1 Identification
+TITLE: 1.1 Identification
+
 [REQUIREMENT]
 UID: SDD-001
 TITLE: Design Document Identification
-STATEMENT: This document shall be identified as the Software Design Description (SDD) for the Advanced Driver Assistance System (ADAS) Control Module, version 1.0, following MIL-STD-498 and ISO 26262 standards.
-RATIONALE: Proper document identification ensures configuration management and design traceability for safety-critical automotive systems.
+STATEMENT: This document shall be identified as the Software Design Description (SDD) for the Satellite Communication Management System (SCMS), version 1.0.
+RATIONALE: Proper document identification ensures configuration management and design traceability.
+
 [/SECTION]
+
 [SECTION]
-TITLE: 1
-2 System overview
+TITLE: 1.2 System overview
+
 [REQUIREMENT]
 UID: SDD-002
 TITLE: Design Overview
-STATEMENT: The ADAS Control Module software design shall implement a safety-critical, real-time architecture with redundant processing paths, sensor fusion algorithms, and fault-tolerant communication for automotive driver assistance applications.
-RATIONALE: Architectural overview establishes the foundation for detailed design specifications in the automotive safety domain.
+STATEMENT: The SCMS software design shall implement a microservices architecture with distributed components, secure communication protocols, and scalable infrastructure for satellite network management.
+RATIONALE: Architectural overview establishes the foundation for detailed design specifications.
+
 [/SECTION]
+
 [SECTION]
-TITLE: 1
-3 Document overview
+TITLE: 1.3 Document overview
+
 [REQUIREMENT]
 UID: SDD-003
 TITLE: Design Document Structure
-STATEMENT: This document shall be organized into sections covering design overview, architectural design, detailed design, interface design, and design constraints following MIL-STD-498 and automotive safety standards.
-RATIONALE: Structured organization facilitates design review and implementation guidance for safety-critical systems.
+STATEMENT: This document shall be organized into sections covering design overview, architectural design, detailed design, interface design, and design constraints.
+RATIONALE: Structured organization facilitates design review and implementation guidance.
+
 [/SECTION]
+
 [/SECTION]
+
 [SECTION]
-TITLE: 2
- Referenced documents
+TITLE: 2. Referenced documents
+
 [REQUIREMENT]
 UID: SDD-004
 TITLE: Design References
-STATEMENT: The design shall reference the SRS document, ISO 26262 safety standards, AUTOSAR architecture standards, MISRA C++ guidelines, and automotive cybersecurity standards for design implementation.
-RATIONALE: Design references ensure consistency with requirements and established automotive safety patterns.
+STATEMENT: The design shall reference the SRS document, system architecture standards, security design patterns, and industry best practices for distributed systems.
+RATIONALE: Design references ensure consistency with requirements and established patterns.
+
 [/SECTION]
+
 [SECTION]
-TITLE: 3
- CSCI-wide design decisions
+TITLE: 3. CSCI-wide design decisions
+
 [REQUIREMENT]
 UID: SDD-005
-TITLE: Safety Architecture Decision
-STATEMENT: The system shall implement a dual-redundant architecture with independent processing paths, sensor fusion algorithms, and voting mechanisms to ensure safety and reliability.
-RATIONALE: Dual-redundant architecture provides fault tolerance and meets ASIL D safety requirements.
+TITLE: Architecture Decision
+STATEMENT: The system shall implement a microservices architecture to enable independent development, deployment, and scaling of system components.
+RATIONALE: Microservices architecture provides flexibility and maintainability for complex distributed systems.
+
 [REQUIREMENT]
 UID: SDD-006
-TITLE: Real-Time Architecture Decision
-STATEMENT: The system shall use a real-time operating system with deterministic scheduling, priority-based task management, and bounded response times for safety-critical functions.
-RATIONALE: Real-time architecture ensures predictable system behavior and meets automotive timing requirements.
+TITLE: Technology Stack Decision
+STATEMENT: The system shall use Python for backend services, React for frontend, PostgreSQL for data persistence, and Docker for containerization.
+RATIONALE: Selected technology stack ensures security compliance, performance, and operational reliability.
+
 [REQUIREMENT]
 UID: SDD-007
-TITLE: Technology Stack Decision
-STATEMENT: The system shall use MISRA C++ compliant code, AUTOSAR middleware, secure communication protocols, and automotive-grade development tools for implementation.
-RATIONALE: Selected technology stack ensures safety compliance, performance, and operational reliability.
+TITLE: Security Design Decision
+STATEMENT: The system shall implement defense-in-depth security with multiple layers of protection including network, application, and data security controls.
+RATIONALE: Layered security approach provides robust protection against various threat vectors.
+
 [/SECTION]
+
 [SECTION]
-TITLE: 4
- CSCI architectural design
+TITLE: 4. CSCI architectural design
+
 [SECTION]
-TITLE: 4
-1 CSCI components
+TITLE: 4.1 CSCI components
+
 [REQUIREMENT]
 UID: SDD-008
-TITLE: Sensor Fusion Component
-STATEMENT: The Sensor Fusion Component shall integrate data from multiple sensors (radar, camera, ultrasonic) using Kalman filtering, object tracking algorithms, and confidence scoring for environmental perception.
-RATIONALE: Dedicated sensor fusion component ensures accurate environmental perception and safety system operation.
+TITLE: Network Management Component
+STATEMENT: The Network Management Component shall handle satellite configuration, routing algorithms, and real-time network monitoring with automated failover capabilities.
+RATIONALE: Dedicated network management component ensures focused functionality and operational reliability.
+
 [REQUIREMENT]
 UID: SDD-009
-TITLE: Decision Making Component
-STATEMENT: The Decision Making Component shall implement safety-critical decision algorithms for lane departure, collision avoidance, and adaptive cruise control with redundant processing paths.
-RATIONALE: Centralized decision making component ensures consistent safety-critical behavior across all ADAS functions.
+TITLE: Security Component
+STATEMENT: The Security Component shall provide authentication, authorization, encryption, and intrusion detection with centralized security policy management.
+RATIONALE: Centralized security component ensures consistent security controls across all system functions.
+
 [REQUIREMENT]
 UID: SDD-010
-TITLE: Vehicle Control Component
-STATEMENT: The Vehicle Control Component shall provide secure interfaces to vehicle systems (brakes, steering, engine) with safety interlocks and command validation.
-RATIONALE: Vehicle control component enables ADAS functions to influence vehicle behavior safely and securely.
+TITLE: User Interface Component
+STATEMENT: The User Interface Component shall provide web-based dashboards, configuration tools, and monitoring displays with role-based access control.
+RATIONALE: Comprehensive user interface component enables efficient system operation and management.
+
 [REQUIREMENT]
 UID: SDD-011
-TITLE: Human Machine Interface Component
-STATEMENT: The Human Machine Interface Component shall provide driver warnings, system status, and configuration options through multiple display interfaces with priority-based messaging.
-RATIONALE: Comprehensive HMI component enables efficient system operation and driver awareness.
+TITLE: Data Management Component
+STATEMENT: The Data Management Component shall handle data persistence, backup, recovery, and archival with appropriate security and performance optimizations.
+RATIONALE: Robust data management component ensures data integrity and operational continuity.
+
+[/SECTION]
+
+[SECTION]
+TITLE: 4.2 Concept of execution
+
 [REQUIREMENT]
 UID: SDD-012
-TITLE: Safety Monitor Component
-STATEMENT: The Safety Monitor Component shall continuously monitor system health, detect faults, and implement graceful degradation with automatic failover to safe states.
-RATIONALE: Safety monitor component ensures system reliability and compliance with automotive safety standards.
-[/SECTION]
-[SECTION]
-TITLE: 4
-2 Concept of execution
+TITLE: Service Execution Model
+STATEMENT: The system shall execute as containerized microservices with automatic scaling, load balancing, and health monitoring for continuous operation.
+RATIONALE: Containerized execution model ensures deployment consistency and operational reliability.
+
 [REQUIREMENT]
 UID: SDD-013
-TITLE: Real-Time Execution Model
-STATEMENT: The system shall execute as a multi-threaded real-time application with priority-based scheduling, deterministic timing, and bounded response times for safety-critical tasks.
-RATIONALE: Real-time execution model ensures predictable system behavior and meets automotive timing requirements.
+TITLE: Communication Model
+STATEMENT: Services shall communicate via RESTful APIs and message queues with secure authentication and encrypted data transmission.
+RATIONALE: Secure communication model ensures system integrity and data protection.
+
+[/SECTION]
+
+[SECTION]
+TITLE: 4.3 Interface design
+
+[SECTION]
+TITLE: 4.3.1 Interface identification and diagrams
+
 [REQUIREMENT]
 UID: SDD-014
-TITLE: Safety Execution Model
-STATEMENT: The system shall implement watchdog timers, health monitoring, and automatic recovery mechanisms with graceful degradation to safe operating modes.
-RATIONALE: Safety execution model ensures system reliability and compliance with automotive safety standards.
-[/SECTION]
-[SECTION]
-TITLE: 4
-3 Interface design
-[SECTION]
-TITLE: 4.3
-1 Interface identification and diagrams
+TITLE: External API Interface
+STATEMENT: The system shall provide RESTful API interfaces for satellite control, network management, and system integration with OAuth 2.0 authentication.
+RATIONALE: Standardized external interfaces enable system integration and automation capabilities.
+
 [REQUIREMENT]
 UID: SDD-015
-TITLE: Sensor Interface Design
-STATEMENT: The system shall provide standardized sensor interfaces supporting CAN bus, Ethernet, and FlexRay protocols with data validation, error detection, and redundancy management.
-RATIONALE: Standardized sensor interfaces enable system integration and ensure data reliability.
+TITLE: Internal Service Interface
+STATEMENT: Internal services shall communicate via well-defined APIs with consistent error handling, data formats, and security protocols.
+RATIONALE: Consistent internal interfaces facilitate service development and system maintenance.
+
 [REQUIREMENT]
 UID: SDD-016
-TITLE: Vehicle Control Interface Design
-STATEMENT: The system shall provide secure vehicle control interfaces with command validation, safety interlocks, and redundant communication paths for critical vehicle functions.
-RATIONALE: Secure vehicle control interfaces ensure safe operation and prevent unauthorized vehicle control.
+TITLE: Database Interface
+STATEMENT: The system shall interface with PostgreSQL databases using connection pooling, prepared statements, and transaction management for data integrity.
+RATIONALE: Robust database interface ensures reliable data persistence and performance.
+
+[/SECTION]
+
+[/SECTION]
+
+[/SECTION]
+
+[SECTION]
+TITLE: 5. Software unit detailed design
+
 [REQUIREMENT]
 UID: SDD-017
-TITLE: HMI Interface Design
-STATEMENT: The system shall provide configurable HMI interfaces supporting multiple display types with priority-based messaging, driver distraction management, and accessibility features.
-RATIONALE: Configurable HMI interfaces ensure driver awareness and system transparency.
-[/SECTION]
-[/SECTION]
-[/SECTION]
-[SECTION]
-TITLE: 5
- Software unit detailed design
+TITLE: Authentication Module
+STATEMENT: The Authentication Module shall implement multi-factor authentication, session management, and secure token handling with automatic timeout and logout capabilities.
+RATIONALE: Comprehensive authentication module ensures system security and user accountability.
+
 [REQUIREMENT]
 UID: SDD-018
-TITLE: Lane Detection Module
-STATEMENT: The Lane Detection Module shall implement computer vision algorithms for lane boundary detection, lane departure prediction, and lane keeping assistance with sub-pixel accuracy.
-RATIONALE: Advanced lane detection algorithms ensure accurate lane departure warning and correction.
+TITLE: Routing Engine
+STATEMENT: The Routing Engine shall implement intelligent traffic routing algorithms with load balancing, failover logic, and priority-based traffic management.
+RATIONALE: Advanced routing engine optimizes network utilization and ensures reliable communication.
+
 [REQUIREMENT]
 UID: SDD-019
-TITLE: Object Detection Module
-STATEMENT: The Object Detection Module shall implement deep learning algorithms for vehicle, pedestrian, and obstacle detection with real-time processing and confidence scoring.
-RATIONALE: Advanced object detection algorithms ensure accurate collision warning and avoidance.
+TITLE: Monitoring Agent
+STATEMENT: The Monitoring Agent shall collect system metrics, generate alerts, and provide real-time status updates with configurable thresholds and notification rules.
+RATIONALE: Comprehensive monitoring agent enables proactive system management and rapid incident response.
+
 [REQUIREMENT]
 UID: SDD-020
-TITLE: Trajectory Planning Module
-STATEMENT: The Trajectory Planning Module shall implement path planning algorithms for adaptive cruise control and emergency maneuvers with safety constraints and smooth trajectories.
-RATIONALE: Advanced trajectory planning ensures smooth and safe vehicle control.
+TITLE: Configuration Manager
+STATEMENT: The Configuration Manager shall handle dynamic configuration updates, version control, and deployment management with rollback capabilities.
+RATIONALE: Robust configuration manager ensures system adaptability and operational stability.
+
+[/SECTION]
+
+[SECTION]
+TITLE: 6. Requirements traceability
+
 [REQUIREMENT]
 UID: SDD-021
-TITLE: Traffic Sign Recognition Module
-STATEMENT: The Traffic Sign Recognition Module shall implement image processing algorithms for traffic sign detection and classification with high accuracy and real-time performance.
-RATIONALE: Advanced traffic sign recognition enhances driver awareness and compliance.
+TITLE: Design Traceability
+STATEMENT: All design elements shall be traceable to software requirements through a comprehensive traceability matrix linking components, modules, and requirements.
+RATIONALE: Requirements traceability ensures complete requirement coverage and facilitates change impact analysis.
+
+[/SECTION]
+
+[SECTION]
+TITLE: 7. Notes
+
 [REQUIREMENT]
 UID: SDD-022
-TITLE: Safety Monitor Module
-STATEMENT: The Safety Monitor Module shall implement comprehensive system health monitoring, fault detection, and automatic recovery mechanisms with configurable thresholds.
-RATIONALE: Comprehensive safety monitoring ensures system reliability and compliance with automotive standards.
-[/SECTION]
-[SECTION]
-TITLE: 6
- Requirements traceability
-[REQUIREMENT]
-UID: SDD-023
-TITLE: Design Traceability
-STATEMENT: All design elements shall be traceable to software requirements through a comprehensive traceability matrix linking components, modules, and requirements with safety impact analysis.
-RATIONALE: Requirements traceability ensures complete requirement coverage and facilitates change impact analysis for safety-critical systems.
-[/SECTION]
-[SECTION]
-TITLE: 7
- Notes
-[REQUIREMENT]
-UID: SDD-024
-TITLE: Implementation Guidelines
-STATEMENT: The software shall be implemented using MISRA C++ compliant code with static analysis, code reviews, unit testing, and continuous integration practices for quality assurance.
-RATIONALE: Implementation guidelines provide guidance for development teams and ensure code quality and safety compliance.
+TITLE: Design Notes
+STATEMENT: This design document shall be maintained under configuration control with version history and change tracking to ensure design consistency and traceability.
+RATIONALE: Document maintenance ensures design accuracy and stakeholder communication.
+
 [/SECTION]

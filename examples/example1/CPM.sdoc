@@ -1,5 +1,5 @@
 [DOCUMENT]
-TITLE: MIL-STD-498 IRS (Interface Requirements Specification)
+TITLE: MIL-STD-498 CPM (Computer Programming Manual)
 
 [SECTION]
 TITLE: 1. Scope
@@ -10,7 +10,7 @@ TITLE: 1.1 Identification
 [/SECTION]
 
 [SECTION]
-TITLE: 1.2 System overview
+TITLE: 1.2 Computer system overview
 
 [/SECTION]
 
@@ -27,26 +27,16 @@ TITLE: 2. Referenced documents
 [/SECTION]
 
 [SECTION]
-TITLE: 3. Requirements
-
-[SECTION]
-TITLE: 3.1 Interface identification and diagrams
-
-[/SECTION]
+TITLE: 3. Programming environment
 
 [/SECTION]
 
 [SECTION]
-TITLE: 4. Qualification provisions
+TITLE: 4. Programming information
 
 [/SECTION]
 
 [SECTION]
-TITLE: 5. Requirements traceability
-
-[/SECTION]
-
-[SECTION]
-TITLE: 6. Notes
+TITLE: 5. Notes
 
 [/SECTION]

@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8"/>
+  <meta name="keywords" content="strictdoc, documentation, documentation-tool, requirements-management, requirements, documentation-generator, requirement-specifications, requirements-engineering, technical-documentation, requirements-specification"/>
+  <meta name="description" content="strictdoc. Software for technical documentation and requirements management."/><meta name="strictdoc-export-type" content="static"><link rel="shortcut icon" href="../_static/favicon.ico" type="image/x-icon"/>
+
+  
+  
+  <link rel="stylesheet" href="../_static/base.css"/>
+  <link rel="stylesheet" href="../_static/layout.css"/>
+  <link rel="stylesheet" href="../_static/content.css"/>
+  <link rel="stylesheet" href="../_static/node.css"/>
+  <link rel="stylesheet" href="../_static/node_content.css"/>
+  <link rel="stylesheet" href="../_static/element.css"/>
+  <link rel="stylesheet" href="../_static/form.css"/>
+  <link rel="stylesheet" href="../_static/requirement__temporary.css"/>
+  <link rel="stylesheet" href="../_static/autogen.css"/>
+  
+  <link rel="stylesheet" href="../_static/requirement-tree.css"/>
+
+
+  
+  <script src="../_static/stimulus_umd.min.js"></script>
+  <script>
+    Stimulus.application = Stimulus.Application.start();
+  </script>
+
+  <script src="../_static/viewtype_menu.js"></script>
+  <script src="../_static/resizable_bar.js"></script>
+  <script src="../_static/collapsible_toc.js"></script>
+  <script src="../_static/toc_highlighting.js"></script>
+  <script src="../_static/zoomable.js"></script>
+  
+  
+  
+
+
+  <title>MIL-STD-498 SDD (Software Design Description) - Deep Traceability</title>
+
+  
+</head>
+
+<body data-viewtype="deep_traceability" data-turbo="false">
+
+<div class="mars">
+  
+</div>
+
+  <div class="layout" id="layout">
+
+    <nav class="layout_nav">
+      <div class="nav">
+
+
+
+  <a
+    data-link="index"
+    class="nav_button"
+    href="../index.html"
+    title="Project index">
+    <svg class="svg_icon" width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <line x1="9" y1="4" x2="7" y2="4"></line>
+  <line x1="12" y1="9" x2="12" y2="7"></line>
+  <line x1="6" y1="10" x2="10" y2="6"></line>
+  <circle cx="4" cy="12" r="2.25"></circle>
+  <circle cx="12" cy="4" r="2.25"></circle>
+  <circle cx="4" cy="4" r="2.25"></circle>
+  <circle cx="12" cy="12" r="2.25"></circle>
+</svg>
+  </a></div>
+    </nav><aside class="layout_tree">
+      
+  
+
+
+
+<div
+  js-resizable_bar="tree"
+  data-state="open"
+  data-position="left"
+>
+<div class="tree">
+    
+        
+        <a
+          href="../example1/SDD.html"
+          class="tree_item"
+          
+          active="true"
+          
+          data-folder="example1"
+          data-testid="tree-document-link"
+        >
+          <svg class="svg_icon" width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d=" M13,13 L13,8 C13,7.5 12.6,7 12,7 L9,7 C8.5,7 8,6.5 8,6 L8,3 C8,2.5 7.5,2 7,2 L4,2 C3.5,2 3,2.5 3,3 L3,13 C3,13.5 3.5,14 4,14 L12,14 C12.6,14 13,13.5 13,13 Z M13,9 L13,8 C13,7.5 13,7 12.5,6.5 L8.5,2.5 C8,2 7.5,2 7,2 L6,2"></path>
+</svg>
+          <div
+            class="document_title"
+            title="MIL-STD-498 SDD (Software Design Description)"
+            data-file_name="SDD.sdoc"
+          >MIL-STD-498 SDD (Software Design Description)</div>
+        </a>
+        
+        
+        
+        
+      </div>
+</div>
+
+    </aside><aside
+        data-position="right"
+        class="layout_toc"
+      >
+        
+  
+
+
+
+<div
+  js-resizable_bar="toc"
+  data-state="open"
+  data-position="right"
+>
+<turbo-frame
+  id="frame-toc"
+  style="display: contents"
+>
+      <ul
+      data-testid="toc-list"
+      js-collapsible_list="list"
+      class="toc"
+      id="toc"
+      data-controller="draggable_list"><li data-nodeid="eae128b2f1a94cf5a80312bc5061c708"><a
+              href="#1-1-Scope"
+              anchor="1-1-Scope"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                1
+              </span>1. Scope
+              
+            </a><ul><li data-nodeid="7a8ec0c98a7d412e8f27151e0e9f7ce5"><a
+              href="#1.1-1-1-Identification"
+              anchor="1.1-1-1-Identification"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                1.1
+              </span>1.1 Identification
+              
+            </a><ul><li data-nodeid="41c189a05dd1427eab8485d251dc51b4">
+        <a
+          href="#SDD-001"
+          anchor="SDD-001"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            1.1.1
+          </span>Design Document Identification
+            </a></li></ul>
+            </li><li data-nodeid="43f8f0f041bc416ea4f56d724ff83a88"><a
+              href="#1.2-1-2-System-overview"
+              anchor="1.2-1-2-System-overview"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                1.2
+              </span>1.2 System overview
+              
+            </a><ul><li data-nodeid="b37bd704904a4dda8ee7c25870cc03d6">
+        <a
+          href="#SDD-002"
+          anchor="SDD-002"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            1.2.1
+          </span>Design Overview
+            </a></li></ul>
+            </li><li data-nodeid="97bc3757101043d6a69127e7c19640ba"><a
+              href="#1.3-1-3-Document-overview"
+              anchor="1.3-1-3-Document-overview"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                1.3
+              </span>1.3 Document overview
+              
+            </a><ul><li data-nodeid="5cc1d3acba2348859df1bc743873db3c">
+        <a
+          href="#SDD-003"
+          anchor="SDD-003"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            1.3.1
+          </span>Design Document Structure
+            </a></li></ul>
+            </li></ul>
+            </li><li data-nodeid="8fb348f679eb4bc8af5d98b5219ba533"><a
+              href="#2-2-Referenced-documents"
+              anchor="2-2-Referenced-documents"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                2
+              </span>2. Referenced documents
+              
+            </a><ul><li data-nodeid="e456afc80ed24bb89d5ab2fd7cd822a9">
+        <a
+          href="#SDD-004"
+          anchor="SDD-004"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            2.1
+          </span>Design References
+            </a></li></ul>
+            </li><li data-nodeid="d903247fdad447a19f5f476f807c1141"><a
+              href="#3-3-CSCI-wide-design-decisions"
+              anchor="3-3-CSCI-wide-design-decisions"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                3
+              </span>3. CSCI-wide design decisions
+              
+            </a><ul><li data-nodeid="cc8b00a80e4b4ad9b6637c81782178b6">
+        <a
+          href="#SDD-005"
+          anchor="SDD-005"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.1
+          </span>Architecture Decision
+            </a></li><li data-nodeid="5a782b50fdf84b48992b9dd8eca798cc">
+        <a
+          href="#SDD-006"
+          anchor="SDD-006"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.2
+          </span>Technology Stack Decision
+            </a></li><li data-nodeid="920c39ea47b1467583766dfd601ee1c1">
+        <a
+          href="#SDD-007"
+          anchor="SDD-007"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            3.3
+          </span>Security Design Decision
+            </a></li></ul>
+            </li><li data-nodeid="739aa7dcbbfb4ffa8db17f5abdfb1743"><a
+              href="#4-4-CSCI-architectural-design"
+              anchor="4-4-CSCI-architectural-design"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                4
+              </span>4. CSCI architectural design
+              
+            </a><ul><li data-nodeid="38c464c96bec49f4b07806b3f5822212"><a
+              href="#4.1-4-1-CSCI-components"
+              anchor="4.1-4-1-CSCI-components"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                4.1
+              </span>4.1 CSCI components
+              
+            </a><ul><li data-nodeid="f126f034621b4a369f40aa950fa0ea60">
+        <a
+          href="#SDD-008"
+          anchor="SDD-008"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            4.1.1
+          </span>Network Management Component
+            </a></li><li data-nodeid="aeff3d486c1947bdaa8e8dcd7f0e35c2">
+        <a
+          href="#SDD-009"
+          anchor="SDD-009"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            4.1.2
+          </span>Security Component
+            </a></li><li data-nodeid="0a7a519238974ea4ad410d3a88afb36a">
+        <a
+          href="#SDD-010"
+          anchor="SDD-010"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            4.1.3
+          </span>User Interface Component
+            </a></li><li data-nodeid="4a5622091c3f4c94abe61d855d3227a3">
+        <a
+          href="#SDD-011"
+          anchor="SDD-011"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            4.1.4
+          </span>Data Management Component
+            </a></li></ul>
+            </li><li data-nodeid="dbc445dbb334416294066ac484654016"><a
+              href="#4.2-4-2-Concept-of-execution"
+              anchor="4.2-4-2-Concept-of-execution"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                4.2
+              </span>4.2 Concept of execution
+              
+            </a><ul><li data-nodeid="2842186e9d9f4288859bad4bd7f46fba">
+        <a
+          href="#SDD-012"
+          anchor="SDD-012"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            4.2.1
+          </span>Service Execution Model
+            </a></li><li data-nodeid="ba29fa88dd0e42ebaabefa8784101621">
+        <a
+          href="#SDD-013"
+          anchor="SDD-013"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            4.2.2
+          </span>Communication Model
+            </a></li></ul>
+            </li><li data-nodeid="467062bdeaa94189b4faf31a2ce01163"><a
+              href="#4.3-4-3-Interface-design"
+              anchor="4.3-4-3-Interface-design"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                4.3
+              </span>4.3 Interface design
+              
+            </a><ul><li data-nodeid="e5953dbcdd4e437eaa0fc418ca60c70c"><a
+              href="#4.3.1-4-3-1-Interface-identification-and-diagrams"
+              anchor="4.3.1-4-3-1-Interface-identification-and-diagrams"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                4.3.1
+              </span>4.3.1 Interface identification and diagrams
+              
+            </a><ul><li data-nodeid="f1caa3c403ca408180cf194376fdc8b3">
+        <a
+          href="#SDD-014"
+          anchor="SDD-014"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            4.3.1.1
+          </span>External API Interface
+            </a></li><li data-nodeid="7256f32625054c8497d03591c54a7043">
+        <a
+          href="#SDD-015"
+          anchor="SDD-015"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            4.3.1.2
+          </span>Internal Service Interface
+            </a></li><li data-nodeid="eea3da6c9e0d45528f11d61e914aafb0">
+        <a
+          href="#SDD-016"
+          anchor="SDD-016"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            4.3.1.3
+          </span>Database Interface
+            </a></li></ul>
+            </li></ul>
+            </li></ul>
+            </li><li data-nodeid="273af287a94e4ec5964a03b3d659cbb0"><a
+              href="#5-5-Software-unit-detailed-design"
+              anchor="5-5-Software-unit-detailed-design"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                5
+              </span>5. Software unit detailed design
+              
+            </a><ul><li data-nodeid="75df8cb8375d490cb4b4c1f0ce468bb6">
+        <a
+          href="#SDD-017"
+          anchor="SDD-017"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            5.1
+          </span>Authentication Module
+            </a></li><li data-nodeid="099cfae102fd44c0afb430fcf19b921e">
+        <a
+          href="#SDD-018"
+          anchor="SDD-018"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            5.2
+          </span>Routing Engine
+            </a></li><li data-nodeid="f0263336df694c299f33a00bd8dd04de">
+        <a
+          href="#SDD-019"
+          anchor="SDD-019"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            5.3
+          </span>Monitoring Agent
+            </a></li><li data-nodeid="9053dfea85e147e0b91147f4790833a3">
+        <a
+          href="#SDD-020"
+          anchor="SDD-020"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            5.4
+          </span>Configuration Manager
+            </a></li></ul>
+            </li><li data-nodeid="8a2101eec74f4745a33484fa9f0a50e4"><a
+              href="#6-6-Requirements-traceability"
+              anchor="6-6-Requirements-traceability"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                6
+              </span>6. Requirements traceability
+              
+            </a><ul><li data-nodeid="59f7b97bbd7a438088fa9565c9cc3199">
+        <a
+          href="#SDD-021"
+          anchor="SDD-021"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            6.1
+          </span>Design Traceability
+            </a></li></ul>
+            </li><li data-nodeid="28ec321d9b644c5291e7cbd3d60b72d3"><a
+              href="#7-7-Notes"
+              anchor="7-7-Notes"
+              data-turbo="false"
+            >
+              <span class="section-number">
+                7
+              </span>7. Notes
+              
+            </a><ul><li data-nodeid="ad2cced740604408a4cf2d65f6e5342e">
+        <a
+          href="#SDD-022"
+          anchor="SDD-022"
+          data-turbo="false"
+        >
+          <span class="section-number">
+            7.1
+          </span>Design Notes
+            </a></li></ul>
+            </li></ul>
+</turbo-frame>
+</div>
+
+      </aside><header class="layout_header">
+      <div class="header">
+
+  
+  <svg class="svg_icon" width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <polyline points="14 5 14 10.5 8 15 2 10.5 2 5 8 1 14 5 8 9.5"></polyline>
+  <polyline points="2.5 5.5 8 9.5 8 15"></polyline>
+</svg>
+  <div
+    class="header__project_name"
+    title="Untitled Project"
+  >Untitled Project
+  </div>
+
+  
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" class="sc-gLvsXj bpkaBy"><path stroke="currentColor" d="M12.5 4.5l-5 11" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <turbo-frame id="header_document_title">
+  <svg class="svg_icon" width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d=" M13,13 L13,8 C13,7.5 12.6,7 12,7 L9,7 C8.5,7 8,6.5 8,6 L8,3 C8,2.5 7.5,2 7,2 L4,2 C3.5,2 3,2.5 3,3 L3,13 C3,13.5 3.5,14 4,14 L12,14 C12.6,14 13,13.5 13,13 Z M13,9 L13,8 C13,7.5 13,7 12.5,6.5 L8.5,2.5 C8,2 7.5,2 7,2 L6,2"></path>
+</svg>
+  <div
+    class="header__document_title"
+    title="MIL-STD-498 SDD (Software Design Description)"
+  >
+    MIL-STD-498 SDD (Software Design Description)
+  </div>
+</turbo-frame>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" class="sc-gLvsXj bpkaBy"><path stroke="currentColor" d="M12.5 4.5l-5 11" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <div class="viewtype">
+  <div
+    id="viewtype_handler"
+    class="viewtype__handler"
+    aria-expanded="false"
+    aria-controls="viewtype_menu"
+  >
+    <span>Deep Traceability</span>
+    <svg class="svg_icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" >
+  <path d="M5 10l3 3 3-3M5 6l3-3 3 3"></path>
+</svg>
+  </div>
+  <menu
+    id="viewtype_menu"
+    class="viewtype__menu"
+    aria-hidden="true"
+    aria-labelledby="viewtype_handler"
+  >
+    <li class="viewtype__menu_header">VIEWS</li>
+    <li>
+      <a
+        data-viewtype_link="document"
+        class="viewtype__menu_item"
+        title="Go to Document view"
+        href="../example1/SDD.html#_TOP">
+      Document</a>
+    </li><li>
+      <a
+        data-viewtype_link="table"
+        class="viewtype__menu_item"
+        title="Go to Table view"
+        href="../example1/SDD-TABLE.html#_TOP">
+      Table</a>
+    </li><li>
+      <a
+        data-viewtype_link="traceability"
+        class="viewtype__menu_item"
+        title="Go to Traceability view"
+        href="../example1/SDD-TRACE.html#_TOP">
+      Traceability</a>
+    </li><li>
+      <a
+        data-viewtype_link="deep_traceability"
+        class="viewtype__menu_item"
+        title="Go to Deep Traceability view"
+        href="../example1/SDD-DEEP-TRACE.html#_TOP">
+      Deep Traceability</a>
+    </li></menu>
+</div>
+    </div>
+    </header>
+
+    <main class="layout_main">
+      
+  <div
+    class="main"
+    js-pan_with_space="true"
+  >
+    
+<div class="tags">
+</div>
+    <div class="content">
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="1-1-Scope"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="1"
+>
+
+<sdoc-autogen>1.&nbsp;1. Scope</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="1.1-1-1-Identification"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="1.1"
+>
+
+<sdoc-autogen>1.1.&nbsp;1.1 Identification</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-001"
+  node-role="requirement"
+  data-uid="SDD-001"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="1.1.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="1.1.1"
+  >
+    
+
+<sdoc-autogen>Design Document Identification</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-001</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>This document shall be identified as the Software Design Description (SDD) for the Satellite Communication Management System (SCMS), version 1.0.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="1.2-1-2-System-overview"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="1.2"
+>
+
+<sdoc-autogen>1.2.&nbsp;1.2 System overview</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-002"
+  node-role="requirement"
+  data-uid="SDD-002"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="1.2.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="1.2.1"
+  >
+    
+
+<sdoc-autogen>Design Overview</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-002</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The SCMS software design shall implement a microservices architecture with distributed components, secure communication protocols, and scalable infrastructure for satellite network management.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="1.3-1-3-Document-overview"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="1.3"
+>
+
+<sdoc-autogen>1.3.&nbsp;1.3 Document overview</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-003"
+  node-role="requirement"
+  data-uid="SDD-003"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="1.3.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="1.3.1"
+  >
+    
+
+<sdoc-autogen>Design Document Structure</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-003</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>This document shall be organized into sections covering design overview, architectural design, detailed design, interface design, and design constraints.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="2-2-Referenced-documents"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="2"
+>
+
+<sdoc-autogen>2.&nbsp;2. Referenced documents</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-004"
+  node-role="requirement"
+  data-uid="SDD-004"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="2.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="2.1"
+  >
+    
+
+<sdoc-autogen>Design References</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-004</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The design shall reference the SRS document, system architecture standards, security design patterns, and industry best practices for distributed systems.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="3-3-CSCI-wide-design-decisions"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="3"
+>
+
+<sdoc-autogen>3.&nbsp;3. CSCI-wide design decisions</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-005"
+  node-role="requirement"
+  data-uid="SDD-005"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.1"
+  >
+    
+
+<sdoc-autogen>Architecture Decision</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-005</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The system shall implement a microservices architecture to enable independent development, deployment, and scaling of system components.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-006"
+  node-role="requirement"
+  data-uid="SDD-006"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.2"
+  >
+    
+
+<sdoc-autogen>Technology Stack Decision</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-006</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The system shall use Python for backend services, React for frontend, PostgreSQL for data persistence, and Docker for containerization.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-007"
+  node-role="requirement"
+  data-uid="SDD-007"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="3.3"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="3.3"
+  >
+    
+
+<sdoc-autogen>Security Design Decision</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-007</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The system shall implement defense-in-depth security with multiple layers of protection including network, application, and data security controls.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="4-4-CSCI-architectural-design"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="4"
+>
+
+<sdoc-autogen>4.&nbsp;4. CSCI architectural design</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="4.1-4-1-CSCI-components"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="4.1"
+>
+
+<sdoc-autogen>4.1.&nbsp;4.1 CSCI components</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-008"
+  node-role="requirement"
+  data-uid="SDD-008"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="4.1.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="4.1.1"
+  >
+    
+
+<sdoc-autogen>Network Management Component</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-008</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The Network Management Component shall handle satellite configuration, routing algorithms, and real-time network monitoring with automated failover capabilities.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-009"
+  node-role="requirement"
+  data-uid="SDD-009"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="4.1.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="4.1.2"
+  >
+    
+
+<sdoc-autogen>Security Component</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-009</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The Security Component shall provide authentication, authorization, encryption, and intrusion detection with centralized security policy management.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-010"
+  node-role="requirement"
+  data-uid="SDD-010"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="4.1.3"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="4.1.3"
+  >
+    
+
+<sdoc-autogen>User Interface Component</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-010</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The User Interface Component shall provide web-based dashboards, configuration tools, and monitoring displays with role-based access control.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-011"
+  node-role="requirement"
+  data-uid="SDD-011"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="4.1.4"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="4.1.4"
+  >
+    
+
+<sdoc-autogen>Data Management Component</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-011</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The Data Management Component shall handle data persistence, backup, recovery, and archival with appropriate security and performance optimizations.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="4.2-4-2-Concept-of-execution"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="4.2"
+>
+
+<sdoc-autogen>4.2.&nbsp;4.2 Concept of execution</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-012"
+  node-role="requirement"
+  data-uid="SDD-012"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="4.2.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="4.2.1"
+  >
+    
+
+<sdoc-autogen>Service Execution Model</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-012</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The system shall execute as containerized microservices with automatic scaling, load balancing, and health monitoring for continuous operation.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-013"
+  node-role="requirement"
+  data-uid="SDD-013"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="4.2.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="4.2.2"
+  >
+    
+
+<sdoc-autogen>Communication Model</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-013</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>Services shall communicate via RESTful APIs and message queues with secure authentication and encrypted data transmission.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="4.3-4-3-Interface-design"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="4.3"
+>
+
+<sdoc-autogen>4.3.&nbsp;4.3 Interface design</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="4.3.1-4-3-1-Interface-identification-and-diagrams"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="4.3.1"
+>
+
+<sdoc-autogen>4.3.1.&nbsp;4.3.1 Interface identification and diagrams</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-014"
+  node-role="requirement"
+  data-uid="SDD-014"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="4.3.1.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="4.3.1.1"
+  >
+    
+
+<sdoc-autogen>External API Interface</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-014</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The system shall provide RESTful API interfaces for satellite control, network management, and system integration with OAuth 2.0 authentication.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-015"
+  node-role="requirement"
+  data-uid="SDD-015"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="4.3.1.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="4.3.1.2"
+  >
+    
+
+<sdoc-autogen>Internal Service Interface</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-015</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>Internal services shall communicate via well-defined APIs with consistent error handling, data formats, and security protocols.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-016"
+  node-role="requirement"
+  data-uid="SDD-016"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="4.3.1.3"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="4.3.1.3"
+  >
+    
+
+<sdoc-autogen>Database Interface</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-016</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The system shall interface with PostgreSQL databases using connection pooling, prepared statements, and transaction management for data integrity.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="5-5-Software-unit-detailed-design"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="5"
+>
+
+<sdoc-autogen>5.&nbsp;5. Software unit detailed design</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-017"
+  node-role="requirement"
+  data-uid="SDD-017"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="5.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="5.1"
+  >
+    
+
+<sdoc-autogen>Authentication Module</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-017</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The Authentication Module shall implement multi-factor authentication, session management, and secure token handling with automatic timeout and logout capabilities.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-018"
+  node-role="requirement"
+  data-uid="SDD-018"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="5.2"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="5.2"
+  >
+    
+
+<sdoc-autogen>Routing Engine</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-018</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The Routing Engine shall implement intelligent traffic routing algorithms with load balancing, failover logic, and priority-based traffic management.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-019"
+  node-role="requirement"
+  data-uid="SDD-019"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="5.3"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="5.3"
+  >
+    
+
+<sdoc-autogen>Monitoring Agent</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-019</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The Monitoring Agent shall collect system metrics, generate alerts, and provide real-time status updates with configurable thresholds and notification rules.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-020"
+  node-role="requirement"
+  data-uid="SDD-020"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="5.4"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="5.4"
+  >
+    
+
+<sdoc-autogen>Configuration Manager</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-020</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>The Configuration Manager shall handle dynamic configuration updates, version control, and deployment management with rollback capabilities.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="6-6-Requirements-traceability"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="6"
+>
+
+<sdoc-autogen>6.&nbsp;6. Requirements traceability</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-021"
+  node-role="requirement"
+  data-uid="SDD-021"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="6.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="6.1"
+  >
+    
+
+<sdoc-autogen>Design Traceability</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-021</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>All design elements shall be traceable to software requirements through a comprehensive traceability matrix linking components, modules, and requirements.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="section"
+    data-testid="node-section"
+  >
+
+    
+    <sdoc-anchor
+  id="7-7-Notes"
+  node-role="section"
+  ></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-section>
+  
+
+<sdoc-section-title
+  data-level="7"
+>
+
+<sdoc-autogen>7.&nbsp;7. Notes</sdoc-autogen></sdoc-section-title>
+</sdoc-section>
+
+
+    </sdoc-node></div>
+          </section>
+          <section class="content_section">
+            <div class="content_item" data-role="parents">
+</div>
+            <div class="content_item" data-role="current">
+
+  <sdoc-node
+    node-style="card"
+    node-role="requirement"
+    data-testid="node-requirement"
+  >
+
+    
+    <sdoc-anchor
+  id="SDD-022"
+  node-role="requirement"
+  data-uid="SDD-022"></sdoc-anchor>
+
+    
+    
+
+
+<sdoc-node-content
+  node-view="simple"
+  data-level="7.1"
+  data-testid="requirement-style-simple"
+>
+  
+  
+  
+  <sdoc-node-title
+    data-level="7.1"
+  >
+    
+
+<sdoc-autogen>Design Notes</sdoc-autogen>
+  </sdoc-node-title>
+  
+  <sdoc-node-uid>
+
+<sdoc-autogen>SDD-022</sdoc-autogen></sdoc-node-uid>
+  
+    <sdoc-node-field data-field-label="statement">
+      <sdoc-autogen><div class="document">
+<p>This design document shall be maintained under configuration control with version history and change tracking to ensure design consistency and traceability.</p>
+</div>
+</sdoc-autogen>
+    </sdoc-node-field>
+</sdoc-node-content>
+
+
+    </sdoc-node></div>
+            <div class="content_item" data-role="children">
+</div>
+          </section></div> 
+  </div> 
+
+    </main>
+
+    <footer class="layout_footer">
+      <div class="footer">
+        Built with
+        <a
+          class="strictdoc__link"
+          href="https://github.com/strictdoc-project/strictdoc"
+          target="_blank"
+        >StrictDoc</a>
+        <a
+          class="strictdoc__version"
+          href="https://github.com/strictdoc-project/strictdoc/releases/tag/0.9.1"
+          target="_blank"
+        >
+          <svg height="16" viewBox="0 0 16 16" version="1.1" width="16" >
+            <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/>
+          </svg>
+          0.9.1
+        </a>
+      </div>
+    </footer>
+
+    <aside class="layout_aside">
+      
+    </aside>
+
+  </div>
+  
+  <div id="modal"></div>
+  <div id="confirm"></div>
+  
+</body>
+</html>

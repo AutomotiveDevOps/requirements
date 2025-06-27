@@ -1,5 +1,5 @@
 [DOCUMENT]
-TITLE: MIL-STD-498 IRS (Interface Requirements Specification)
+TITLE: MIL-STD-498 STD (Software Test Description)
 
 [SECTION]
 TITLE: 1. Scope
@@ -27,17 +27,12 @@ TITLE: 2. Referenced documents
 [/SECTION]
 
 [SECTION]
-TITLE: 3. Requirements
-
-[SECTION]
-TITLE: 3.1 Interface identification and diagrams
-
-[/SECTION]
+TITLE: 3. Test preparations
 
 [/SECTION]
 
 [SECTION]
-TITLE: 4. Qualification provisions
+TITLE: 4. Test descriptions
 
 [/SECTION]
 
