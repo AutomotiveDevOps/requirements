@@ -26,11 +26,13 @@ jobs:
     - name: Generate documentation for example1
       run: |
         cd examples/example1
+        mkdir -p docs
         strictdoc export . --output-dir docs --formats html
     
     - name: Generate documentation for example2
       run: |
         cd examples/example2
+        mkdir -p docs
         mkdir -p docs/html/example2
         # Generate basic HTML for existing documents
         for file in *.sdoc; do

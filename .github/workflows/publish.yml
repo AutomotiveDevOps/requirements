@@ -37,6 +37,7 @@ jobs:
       - name: Run Strict Doc
         run: |
           # Build all StrictDoc documents from all .sdoc files in the project
+          mkdir -p docs
           strictdoc export --output-dir docs/ $(find . -type f -name '*.sdoc' | grep -v './venv/' | grep -v './docs/')
 
       - name: Deploy to GitHub Pages
