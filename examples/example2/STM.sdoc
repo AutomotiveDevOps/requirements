@@ -1,0 +1,124 @@
+[DOCUMENT]
+TITLE: MIL-STD-498 STM (Software Transition Manual) - Military Quad Copter RTOS
+[[SECTION]]
+TITLE: 1. Scope
+[[SECTION]]
+TITLE: 1.1 Identification
+[REFERENCE]
+TYPE: Document
+REF: SIM.sdoc
+DESC: See Software Installation Manual for installation procedures.
+[REFERENCE]
+TYPE: Document
+REF: SUM.sdoc
+DESC: See Software User Manual for operational procedures.
+[REFERENCE]
+TYPE: Document
+REF: STR.sdoc
+DESC: See Software Test Report for system validation.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 1.2 System overview
+[REQUIREMENT]
+UID: STM-001-MILUAV
+TITLE: System Overview
+STATEMENT: The Military Quad Copter RTOS transition process includes deployment planning, training, operational handover, and ongoing support for military UAV operations.
+RATIONALE: System overview provides context for transition procedures.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 1.3 Document overview
+[REQUIREMENT]
+UID: STM-002-MILUAV
+TITLE: Document Structure
+STATEMENT: This document covers transition planning, referenced documents, transition procedures, and support arrangements per MIL-STD-498.
+RATIONALE: Structured documentation supports successful system transition.
+[[/SECTION]]
+[[/SECTION]]
+[[SECTION]]
+TITLE: 2. Referenced documents
+[REFERENCE]
+TYPE: Document
+REF: SIM.sdoc
+DESC: Software Installation Manual
+[REFERENCE]
+TYPE: Document
+REF: SUM.sdoc
+DESC: Software User Manual
+[REFERENCE]
+TYPE: Document
+REF: STR.sdoc
+DESC: Software Test Report
+[[/SECTION]]
+[[SECTION]]
+TITLE: 3. Transition planning
+[REQUIREMENT]
+UID: STM-003-MILUAV
+TITLE: Deployment Planning
+STATEMENT: Deployment planning includes site preparation, infrastructure setup, personnel training, and operational readiness assessment for military deployment.
+RATIONALE: Deployment planning ensures successful system transition.
+[REQUIREMENT]
+UID: STM-004-MILUAV
+TITLE: Training Planning
+STATEMENT: Training planning includes operator training, maintenance training, and support personnel training with certification requirements for military operations.
+RATIONALE: Training planning ensures competent system operation.
+[REQUIREMENT]
+UID: STM-005-MILUAV
+TITLE: Support Planning
+STATEMENT: Support planning includes technical support, maintenance support, and operational support arrangements for ongoing military operations.
+RATIONALE: Support planning ensures sustained system operation.
+[REQUIREMENT]
+UID: STM-006-MILUAV
+TITLE: Risk Management
+STATEMENT: Risk management includes transition risks, mitigation strategies, and contingency plans for military system deployment.
+RATIONALE: Risk management ensures successful transition and operation.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 4. Transition procedures
+[REQUIREMENT]
+UID: STM-007-MILUAV
+TITLE: Pre-Transition Activities
+STATEMENT: Pre-transition activities include system validation, personnel preparation, infrastructure verification, and operational readiness assessment.
+RATIONALE: Pre-transition activities ensure readiness for transition.
+[REQUIREMENT]
+UID: STM-008-MILUAV
+TITLE: System Deployment
+STATEMENT: System deployment includes installation, configuration, testing, and validation at operational sites with military oversight.
+RATIONALE: System deployment enables operational capability.
+[REQUIREMENT]
+UID: STM-009-MILUAV
+TITLE: Personnel Training
+STATEMENT: Personnel training includes classroom instruction, hands-on practice, certification testing, and operational familiarization for military operators.
+RATIONALE: Personnel training ensures competent system operation.
+[REQUIREMENT]
+UID: STM-010-MILUAV
+TITLE: Operational Handover
+STATEMENT: Operational handover includes system acceptance, operational responsibility transfer, and ongoing support establishment for military operations.
+RATIONALE: Operational handover ensures successful system transition.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 5. Support arrangements
+[REQUIREMENT]
+UID: STM-011-MILUAV
+TITLE: Technical Support
+STATEMENT: Technical support includes help desk services, remote diagnostics, on-site support, and technical documentation for military operations.
+RATIONALE: Technical support ensures system reliability and availability.
+[REQUIREMENT]
+UID: STM-012-MILUAV
+TITLE: Maintenance Support
+STATEMENT: Maintenance support includes preventive maintenance, corrective maintenance, spare parts, and maintenance training for military systems.
+RATIONALE: Maintenance support ensures system performance and longevity.
+[REQUIREMENT]
+UID: STM-013-MILUAV
+TITLE: Operational Support
+STATEMENT: Operational support includes mission planning assistance, operational procedures, and performance optimization for military operations.
+RATIONALE: Operational support ensures mission success and effectiveness.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 6. Notes
+[REQUIREMENT]
+UID: STM-014-MILUAV
+TITLE: Transition Success Criteria
+STATEMENT: Transition success criteria include system operational capability, personnel competency, support infrastructure, and mission readiness for military deployment.
+RATIONALE: Transition success criteria ensure successful system transition and operation.
+[[/SECTION]]
+

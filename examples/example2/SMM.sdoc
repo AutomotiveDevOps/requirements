@@ -1,0 +1,137 @@
+[DOCUMENT]
+TITLE: MIL-STD-498 SMM (Software Maintenance Manual) - Military Quad Copter RTOS
+[[SECTION]]
+TITLE: 1. Scope
+[[SECTION]]
+TITLE: 1.1 Identification
+[REFERENCE]
+TYPE: Document
+REF: STM.sdoc
+DESC: See Software Transition Manual for transition procedures.
+[REFERENCE]
+TYPE: Document
+REF: SUM.sdoc
+DESC: See Software User Manual for operational procedures.
+[REFERENCE]
+TYPE: Document
+REF: SCMP.sdoc
+DESC: See Software Configuration Management Plan for configuration control.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 1.2 System overview
+[REQUIREMENT]
+UID: SMM-001-MILUAV
+TITLE: System Overview
+STATEMENT: The Military Quad Copter RTOS requires comprehensive maintenance procedures for software updates, hardware maintenance, and operational support for military UAV operations.
+RATIONALE: System overview provides context for maintenance procedures.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 1.3 Document overview
+[REQUIREMENT]
+UID: SMM-002-MILUAV
+TITLE: Document Structure
+STATEMENT: This document covers maintenance organization, referenced documents, maintenance procedures, and support arrangements per MIL-STD-498.
+RATIONALE: Structured documentation supports effective maintenance.
+[[/SECTION]]
+[[/SECTION]]
+[[SECTION]]
+TITLE: 2. Referenced documents
+[REFERENCE]
+TYPE: Document
+REF: STM.sdoc
+DESC: Software Transition Manual
+[REFERENCE]
+TYPE: Document
+REF: SUM.sdoc
+DESC: Software User Manual
+[REFERENCE]
+TYPE: Document
+REF: SCMP.sdoc
+DESC: Software Configuration Management Plan
+[[/SECTION]]
+[[SECTION]]
+TITLE: 3. Maintenance organization
+[REQUIREMENT]
+UID: SMM-003-MILUAV
+TITLE: Maintenance Organization
+STATEMENT: Maintenance organization includes maintenance manager, software engineers, hardware technicians, and support personnel with defined roles and responsibilities.
+RATIONALE: Maintenance organization ensures effective system maintenance.
+[REQUIREMENT]
+UID: SMM-004-MILUAV
+TITLE: Maintenance Levels
+STATEMENT: Maintenance levels include organizational maintenance, intermediate maintenance, and depot maintenance with escalation procedures for military systems.
+RATIONALE: Maintenance levels ensure appropriate maintenance support.
+[REQUIREMENT]
+UID: SMM-005-MILUAV
+TITLE: Maintenance Authority
+STATEMENT: Maintenance authority includes change approval authority, release authority, and deployment authority for military software maintenance.
+RATIONALE: Maintenance authority ensures controlled system evolution.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 4. Maintenance procedures
+[REQUIREMENT]
+UID: SMM-006-MILUAV
+TITLE: Preventive Maintenance
+STATEMENT: Preventive maintenance includes software updates, hardware inspections, performance monitoring, and system optimization for military UAV operations.
+RATIONALE: Preventive maintenance ensures system reliability and performance.
+[REQUIREMENT]
+UID: SMM-007-MILUAV
+TITLE: Corrective Maintenance
+STATEMENT: Corrective maintenance includes defect correction, bug fixes, performance improvements, and security patches for military software systems.
+RATIONALE: Corrective maintenance ensures system functionality and security.
+[REQUIREMENT]
+UID: SMM-008-MILUAV
+TITLE: Adaptive Maintenance
+STATEMENT: Adaptive maintenance includes requirement changes, interface updates, and system enhancements for evolving military UAV operations.
+RATIONALE: Adaptive maintenance ensures system adaptability and effectiveness.
+[REQUIREMENT]
+UID: SMM-009-MILUAV
+TITLE: Perfective Maintenance
+STATEMENT: Perfective maintenance includes performance optimization, code refactoring, and system improvements for military software systems.
+RATIONALE: Perfective maintenance ensures system efficiency and maintainability.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 5. Change management
+[REQUIREMENT]
+UID: SMM-010-MILUAV
+TITLE: Change Request Process
+STATEMENT: Change request process includes change identification, impact analysis, approval procedures, and implementation tracking for military software maintenance.
+RATIONALE: Change request process ensures controlled system evolution.
+[REQUIREMENT]
+UID: SMM-011-MILUAV
+TITLE: Version Management
+STATEMENT: Version management includes software versions, hardware versions, and documentation versions with release management and deployment tracking.
+RATIONALE: Version management ensures system traceability and reliability.
+[REQUIREMENT]
+UID: SMM-012-MILUAV
+TITLE: Release Management
+STATEMENT: Release management includes release planning, testing, deployment, and rollback procedures for military software releases.
+RATIONALE: Release management ensures safe and reliable system updates.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 6. Support arrangements
+[REQUIREMENT]
+UID: SMM-013-MILUAV
+TITLE: Technical Support
+STATEMENT: Technical support includes help desk services, remote diagnostics, on-site support, and technical documentation for military operations.
+RATIONALE: Technical support ensures system reliability and availability.
+[REQUIREMENT]
+UID: SMM-014-MILUAV
+TITLE: Training Support
+STATEMENT: Training support includes operator training, maintenance training, and update training for military personnel and contractors.
+RATIONALE: Training support ensures competent system operation and maintenance.
+[REQUIREMENT]
+UID: SMM-015-MILUAV
+TITLE: Documentation Support
+STATEMENT: Documentation support includes maintenance procedures, troubleshooting guides, and technical documentation for military software systems.
+RATIONALE: Documentation support ensures effective system maintenance and operation.
+[[/SECTION]]
+[[SECTION]]
+TITLE: 7. Notes
+[REQUIREMENT]
+UID: SMM-016-MILUAV
+TITLE: Maintenance Security
+STATEMENT: Maintenance procedures shall include security controls, access controls, and audit trails for military software maintenance and updates.
+RATIONALE: Maintenance security ensures system protection and compliance.
+[[/SECTION]]
+

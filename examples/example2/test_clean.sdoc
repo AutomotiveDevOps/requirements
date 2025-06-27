@@ -1,0 +1,10 @@
+[DOCUMENT]
+TITLE: Test Document
+[[SECTION]]
+TITLE: Test Section
+[REQUIREMENT]
+UID: TEST-001
+TITLE: Test Requirement
+STATEMENT: This is a test requirement.
+RATIONALE: Testing StrictDoc grammar.
+[[/SECTION]] 
