@@ -19,26 +19,26 @@ The repository demonstrates complete 1:1 mapping to the MIL-STD-498 standard doc
 - 🌐 [Documentation Navigation Hub](https://automotivedevops.github.io/requirements/)
 
 **Example 1 - ADAS Control Module (Complete MIL-STD-498 Set):**
-- 📋 [Software Requirements Specification (SRS)](https://automotivedevops.github.io/requirements/example1/html/SRS-TABLE.html)
-- 🏗️ [Software Design Description (SDD)](https://automotivedevops.github.io/requirements/example1/html/SDD-TABLE.html)
-- 🧪 [Software Test Plan (STP)](https://automotivedevops.github.io/requirements/example1/html/STP-TABLE.html)
-- 📊 [Computer Operation Manual (COM)](https://automotivedevops.github.io/requirements/example1/html/COM-TABLE.html)
+- 📋 [Software Requirements Specification (SRS)](https://automotivedevops.github.io/requirements/example1/html/example1/SRS-TABLE.html)
+- 🏗️ [Software Design Description (SDD)](https://automotivedevops.github.io/requirements/example1/html/example1/SDD-TABLE.html)
+- 🧪 [Software Test Plan (STP)](https://automotivedevops.github.io/requirements/example1/html/example1/STP-TABLE.html)
+- 📊 [Computer Operation Manual (COM)](https://automotivedevops.github.io/requirements/example1/html/example1/COM-TABLE.html)
 - 📋 [All Documents Index](https://automotivedevops.github.io/requirements/example1/html/index.html)
 
 **Example 2 - Military Quad Copter RTOS:**
-- 📋 [Software Requirements Specification (SRS)](https://automotivedevops.github.io/requirements/example2/html/SRS-TABLE.html)
-- 🏗️ [Software Design Description (SDD)](https://automotivedevops.github.io/requirements/example2/html/SDD-TABLE.html)
-- 🧪 [Software Test Plan (STP)](https://automotivedevops.github.io/requirements/example2/html/STP-TABLE.html)
+- 📋 [Software Requirements Specification (SRS)](https://automotivedevops.github.io/requirements/example2/html/example2/SRS-TABLE.html)
+- 🏗️ [Software Design Description (SDD)](https://automotivedevops.github.io/requirements/example2/html/example2/SDD-TABLE.html)
+- 🧪 [Software Test Plan (STP)](https://automotivedevops.github.io/requirements/example2/html/example2/STP-TABLE.html)
 - 📊 [All Documents Index](https://automotivedevops.github.io/requirements/example2/html/index.html)
 
 **StrictDoc Examples & Templates:**
-- 📋 [Minimal Example](https://automotivedevops.github.io/requirements/strictdoc/html/00_minimal-TABLE.html)
-- 📋 [Minimal with Sections](https://automotivedevops.github.io/requirements/strictdoc/html/01_minimal_sections-TABLE.html)
-- 📋 [Advanced Features](https://automotivedevops.github.io/requirements/strictdoc/html/02_advanced_features-TABLE.html)
+- 📋 [Minimal Example](https://automotivedevops.github.io/requirements/strictdoc/html/strictdoc/00_minimal-TABLE.html)
+- 📋 [Minimal with Sections](https://automotivedevops.github.io/requirements/strictdoc/html/strictdoc/01_minimal_sections-TABLE.html)
+- 📋 [Advanced Features](https://automotivedevops.github.io/requirements/strictdoc/html/strictdoc/02_advanced_features-TABLE.html)
 - 📊 [All Documents Index](https://automotivedevops.github.io/requirements/strictdoc/html/index.html)
 
 **Root Level Documentation:**
-- 📋 [Bug Demo](https://automotivedevops.github.io/requirements/root/html/bug_demo-TABLE.html)
+- 📋 [Bug Demo](https://automotivedevops.github.io/requirements/root/html/root/bug_demo-TABLE.html)
 - 📋 [Test Files](https://automotivedevops.github.io/requirements/root/html/index.html)
 
 ## 🚀 Quick Start
