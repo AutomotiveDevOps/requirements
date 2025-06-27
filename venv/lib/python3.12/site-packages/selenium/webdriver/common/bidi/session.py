@@ -19,7 +19,6 @@ from selenium.webdriver.common.bidi.common import command_builder
 
 
 class Session:
-
     def __init__(self, conn):
         self.conn = conn
 

@@ -16,13 +16,9 @@
 # under the License.
 
 import functools
-from base64 import urlsafe_b64decode
-from base64 import urlsafe_b64encode
+from base64 import urlsafe_b64decode, urlsafe_b64encode
 from enum import Enum
-from typing import Any
-from typing import Dict
-from typing import Optional
-from typing import Union
+from typing import Any, Dict, Optional, Union
 
 
 class Protocol(str, Enum):

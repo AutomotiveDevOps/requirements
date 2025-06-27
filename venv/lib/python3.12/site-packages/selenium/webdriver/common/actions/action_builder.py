@@ -15,9 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-from typing import List
-from typing import Optional
-from typing import Union
+from typing import List, Optional, Union
 
 from selenium.webdriver.remote.command import Command
 
@@ -159,7 +157,7 @@ class ActionBuilder:
         >>> action_builder = ActionBuilder(driver)
         >>> keyboard = action_builder.key_input
         >>> el = driver.find_element(id: "some_id")
-        >>> action_builder.click(el).pause(keyboard).pause(keyboard).pause(keyboard).send_keys('keys').perform()
+        >>> action_builder.click(el).pause(keyboard).pause(keyboard).pause(keyboard).send_keys("keys").perform()
         """
         enc = {"actions": []}
         for device in self.devices:
@@ -177,7 +175,7 @@ class ActionBuilder:
         >>> action_builder = ActionBuilder(driver)
         >>> keyboard = action_builder.key_input
         >>> el = driver.find_element(By.ID, "some_id")
-        >>> action_builder.click(el).pause(keyboard).pause(keyboard).pause(keyboard).send_keys('keys')
+        >>> action_builder.click(el).pause(keyboard).pause(keyboard).pause(keyboard).send_keys("keys")
         >>> action_builder.clear_actions()
         """
         self.driver.execute(Command.W3C_CLEAR_ACTIONS)

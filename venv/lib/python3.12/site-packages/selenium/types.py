@@ -16,11 +16,7 @@
 # under the License.
 """Selenium type definitions."""
 
-from typing import IO
-from typing import Any
-from typing import Iterable
-from typing import Type
-from typing import Union
+from typing import IO, Any, Iterable, Type, Union
 
 AnyKey = Union[str, int, float]
 WaitExcTypes = Iterable[Type[Exception]]

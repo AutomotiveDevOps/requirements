@@ -16,9 +16,7 @@
 # under the License.
 
 
-from typing import List
-from typing import Mapping
-from typing import Optional
+from typing import List, Mapping, Optional
 
 from selenium.types import SubprocessStdAlias
 from selenium.webdriver.chromium import service
@@ -37,10 +35,10 @@ class Service(service.ChromiumService):
 
     def __init__(
         self,
-        executable_path=None,
+        executable_path: Optional[str] = None,
         port: int = 0,
         service_args: Optional[List[str]] = None,
-        log_output: SubprocessStdAlias = None,
+        log_output: Optional[SubprocessStdAlias] = None,
         env: Optional[Mapping[str, str]] = None,
         **kwargs,
     ) -> None:

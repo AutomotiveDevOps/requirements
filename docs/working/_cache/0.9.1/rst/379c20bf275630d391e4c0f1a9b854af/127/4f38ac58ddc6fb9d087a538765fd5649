@@ -1,3 +1,0 @@
-<div class="document">
-<p>Internal services shall communicate via well-defined APIs with consistent error handling, data formats, and security protocols.</p>
-</div>

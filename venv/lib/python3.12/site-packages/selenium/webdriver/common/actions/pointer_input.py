@@ -15,17 +15,13 @@
 # specific language governing permissions and limitations
 # under the License.
 
-from typing import Any
-from typing import Dict
-from typing import Optional
-from typing import Union
+from typing import Any, Dict, Optional, Union
 
 from selenium.common.exceptions import InvalidArgumentException
 from selenium.webdriver.remote.webelement import WebElement
 
 from .input_device import InputDevice
-from .interaction import POINTER
-from .interaction import POINTER_KINDS
+from .interaction import POINTER, POINTER_KINDS
 
 
 class PointerInput(InputDevice):

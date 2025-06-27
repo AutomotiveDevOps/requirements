@@ -15,10 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-from typing import Dict
-from typing import List
-from typing import Optional
-from typing import Union
+from typing import Dict, List, Optional, Union
 
 from selenium.webdriver.common.bidi.common import command_builder
 
@@ -402,7 +399,8 @@ class BrowsingContext:
         max_depth: Optional[int] = None,
         root: Optional[str] = None,
     ) -> List[BrowsingContextInfo]:
-        """Returns a tree of all descendent navigables including the given parent itself, or all top-level contexts when no parent is provided.
+        """Returns a tree of all descendent navigables including the given parent itself, or all top-level contexts
+        when no parent is provided.
 
         Parameters:
         -----------
@@ -513,7 +511,8 @@ class BrowsingContext:
         scale: float = 1.0,
         shrink_to_fit: bool = True,
     ) -> str:
-        """Creates a paginated representation of a document, and returns it as a PDF document represented as a Base64-encoded string.
+        """Creates a paginated representation of a document, and returns it as a PDF document represented as a
+        Base64-encoded string.
 
         Parameters:
         -----------

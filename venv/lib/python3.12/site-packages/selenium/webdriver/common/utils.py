@@ -17,10 +17,7 @@
 """The Utils methods."""
 
 import socket
-from typing import Iterable
-from typing import List
-from typing import Optional
-from typing import Union
+from typing import Iterable, List, Optional, Union
 
 from selenium.types import AnyKey
 from selenium.webdriver.common.keys import Keys

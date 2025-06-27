@@ -1,3 +1,0 @@
-<div class="document">
-<p>The system shall use Python for backend services, React for frontend, PostgreSQL for data persistence, and Docker for containerization.</p>
-</div>

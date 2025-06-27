@@ -16,17 +16,9 @@
 # under the License.
 
 import time
-from typing import Callable
-from typing import Generic
-from typing import Literal
-from typing import Optional
-from typing import Tuple
-from typing import Type
-from typing import TypeVar
-from typing import Union
+from typing import Callable, Generic, Literal, Optional, Tuple, Type, TypeVar, Union
 
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.types import WaitExcTypes
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
@@ -81,7 +73,7 @@ class WebDriverWait(Generic[D]):
         # avoid the divide by zero
         if self._poll == 0:
             self._poll = POLL_FREQUENCY
-        exceptions = list(IGNORED_EXCEPTIONS)
+        exceptions: list = list(IGNORED_EXCEPTIONS)
         if ignored_exceptions:
             try:
                 exceptions.extend(iter(ignored_exceptions))
@@ -89,7 +81,7 @@ class WebDriverWait(Generic[D]):
                 exceptions.append(ignored_exceptions)
         self._ignored_exceptions = tuple(exceptions)
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f'<{type(self).__module__}.{type(self).__name__} (session="{self._driver.session_id}")>'
 
     def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = "") -> T:
@@ -178,8 +170,7 @@ class WebDriverWait(Generic[D]):
 
         # Wait until an element is visible on the page
         >>> wait = WebDriverWait(driver, 10)
-        >>> is_disappeared = wait.until_not(EC.visibility_of_element_located(
-        ... (By.ID, "exampleId")))
+        >>> is_disappeared = wait.until_not(EC.visibility_of_element_located((By.ID, "exampleId")))
         """
         end_time = time.monotonic() + self._timeout
         while True:

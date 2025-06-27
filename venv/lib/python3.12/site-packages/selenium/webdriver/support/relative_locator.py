@@ -15,16 +15,10 @@
 # specific language governing permissions and limitations
 # under the License.
 import warnings
-from typing import Dict
-from typing import List
-from typing import NoReturn
-from typing import Optional
-from typing import Union
-from typing import overload
+from typing import Dict, List, NoReturn, Optional, Union, overload
 
 from selenium.common.exceptions import WebDriverException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.by import ByType
+from selenium.webdriver.common.by import By, ByType
 from selenium.webdriver.remote.webelement import WebElement
 
 
@@ -51,9 +45,7 @@ def with_tag_name(tag_name: str) -> "RelativeBy":
     - This method is deprecated and may be removed in future versions.
     - Please use `locate_with` instead.
     """
-    warnings.warn(
-        "This method is deprecated and may be removed in future versions. " "Please use `locate_with` instead."
-    )
+    warnings.warn("This method is deprecated and may be removed in future versions. Please use `locate_with` instead.")
     if not tag_name:
         raise WebDriverException("tag_name can not be null")
     return RelativeBy({By.CSS_SELECTOR: tag_name})
@@ -94,7 +86,7 @@ class RelativeBy:
     --------
     >>> lowest = driver.find_element(By.ID, "below")
     >>> elements = driver.find_elements(locate_with(By.CSS_SELECTOR, "p").above(lowest))
-    >>> ids = [el.get_attribute('id') for el in elements]
+    >>> ids = [el.get_attribute("id") for el in elements]
     >>> assert "above" in ids
     >>> assert "mid" in ids
     """

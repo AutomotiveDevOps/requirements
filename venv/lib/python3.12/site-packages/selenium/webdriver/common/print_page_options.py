@@ -16,14 +16,10 @@
 # under the License.
 
 
-from typing import TYPE_CHECKING
-from typing import List
-from typing import Optional
-from typing import Type
+from typing import TYPE_CHECKING, List, Optional, Type
 
 if TYPE_CHECKING:
-    from typing import Literal
-    from typing import TypedDict
+    from typing import Literal, TypedDict
 
     Orientation = Literal["portrait", "landscape"]
 
@@ -47,8 +43,7 @@ if TYPE_CHECKING:
         pageRanges: List[str]
 
 else:
-    from typing import Any
-    from typing import Dict
+    from typing import Any, Dict
 
     Orientation = str
     _MarginOpts = _PageOpts = _PrintOpts = Dict[str, Any]

@@ -68,3 +68,12 @@ class JavaScriptLogEntry:
             stacktrace=json["stackTrace"],
             type_=json["type"],
         )
+
+
+class LogLevel:
+    """Represents log level."""
+
+    DEBUG = "debug"
+    INFO = "info"
+    WARN = "warn"
+    ERROR = "error"

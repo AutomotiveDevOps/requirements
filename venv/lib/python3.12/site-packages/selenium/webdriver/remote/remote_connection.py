@@ -154,7 +154,7 @@ class RemoteConnection:
 
     _timeout = socket.getdefaulttimeout()
     _ca_certs = os.getenv("REQUESTS_CA_BUNDLE") if "REQUESTS_CA_BUNDLE" in os.environ else certifi.where()
-    _client_config: ClientConfig = None
+    _client_config: Optional[ClientConfig] = None
 
     system = platform.system().lower()
     if system == "darwin":

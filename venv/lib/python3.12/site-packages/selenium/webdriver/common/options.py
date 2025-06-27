@@ -16,10 +16,9 @@
 # under the License.
 
 import warnings
-from abc import ABCMeta
-from abc import abstractmethod
+from abc import ABCMeta, abstractmethod
 from enum import Enum
-from typing import Optional
+from typing import List, Optional
 
 from selenium.common.exceptions import InvalidArgumentException
 from selenium.webdriver.common.proxy import Proxy
@@ -475,14 +474,14 @@ class ArgOptions(BaseOptions):
 
     def __init__(self) -> None:
         super().__init__()
-        self._arguments = []
+        self._arguments: List[str] = []
 
     @property
     def arguments(self):
         """:Returns: A list of arguments needed for the browser."""
         return self._arguments
 
-    def add_argument(self, argument) -> None:
+    def add_argument(self, argument: str) -> None:
         """Adds an argument to the list.
 
         :Args:

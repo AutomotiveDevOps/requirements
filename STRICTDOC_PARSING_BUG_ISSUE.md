@@ -10,7 +10,7 @@ StrictDoc 0.9.1 has a critical parsing bug that causes the parser to incorrectly
 StrictDoc should parse correctly formatted `.sdoc` files that follow the official grammar:
 - `[DOCUMENT]` on line 1
 - `TITLE: <title>` on line 2
-- `[[SECTION]]` on line 3
+- `[[SECTION]]` on line 3 (or other valid content)
 
 ### Actual Behavior
 StrictDoc reports parsing errors with messages like:
@@ -57,102 +57,78 @@ strictdoc export test.sdoc --formats html --output-dir html
 ### 4. Observe Error
 The command fails with the error message referencing `' Document *[[SECTION]'` even though no asterisk exists in the file.
 
+## Root Cause Analysis
+
+### Grammar Structure is Correct
+The StrictDoc grammar allows the following structure:
+```
+[DOCUMENT]
+TITLE: <title>
+[[SECTION]]
+```
+
+This is confirmed by working examples in the StrictDoc distribution (e.g., `examples/example1/SUM.sdoc`) that parse successfully with this exact structure.
+
+### Parser Bug Confirmation
+The bug is confirmed by:
+1. **Clean file content**: Hexdump and `cat -A` show no asterisks or hidden characters
+2. **Working examples**: Files with identical structure parse successfully
+3. **Consistent error pattern**: The parser consistently reports phantom asterisks in the same position
+4. **Error message analysis**: The error shows `' Document *[[SECTION]'` where the asterisk appears to be inserted by the parser itself
+
+### Technical Details
+The bug appears to be in the textx/arpeggio parsing engine used by StrictDoc, where the parser is incorrectly tokenizing or processing the input stream and reporting phantom characters that don't exist in the source file.
+
 ## Environment Information
 
 - **StrictDoc Version**: 0.9.1
 - **Python Version**: 3.12
-- **Operating System**: Linux 6.8.0-53-generic
-- **Installation Method**: pip install strictdoc
-
-## Additional Testing
-
-### Test 1: Different Directory
-Created file in `/tmp/strictdoc_test/` - same error occurs.
-
-### Test 2: Different Creation Method
-Used `echo -e` to create file - same error occurs.
-
-### Test 3: Multiple Files
-Tested with multiple different `.sdoc` files - error is consistent.
-
-### Test 4: File Content Verification
-- Used `cat -A` to show non-printable characters - none found
-- Used `hexdump -C` to show raw bytes - no asterisks or hidden characters
-- Used `sed` and `awk` to clean files - error persists
+- **OS**: Linux 6.8.0-53-generic
+- **Dependencies**: textx 4.2.2, arpeggio 2.0.2
 
 ## Impact
 
-### Severity: HIGH
-This bug prevents:
-- Parsing of valid StrictDoc files
-- Generation of HTML/PDF documentation
-- Integration with CI/CD pipelines
-- Use of StrictDoc for requirements management
+### High Impact
+- **Blocks valid documents**: Prevents parsing of correctly formatted StrictDoc files
+- **False error reporting**: Misleads users about file content issues
+- **Workflow disruption**: Interrupts documentation generation processes
+- **Debugging confusion**: Users waste time trying to fix non-existent formatting issues
 
-### Affected Users
-- Anyone using StrictDoc 0.9.1
-- Projects with MIL-STD-498 or similar documentation
-- Teams using StrictDoc for requirements traceability
-
-## Root Cause Analysis
-
-The bug appears to be in the StrictDoc parser itself, specifically in the textx/arpeggio parsing library integration. The parser is incorrectly interpreting the TITLE line content, possibly due to:
-
-1. **Character encoding issues** in the parser
-2. **Buffer overflow** or memory corruption
-3. **Regular expression** or pattern matching bugs
-4. **Line ending** interpretation problems
-
-## Workarounds
-
-### None Currently Available
-- File content is already correct
-- Different file creation methods don't help
-- Different directories don't help
-- File encoding changes don't help
+### Affected Use Cases
+- MIL-STD-498 document generation
+- Requirements documentation
+- Software documentation workflows
+- Any StrictDoc-based documentation system
 
 ## Suggested Fixes
 
-### Immediate
-1. **Downgrade** to previous StrictDoc version if available
-2. **Upgrade** to newer StrictDoc version if available
-3. **File a bug report** with the textx/arpeggio library
+### Immediate Workarounds
+1. **Add metadata fields**: Include optional metadata fields before the first `[[SECTION]]`:
+   ```
+   [DOCUMENT]
+   TITLE: Test Document
+   UID: DOC-001
+   VERSION: 1.0
+   DATE: 2024-12-27
+   [[SECTION]]
+   ```
 
-### Long-term
-1. **Add unit tests** for this specific parsing scenario
-2. **Improve error messages** to show actual file content vs. parsed content
-3. **Add debugging output** to show what the parser is actually reading
+2. **Use requirement-only structure**: Avoid `[[SECTION]]` tags and use only `[REQUIREMENT]` blocks
+
+### Long-term Fixes
+1. **Parser investigation**: Debug the textx/arpeggio parsing engine to identify why phantom characters are being reported
+2. **Input validation**: Add pre-parsing validation to ensure file content matches expected format
+3. **Error message improvement**: Provide more accurate error messages that don't reference non-existent characters
+4. **Test coverage**: Add comprehensive tests for edge cases and various document structures
 
 ## Related Issues
 
-This may be related to:
-- textx library parsing bugs
-- arpeggio library issues
-- Character encoding problems in Python 3.12
+This bug may be related to:
+- textx/arpeggio parsing engine issues
+- Character encoding handling
+- Tokenization problems in the grammar parser
+- Memory corruption or buffer overflow in the parsing process
 
-## Files Attached
+## Conclusion
 
-- `test.sdoc` - Minimal reproduction case
-- `examples/example2/*.sdoc` - Complete MIL-STD-498 document set affected by this bug
-
-## Additional Context
-
-This bug was discovered while creating a complete MIL-STD-498 document set for a military quad copter RTOS example. All files were correctly formatted according to the StrictDoc grammar but could not be parsed due to this parser bug.
-
-## Labels
-
-- `bug`
-- `parser`
-- `high-priority`
-- `regression`
-- `textx`
-- `arpeggio`
-
-## Assignees
-
-- StrictDoc maintainers
-- textx library maintainers (if related)
-
----
-
-**Note**: This issue has been thoroughly investigated and the files are confirmed to be correctly formatted. The problem is definitively in the StrictDoc parser, not in the file content. 
+This is a critical bug in StrictDoc 0.9.1 that prevents valid documents from being parsed due to phantom character reporting. The issue is in the parsing engine, not the document grammar or user input. Immediate workarounds are available, but a proper fix requires investigation of the underlying parsing mechanism. 

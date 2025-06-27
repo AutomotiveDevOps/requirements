@@ -15,9 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-from typing import Any
-from typing import List
-from typing import Tuple
+from typing import Any, List, Tuple
 
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.by import By
@@ -47,7 +45,8 @@ class EventFiringWebDriver:
 
         :Args:
          - driver : A WebDriver instance
-         - event_listener : Instance of a class that subclasses AbstractEventListener and implements it fully or partially
+         - event_listener : Instance of a class that subclasses AbstractEventListener and implements it fully
+                            or partially
 
         Example:
 
@@ -56,11 +55,14 @@ class EventFiringWebDriver:
             from selenium.webdriver import Firefox
             from selenium.webdriver.support.events import EventFiringWebDriver, AbstractEventListener
 
+
             class MyListener(AbstractEventListener):
                 def before_navigate_to(self, url, driver):
                     print("Before navigate to %s" % url)
+
                 def after_navigate_to(self, url, driver):
                     print("After navigate to %s" % url)
+
 
             driver = Firefox()
             ef_driver = EventFiringWebDriver(driver, MyListener())
@@ -89,7 +91,7 @@ class EventFiringWebDriver:
     def forward(self) -> None:
         self._dispatch("navigate_forward", (self._driver,), "forward", ())
 
-    def execute_script(self, script, *args):
+    def execute_script(self, script: str, *args):
         unwrapped_args = (script,) + self._unwrap_element_args(args)
         return self._dispatch("execute_script", (script, self._driver), "execute_script", unwrapped_args)
 
