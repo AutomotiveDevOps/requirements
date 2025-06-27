@@ -36,3 +36,11 @@ repos:
         files: \.sdoc$
         pass_filenames: true
         require_serial: true
+    -   id: strictdoc-uid-uniqueness
+        name: StrictDoc UID Uniqueness Validator
+        entry: python scripts/validate_uid_uniqueness.py
+        language: python
+        types: [text]
+        files: \.sdoc$
+        pass_filenames: false
+        require_serial: true
