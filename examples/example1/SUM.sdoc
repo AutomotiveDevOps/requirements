@@ -1,216 +1,177 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 SUM (Software User Manual) - ADAS Control Module
-
 [SECTION]
-TITLE: 1. Scope
-
+TITLE: 1
+ Scope
 [SECTION]
-TITLE: 1.1 Identification
-
+TITLE: 1
+1 Identification
 [REQUIREMENT]
 UID: SUM-001
 TITLE: User Manual Identification
 STATEMENT: This document shall be identified as the Software User Manual (SUM) for the Advanced Driver Assistance System (ADAS) Control Module, version 1.0, following MIL-STD-498 and automotive user documentation standards.
 RATIONALE: Proper user manual identification ensures configuration management and user documentation traceability for automotive safety systems.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 1.2 System overview
-
+TITLE: 1
+2 System overview
 [REQUIREMENT]
 UID: SUM-002
 TITLE: System Overview
 STATEMENT: The ADAS Control Module provides comprehensive driver assistance capabilities including lane departure warning, adaptive cruise control, forward collision warning, blind spot detection, and traffic sign recognition for enhanced vehicle safety and driver comfort.
 RATIONALE: System overview provides users with understanding of system capabilities and benefits.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 1.3 Document overview
-
+TITLE: 1
+3 Document overview
 [REQUIREMENT]
 UID: SUM-003
 TITLE: User Manual Structure
 STATEMENT: This document shall be organized into sections covering system overview, installation, operation, maintenance, troubleshooting, and safety information following MIL-STD-498 and automotive user documentation standards.
 RATIONALE: Structured organization facilitates user understanding and safe system operation.
-
 [/SECTION]
-
 [/SECTION]
-
 [SECTION]
-TITLE: 2. Referenced documents
-
+TITLE: 2
+ Referenced documents
 [REQUIREMENT]
 UID: SUM-004
 TITLE: User Documentation References
 STATEMENT: The user manual shall reference vehicle owner's manual, safety guidelines, maintenance procedures, and regulatory compliance information for comprehensive user guidance.
 RATIONALE: User documentation references ensure comprehensive user guidance and safety compliance.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 3. System overview
-
+TITLE: 3
+ System overview
 [SECTION]
-TITLE: 3.1 System capabilities
-
+TITLE: 3
+1 System capabilities
 [REQUIREMENT]
 UID: SUM-005
 TITLE: Lane Departure Warning
 STATEMENT: The system shall provide lane departure warning with visual and audible alerts when the vehicle approaches lane boundaries, helping prevent unintentional lane departures and potential accidents.
 RATIONALE: Lane departure warning capability enhances driver safety and accident prevention.
-
 [REQUIREMENT]
 UID: SUM-006
 TITLE: Adaptive Cruise Control
 STATEMENT: The system shall provide adaptive cruise control that automatically maintains safe following distance and adjusts vehicle speed based on traffic conditions, enhancing driver comfort and safety.
 RATIONALE: Adaptive cruise control capability enhances driver comfort and safety during highway driving.
-
 [REQUIREMENT]
 UID: SUM-007
 TITLE: Forward Collision Warning
 STATEMENT: The system shall provide forward collision warning with escalating alerts and automatic emergency braking when potential collisions are detected, helping prevent accidents and reduce collision severity.
 RATIONALE: Forward collision warning capability enhances driver safety and accident prevention.
-
 [REQUIREMENT]
 UID: SUM-008
 TITLE: Blind Spot Detection
 STATEMENT: The system shall provide blind spot detection with visual warnings in side mirrors and audible alerts when turn signals are activated with vehicles in blind spots, enhancing driver awareness.
 RATIONALE: Blind spot detection capability enhances driver awareness and prevents lane change accidents.
-
 [REQUIREMENT]
 UID: SUM-009
 TITLE: Traffic Sign Recognition
 STATEMENT: The system shall provide traffic sign recognition that displays speed limits, stop signs, and warning signs on the instrument cluster or head-up display, enhancing driver awareness and compliance.
 RATIONALE: Traffic sign recognition capability enhances driver awareness and traffic compliance.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 3.2 System limitations
-
+TITLE: 3
+2 System limitations
 [REQUIREMENT]
 UID: SUM-010
 TITLE: System Limitations
 STATEMENT: The system shall have limitations including weather conditions, sensor obstructions, road conditions, and driver responsibility requirements that users must understand for safe operation.
 RATIONALE: System limitations information ensures user understanding and safe system operation.
-
 [/SECTION]
-
 [/SECTION]
-
 [SECTION]
-TITLE: 4. Installation and setup
-
+TITLE: 4
+ Installation and setup
 [SECTION]
-TITLE: 4.1 Installation requirements
-
+TITLE: 4
+1 Installation requirements
 [REQUIREMENT]
 UID: SUM-011
 TITLE: Hardware Requirements
 STATEMENT: The system shall require compatible vehicle hardware including sensors, displays, and control units that meet automotive safety and performance standards for proper installation and operation.
 RATIONALE: Hardware requirements ensure proper system installation and operation.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 4.2 Installation procedures
-
+TITLE: 4
+2 Installation procedures
 [REQUIREMENT]
 UID: SUM-012
 TITLE: Installation Process
 STATEMENT: The system installation shall follow manufacturer procedures including sensor calibration, system configuration, and safety validation by qualified automotive technicians.
 RATIONALE: Proper installation procedures ensure system safety and performance.
-
 [/SECTION]
-
 [/SECTION]
-
 [SECTION]
-TITLE: 5. Operation
-
+TITLE: 5
+ Operation
 [SECTION]
-TITLE: 5.1 System startup
-
+TITLE: 5
+1 System startup
 [REQUIREMENT]
 UID: SUM-013
 TITLE: System Startup
 STATEMENT: The system shall automatically start with vehicle ignition and perform self-diagnostic checks with status indicators on the instrument cluster or center console display.
 RATIONALE: Automatic system startup ensures system availability and user awareness.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 5.2 Normal operation
-
+TITLE: 5
+2 Normal operation
 [REQUIREMENT]
 UID: SUM-014
 TITLE: Normal Operation
 STATEMENT: The system shall operate continuously during normal driving with automatic activation of safety features and driver notifications through visual, audible, and haptic feedback as appropriate.
 RATIONALE: Continuous normal operation ensures driver safety and system effectiveness.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 5.3 User controls
-
+TITLE: 5
+3 User controls
 [REQUIREMENT]
 UID: SUM-015
 TITLE: User Controls
 STATEMENT: The system shall provide user controls for feature activation, sensitivity adjustment, and system configuration through vehicle controls, mobile applications, or web interfaces.
 RATIONALE: User controls enable system customization and user preference management.
-
 [/SECTION]
-
 [/SECTION]
-
 [SECTION]
-TITLE: 6. Maintenance
-
+TITLE: 6
+ Maintenance
 [SECTION]
-TITLE: 6.1 Preventive maintenance
-
+TITLE: 6
+1 Preventive maintenance
 [REQUIREMENT]
 UID: SUM-016
 TITLE: Preventive Maintenance
 STATEMENT: The system shall require regular preventive maintenance including sensor cleaning, system calibration, software updates, and safety inspections by qualified automotive technicians.
 RATIONALE: Preventive maintenance ensures system reliability and safety compliance.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 6.2 Troubleshooting
-
+TITLE: 6
+2 Troubleshooting
 [REQUIREMENT]
 UID: SUM-017
 TITLE: Troubleshooting Procedures
 STATEMENT: The system shall provide troubleshooting procedures for common issues including sensor malfunctions, system warnings, and performance problems with diagnostic information and resolution steps.
 RATIONALE: Troubleshooting procedures enable user problem resolution and system maintenance.
-
 [/SECTION]
-
 [/SECTION]
-
 [SECTION]
-TITLE: 7. Safety information
-
+TITLE: 7
+ Safety information
 [REQUIREMENT]
 UID: SUM-018
 TITLE: Safety Warnings
 STATEMENT: The system shall include comprehensive safety warnings about driver responsibility, system limitations, emergency procedures, and safe operation practices for user safety.
 RATIONALE: Safety warnings ensure user understanding and safe system operation.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 8. Notes
-
+TITLE: 8
+ Notes
 [REQUIREMENT]
 UID: SUM-019
 TITLE: User Guidelines
 STATEMENT: The user manual shall provide comprehensive user guidelines for safe operation, system understanding, and emergency procedures following automotive safety standards and best practices.
 RATIONALE: User guidelines provide guidance for users and ensure safe system operation.
-
-[/SECTION] 
+[/SECTION]

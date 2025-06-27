@@ -1,181 +1,149 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 IRS (Interface Requirements Specification) - ADAS Control Module
-
 [SECTION]
-TITLE: 1. Scope
-
+TITLE: 1
+ Scope
 [SECTION]
-TITLE: 1.1 Identification
-
+TITLE: 1
+1 Identification
 [REQUIREMENT]
 UID: IRS-001
 TITLE: Interface Requirements Identification
 STATEMENT: This document shall be identified as the Interface Requirements Specification (IRS) for the Advanced Driver Assistance System (ADAS) Control Module, version 1.0, following MIL-STD-498 and automotive interface standards.
 RATIONALE: Proper interface requirements identification ensures configuration management and interface traceability for automotive safety systems.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 1.2 System overview
-
+TITLE: 1
+2 System overview
 [REQUIREMENT]
 UID: IRS-002
 TITLE: Interface Overview
 STATEMENT: The ADAS Control Module shall provide comprehensive interface requirements for sensor integration, vehicle control, human machine interface, and external communication for automotive safety-critical applications.
 RATIONALE: Interface overview establishes the foundation for all interface requirements in the automotive safety domain.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 1.3 Document overview
-
+TITLE: 1
+3 Document overview
 [REQUIREMENT]
 UID: IRS-003
 TITLE: Interface Document Structure
 STATEMENT: This document shall be organized into sections covering interface identification, interface requirements, interface standards, and interface validation following MIL-STD-498 and automotive interface standards.
 RATIONALE: Structured organization facilitates interface requirements review and validation for safety-critical systems.
-
 [/SECTION]
-
 [/SECTION]
-
 [SECTION]
-TITLE: 2. Referenced documents
-
+TITLE: 2
+ Referenced documents
 [REQUIREMENT]
 UID: IRS-004
 TITLE: Interface Standards
 STATEMENT: The interface requirements shall comply with AUTOSAR interface standards, CAN bus protocols, Ethernet automotive standards, and automotive cybersecurity standards for interface implementation.
 RATIONALE: Compliance with established automotive interface standards ensures system compatibility and safety.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 3. Interface requirements
-
+TITLE: 3
+ Interface requirements
 [SECTION]
-TITLE: 3.1 Sensor interface requirements
-
+TITLE: 3
+1 Sensor interface requirements
 [REQUIREMENT]
 UID: IRS-005
 TITLE: Radar Sensor Interface
 STATEMENT: The system shall interface with front, rear, and side radar sensors using CAN bus protocol with data rates up to 1Mbps, supporting object detection, distance measurement, and velocity calculation.
 RATIONALE: Radar sensor interfaces are critical for accurate environmental perception and safety system operation.
-
 [REQUIREMENT]
 UID: IRS-006
 TITLE: Camera Sensor Interface
 STATEMENT: The system shall interface with front and rear cameras using Ethernet protocol with data rates up to 100Mbps, supporting image processing, lane detection, and traffic sign recognition.
 RATIONALE: Camera sensor interfaces are critical for visual perception and safety system operation.
-
 [REQUIREMENT]
 UID: IRS-007
 TITLE: Ultrasonic Sensor Interface
 STATEMENT: The system shall interface with ultrasonic sensors using CAN bus protocol for short-range object detection and parking assistance with data rates up to 500kbps.
 RATIONALE: Ultrasonic sensor interfaces support parking assistance and low-speed safety features.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 3.2 Vehicle control interface requirements
-
+TITLE: 3
+2 Vehicle control interface requirements
 [REQUIREMENT]
 UID: IRS-008
 TITLE: Brake Control Interface
 STATEMENT: The system shall interface with brake control unit using secure CAN bus protocol with redundant communication paths, supporting emergency braking and adaptive cruise control functions.
 RATIONALE: Brake control interfaces enable critical safety functions and accident prevention.
-
 [REQUIREMENT]
 UID: IRS-009
 TITLE: Engine Control Interface
 STATEMENT: The system shall interface with engine control unit using CAN bus protocol for adaptive cruise control and speed management with appropriate safety interlocks.
 RATIONALE: Engine control interfaces enable adaptive cruise control and speed management functions.
-
 [REQUIREMENT]
 UID: IRS-010
 TITLE: Steering Control Interface
 STATEMENT: The system shall interface with steering control unit using secure CAN bus protocol for lane keeping assistance and emergency steering with safety validation.
 RATIONALE: Steering control interfaces enable lane keeping assistance and emergency steering functions.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 3.3 Human machine interface requirements
-
+TITLE: 3
+3 Human machine interface requirements
 [REQUIREMENT]
 UID: IRS-011
 TITLE: Instrument Cluster Interface
 STATEMENT: The system shall interface with instrument cluster using CAN bus protocol for displaying ADAS status, warnings, and system information with priority-based messaging.
 RATIONALE: Instrument cluster interfaces ensure driver awareness and system transparency.
-
 [REQUIREMENT]
 UID: IRS-012
 TITLE: Head-Up Display Interface
 STATEMENT: The system shall interface with head-up display using Ethernet protocol for displaying critical warnings and traffic sign information with low latency requirements.
 RATIONALE: Head-up display interfaces enhance driver awareness and safety information display.
-
 [REQUIREMENT]
 UID: IRS-013
 TITLE: Center Console Interface
 STATEMENT: The system shall interface with center console using Ethernet protocol for system configuration, user preferences, and detailed system information display.
 RATIONALE: Center console interfaces enable system configuration and user preference management.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 3.4 External communication interface requirements
-
+TITLE: 3
+4 External communication interface requirements
 [REQUIREMENT]
 UID: IRS-014
 TITLE: Over-the-Air Update Interface
 STATEMENT: The system shall provide secure over-the-air update interface using encrypted communication protocols for software updates and configuration management.
 RATIONALE: Over-the-air update interfaces enable remote software updates and system maintenance.
-
 [REQUIREMENT]
 UID: IRS-015
 TITLE: Diagnostic Interface
 STATEMENT: The system shall provide diagnostic interface using standard automotive diagnostic protocols for system troubleshooting and maintenance support.
 RATIONALE: Diagnostic interfaces enable system troubleshooting and maintenance support.
-
 [/SECTION]
-
 [/SECTION]
-
 [SECTION]
-TITLE: 4. Interface standards
-
+TITLE: 4
+ Interface standards
 [REQUIREMENT]
 UID: IRS-016
 TITLE: Communication Protocols
 STATEMENT: The system shall support CAN bus, Ethernet, and FlexRay communication protocols with appropriate data rates, error detection, and redundancy for automotive applications.
 RATIONALE: Standard communication protocols ensure system compatibility and reliability.
-
 [REQUIREMENT]
 UID: IRS-017
 TITLE: Data Formats
 STATEMENT: The system shall use standardized data formats including AUTOSAR message formats, sensor data formats, and diagnostic data formats for interface compatibility.
 RATIONALE: Standardized data formats ensure interface compatibility and system integration.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 5. Interface validation
-
+TITLE: 5
+ Interface validation
 [REQUIREMENT]
 UID: IRS-018
 TITLE: Interface Testing
 STATEMENT: The system shall undergo comprehensive interface testing including protocol validation, data format validation, and performance testing for all interfaces.
 RATIONALE: Comprehensive interface testing ensures interface reliability and system compatibility.
-
 [/SECTION]
-
 [SECTION]
-TITLE: 6. Notes
-
+TITLE: 6
+ Notes
 [REQUIREMENT]
 UID: IRS-019
 TITLE: Interface Guidelines
 STATEMENT: The interface requirements shall follow automotive interface guidelines, safety standards, and industry best practices for interface design and implementation.
 RATIONALE: Interface guidelines provide guidance for interface design and ensure safety compliance.
-
-[/SECTION] 
+[/SECTION]
