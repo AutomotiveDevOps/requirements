@@ -1,42 +1,30 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 CPM (Computer Programming Manual)
 
-[[[SECTION]]]
-TITLE: 1. Scope
+[REQUIREMENT]
+UID: CPM-001
+STATUS: Draft
+TITLE: Configuration Planning
+STATEMENT: The system shall implement comprehensive configuration management with version control and change tracking.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[SECTION]]]
-TITLE: 1.1 Identification
+[REQUIREMENT]
+UID: CPM-002
+STATUS: Draft
+TITLE: Baseline Management
+STATEMENT: The system shall maintain configuration baselines for all software components and documentation.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[/SECTION]]]
+[REQUIREMENT]
+UID: CPM-003
+STATUS: Draft
+TITLE: Change Control
+STATEMENT: The system shall implement formal change control procedures for all modifications and updates.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[SECTION]]]
-TITLE: 1.2 Computer system overview
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 1.3 Document overview
-
-[[[/SECTION]]]
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 2. Referenced documents
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 3. Programming environment
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 4. Programming information
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 5. Notes
-
-[[[/SECTION]]]
+[REQUIREMENT]
+UID: CPM-004
+STATUS: Draft
+TITLE: Release Management
+STATEMENT: The system shall support automated release management with deployment pipelines and rollback capabilities.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.

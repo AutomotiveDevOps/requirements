@@ -1,3 +1,0 @@
-<div class="document">
-<p>The API shall respond within 200ms for 95% of requests under normal load conditions.</p>
-</div>

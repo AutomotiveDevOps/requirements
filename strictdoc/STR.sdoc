@@ -1,62 +1,30 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 STR (Software Test Report)
 
-[[[SECTION]]]
-TITLE: 1. Scope
+[REQUIREMENT]
+UID: STR-001
+STATUS: Draft
+TITLE: Test Strategy
+STATEMENT: The system shall undergo comprehensive testing including unit, integration, system, and acceptance testing.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[SECTION]]]
-TITLE: 1.1 Identification
+[REQUIREMENT]
+UID: STR-002
+STATUS: Draft
+TITLE: Test Environment
+STATEMENT: The system shall be tested in environments that simulate production conditions.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[/SECTION]]]
+[REQUIREMENT]
+UID: STR-003
+STATUS: Draft
+TITLE: Test Coverage
+STATEMENT: The system shall achieve minimum 90% code coverage and 100% requirement coverage.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[SECTION]]]
-TITLE: 1.2 System overview
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 1.3 Document overview
-
-[[[/SECTION]]]
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 2. Referenced documents
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 3. Overview of test results
-
-[[[SECTION]]]
-TITLE: 3.1 Overall assessment of the software tested
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 3.2 Impact of test environment
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 3.3 Recommended improvements
-
-[[[/SECTION]]]
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 4. Detailed test results
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 5. Test log
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 6. Notes
-
-[[[/SECTION]]]
+[REQUIREMENT]
+UID: STR-004
+STATUS: Draft
+TITLE: Test Automation
+STATEMENT: The system shall support automated testing with continuous integration and deployment.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.

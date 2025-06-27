@@ -1,37 +1,30 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 FSM (Functional Specification Manual)
 
-[[[SECTION]]]
-TITLE: 1. Scope
+[REQUIREMENT]
+UID: FSM-001
+STATUS: Draft
+TITLE: Facility Requirements
+STATEMENT: The system shall operate in secure facilities with appropriate environmental controls.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[SECTION]]]
-TITLE: 1.1 Identification
+[REQUIREMENT]
+UID: FSM-002
+STATUS: Draft
+TITLE: Hardware Infrastructure
+STATEMENT: The system shall use enterprise-grade hardware with redundancy and failover capabilities.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[/SECTION]]]
+[REQUIREMENT]
+UID: FSM-003
+STATUS: Draft
+TITLE: Network Infrastructure
+STATEMENT: The system shall operate on secure networks with appropriate segmentation and monitoring.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[SECTION]]]
-TITLE: 1.2 System overview
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 1.3 Document overview
-
-[[[/SECTION]]]
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 2. Referenced documents
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 3. Firmware programming instructions
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 4. Notes
-
-[[[/SECTION]]]
+[REQUIREMENT]
+UID: FSM-004
+STATUS: Draft
+TITLE: Environmental Controls
+STATEMENT: The system shall operate in controlled environments with appropriate temperature and humidity controls.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.

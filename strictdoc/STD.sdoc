@@ -1,47 +1,30 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 STD (Software Test Description)
 
-[[[SECTION]]]
-TITLE: 1. Scope
+[REQUIREMENT]
+UID: STD-001
+STATUS: Draft
+TITLE: Software Test Description
+STATEMENT: The system shall undergo comprehensive testing including functional, performance, and security testing.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[SECTION]]]
-TITLE: 1.1 Identification
+[REQUIREMENT]
+UID: STD-002
+STATUS: Draft
+TITLE: Test Procedures
+STATEMENT: The system shall follow standardized test procedures with documented test cases and expected results.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[/SECTION]]]
+[REQUIREMENT]
+UID: STD-003
+STATUS: Draft
+TITLE: Test Data
+STATEMENT: The system shall use representative test data that simulates production conditions.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
 
-[[[SECTION]]]
-TITLE: 1.2 System overview
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 1.3 Document overview
-
-[[[/SECTION]]]
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 2. Referenced documents
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 3. Test preparations
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 4. Test descriptions
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 5. Requirements traceability
-
-[[[/SECTION]]]
-
-[[[SECTION]]]
-TITLE: 6. Notes
-
-[[[/SECTION]]]
+[REQUIREMENT]
+UID: STD-004
+STATUS: Draft
+TITLE: Test Tools
+STATEMENT: The system shall use automated testing tools for efficient test execution and reporting.
+RATIONALE: This requirement ensures proper system functionality and compliance with standards.
