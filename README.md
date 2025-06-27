@@ -1,318 +1,94 @@
-# ADAS Control Module - MIL-STD-498 Documentation Example
+# MIL-STD-498 Requirements Documentation
 
-This directory contains a comprehensive example of MIL-STD-498 documentation for a fictitious Advanced Driver Assistance System (ADAS) Control Module. The example demonstrates a complete 1:1 mapping to the MIL-STD-498 standard document structure.
+This repository contains comprehensive MIL-STD-498 documentation examples for safety-critical systems, including an Advanced Driver Assistance System (ADAS) Control Module and a Military Quad Copter RTOS.
 
 ## Overview
 
-The ADAS Control Module is a safety-critical automotive system that provides driver assistance capabilities including:
-- Adaptive Cruise Control
-- Lane Keeping Assistance  
-- Collision Avoidance
-- Automated Emergency Braking
-- Blind Spot Monitoring
-- Pedestrian Detection
+The repository demonstrates complete 1:1 mapping to the MIL-STD-498 standard document structure with:
 
-## Quick Start - Viewing the Documentation
+- **Example 1**: ADAS Control Module - Complete automotive safety system
+- **Example 2**: Military Quad Copter RTOS - Military-grade real-time system
+- **StrictDoc Examples**: Official templates and reference documentation
+- **Root Level**: Project documentation and test files
 
 ## 📖 View Documentation Online
 
 ### GitHub Pages Links
 
+**Main Documentation Hub:**
+- 🌐 [Documentation Navigation Hub](https://automotivedevops.github.io/requirements/)
+
 **Example 1 - ADAS Control Module (Complete MIL-STD-498 Set):**
-- 🌐 [Main Documentation Index](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/index.html)
-- 📋 [Software Requirements Specification (SRS)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/SRS.html)
-- 📋 [SRS Table View](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/SRS-TABLE.html)
-- 📋 [SRS Traceability Matrix](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/SRS-TRACE.html)
-- 📋 [SRS Deep Traceability](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/SRS-DEEP-TRACE.html)
-- 🏗️ [Software Design Description (SDD)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/SDD.html)
-- 🧪 [Software Test Plan (STP)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/STP.html)
-- 📊 [All Documents Index](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/)
+- 📋 [Software Requirements Specification (SRS)](https://automotivedevops.github.io/requirements/example1/html/SRS-TABLE.html)
+- 🏗️ [Software Design Description (SDD)](https://automotivedevops.github.io/requirements/example1/html/SDD-TABLE.html)
+- 🧪 [Software Test Plan (STP)](https://automotivedevops.github.io/requirements/example1/html/STP-TABLE.html)
+- 📊 [Computer Operation Manual (COM)](https://automotivedevops.github.io/requirements/example1/html/COM-TABLE.html)
+- 📋 [All Documents Index](https://automotivedevops.github.io/requirements/example1/html/index.html)
 
 **Example 2 - Military Quad Copter RTOS:**
-- 🌐 [Main Documentation Index](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/index.html)
-- 📋 [Software Requirements Specification (SRS)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/SRS.html)
-- 📋 [SRS Table View](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/SRS-TABLE.html)
-- 📋 [SRS Traceability Matrix](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/SRS-TRACE.html)
-- 📋 [SRS Deep Traceability](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/SRS-DEEP-TRACE.html)
-- 🏗️ [Software Design Description (SDD)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/SDD.html)
-- 🧪 [Software Test Plan (STP)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/STP.html)
-- 📊 [All Documents Index](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/)
+- 📋 [Software Requirements Specification (SRS)](https://automotivedevops.github.io/requirements/example2/html/SRS-TABLE.html)
+- 🏗️ [Software Design Description (SDD)](https://automotivedevops.github.io/requirements/example2/html/SDD-TABLE.html)
+- 🧪 [Software Test Plan (STP)](https://automotivedevops.github.io/requirements/example2/html/STP-TABLE.html)
+- 📊 [All Documents Index](https://automotivedevops.github.io/requirements/example2/html/index.html)
 
-**StrictDoc Examples (Official Distribution):**
-- 🌐 [Main Documentation Index](https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/index.html)
-- 📋 [Minimal Example](https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/strictdoc/00_minimal.html)
-- 📋 [Minimal with Sections](https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/strictdoc/01_minimal_sections.html)
-- 📋 [Advanced Features](https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/strictdoc/02_advanced_features.html)
-- 📊 [All Documents Index](https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/strictdoc/)
+**StrictDoc Examples & Templates:**
+- 📋 [Minimal Example](https://automotivedevops.github.io/requirements/strictdoc/html/00_minimal-TABLE.html)
+- 📋 [Minimal with Sections](https://automotivedevops.github.io/requirements/strictdoc/html/01_minimal_sections-TABLE.html)
+- 📋 [Advanced Features](https://automotivedevops.github.io/requirements/strictdoc/html/02_advanced_features-TABLE.html)
+- 📊 [All Documents Index](https://automotivedevops.github.io/requirements/strictdoc/html/index.html)
 
-> **Note:** Replace `YOUR_USERNAME` and `REPO_NAME` with your actual GitHub username and repository name.
-> If GitHub Pages is not enabled, you can view the files directly in the repository or build them locally.
+**Root Level Documentation:**
+- 📋 [Bug Demo](https://automotivedevops.github.io/requirements/root/html/bug_demo-TABLE.html)
+- 📋 [Test Files](https://automotivedevops.github.io/requirements/root/html/index.html)
 
+## 🚀 Quick Start
 
 ### Option 1: View Online (Recommended)
-The HTML documentation is included in this repository and can be viewed directly:
+All documentation is automatically generated and deployed to GitHub Pages. Simply click any of the links above to view the documentation in your browser.
 
-1. **Main Index**: Open `docs/html/index.html` in any web browser
-2. **Individual Documents**: Navigate to `docs/html/example1/` for specific document views
-3. **Multiple Formats**: Each document has 4 viewing formats:
-   - **Standard View**: `DOCUMENT.html` (e.g., `SRS.html`)
-   - **Table View**: `DOCUMENT-TABLE.html` (e.g., `SRS-TABLE.html`)
-   - **Traceability View**: `DOCUMENT-TRACE.html` (e.g., `SRS-TRACE.html`)
-   - **Deep Traceability View**: `DOCUMENT-DEEP-TRACE.html` (e.g., `SRS-DEEP-TRACE.html`)
+### Option 2: Build Locally
+To build the documentation locally:
 
-### Option 2: Local Web Server
+```bash
+# Clone the repository
+git clone https://github.com/AutomotiveDevOps/requirements.git
+cd requirements
+
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install strictdoc
+
+# Build documentation for each directory
+cd examples/example1
+strictdoc export *.sdoc --output-dir docs --formats html --config strictdoc.toml
+
+cd ../example2
+strictdoc export *.sdoc --output-dir docs --formats html --config strictdoc.toml
+
+cd ../../strictdoc
+strictdoc export *.sdoc --output-dir docs --formats html --config strictdoc.toml
+
+cd ..
+strictdoc export *.sdoc --output-dir docs/root --formats html --config strictdoc.toml
+```
+
+### Option 3: Local Web Server
 For the best experience, serve the files using a local web server:
 
 ```bash
 # Using Python 3
-cd docs/html
+cd docs
 python3 -m http.server 8000
-
-# Using Python 2
-cd docs/html
-python -m SimpleHTTPServer 8000
-
-# Using Node.js (if installed)
-cd docs/html
-npx serve .
 
 # Then open http://localhost:8000 in your browser
 ```
 
-### Option 3: GitHub Pages (Recommended for Sharing)
+## 📋 MIL-STD-498 Document Set
 
-### Enabling GitHub Pages
-
-To enable GitHub Pages for this repository:
-
-1. **Go to repository Settings** → **Pages**
-2. **Source**: Select "Deploy from a branch"
-3. **Branch**: Choose `main` (or your default branch)
-4. **Folder**: Select `/ (root)`
-5. **Click Save**
-
-After enabling, your documentation will be available at:
-`https://YOUR_USERNAME.github.io/REPO_NAME/`
-
-The links above will work once GitHub Pages is enabled and deployed.
-
-
-
-### Enabling GitHub Pages
-
-To enable GitHub Pages for this repository:
-
-1. **Go to repository Settings** → **Pages**
-2. **Source**: Select "Deploy from a branch"
-3. **Branch**: Choose `main` (or your default branch)
-4. **Folder**: Select `/ (root)`
-5. **Click Save**
-
-After enabling, your documentation will be available at:
-`https://YOUR_USERNAME.github.io/REPO_NAME/`
-
-The links above will work once GitHub Pages is enabled and deployed.
-
-If this repository is hosted on GitHub, the HTML files can be viewed directly through GitHub Pages:
-
-### Enabling GitHub Pages
-
-To enable GitHub Pages for this repository:
-
-1. **Go to repository Settings** → **Pages**
-2. **Source**: Select "Deploy from a branch"
-3. **Branch**: Choose `main` (or your default branch)
-4. **Folder**: Select `/ (root)`
-5. **Click Save**
-
-After enabling, your documentation will be available at:
-`https://YOUR_USERNAME.github.io/REPO_NAME/`
-
-The links above will work once GitHub Pages is enabled and deployed.
-
-
-
-### Enabling GitHub Pages
-
-To enable GitHub Pages for this repository:
-
-1. **Go to repository Settings** → **Pages**
-2. **Source**: Select "Deploy from a branch"
-3. **Branch**: Choose `main` (or your default branch)
-4. **Folder**: Select `/ (root)`
-5. **Click Save**
-
-After enabling, your documentation will be available at:
-`https://YOUR_USERNAME.github.io/REPO_NAME/`
-
-The links above will work once GitHub Pages is enabled and deployed.
-
-- **Example 1**: `https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/index.html`
-
-### Enabling GitHub Pages
-
-To enable GitHub Pages for this repository:
-
-1. **Go to repository Settings** → **Pages**
-2. **Source**: Select "Deploy from a branch"
-3. **Branch**: Choose `main` (or your default branch)
-4. **Folder**: Select `/ (root)`
-5. **Click Save**
-
-After enabling, your documentation will be available at:
-`https://YOUR_USERNAME.github.io/REPO_NAME/`
-
-The links above will work once GitHub Pages is enabled and deployed.
-
-- **Example 2**: `https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/index.html`
-
-### Enabling GitHub Pages
-
-To enable GitHub Pages for this repository:
-
-1. **Go to repository Settings** → **Pages**
-2. **Source**: Select "Deploy from a branch"
-3. **Branch**: Choose `main` (or your default branch)
-4. **Folder**: Select `/ (root)`
-5. **Click Save**
-
-After enabling, your documentation will be available at:
-`https://YOUR_USERNAME.github.io/REPO_NAME/`
-
-The links above will work once GitHub Pages is enabled and deployed.
-
-- **StrictDoc Examples**: `https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/index.html`
-
-### Enabling GitHub Pages
-
-To enable GitHub Pages for this repository:
-
-1. **Go to repository Settings** → **Pages**
-2. **Source**: Select "Deploy from a branch"
-3. **Branch**: Choose `main` (or your default branch)
-4. **Folder**: Select `/ (root)`
-5. **Click Save**
-
-After enabling, your documentation will be available at:
-`https://YOUR_USERNAME.github.io/REPO_NAME/`
-
-The links above will work once GitHub Pages is enabled and deployed.
-
-
-
-### Enabling GitHub Pages
-
-To enable GitHub Pages for this repository:
-
-1. **Go to repository Settings** → **Pages**
-2. **Source**: Select "Deploy from a branch"
-3. **Branch**: Choose `main` (or your default branch)
-4. **Folder**: Select `/ (root)`
-5. **Click Save**
-
-After enabling, your documentation will be available at:
-`https://YOUR_USERNAME.github.io/REPO_NAME/`
-
-The links above will work once GitHub Pages is enabled and deployed.
-
-See the "GitHub Pages Links" section above for direct links to all documents.
-
-### Enabling GitHub Pages
-
-To enable GitHub Pages for this repository:
-
-1. **Go to repository Settings** → **Pages**
-2. **Source**: Select "Deploy from a branch"
-3. **Branch**: Choose `main` (or your default branch)
-4. **Folder**: Select `/ (root)`
-5. **Click Save**
-
-After enabling, your documentation will be available at:
-`https://YOUR_USERNAME.github.io/REPO_NAME/`
-
-The links above will work once GitHub Pages is enabled and deployed.
-
-
-
-## Building the Documentation
-
-### Prerequisites
-- Python 3.8 or higher
-- Virtual environment with StrictDoc installed
-
-### Step-by-Step Build Instructions
-
-1. **Navigate to the project directory**:
-   ```bash
-   cd /projects/requirements/examples/example1
-   ```
-
-2. **Activate the virtual environment**:
-   ```bash
-   source /projects/requirements/venv/bin/activate
-   ```
-
-3. **Build all documents**:
-   ```bash
-   strictdoc export . --output-dir docs --formats html
-   ```
-
-4. **Build individual documents** (optional):
-   ```bash
-   # Build just the SRS
-   strictdoc export SRS.sdoc --output-dir docs --formats html
-   
-   # Build multiple specific documents
-   strictdoc export SRS.sdoc SDD.sdoc STP.sdoc --output-dir docs --formats html
-   ```
-
-5. **View the results**:
-   ```bash
-   # Open the main index
-   xdg-open docs/html/index.html  # Linux
-   open docs/html/index.html      # macOS
-   start docs/html/index.html     # Windows
-   ```
-
-### Build Options
-
-The `strictdoc export` command supports various options:
-
-```bash
-# Build with specific output formats
-strictdoc export . --output-dir docs --formats html,rst
-
-# Build with parallel processing (faster)
-strictdoc export . --output-dir docs --formats html --parallel
-
-# Build with custom configuration
-strictdoc export . --output-dir docs --formats html --config-file strictdoc.toml
-
-# Build with verbose output
-strictdoc export . --output-dir docs --formats html --verbose
-```
-
-### Output Structure
-
-After building, the following structure is created:
-
-```
-docs/
-├── html/
-│   ├── index.html              # Main navigation page
-│   ├── _static/                # CSS, JS, and assets
-│   └── example1/               # Generated document files
-│       ├── SRS.html            # Software Requirements Specification
-│       ├── SRS-TABLE.html      # Requirements table view
-│       ├── SRS-TRACE.html      # Traceability matrix
-│       ├── SRS-DEEP-TRACE.html # Detailed traceability
-│       ├── SDD.html            # Software Design Description
-│       └── ...                 # All other documents
-```
-
-## MIL-STD-498 Document Set
-
-This example includes all 20 MIL-STD-498 document types with complete section and requirement mappings:
+This repository includes all 20 MIL-STD-498 document types with complete section and requirement mappings:
 
 ### Core Requirements Documents
 - **SRS.sdoc** - Software Requirements Specification
@@ -347,18 +123,26 @@ This example includes all 20 MIL-STD-498 document types with complete section an
 ### Additional Documents
 - **COM.sdoc** - Common Elements (if needed)
 
-## Document Structure
+## 🔧 CI/CD Pipeline
 
-Each document follows the exact MIL-STD-498 section structure with:
-- Proper document identification
-- Scope and overview sections
-- Referenced documents
-- Detailed requirements/design sections
-- Notes and traceability
+The repository includes automated CI/CD pipelines that:
 
-## Requirements Coverage
+1. **Validate UID Uniqueness**: Ensures no duplicate UIDs across documents
+2. **Grammar Validation**: Validates StrictDoc grammar compliance
+3. **Documentation Generation**: Automatically builds HTML documentation
+4. **GitHub Pages Deployment**: Deploys documentation to GitHub Pages
 
-The example demonstrates comprehensive requirements coverage across:
+### Pre-commit Hooks
+- UID uniqueness validation
+- StrictDoc grammar validation
+- Python code linting (ruff)
+- YAML/JSON formatting (prettier)
+
+## 📊 Requirements Coverage
+
+The examples demonstrate comprehensive requirements coverage:
+
+### Example 1 (ADAS Control Module)
 - **35 SRS Requirements** - Complete software requirements specification
 - **22 SDD Requirements** - Detailed design requirements
 - **18 STP Requirements** - Comprehensive test planning
@@ -376,9 +160,15 @@ The example demonstrates comprehensive requirements coverage across:
 - **10 CPM Requirements** - Program manual and procedures
 - **9 FSM Requirements** - Firmware support procedures
 
-## Automotive Context
+### Example 2 (Military Quad Copter RTOS)
+- Complete MIL-STD-498 document set for military-grade RTOS
+- Real-time performance requirements
+- Safety-critical system specifications
+- Military compliance documentation
 
-All documents are tailored for automotive safety-critical applications with:
+## 🏭 Automotive Context
+
+Example 1 documents are tailored for automotive safety-critical applications with:
 - ISO 26262 ASIL D compliance requirements
 - MISRA C++ coding standards
 - AUTOSAR architecture considerations
@@ -386,7 +176,7 @@ All documents are tailored for automotive safety-critical applications with:
 - Real-time performance requirements
 - Environmental and safety constraints
 
-## Document Relationships
+## 🔗 Document Relationships
 
 The documents maintain proper traceability relationships:
 - SRS → SDD → Implementation
@@ -396,7 +186,7 @@ The documents maintain proper traceability relationships:
 - SRS → SPS → SVD
 - All documents → Configuration Management
 
-## Quality Assurance
+## ✅ Quality Assurance
 
 Each document includes:
 - Unique requirement identifiers (UID)
@@ -405,7 +195,7 @@ Each document includes:
 - Proper section hierarchy
 - Traceability to related documents
 
-## Compliance
+## 🛡️ Compliance
 
 This example demonstrates compliance with:
 - MIL-STD-498 document structure requirements
@@ -414,7 +204,7 @@ This example demonstrates compliance with:
 - Requirements engineering principles
 - Configuration management practices
 
-## Troubleshooting
+## 🛠️ Troubleshooting
 
 ### Common Issues
 
@@ -438,15 +228,15 @@ This example demonstrates compliance with:
 - Build individual documents during development for faster iteration
 - Use `--verbose` flag to see detailed build information
 
-## Usage
+## 📚 Usage
 
-This example can be used as:
+This repository can be used as:
 - A template for MIL-STD-498 compliant documentation
 - A reference for automotive software documentation
 - A training tool for requirements engineering
 - A baseline for safety-critical system documentation
 
-## Maintenance
+## 🔄 Maintenance
 
 All documents are maintained under configuration control with:
 - Version history tracking
@@ -454,10 +244,22 @@ All documents are maintained under configuration control with:
 - Traceability matrix maintenance
 - Regular review and update cycles
 
-## Contributing
+## 🤝 Contributing
 
-When contributing to this example:
+When contributing to this repository:
 1. Maintain MIL-STD-498 compliance
 2. Update traceability relationships
 3. Test builds before committing
 4. Update this README if build procedures change
+5. Ensure UID uniqueness across all documents
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🔗 Links
+
+- [StrictDoc Documentation](https://strictdoc.readthedocs.io/)
+- [MIL-STD-498 Standard](https://en.wikipedia.org/wiki/MIL-STD-498)
+- [ISO 26262 Automotive Safety](https://www.iso.org/standard/43464.html)
+- [GitHub Repository](https://github.com/AutomotiveDevOps/requirements) 
