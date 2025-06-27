@@ -1,0 +1,625 @@
+# Ruff configuration file
+# See: https://docs.astral.sh/ruff/configuration/
+
+# Target Python version
+target-version = "py312"
+
+# Line length
+line-length = 88
+
+# Indent with spaces
+indent-width = 4
+
+# Quote style
+quote-style = "double"
+
+# Import sorting
+[lint.isort]
+known-first-party = ["scripts"]
+force-single-line = false
+combine-as-imports = true
+
+# Formatting
+[format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+# Linting rules
+[lint]
+# Enable all rules by default
+select = ["ALL"]
+
+# Ignore specific rules
+ignore = [
+    "D100",  # Missing docstring in public module
+    "D101",  # Missing docstring in public class
+    "D102",  # Missing docstring in public method
+    "D103",  # Missing docstring in public function
+    "D104",  # Missing docstring in public package
+    "D105",  # Missing docstring in magic method
+    "D106",  # Missing docstring in public nested class
+    "D107",  # Missing docstring in __init__
+    "D200",  # One-line docstring should fit on one line
+    "D201",  # No blank lines allowed before function docstring
+    "D202",  # No blank lines allowed after function docstring
+    "D203",  # 1 blank line required before class docstring
+    "D204",  # 1 blank line required after class docstring
+    "D205",  # 1 blank line required between summary line and description
+    "D206",  # Docstring should be indented with spaces, not tabs
+    "D207",  # Docstring is under-indented
+    "D208",  # Docstring is over-indented
+    "D209",  # Multi-line docstring closing quotes should be on a separate line
+    "D210",  # No whitespaces allowed surrounding docstring text
+    "D211",  # No blank lines allowed before class docstring
+    "D212",  # Multi-line docstring summary should start at the first line
+    "D213",  # Multi-line docstring summary should start at the second line
+    "D214",  # Section is over-indented
+    "D215",  # Section underline is over-indented
+    "D300",  # Use """triple double quotes"""
+    "D301",  # Use r""" if any backslashes in a docstring
+    "D400",  # First line should end with a period
+    "D401",  # First line should be in imperative mood
+    "D402",  # First line should not be the function's "signature"
+    "D403",  # First word of the first line should be properly capitalized
+    "D404",  # First word of the docstring should not be "This"
+    "D405",  # Section name should be properly capitalized
+    "D406",  # Section name should end with a newline
+    "D407",  # Missing dashed underline after section
+    "D408",  # Section underline should be in the line following the section's name
+    "D409",  # Section underline should match the length of its name
+    "D410",  # Missing blank line after section
+    "D411",  # Missing blank line before section
+    "D412",  # No blank lines allowed between a section header and its content
+    "D413",  # Missing blank line after last section
+    "D414",  # Section has no content
+    "D415",  # First line should end with a period, question mark, or exclamation point
+    "D416",  # Section name should end with a colon
+    "D417",  # Missing argument descriptions in the docstring
+    "D418",  # Function/ method should not have a docstring
+    "D419",  # Docstring is empty
+    "E501",  # Line too long (handled by formatter)
+    "W191",  # Indentation contains tabs
+    "W291",  # Trailing whitespace
+    "W292",  # No newline at end of file
+    "W293",  # Blank line contains whitespace
+    "W391",  # Blank line at end of file
+    "W503",  # Line break before binary operator
+    "W504",  # Line break after binary operator
+    "W505",  # Doc line too long
+    "E731",  # Do not assign a lambda expression, use a def
+    "E741",  # Ambiguous variable name
+    "E742",  # Ambiguous class name
+    "E743",  # Ambiguous function name
+    "E902",  # IOError (OSError is preferred)
+    "E999",  # SyntaxError
+    "F401",  # Imported but unused
+    "F402",  # Import shadowed by loop variable
+    "F403",  # 'from module import *' used; unable to detect undefined names
+    "F404",  # Future import(s) name after other statements
+    "F405",  # Name may be undefined, or defined from star imports: module
+    "F406",  # "from module import *" only allowed at module level
+    "F407",  # An __future__ import must be the first non docstring statement
+    "F501",  # % format string with unused named arguments
+    "F502",  # % format string with unused arguments
+    "F503",  # % format string with missing arguments
+    "F504",  # % format string with unused arguments
+    "F505",  # % format string with missing arguments
+    "F506",  # f-string with invalid syntax
+    "F507",  # f-string with invalid syntax
+    "F508",  # f-string with invalid syntax
+    "F509",  # f-string with invalid syntax
+    "F510",  # f-string with invalid syntax
+    "F511",  # f-string with invalid syntax
+    "F512",  # f-string with invalid syntax
+    "F513",  # f-string with invalid syntax
+    "F514",  # f-string with invalid syntax
+    "F515",  # f-string with invalid syntax
+    "F516",  # f-string with invalid syntax
+    "F517",  # f-string with invalid syntax
+    "F518",  # f-string with invalid syntax
+    "F519",  # f-string with invalid syntax
+    "F520",  # f-string with invalid syntax
+    "F521",  # f-string with invalid syntax
+    "F522",  # f-string with invalid syntax
+    "F523",  # f-string with invalid syntax
+    "F524",  # f-string with invalid syntax
+    "F525",  # f-string with invalid syntax
+    "F526",  # f-string with invalid syntax
+    "F527",  # f-string with invalid syntax
+    "F528",  # f-string with invalid syntax
+    "F529",  # f-string with invalid syntax
+    "F530",  # f-string with invalid syntax
+    "F531",  # f-string with invalid syntax
+    "F532",  # f-string with invalid syntax
+    "F533",  # f-string with invalid syntax
+    "F534",  # f-string with invalid syntax
+    "F535",  # f-string with invalid syntax
+    "F536",  # f-string with invalid syntax
+    "F537",  # f-string with invalid syntax
+    "F538",  # f-string with invalid syntax
+    "F539",  # f-string with invalid syntax
+    "F540",  # f-string with invalid syntax
+    "F541",  # f-string with invalid syntax
+    "F542",  # f-string with invalid syntax
+    "F543",  # f-string with invalid syntax
+    "F544",  # f-string with invalid syntax
+    "F545",  # f-string with invalid syntax
+    "F546",  # f-string with invalid syntax
+    "F547",  # f-string with invalid syntax
+    "F548",  # f-string with invalid syntax
+    "F549",  # f-string with invalid syntax
+    "F550",  # f-string with invalid syntax
+    "F551",  # f-string with invalid syntax
+    "F552",  # f-string with invalid syntax
+    "F553",  # f-string with invalid syntax
+    "F554",  # f-string with invalid syntax
+    "F555",  # f-string with invalid syntax
+    "F556",  # f-string with invalid syntax
+    "F557",  # f-string with invalid syntax
+    "F558",  # f-string with invalid syntax
+    "F559",  # f-string with invalid syntax
+    "F560",  # f-string with invalid syntax
+    "F561",  # f-string with invalid syntax
+    "F562",  # f-string with invalid syntax
+    "F563",  # f-string with invalid syntax
+    "F564",  # f-string with invalid syntax
+    "F565",  # f-string with invalid syntax
+    "F566",  # f-string with invalid syntax
+    "F567",  # f-string with invalid syntax
+    "F568",  # f-string with invalid syntax
+    "F569",  # f-string with invalid syntax
+    "F570",  # f-string with invalid syntax
+    "F571",  # f-string with invalid syntax
+    "F572",  # f-string with invalid syntax
+    "F573",  # f-string with invalid syntax
+    "F574",  # f-string with invalid syntax
+    "F575",  # f-string with invalid syntax
+    "F576",  # f-string with invalid syntax
+    "F577",  # f-string with invalid syntax
+    "F578",  # f-string with invalid syntax
+    "F579",  # f-string with invalid syntax
+    "F580",  # f-string with invalid syntax
+    "F581",  # f-string with invalid syntax
+    "F582",  # f-string with invalid syntax
+    "F583",  # f-string with invalid syntax
+    "F584",  # f-string with invalid syntax
+    "F585",  # f-string with invalid syntax
+    "F586",  # f-string with invalid syntax
+    "F587",  # f-string with invalid syntax
+    "F588",  # f-string with invalid syntax
+    "F589",  # f-string with invalid syntax
+    "F590",  # f-string with invalid syntax
+    "F591",  # f-string with invalid syntax
+    "F592",  # f-string with invalid syntax
+    "F593",  # f-string with invalid syntax
+    "F594",  # f-string with invalid syntax
+    "F595",  # f-string with invalid syntax
+    "F596",  # f-string with invalid syntax
+    "F597",  # f-string with invalid syntax
+    "F598",  # f-string with invalid syntax
+    "F599",  # f-string with invalid syntax
+    "F600",  # f-string with invalid syntax
+    "F601",  # f-string with invalid syntax
+    "F602",  # f-string with invalid syntax
+    "F603",  # f-string with invalid syntax
+    "F604",  # f-string with invalid syntax
+    "F605",  # f-string with invalid syntax
+    "F606",  # f-string with invalid syntax
+    "F607",  # f-string with invalid syntax
+    "F608",  # f-string with invalid syntax
+    "F609",  # f-string with invalid syntax
+    "F610",  # f-string with invalid syntax
+    "F611",  # f-string with invalid syntax
+    "F612",  # f-string with invalid syntax
+    "F613",  # f-string with invalid syntax
+    "F614",  # f-string with invalid syntax
+    "F615",  # f-string with invalid syntax
+    "F616",  # f-string with invalid syntax
+    "F617",  # f-string with invalid syntax
+    "F618",  # f-string with invalid syntax
+    "F619",  # f-string with invalid syntax
+    "F620",  # f-string with invalid syntax
+    "F621",  # f-string with invalid syntax
+    "F622",  # f-string with invalid syntax
+    "F623",  # f-string with invalid syntax
+    "F624",  # f-string with invalid syntax
+    "F625",  # f-string with invalid syntax
+    "F626",  # f-string with invalid syntax
+    "F627",  # f-string with invalid syntax
+    "F628",  # f-string with invalid syntax
+    "F629",  # f-string with invalid syntax
+    "F630",  # f-string with invalid syntax
+    "F631",  # f-string with invalid syntax
+    "F632",  # f-string with invalid syntax
+    "F633",  # f-string with invalid syntax
+    "F634",  # f-string with invalid syntax
+    "F635",  # f-string with invalid syntax
+    "F636",  # f-string with invalid syntax
+    "F637",  # f-string with invalid syntax
+    "F638",  # f-string with invalid syntax
+    "F639",  # f-string with invalid syntax
+    "F640",  # f-string with invalid syntax
+    "F641",  # f-string with invalid syntax
+    "F642",  # f-string with invalid syntax
+    "F643",  # f-string with invalid syntax
+    "F644",  # f-string with invalid syntax
+    "F645",  # f-string with invalid syntax
+    "F646",  # f-string with invalid syntax
+    "F647",  # f-string with invalid syntax
+    "F648",  # f-string with invalid syntax
+    "F649",  # f-string with invalid syntax
+    "F650",  # f-string with invalid syntax
+    "F651",  # f-string with invalid syntax
+    "F652",  # f-string with invalid syntax
+    "F653",  # f-string with invalid syntax
+    "F654",  # f-string with invalid syntax
+    "F655",  # f-string with invalid syntax
+    "F656",  # f-string with invalid syntax
+    "F657",  # f-string with invalid syntax
+    "F658",  # f-string with invalid syntax
+    "F659",  # f-string with invalid syntax
+    "F660",  # f-string with invalid syntax
+    "F661",  # f-string with invalid syntax
+    "F662",  # f-string with invalid syntax
+    "F663",  # f-string with invalid syntax
+    "F664",  # f-string with invalid syntax
+    "F665",  # f-string with invalid syntax
+    "F666",  # f-string with invalid syntax
+    "F667",  # f-string with invalid syntax
+    "F668",  # f-string with invalid syntax
+    "F669",  # f-string with invalid syntax
+    "F670",  # f-string with invalid syntax
+    "F671",  # f-string with invalid syntax
+    "F672",  # f-string with invalid syntax
+    "F673",  # f-string with invalid syntax
+    "F674",  # f-string with invalid syntax
+    "F675",  # f-string with invalid syntax
+    "F676",  # f-string with invalid syntax
+    "F677",  # f-string with invalid syntax
+    "F678",  # f-string with invalid syntax
+    "F679",  # f-string with invalid syntax
+    "F680",  # f-string with invalid syntax
+    "F681",  # f-string with invalid syntax
+    "F682",  # f-string with invalid syntax
+    "F683",  # f-string with invalid syntax
+    "F684",  # f-string with invalid syntax
+    "F685",  # f-string with invalid syntax
+    "F686",  # f-string with invalid syntax
+    "F687",  # f-string with invalid syntax
+    "F688",  # f-string with invalid syntax
+    "F689",  # f-string with invalid syntax
+    "F690",  # f-string with invalid syntax
+    "F691",  # f-string with invalid syntax
+    "F692",  # f-string with invalid syntax
+    "F693",  # f-string with invalid syntax
+    "F694",  # f-string with invalid syntax
+    "F695",  # f-string with invalid syntax
+    "F696",  # f-string with invalid syntax
+    "F697",  # f-string with invalid syntax
+    "F698",  # f-string with invalid syntax
+    "F699",  # f-string with invalid syntax
+    "F700",  # f-string with invalid syntax
+    "F701",  # f-string with invalid syntax
+    "F702",  # f-string with invalid syntax
+    "F703",  # f-string with invalid syntax
+    "F704",  # f-string with invalid syntax
+    "F705",  # f-string with invalid syntax
+    "F706",  # f-string with invalid syntax
+    "F707",  # f-string with invalid syntax
+    "F708",  # f-string with invalid syntax
+    "F709",  # f-string with invalid syntax
+    "F710",  # f-string with invalid syntax
+    "F711",  # f-string with invalid syntax
+    "F712",  # f-string with invalid syntax
+    "F713",  # f-string with invalid syntax
+    "F714",  # f-string with invalid syntax
+    "F715",  # f-string with invalid syntax
+    "F716",  # f-string with invalid syntax
+    "F717",  # f-string with invalid syntax
+    "F718",  # f-string with invalid syntax
+    "F719",  # f-string with invalid syntax
+    "F720",  # f-string with invalid syntax
+    "F721",  # f-string with invalid syntax
+    "F722",  # f-string with invalid syntax
+    "F723",  # f-string with invalid syntax
+    "F724",  # f-string with invalid syntax
+    "F725",  # f-string with invalid syntax
+    "F726",  # f-string with invalid syntax
+    "F727",  # f-string with invalid syntax
+    "F728",  # f-string with invalid syntax
+    "F729",  # f-string with invalid syntax
+    "F730",  # f-string with invalid syntax
+    "F731",  # f-string with invalid syntax
+    "F732",  # f-string with invalid syntax
+    "F733",  # f-string with invalid syntax
+    "F734",  # f-string with invalid syntax
+    "F735",  # f-string with invalid syntax
+    "F736",  # f-string with invalid syntax
+    "F737",  # f-string with invalid syntax
+    "F738",  # f-string with invalid syntax
+    "F739",  # f-string with invalid syntax
+    "F740",  # f-string with invalid syntax
+    "F741",  # f-string with invalid syntax
+    "F742",  # f-string with invalid syntax
+    "F743",  # f-string with invalid syntax
+    "F744",  # f-string with invalid syntax
+    "F745",  # f-string with invalid syntax
+    "F746",  # f-string with invalid syntax
+    "F747",  # f-string with invalid syntax
+    "F748",  # f-string with invalid syntax
+    "F749",  # f-string with invalid syntax
+    "F750",  # f-string with invalid syntax
+    "F751",  # f-string with invalid syntax
+    "F752",  # f-string with invalid syntax
+    "F753",  # f-string with invalid syntax
+    "F754",  # f-string with invalid syntax
+    "F755",  # f-string with invalid syntax
+    "F756",  # f-string with invalid syntax
+    "F757",  # f-string with invalid syntax
+    "F758",  # f-string with invalid syntax
+    "F759",  # f-string with invalid syntax
+    "F760",  # f-string with invalid syntax
+    "F761",  # f-string with invalid syntax
+    "F762",  # f-string with invalid syntax
+    "F763",  # f-string with invalid syntax
+    "F764",  # f-string with invalid syntax
+    "F765",  # f-string with invalid syntax
+    "F766",  # f-string with invalid syntax
+    "F767",  # f-string with invalid syntax
+    "F768",  # f-string with invalid syntax
+    "F769",  # f-string with invalid syntax
+    "F770",  # f-string with invalid syntax
+    "F771",  # f-string with invalid syntax
+    "F772",  # f-string with invalid syntax
+    "F773",  # f-string with invalid syntax
+    "F774",  # f-string with invalid syntax
+    "F775",  # f-string with invalid syntax
+    "F776",  # f-string with invalid syntax
+    "F777",  # f-string with invalid syntax
+    "F778",  # f-string with invalid syntax
+    "F779",  # f-string with invalid syntax
+    "F780",  # f-string with invalid syntax
+    "F781",  # f-string with invalid syntax
+    "F782",  # f-string with invalid syntax
+    "F783",  # f-string with invalid syntax
+    "F784",  # f-string with invalid syntax
+    "F785",  # f-string with invalid syntax
+    "F786",  # f-string with invalid syntax
+    "F787",  # f-string with invalid syntax
+    "F788",  # f-string with invalid syntax
+    "F789",  # f-string with invalid syntax
+    "F790",  # f-string with invalid syntax
+    "F791",  # f-string with invalid syntax
+    "F792",  # f-string with invalid syntax
+    "F793",  # f-string with invalid syntax
+    "F794",  # f-string with invalid syntax
+    "F795",  # f-string with invalid syntax
+    "F796",  # f-string with invalid syntax
+    "F797",  # f-string with invalid syntax
+    "F798",  # f-string with invalid syntax
+    "F799",  # f-string with invalid syntax
+    "F800",  # f-string with invalid syntax
+    "F801",  # f-string with invalid syntax
+    "F802",  # f-string with invalid syntax
+    "F803",  # f-string with invalid syntax
+    "F804",  # f-string with invalid syntax
+    "F805",  # f-string with invalid syntax
+    "F806",  # f-string with invalid syntax
+    "F807",  # f-string with invalid syntax
+    "F808",  # f-string with invalid syntax
+    "F809",  # f-string with invalid syntax
+    "F810",  # f-string with invalid syntax
+    "F811",  # f-string with invalid syntax
+    "F812",  # f-string with invalid syntax
+    "F813",  # f-string with invalid syntax
+    "F814",  # f-string with invalid syntax
+    "F815",  # f-string with invalid syntax
+    "F816",  # f-string with invalid syntax
+    "F817",  # f-string with invalid syntax
+    "F818",  # f-string with invalid syntax
+    "F819",  # f-string with invalid syntax
+    "F820",  # f-string with invalid syntax
+    "F821",  # f-string with invalid syntax
+    "F822",  # f-string with invalid syntax
+    "F823",  # f-string with invalid syntax
+    "F824",  # f-string with invalid syntax
+    "F825",  # f-string with invalid syntax
+    "F826",  # f-string with invalid syntax
+    "F827",  # f-string with invalid syntax
+    "F828",  # f-string with invalid syntax
+    "F829",  # f-string with invalid syntax
+    "F830",  # f-string with invalid syntax
+    "F831",  # f-string with invalid syntax
+    "F832",  # f-string with invalid syntax
+    "F833",  # f-string with invalid syntax
+    "F834",  # f-string with invalid syntax
+    "F835",  # f-string with invalid syntax
+    "F836",  # f-string with invalid syntax
+    "F837",  # f-string with invalid syntax
+    "F838",  # f-string with invalid syntax
+    "F839",  # f-string with invalid syntax
+    "F840",  # f-string with invalid syntax
+    "F841",  # f-string with invalid syntax
+    "F842",  # f-string with invalid syntax
+    "F843",  # f-string with invalid syntax
+    "F844",  # f-string with invalid syntax
+    "F845",  # f-string with invalid syntax
+    "F846",  # f-string with invalid syntax
+    "F847",  # f-string with invalid syntax
+    "F848",  # f-string with invalid syntax
+    "F849",  # f-string with invalid syntax
+    "F850",  # f-string with invalid syntax
+    "F851",  # f-string with invalid syntax
+    "F852",  # f-string with invalid syntax
+    "F853",  # f-string with invalid syntax
+    "F854",  # f-string with invalid syntax
+    "F855",  # f-string with invalid syntax
+    "F856",  # f-string with invalid syntax
+    "F857",  # f-string with invalid syntax
+    "F858",  # f-string with invalid syntax
+    "F859",  # f-string with invalid syntax
+    "F860",  # f-string with invalid syntax
+    "F861",  # f-string with invalid syntax
+    "F862",  # f-string with invalid syntax
+    "F863",  # f-string with invalid syntax
+    "F864",  # f-string with invalid syntax
+    "F865",  # f-string with invalid syntax
+    "F866",  # f-string with invalid syntax
+    "F867",  # f-string with invalid syntax
+    "F868",  # f-string with invalid syntax
+    "F869",  # f-string with invalid syntax
+    "F870",  # f-string with invalid syntax
+    "F871",  # f-string with invalid syntax
+    "F872",  # f-string with invalid syntax
+    "F873",  # f-string with invalid syntax
+    "F874",  # f-string with invalid syntax
+    "F875",  # f-string with invalid syntax
+    "F876",  # f-string with invalid syntax
+    "F877",  # f-string with invalid syntax
+    "F878",  # f-string with invalid syntax
+    "F879",  # f-string with invalid syntax
+    "F880",  # f-string with invalid syntax
+    "F881",  # f-string with invalid syntax
+    "F882",  # f-string with invalid syntax
+    "F883",  # f-string with invalid syntax
+    "F884",  # f-string with invalid syntax
+    "F885",  # f-string with invalid syntax
+    "F886",  # f-string with invalid syntax
+    "F887",  # f-string with invalid syntax
+    "F888",  # f-string with invalid syntax
+    "F889",  # f-string with invalid syntax
+    "F890",  # f-string with invalid syntax
+    "F891",  # f-string with invalid syntax
+    "F892",  # f-string with invalid syntax
+    "F893",  # f-string with invalid syntax
+    "F894",  # f-string with invalid syntax
+    "F895",  # f-string with invalid syntax
+    "F896",  # f-string with invalid syntax
+    "F897",  # f-string with invalid syntax
+    "F898",  # f-string with invalid syntax
+    "F899",  # f-string with invalid syntax
+    "F900",  # f-string with invalid syntax
+    "F901",  # f-string with invalid syntax
+    "F902",  # f-string with invalid syntax
+    "F903",  # f-string with invalid syntax
+    "F904",  # f-string with invalid syntax
+    "F905",  # f-string with invalid syntax
+    "F906",  # f-string with invalid syntax
+    "F907",  # f-string with invalid syntax
+    "F908",  # f-string with invalid syntax
+    "F909",  # f-string with invalid syntax
+    "F910",  # f-string with invalid syntax
+    "F911",  # f-string with invalid syntax
+    "F912",  # f-string with invalid syntax
+    "F913",  # f-string with invalid syntax
+    "F914",  # f-string with invalid syntax
+    "F915",  # f-string with invalid syntax
+    "F916",  # f-string with invalid syntax
+    "F917",  # f-string with invalid syntax
+    "F918",  # f-string with invalid syntax
+    "F919",  # f-string with invalid syntax
+    "F920",  # f-string with invalid syntax
+    "F921",  # f-string with invalid syntax
+    "F922",  # f-string with invalid syntax
+    "F923",  # f-string with invalid syntax
+    "F924",  # f-string with invalid syntax
+    "F925",  # f-string with invalid syntax
+    "F926",  # f-string with invalid syntax
+    "F927",  # f-string with invalid syntax
+    "F928",  # f-string with invalid syntax
+    "F929",  # f-string with invalid syntax
+    "F930",  # f-string with invalid syntax
+    "F931",  # f-string with invalid syntax
+    "F932",  # f-string with invalid syntax
+    "F933",  # f-string with invalid syntax
+    "F934",  # f-string with invalid syntax
+    "F935",  # f-string with invalid syntax
+    "F936",  # f-string with invalid syntax
+    "F937",  # f-string with invalid syntax
+    "F938",  # f-string with invalid syntax
+    "F939",  # f-string with invalid syntax
+    "F940",  # f-string with invalid syntax
+    "F941",  # f-string with invalid syntax
+    "F942",  # f-string with invalid syntax
+    "F943",  # f-string with invalid syntax
+    "F944",  # f-string with invalid syntax
+    "F945",  # f-string with invalid syntax
+    "F946",  # f-string with invalid syntax
+    "F947",  # f-string with invalid syntax
+    "F948",  # f-string with invalid syntax
+    "F949",  # f-string with invalid syntax
+    "F950",  # f-string with invalid syntax
+    "F951",  # f-string with invalid syntax
+    "F952",  # f-string with invalid syntax
+    "F953",  # f-string with invalid syntax
+    "F954",  # f-string with invalid syntax
+    "F955",  # f-string with invalid syntax
+    "F956",  # f-string with invalid syntax
+    "F957",  # f-string with invalid syntax
+    "F958",  # f-string with invalid syntax
+    "F959",  # f-string with invalid syntax
+    "F960",  # f-string with invalid syntax
+    "F961",  # f-string with invalid syntax
+    "F962",  # f-string with invalid syntax
+    "F963",  # f-string with invalid syntax
+    "F964",  # f-string with invalid syntax
+    "F965",  # f-string with invalid syntax
+    "F966",  # f-string with invalid syntax
+    "F967",  # f-string with invalid syntax
+    "F968",  # f-string with invalid syntax
+    "F969",  # f-string with invalid syntax
+    "F970",  # f-string with invalid syntax
+    "F971",  # f-string with invalid syntax
+    "F972",  # f-string with invalid syntax
+    "F973",  # f-string with invalid syntax
+    "F974",  # f-string with invalid syntax
+    "F975",  # f-string with invalid syntax
+    "F976",  # f-string with invalid syntax
+    "F977",  # f-string with invalid syntax
+    "F978",  # f-string with invalid syntax
+    "F979",  # f-string with invalid syntax
+    "F980",  # f-string with invalid syntax
+    "F981",  # f-string with invalid syntax
+    "F982",  # f-string with invalid syntax
+    "F983",  # f-string with invalid syntax
+    "F984",  # f-string with invalid syntax
+    "F985",  # f-string with invalid syntax
+    "F986",  # f-string with invalid syntax
+    "F987",  # f-string with invalid syntax
+    "F988",  # f-string with invalid syntax
+    "F989",  # f-string with invalid syntax
+    "F990",  # f-string with invalid syntax
+    "F991",  # f-string with invalid syntax
+    "F992",  # f-string with invalid syntax
+    "F993",  # f-string with invalid syntax
+    "F994",  # f-string with invalid syntax
+    "F995",  # f-string with invalid syntax
+    "F996",  # f-string with invalid syntax
+    "F997",  # f-string with invalid syntax
+    "F998",  # f-string with invalid syntax
+    "F999",  # f-string with invalid syntax
+]
+
+# Exclude specific files/directories
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    "build",
+    "dist",
+    "docs",
+    "html_demo",
+    "html_sum_test",
+    "MIL-STD-498",
+    "strictdoc",
+    "examples/example1/docs",
+    "examples/example2/docs",
+    "examples/example1/test_build",
+    "examples/example2/test_build",
+] 
