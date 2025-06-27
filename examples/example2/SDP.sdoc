@@ -1,0 +1,152 @@
+/**
+ * This code written by Claude Sonnet 4 (claude-3-5-sonnet-20241022)
+ * Generated via Cursor IDE (cursor.sh) with AI assistance
+ * Model: Anthropic Claude 3.5 Sonnet
+ * Generation timestamp: 2024-12-19T10:50:00Z
+ * Context: Military Quad Copter RTOS Software Development Plan
+ * 
+ * Technical details:
+ * - LLM: Claude 3.5 Sonnet (2024-10-22)
+ * - IDE: Cursor (cursor.sh)
+ * - Generation method: AI-assisted pair programming
+ * - Code style: MIL-STD-498 SDP format
+ * - Dependencies: StrictDoc, MIL-STD-498 compliance
+ */
+
+[DOCUMENT]
+TITLE: MIL-STD-498 SDP (Software Development Plan) - Military Quad Copter RTOS
+
+[[SECTION]]
+TITLE: 1. Scope
+
+[[SECTION]]
+TITLE: 1.1 Identification
+
+[REFERENCE]
+TYPE: Document
+REF: SRS.sdoc
+DESC: See Software Requirements Specification for requirements.
+
+[REFERENCE]
+TYPE: Document
+REF: SDD.sdoc
+DESC: See Software Design Description for architecture.
+
+[REFERENCE]
+TYPE: Document
+REF: STP.sdoc
+DESC: See Software Test Plan for test strategy.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 1.2 System overview
+
+[REQUIREMENT]
+UID: SDP-001-MILUAV
+TITLE: System Overview
+STATEMENT: The Military Quad Copter RTOS is developed for autonomous, secure, and real-time UAV operations in military environments.
+RATIONALE: System overview provides context for the development plan.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 1.3 Document overview
+
+[REQUIREMENT]
+UID: SDP-002-MILUAV
+TITLE: Document Structure
+STATEMENT: This document is organized per MIL-STD-498, covering scope, referenced documents, required work, development activities, and notes.
+RATIONALE: Structured documentation supports review and validation.
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 2. Referenced documents
+
+[REFERENCE]
+TYPE: Document
+REF: SRS.sdoc
+DESC: Software Requirements Specification
+
+[REFERENCE]
+TYPE: Document
+REF: SDD.sdoc
+DESC: Software Design Description
+
+[REFERENCE]
+TYPE: Document
+REF: STP.sdoc
+DESC: Software Test Plan
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3. Overview of required work
+
+[REQUIREMENT]
+UID: SDP-003-MILUAV
+TITLE: Required Work
+STATEMENT: The project includes requirements analysis, design, implementation, integration, verification, validation, and deployment of the RTOS.
+RATIONALE: Outlines the major work areas for the project.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 4. Plans for performing general software development activities
+
+[REQUIREMENT]
+UID: SDP-004-MILUAV
+TITLE: Development Process
+STATEMENT: The project will follow an iterative, model-based development process with continuous integration and verification.
+RATIONALE: Ensures quality and traceability throughout development.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 5. Plans for performing detailed software development activities
+
+[REQUIREMENT]
+UID: SDP-005-MILUAV
+TITLE: Detailed Activities
+STATEMENT: Each phase (requirements, design, implementation, test) will include reviews, audits, and formal acceptance criteria.
+RATIONALE: Ensures each activity meets quality standards.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 6. Plans for performing integral activities
+
+[REQUIREMENT]
+UID: SDP-006-MILUAV
+TITLE: Integral Activities
+STATEMENT: Configuration management, quality assurance, and risk management will be performed throughout the project lifecycle.
+RATIONALE: Integral activities ensure project success and compliance.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 7. Plans for performing supporting activities
+
+[REQUIREMENT]
+UID: SDP-007-MILUAV
+TITLE: Supporting Activities
+STATEMENT: Training, documentation, and maintenance planning will be provided to support system deployment and sustainment.
+RATIONALE: Supporting activities ensure long-term system viability.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 8. Notes
+
+[REQUIREMENT]
+UID: SDP-008-MILUAV
+TITLE: Notes
+STATEMENT: All development activities will comply with MIL-STD-498 and related standards.
+RATIONALE: Ensures compliance and traceability.
+
+[[/SECTION]]
+
+[[/SECTION]] 

@@ -1,0 +1,373 @@
+/**
+ * This code written by Claude Sonnet 4 (claude-3-5-sonnet-20241022)
+ * Generated via Cursor IDE (cursor.sh) with AI assistance
+ * Model: Anthropic Claude 3.5 Sonnet
+ * Generation timestamp: 2024-12-19T10:30:00Z
+ * Context: Military Quad Copter RTOS Software Requirements Specification
+ * 
+ * Technical details:
+ * - LLM: Claude 3.5 Sonnet (2024-10-22)
+ * - IDE: Cursor (cursor.sh)
+ * - Generation method: AI-assisted pair programming
+ * - Code style: MIL-STD-498 SRS format with military UAV requirements
+ * - Dependencies: StrictDoc, MIL-STD-498 compliance
+ */
+
+[DOCUMENT]
+TITLE: MIL-STD-498 SRS (Software Requirements Specification) - Military Quad Copter RTOS
+
+[[SECTION]]
+TITLE: 1. Scope
+
+[[SECTION]]
+TITLE: 1.1 Identification
+
+[REQUIREMENT]
+UID: SRS-001-MILUAV
+TITLE: Software Identification
+STATEMENT: The software shall be identified as the Military Quad Copter Real-Time Operating System (RTOS) Software Requirements Specification, version 2.0, designed for autonomous military UAV operations.
+RATIONALE: Proper software identification ensures configuration management and traceability for military systems.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 1.2 System overview
+
+[REQUIREMENT]
+UID: SRS-002-MILUAV
+TITLE: System Overview
+STATEMENT: The Military Quad Copter RTOS shall provide autonomous flight control, mission management, sensor fusion, secure communication, and tactical payload management for military unmanned aerial vehicle operations in hostile environments.
+RATIONALE: System overview establishes the context for all software requirements in military UAV applications.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 1.3 Document overview
+
+[REQUIREMENT]
+UID: SRS-003-MILUAV
+TITLE: Document Structure
+STATEMENT: This document shall be organized into six major sections covering scope, referenced documents, requirements, qualification provisions, traceability, and notes following MIL-STD-498 format.
+RATIONALE: Structured organization facilitates requirements review and validation for military software systems.
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 2. Referenced documents
+
+[REQUIREMENT]
+UID: SRS-004-MILUAV
+TITLE: Reference Standards
+STATEMENT: The software shall comply with MIL-STD-498, DO-178C Level A, MIL-STD-882E, FIPS 140-2 Level 3, Common Criteria EAL4+, and DoD cybersecurity requirements for military software development and quality assurance.
+RATIONALE: Compliance with established military and aviation standards ensures software quality, safety, and security.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3. Requirements
+
+[[SECTION]]
+TITLE: 3.1 Required states and modes
+
+[REQUIREMENT]
+UID: SRS-005-MILUAV
+TITLE: Operational States
+STATEMENT: The software shall support ground standby, pre-flight, autonomous flight, manual control, emergency landing, mission abort, and maintenance states with appropriate state transitions and safety interlocks.
+RATIONALE: Defined operational states ensure predictable system behavior under various military operational conditions.
+
+[REQUIREMENT]
+UID: SRS-006-MILUAV
+TITLE: Mode Transitions
+STATEMENT: The software shall provide automatic and manual mode transitions with appropriate safety checks, user notifications, and fail-safe mechanisms for military operations.
+RATIONALE: Controlled mode transitions prevent system instability and ensure mission safety.
+
+[REQUIREMENT]
+UID: SRS-007-MILUAV
+TITLE: Emergency States
+STATEMENT: The software shall implement emergency states including loss of communication, GPS failure, critical system failure, and hostile environment detection with automatic recovery procedures.
+RATIONALE: Emergency states ensure system survivability and mission completion under adverse conditions.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.2 CSCI capability requirements
+
+[[SECTION]]
+TITLE: 3.2.1 Flight Control System
+
+[REQUIREMENT]
+UID: SRS-008-MILUAV
+TITLE: Autonomous Flight Control
+STATEMENT: The software shall provide autonomous flight control with PID-based stabilization, attitude control, altitude hold, and position control with sub-centimeter accuracy for military precision operations.
+RATIONALE: Autonomous flight control is essential for military UAV operations requiring precise positioning and stability.
+
+[REQUIREMENT]
+UID: SRS-009-MILUAV
+TITLE: Takeoff and Landing
+STATEMENT: The software shall provide autonomous takeoff and landing capabilities with obstacle detection, wind compensation, and emergency landing procedures for military field operations.
+RATIONALE: Autonomous takeoff and landing enable operations in unprepared landing zones typical of military environments.
+
+[REQUIREMENT]
+UID: SRS-010-MILUAV
+TITLE: Waypoint Navigation
+STATEMENT: The software shall provide waypoint navigation with 3D path planning, obstacle avoidance, and dynamic route optimization for complex military missions.
+RATIONALE: Waypoint navigation enables complex mission execution with minimal human intervention.
+
+[REQUIREMENT]
+UID: SRS-011-MILUAV
+TITLE: Formation Flying
+STATEMENT: The software shall support formation flying with up to 8 UAVs, maintaining relative positioning with sub-meter accuracy and collision avoidance.
+RATIONALE: Formation flying capabilities enable coordinated military operations and tactical advantages.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.2.2 Mission Management
+
+[REQUIREMENT]
+UID: SRS-012-MILUAV
+TITLE: Mission Planning
+STATEMENT: The software shall provide pre-flight mission planning with 3D route optimization, fuel management, payload configuration, and contingency planning for military operations.
+RATIONALE: Mission planning ensures efficient resource utilization and mission success.
+
+[REQUIREMENT]
+UID: SRS-013-MILUAV
+TITLE: Real-Time Mission Adaptation
+STATEMENT: The software shall provide real-time mission adaptation based on environmental conditions, threat assessment, and operational requirements with automatic decision-making capabilities.
+RATIONALE: Real-time adaptation enables responsive military operations in dynamic environments.
+
+[REQUIREMENT]
+UID: SRS-014-MILUAV
+TITLE: Payload Management
+STATEMENT: The software shall manage tactical payloads including EO/IR cameras, LIDAR sensors, communication relays, and mission-specific equipment with automatic deployment and retrieval.
+RATIONALE: Payload management enables diverse military mission capabilities and equipment utilization.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.2.3 Sensor Fusion and Navigation
+
+[REQUIREMENT]
+UID: SRS-015-MILUAV
+TITLE: Multi-Sensor Fusion
+STATEMENT: The software shall fuse data from GPS, INS, LIDAR, cameras, radar altimeter, and environmental sensors with Kalman filtering for robust navigation in GPS-denied environments.
+RATIONALE: Multi-sensor fusion ensures navigation reliability in challenging military environments.
+
+[REQUIREMENT]
+UID: SRS-016-MILUAV
+TITLE: Obstacle Detection and Avoidance
+STATEMENT: The software shall provide real-time obstacle detection and avoidance using LIDAR, stereo vision, and radar with 360-degree coverage and sub-second response times.
+RATIONALE: Obstacle avoidance is critical for safe autonomous operation in complex environments.
+
+[REQUIREMENT]
+UID: SRS-017-MILUAV
+TITLE: GPS-Denied Navigation
+STATEMENT: The software shall provide navigation capabilities in GPS-denied environments using visual odometry, inertial navigation, and landmark recognition with accuracy degradation of less than 1% per minute.
+RATIONALE: GPS-denied navigation enables operations in environments where GPS signals are unavailable or compromised.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.2.4 Communication and Security
+
+[REQUIREMENT]
+UID: SRS-018-MILUAV
+TITLE: Secure Communication
+STATEMENT: The software shall provide secure communication using AES-256 encryption, frequency hopping, and anti-jamming protocols for command and control operations.
+RATIONALE: Secure communication protects mission integrity and prevents hostile interference.
+
+[REQUIREMENT]
+UID: SRS-019-MILUAV
+TITLE: Video Streaming
+STATEMENT: The software shall provide encrypted real-time video streaming with adaptive bitrate, low latency (<100ms), and automatic quality adjustment based on communication conditions.
+RATIONALE: Video streaming enables real-time situational awareness for military operations.
+
+[REQUIREMENT]
+UID: SRS-020-MILUAV
+TITLE: Anti-Jamming Capabilities
+STATEMENT: The software shall implement anti-jamming capabilities including frequency hopping, spread spectrum techniques, and automatic frequency selection to maintain communication under electronic warfare conditions.
+RATIONALE: Anti-jamming capabilities ensure communication reliability in hostile electronic environments.
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.3 CSCI external interface requirements
+
+[[SECTION]]
+TITLE: 3.3.1 Interface identification and diagrams
+
+[REQUIREMENT]
+UID: SRS-021-MILUAV
+TITLE: Ground Control Station Interface
+STATEMENT: The software shall provide a secure ground control station interface with encrypted communication, role-based access control, and real-time mission monitoring capabilities.
+RATIONALE: Ground control station interface enables human oversight and control of autonomous operations.
+
+[REQUIREMENT]
+UID: SRS-022-MILUAV
+TITLE: Sensor Interfaces
+STATEMENT: The software shall interface with GPS/INS, LIDAR, EO/IR cameras, radar altimeter, and environmental sensors using standardized protocols with automatic calibration and health monitoring.
+RATIONALE: Sensor interfaces enable comprehensive environmental awareness and navigation capabilities.
+
+[REQUIREMENT]
+UID: SRS-023-MILUAV
+TITLE: Actuator Interfaces
+STATEMENT: The software shall interface with motor controllers, servo actuators, and payload deployment mechanisms using redundant communication protocols with automatic fault detection.
+RATIONALE: Actuator interfaces enable precise flight control and mission execution.
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.4 CSCI internal interface requirements
+
+[REQUIREMENT]
+UID: SRS-024-MILUAV
+TITLE: Internal Communication
+STATEMENT: The software shall use secure internal communication protocols between components with message queuing, event-driven architecture, and fault-tolerant message delivery.
+RATIONALE: Internal communication protocols ensure system reliability and maintainability under military operating conditions.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.5 CSCI internal data requirements
+
+[REQUIREMENT]
+UID: SRS-025-MILUAV
+TITLE: Mission Data Storage
+STATEMENT: The software shall store mission data, flight logs, sensor data, and system health information with automatic backup, encryption, and data retention policies for military audit requirements.
+RATIONALE: Mission data storage ensures operational accountability and post-mission analysis capabilities.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.6 Adaptation requirements
+
+[REQUIREMENT]
+UID: SRS-026-MILUAV
+TITLE: Dynamic Configuration
+STATEMENT: The software shall support dynamic configuration updates without system restart, including mission parameters, security policies, and operational rules for adaptive military operations.
+RATIONALE: Dynamic configuration enables system adaptation to changing operational requirements and threat conditions.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.7 Sizing and timing requirements
+
+[REQUIREMENT]
+UID: SRS-027-MILUAV
+TITLE: Real-Time Performance
+STATEMENT: The software shall process flight control loops at 1kHz with latency under 100μs, sensor fusion at 100Hz with latency under 10ms, and communication processing with latency under 50ms.
+RATIONALE: Real-time performance requirements ensure responsive flight control and mission execution.
+
+[REQUIREMENT]
+UID: SRS-028-MILUAV
+TITLE: Memory and Processing Requirements
+STATEMENT: The software shall operate within 512MB RAM, 2GB flash storage, and utilize less than 80% of dual-core ARM Cortex-R5 processor capacity under maximum load conditions.
+RATIONALE: Resource constraints ensure system reliability and predictable performance under all operating conditions.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.8 Safety requirements
+
+[REQUIREMENT]
+UID: SRS-029-MILUAV
+TITLE: Flight Safety
+STATEMENT: The software shall implement flight safety controls including automatic return-to-base, emergency landing procedures, and system redundancy to prevent uncontrolled flight or ground impact.
+RATIONALE: Flight safety requirements protect personnel, equipment, and mission objectives.
+
+[REQUIREMENT]
+UID: SRS-030-MILUAV
+TITLE: Fault Tolerance
+STATEMENT: The software shall implement triple-redundant critical systems with automatic fault detection, isolation, and recovery to maintain system operation under single or dual component failures.
+RATIONALE: Fault tolerance ensures system reliability and mission completion under adverse conditions.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.9 Security and privacy requirements
+
+[REQUIREMENT]
+UID: SRS-031-MILUAV
+TITLE: Authentication and Authorization
+STATEMENT: The software shall implement multi-factor authentication, role-based access control, and secure session management with automatic timeout and secure session termination for military security requirements.
+RATIONALE: Strong authentication and authorization protect system integrity and prevent unauthorized access.
+
+[REQUIREMENT]
+UID: SRS-032-MILUAV
+TITLE: Data Encryption
+STATEMENT: The software shall encrypt all stored data, communication channels, and configuration files using FIPS 140-2 Level 3 approved cryptographic algorithms and key management procedures.
+RATIONALE: Data encryption protects sensitive military information and mission data.
+
+[REQUIREMENT]
+UID: SRS-033-MILUAV
+TITLE: Threat Detection
+STATEMENT: The software shall implement threat detection capabilities including intrusion detection, anomaly detection, and automatic response mechanisms for cyber and electronic warfare threats.
+RATIONALE: Threat detection enables proactive defense against hostile cyber and electronic warfare activities.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 3.10 Environmental requirements
+
+[REQUIREMENT]
+UID: SRS-034-MILUAV
+TITLE: Environmental Tolerance
+STATEMENT: The software shall operate reliably in temperature ranges from -40°C to +85°C, humidity from 0% to 95% non-condensing, and altitude from sea level to 15,000 feet following MIL-STD-810G requirements.
+RATIONALE: Environmental tolerance ensures system operation in diverse military operating environments.
+
+[REQUIREMENT]
+UID: SRS-035-MILUAV
+TITLE: EMI/EMC Compliance
+STATEMENT: The software shall comply with MIL-STD-461F electromagnetic interference and compatibility requirements for military electronic equipment operation.
+RATIONALE: EMI/EMC compliance ensures system operation in electromagnetic environments typical of military operations.
+
+[[/SECTION]]
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 4. Qualification provisions
+
+[REQUIREMENT]
+UID: SRS-036-MILUAV
+TITLE: Testing Requirements
+STATEMENT: The software shall undergo comprehensive testing including unit testing, integration testing, system testing, and flight testing with 100% requirements coverage and traceability.
+RATIONALE: Comprehensive testing ensures software quality and compliance with military standards.
+
+[REQUIREMENT]
+UID: SRS-037-MILUAV
+TITLE: Certification Requirements
+STATEMENT: The software shall achieve DO-178C Level A certification for airborne systems and Common Criteria EAL4+ certification for information technology security.
+RATIONALE: Certification requirements ensure compliance with aviation safety and information security standards.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 5. Requirements traceability
+
+[REQUIREMENT]
+UID: SRS-038-MILUAV
+TITLE: Traceability Matrix
+STATEMENT: All software requirements shall be traceable to system requirements, design elements, test cases, and verification activities with bidirectional traceability maintained throughout the development lifecycle.
+RATIONALE: Requirements traceability ensures complete verification and validation of system capabilities.
+
+[[/SECTION]]
+
+[[SECTION]]
+TITLE: 6. Notes
+
+[REQUIREMENT]
+UID: SRS-039-MILUAV
+TITLE: Documentation Requirements
+STATEMENT: All software documentation shall follow MIL-STD-498 format with complete traceability, version control, and configuration management procedures for military software development.
+RATIONALE: Documentation requirements ensure maintainability and compliance with military software development standards.
+
+[[/SECTION]]
+
+[[/SECTION]] 
