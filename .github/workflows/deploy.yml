@@ -27,7 +27,7 @@ jobs:
       run: |
         cd examples/example1
         mkdir -p docs
-        strictdoc export . --output-dir docs --formats html --config strictdoc.toml
+        strictdoc export *.sdoc --output-dir docs --formats html --config strictdoc.toml
     
     - name: Generate documentation for example2
       run: |

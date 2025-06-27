@@ -38,7 +38,8 @@ jobs:
         run: |
           # Build all StrictDoc documents from all .sdoc files in the project
           mkdir -p docs
-          strictdoc export --output-dir docs/ --config strictdoc.toml $(find . -type f -name '*.sdoc' | grep -v './venv/' | grep -v './docs/')
+          # Use relative paths to avoid absolute path resolution issues
+          strictdoc export --output-dir docs/ --config strictdoc.toml strictdoc/*.sdoc examples/example1/*.sdoc examples/example2/*.sdoc
 
       - name: Deploy to GitHub Pages
         uses: Cecilapp/GitHub-Pages-deploy@v3
