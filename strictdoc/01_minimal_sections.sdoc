@@ -1,17 +1,17 @@
 [DOCUMENT]
 TITLE: Minimal Example with Sections
 
-[SECTION]
+[[SECTION]]
 TITLE: High Level Section
 
-[SECTION]
+[[SECTION]]
 TITLE: Mid Level Section
 
-[SECTION]
+[[SECTION]]
 TITLE: Low Level Section
 
-[/SECTION]
+[[/SECTION]]
 
-[/SECTION]
+[[/SECTION]]
 
-[/SECTION]
+[[/SECTION]]
