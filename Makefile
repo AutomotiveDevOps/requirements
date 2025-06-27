@@ -1,14 +1,15 @@
 # Makefile for local StrictDoc development
 # Uses full escape for all variables as per user rules
 
-.PHONY: help venv install clean docs serve serve-milstd
+.PHONY: help venv install clean docs reqif serve serve-milstd
 
 # Default target
 help:
 	@echo "Available targets:"
 	@echo "  venv     - Create Python virtual environment"
 	@echo "  install  - Install dependencies in virtual environment"
-	@echo "  docs     - Generate documentation from .sdoc files"
+	@echo "  docs     - Generate HTML documentation from all .sdoc files in the project"
+	@echo "  reqif    - Generate ReqIF documentation from all .sdoc files in the project"
 	@echo "  serve    - Serve generated documentation locally"
 	@echo "  serve-milstd - Serve StrictDoc documentation locally"
 	@echo "  clean    - Clean generated files and virtual environment"
@@ -24,9 +25,17 @@ install: venv
 	venv/bin/pip install toml
 	venv/bin/pip install pygments
 
-# Generate documentation
+# Generate HTML documentation
 docs: install
-	venv/bin/strictdoc export --output-dir docs/ strictdoc/*.sdoc
+	venv/bin/strictdoc export --output-dir docs/ $(shell find . -type f -name '*.sdoc' | grep -v './venv/' | grep -v './docs/')
+
+# Generate ReqIF documentation
+reqif: install
+	venv/bin/strictdoc export --output-dir docs/ --formats reqif-sdoc $(shell find . -type f -name '*.sdoc' | grep -v './venv/' | grep -v './docs/')
+
+# Generate both HTML and ReqIF documentation
+all: install
+	venv/bin/strictdoc export --output-dir docs/ --formats html,reqif-sdoc $(shell find . -type f -name '*.sdoc' | grep -v './venv/' | grep -v './docs/')
 
 # Serve documentation locally (requires Python http.server)
 serve: docs
