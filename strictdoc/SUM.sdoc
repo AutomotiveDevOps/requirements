@@ -1,10 +1,10 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 SUM (Software User Manual)
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 1. Scope
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 1.1 Identification
 
 [REQUIREMENT]
@@ -13,9 +13,9 @@ TITLE: User Manual Identification
 STATEMENT: This document shall be identified as the Software User Manual (SUM) for the Satellite Communication Management System (SCMS), version 1.0.
 RATIONALE: Proper document identification ensures configuration management and user guidance.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 1.2 System overview
 
 [REQUIREMENT]
@@ -24,9 +24,9 @@ TITLE: System Overview
 STATEMENT: The SCMS provides comprehensive management and control of satellite communication networks through an intuitive web-based interface with role-based access control.
 RATIONALE: System overview helps users understand system capabilities and intended use.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 1.3 Document overview
 
 [REQUIREMENT]
@@ -35,11 +35,11 @@ TITLE: Manual Structure
 STATEMENT: This manual shall be organized into sections covering installation, operation, maintenance, troubleshooting, and reference information for system users.
 RATIONALE: Structured organization facilitates user navigation and information retrieval.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 2. Referenced documents
 
 [REQUIREMENT]
@@ -48,12 +48,12 @@ TITLE: Reference Documents
 STATEMENT: This manual shall reference system requirements, design documents, and operational procedures to provide comprehensive user guidance.
 RATIONALE: Reference documents ensure consistency with system specifications and procedures.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 3. Software summary
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 3.1 Software context
 
 [REQUIREMENT]
@@ -62,9 +62,9 @@ TITLE: System Context
 STATEMENT: The SCMS operates within a distributed environment with multiple satellite networks, security controls, and integration with external communication systems.
 RATIONALE: System context helps users understand operational environment and dependencies.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 3.2 Software capabilities
 
 [REQUIREMENT]
@@ -73,9 +73,9 @@ TITLE: Core Capabilities
 STATEMENT: The system provides satellite network management, real-time monitoring, security controls, traffic routing, and automated failover capabilities for communication networks.
 RATIONALE: Core capabilities define system functionality and user expectations.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 3.3 Software limitations
 
 [REQUIREMENT]
@@ -84,14 +84,14 @@ TITLE: System Limitations
 STATEMENT: The system requires continuous network connectivity, authorized user access, and compatible browser software for optimal operation.
 RATIONALE: System limitations help users understand operational constraints and requirements.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 4. Accessing the software
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 4.1 Software access
 
 [REQUIREMENT]
@@ -100,9 +100,9 @@ TITLE: Access Requirements
 STATEMENT: Users shall access the system through secure web browsers with valid authentication credentials and appropriate role-based permissions.
 RATIONALE: Access requirements ensure system security and proper user authorization.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 4.2 User interface overview
 
 [REQUIREMENT]
@@ -111,14 +111,14 @@ TITLE: Interface Overview
 STATEMENT: The user interface shall provide intuitive navigation, role-based dashboards, real-time monitoring displays, and configuration tools for system management.
 RATIONALE: Interface overview helps users understand system layout and navigation.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 5. Operating the software
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 5.1 Normal operations
 
 [REQUIREMENT]
@@ -127,9 +127,9 @@ TITLE: Normal Operations
 STATEMENT: Normal operations include monitoring satellite networks, configuring routing parameters, managing user access, and reviewing system performance metrics.
 RATIONALE: Normal operations define standard system usage and user responsibilities.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 5.2 Abnormal operations
 
 [REQUIREMENT]
@@ -138,9 +138,9 @@ TITLE: Emergency Procedures
 STATEMENT: Emergency procedures shall include incident response, system failover, security incident handling, and communication with support personnel.
 RATIONALE: Emergency procedures ensure proper response to system issues and incidents.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 5.3 Error recovery
 
 [REQUIREMENT]
@@ -149,11 +149,11 @@ TITLE: Error Recovery
 STATEMENT: Error recovery procedures shall include system restart, configuration restoration, data recovery, and escalation to technical support when needed.
 RATIONALE: Error recovery procedures ensure system restoration and operational continuity.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 6. Software messages
 
 [REQUIREMENT]
@@ -162,9 +162,9 @@ TITLE: System Messages
 STATEMENT: The system shall provide clear, informative messages for user actions, system events, error conditions, and operational status updates.
 RATIONALE: Clear system messages help users understand system behavior and respond appropriately.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: 7. Notes
 
 [REQUIREMENT]
@@ -173,4 +173,4 @@ TITLE: User Notes
 STATEMENT: This user manual shall be maintained under configuration control with regular updates to reflect system changes and user feedback.
 RATIONALE: Document maintenance ensures user guidance accuracy and system alignment.
 
-[[/SECTION]]
+[[[/SECTION]]]

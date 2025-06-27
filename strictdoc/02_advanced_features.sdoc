@@ -1,7 +1,7 @@
 [DOCUMENT]
 TITLE: Advanced StrictDoc Features Example
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: System Overview
 
 [REQUIREMENT]
@@ -20,9 +20,9 @@ TITLE: Data Encryption
 STATEMENT: All sensitive data shall be encrypted at rest and in transit using AES-256 encryption.
 RATIONALE: Data protection compliance and security best practices require encryption.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: Technical Requirements
 
 [REQUIREMENT]
@@ -41,9 +41,9 @@ TITLE: Database Backup
 STATEMENT: The system shall perform automated daily backups with point-in-time recovery capability.
 RATIONALE: Data protection and disaster recovery require reliable backup mechanisms.
 
-[[/SECTION]]
+[[[/SECTION]]]
 
-[[SECTION]]
+[[[SECTION]]]
 TITLE: User Interface Requirements
 
 [REQUIREMENT]
@@ -62,4 +62,4 @@ TITLE: Accessibility Compliance
 STATEMENT: The user interface shall comply with WCAG 2.1 AA standards for accessibility.
 RATIONALE: Ensuring accessibility for users with disabilities is both a legal requirement and good practice.
 
-[[/SECTION]]
+[[[/SECTION]]]
