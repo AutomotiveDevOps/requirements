@@ -1,18 +1,30 @@
 // map of the project for the stable_uri forwarder
 const projectMap = {
- "mil-std-498-strictdoc/COM.html": [
+ "strictdoc/00_minimal.html": [
  ],
- "mil-std-498-strictdoc/CPM.html": [
+ "strictdoc/01_minimal_sections.html": [
  ],
- "mil-std-498-strictdoc/DBDD.html": [
+ "strictdoc/02_advanced_features.html": [
+  {"UID":"REQ-001"},
+  {"UID":"REQ-002"},
+  {"UID":"REQ-003"},
+  {"UID":"REQ-004"},
+  {"UID":"REQ-005"},
+  {"UID":"REQ-006"},
  ],
- "mil-std-498-strictdoc/FSM.html": [
+ "strictdoc/COM.html": [
  ],
- "mil-std-498-strictdoc/IDD.html": [
+ "strictdoc/CPM.html": [
  ],
- "mil-std-498-strictdoc/IRS.html": [
+ "strictdoc/DBDD.html": [
  ],
- "mil-std-498-strictdoc/OCD.html": [
+ "strictdoc/FSM.html": [
+ ],
+ "strictdoc/IDD.html": [
+ ],
+ "strictdoc/IRS.html": [
+ ],
+ "strictdoc/OCD.html": [
   {"UID":"OCD-001"},
   {"UID":"OCD-002"},
   {"UID":"OCD-003"},
@@ -37,7 +49,7 @@ const projectMap = {
   {"UID":"OCD-022"},
   {"UID":"OCD-023"},
  ],
- "mil-std-498-strictdoc/SDD.html": [
+ "strictdoc/SDD.html": [
   {"UID":"SDD-001"},
   {"UID":"SDD-002"},
   {"UID":"SDD-003"},
@@ -61,11 +73,11 @@ const projectMap = {
   {"UID":"SDD-021"},
   {"UID":"SDD-022"},
  ],
- "mil-std-498-strictdoc/SDP.html": [
+ "strictdoc/SDP.html": [
  ],
- "mil-std-498-strictdoc/SPS.html": [
+ "strictdoc/SPS.html": [
  ],
- "mil-std-498-strictdoc/SRS.html": [
+ "strictdoc/SRS.html": [
   {"UID":"SRS-001"},
   {"UID":"SRS-002"},
   {"UID":"SRS-003"},
@@ -103,13 +115,13 @@ const projectMap = {
   {"UID":"SRS-035"},
   {"UID":"SRS-036"},
  ],
- "mil-std-498-strictdoc/SSDD.html": [
+ "strictdoc/SSDD.html": [
  ],
- "mil-std-498-strictdoc/SSS.html": [
+ "strictdoc/SSS.html": [
  ],
- "mil-std-498-strictdoc/STD.html": [
+ "strictdoc/STD.html": [
  ],
- "mil-std-498-strictdoc/STP.html": [
+ "strictdoc/STP.html": [
   {"UID":"STP-001"},
   {"UID":"STP-002"},
   {"UID":"STP-003"},
@@ -129,11 +141,11 @@ const projectMap = {
   {"UID":"STP-017"},
   {"UID":"STP-018"},
  ],
- "mil-std-498-strictdoc/STRP.html": [
+ "strictdoc/STR.html": [
  ],
- "mil-std-498-strictdoc/STR.html": [
+ "strictdoc/STRP.html": [
  ],
- "mil-std-498-strictdoc/SUM.html": [
+ "strictdoc/SUM.html": [
   {"UID":"SUM-001"},
   {"UID":"SUM-002"},
   {"UID":"SUM-003"},
@@ -149,6 +161,6 @@ const projectMap = {
   {"UID":"SUM-013"},
   {"UID":"SUM-014"},
  ],
- "mil-std-498-strictdoc/SVD.html": [
+ "strictdoc/SVD.html": [
  ],
 };

@@ -36,8 +36,8 @@ jobs:
 
       - name: Run Strict Doc
         run: |
-          # Build only the MIL-STD-498 documents to avoid malformed files in root
-          strictdoc export --output-dir docs/ mil-std-498-strictdoc/*.sdoc
+          # Build all StrictDoc documents from the strictdoc folder
+          strictdoc export --output-dir docs/ strictdoc/*.sdoc
 
       - name: Deploy to GitHub Pages
         uses: Cecilapp/GitHub-Pages-deploy@v3
