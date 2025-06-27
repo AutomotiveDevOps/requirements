@@ -1,3 +1,0 @@
-<div class="document">
-<p>The software shall process up to 10,000 concurrent connections, respond to user interface requests within 2 seconds, and handle real-time data updates with latency under 100 milliseconds.</p>
-</div>

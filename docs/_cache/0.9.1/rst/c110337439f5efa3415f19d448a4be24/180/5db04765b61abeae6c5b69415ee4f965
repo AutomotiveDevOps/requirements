@@ -1,3 +1,0 @@
-<div class="document">
-<p>During maintenance operations, the system shall support graceful degradation, automated failover to backup systems, and coordinated maintenance scheduling across multiple networks.</p>
-</div>
