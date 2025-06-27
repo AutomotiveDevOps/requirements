@@ -2,14 +2,14 @@
 TITLE: MIL-STD-498 SSS (System/Subsystem Specification)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: SSS-1
 STATUS: Draft
 TITLE: MIL-STD-498 SSS (System/Subsystem Specification)
 STATEMENT: This requirement covers MIL-STD-498 SSS (System/Subsystem Specification).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: SSS-2
 STATUS: Draft
 TITLE: System Security
 STATEMENT: This requirement covers System Security.

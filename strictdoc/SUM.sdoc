@@ -2,14 +2,14 @@
 TITLE: MIL-STD-498 SUM (Software User Manual)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: SUM-1
 STATUS: Draft
 TITLE: MIL-STD-498 SUM (Software User Manual)
 STATEMENT: This requirement covers MIL-STD-498 SUM (Software User Manual).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: SUM-2
 STATUS: Draft
 TITLE: User Notes
 STATEMENT: This requirement covers User Notes.

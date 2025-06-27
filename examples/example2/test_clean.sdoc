@@ -2,21 +2,21 @@
 TITLE: Test Document
 
 [REQUIREMENT]
-UID: REQ-1
+UID: TES-1
 STATUS: Draft
 TITLE: Test Document
 STATEMENT: This requirement covers Test Document.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: TES-2
 STATUS: Draft
 TITLE: Test Section
 STATEMENT: This requirement covers Test Section.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-3
+UID: TES-3
 STATUS: Draft
 TITLE: Test Requirement
 STATEMENT: This requirement covers Test Requirement.

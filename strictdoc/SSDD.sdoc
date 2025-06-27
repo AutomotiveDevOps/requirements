@@ -2,14 +2,14 @@
 TITLE: MIL-STD-498 SSDD (Software System Design Description)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: SSDD-1
 STATUS: Draft
 TITLE: MIL-STD-498 SSDD (Software System Design Description)
 STATEMENT: This requirement covers MIL-STD-498 SSDD (Software System Design Description).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: SSDD-2
 STATUS: Draft
 TITLE: Data Design
 STATEMENT: This requirement covers Data Design.

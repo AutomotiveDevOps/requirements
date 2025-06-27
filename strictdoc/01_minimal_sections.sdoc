@@ -2,14 +2,14 @@
 TITLE: Minimal Example with Sections
 
 [REQUIREMENT]
-UID: REQ-1
+UID: 01_-1
 STATUS: Draft
 TITLE: Minimal Example with Sections
 STATEMENT: This requirement covers Minimal Example with Sections.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: 01_-2
 STATUS: Draft
 TITLE: Configuration Management
 STATEMENT: This requirement covers Configuration Management.

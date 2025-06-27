@@ -2,56 +2,56 @@
 TITLE: MIL-STD-498 FSM (Functional Specification Manual)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: FSM-1
 STATUS: Draft
 TITLE: MIL-STD-498 FSM (Functional Specification Manual)
 STATEMENT: This requirement covers MIL-STD-498 FSM (Functional Specification Manual).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: FSM-2
 STATUS: Draft
 TITLE: 1. Scope
 STATEMENT: This requirement covers 1. Scope.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-3
+UID: FSM-3
 STATUS: Draft
 TITLE: 1.1 Identification
 STATEMENT: This requirement covers 1.1 Identification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-4
+UID: FSM-4
 STATUS: Draft
 TITLE: 1.2 System overview
 STATEMENT: This requirement covers 1.2 System overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-5
+UID: FSM-5
 STATUS: Draft
 TITLE: 1.3 Document overview
 STATEMENT: This requirement covers 1.3 Document overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-6
+UID: FSM-6
 STATUS: Draft
 TITLE: 2. Referenced documents
 STATEMENT: This requirement covers 2. Referenced documents.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-7
+UID: FSM-7
 STATUS: Draft
 TITLE: 3. Firmware programming instructions
 STATEMENT: This requirement covers 3. Firmware programming instructions.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-8
+UID: FSM-8
 STATUS: Draft
 TITLE: 4. Notes
 STATEMENT: This requirement covers 4. Notes.

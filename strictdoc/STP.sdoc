@@ -2,14 +2,14 @@
 TITLE: MIL-STD-498 STP (Software Test Plan)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: STP-1
 STATUS: Draft
 TITLE: MIL-STD-498 STP (Software Test Plan)
 STATEMENT: This requirement covers MIL-STD-498 STP (Software Test Plan).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: STP-2
 STATUS: Draft
 TITLE: Test Notes
 STATEMENT: This requirement covers Test Notes.

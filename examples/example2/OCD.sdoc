@@ -2,126 +2,126 @@
 TITLE: MIL-STD-498 OCD (Operational Concept Document) - Military Quad Copter RTOS
 
 [REQUIREMENT]
-UID: REQ-1
+UID: OCD-1
 STATUS: Draft
 TITLE: MIL-STD-498 OCD (Operational Concept Document) - Military Quad Copter RTOS
 STATEMENT: This requirement covers MIL-STD-498 OCD (Operational Concept Document) - Military Quad Copter RTOS.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: OCD-2
 STATUS: Draft
 TITLE: 1. Scope
 STATEMENT: This requirement covers 1. Scope.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-3
+UID: OCD-3
 STATUS: Draft
 TITLE: 1.1 Identification
 STATEMENT: This requirement covers 1.1 Identification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-4
+UID: OCD-4
 STATUS: Draft
 TITLE: 1.2 System overview
 STATEMENT: This requirement covers 1.2 System overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-5
+UID: OCD-5
 STATUS: Draft
 TITLE: System Overview
 STATEMENT: This requirement covers System Overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-6
+UID: OCD-6
 STATUS: Draft
 TITLE: 1.3 Document overview
 STATEMENT: This requirement covers 1.3 Document overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-7
+UID: OCD-7
 STATUS: Draft
 TITLE: Document Structure
 STATEMENT: This requirement covers Document Structure.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-8
+UID: OCD-8
 STATUS: Draft
 TITLE: 2. Referenced documents
 STATEMENT: This requirement covers 2. Referenced documents.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-9
+UID: OCD-9
 STATUS: Draft
 TITLE: 3. Current system or situation
 STATEMENT: This requirement covers 3. Current system or situation.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-10
+UID: OCD-10
 STATUS: Draft
 TITLE: Current Situation
 STATEMENT: This requirement covers Current Situation.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-11
+UID: OCD-11
 STATUS: Draft
 TITLE: 4. Justification for and nature of changes
 STATEMENT: This requirement covers 4. Justification for and nature of changes.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-12
+UID: OCD-12
 STATUS: Draft
 TITLE: Justification
 STATEMENT: This requirement covers Justification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-13
+UID: OCD-13
 STATUS: Draft
 TITLE: 5. Concept for a new or modified system
 STATEMENT: This requirement covers 5. Concept for a new or modified system.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-14
+UID: OCD-14
 STATUS: Draft
 TITLE: New System Concept
 STATEMENT: This requirement covers New System Concept.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-15
+UID: OCD-15
 STATUS: Draft
 TITLE: 6. Operational scenarios
 STATEMENT: This requirement covers 6. Operational scenarios.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-16
+UID: OCD-16
 STATUS: Draft
 TITLE: Emergency Operations
 STATEMENT: This requirement covers Emergency Operations.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-17
+UID: OCD-17
 STATUS: Draft
 TITLE: 7. Summary of impacts
 STATEMENT: This requirement covers 7. Summary of impacts.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-18
+UID: OCD-18
 STATUS: Draft
 TITLE: Operational Impacts
 STATEMENT: This requirement covers Operational Impacts.

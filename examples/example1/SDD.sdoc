@@ -2,182 +2,182 @@
 TITLE: MIL-STD-498 SDD (Software Design Description)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: SDD-1
 STATUS: Draft
 TITLE: MIL-STD-498 SDD (Software Design Description)
 STATEMENT: This requirement covers MIL-STD-498 SDD (Software Design Description).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: SDD-2
 STATUS: Draft
 TITLE: 1. Scope
 STATEMENT: This requirement covers 1. Scope.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-3
+UID: SDD-3
 STATUS: Draft
 TITLE: 1.1 Identification
 STATEMENT: This requirement covers 1.1 Identification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-4
+UID: SDD-4
 STATUS: Draft
 TITLE: Design Document Identification
 STATEMENT: This requirement covers Design Document Identification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-5
+UID: SDD-5
 STATUS: Draft
 TITLE: 1.2 System overview
 STATEMENT: This requirement covers 1.2 System overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-6
+UID: SDD-6
 STATUS: Draft
 TITLE: Design Overview
 STATEMENT: This requirement covers Design Overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-7
+UID: SDD-7
 STATUS: Draft
 TITLE: 1.3 Document overview
 STATEMENT: This requirement covers 1.3 Document overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-8
+UID: SDD-8
 STATUS: Draft
 TITLE: Design Document Structure
 STATEMENT: This requirement covers Design Document Structure.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-9
+UID: SDD-9
 STATUS: Draft
 TITLE: 2. Referenced documents
 STATEMENT: This requirement covers 2. Referenced documents.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-10
+UID: SDD-10
 STATUS: Draft
 TITLE: Design References
 STATEMENT: This requirement covers Design References.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-11
+UID: SDD-11
 STATUS: Draft
 TITLE: 3. CSCI-wide design decisions
 STATEMENT: This requirement covers 3. CSCI-wide design decisions.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-12
+UID: SDD-12
 STATUS: Draft
 TITLE: Security Design Decision
 STATEMENT: This requirement covers Security Design Decision.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-13
+UID: SDD-13
 STATUS: Draft
 TITLE: 4. CSCI architectural design
 STATEMENT: This requirement covers 4. CSCI architectural design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-14
+UID: SDD-14
 STATUS: Draft
 TITLE: 4.1 CSCI components
 STATEMENT: This requirement covers 4.1 CSCI components.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-15
+UID: SDD-15
 STATUS: Draft
 TITLE: Data Management Component
 STATEMENT: This requirement covers Data Management Component.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-16
+UID: SDD-16
 STATUS: Draft
 TITLE: 4.2 Concept of execution
 STATEMENT: This requirement covers 4.2 Concept of execution.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-17
+UID: SDD-17
 STATUS: Draft
 TITLE: Communication Model
 STATEMENT: This requirement covers Communication Model.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-18
+UID: SDD-18
 STATUS: Draft
 TITLE: 4.3 Interface design
 STATEMENT: This requirement covers 4.3 Interface design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-19
+UID: SDD-19
 STATUS: Draft
 TITLE: 4.3.1 Interface identification and diagrams
 STATEMENT: This requirement covers 4.3.1 Interface identification and diagrams.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-20
+UID: SDD-20
 STATUS: Draft
 TITLE: Database Interface
 STATEMENT: This requirement covers Database Interface.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-21
+UID: SDD-21
 STATUS: Draft
 TITLE: 5. Software unit detailed design
 STATEMENT: This requirement covers 5. Software unit detailed design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-22
+UID: SDD-22
 STATUS: Draft
 TITLE: Configuration Manager
 STATEMENT: This requirement covers Configuration Manager.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-23
+UID: SDD-23
 STATUS: Draft
 TITLE: 6. Requirements traceability
 STATEMENT: This requirement covers 6. Requirements traceability.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-24
+UID: SDD-24
 STATUS: Draft
 TITLE: Design Traceability
 STATEMENT: This requirement covers Design Traceability.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-25
+UID: SDD-25
 STATUS: Draft
 TITLE: 7. Notes
 STATEMENT: This requirement covers 7. Notes.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-26
+UID: SDD-26
 STATUS: Draft
 TITLE: Design Notes
 STATEMENT: This requirement covers Design Notes.

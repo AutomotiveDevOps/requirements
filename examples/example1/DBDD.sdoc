@@ -2,77 +2,77 @@
 TITLE: MIL-STD-498 DBDD (Database Design Description)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: DBDD-1
 STATUS: Draft
 TITLE: MIL-STD-498 DBDD (Database Design Description)
 STATEMENT: This requirement covers MIL-STD-498 DBDD (Database Design Description).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: DBDD-2
 STATUS: Draft
 TITLE: 1. Scope
 STATEMENT: This requirement covers 1. Scope.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-3
+UID: DBDD-3
 STATUS: Draft
 TITLE: 1.1 Identification
 STATEMENT: This requirement covers 1.1 Identification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-4
+UID: DBDD-4
 STATUS: Draft
 TITLE: 1.2 Database overview
 STATEMENT: This requirement covers 1.2 Database overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-5
+UID: DBDD-5
 STATUS: Draft
 TITLE: 1.3 Document overview
 STATEMENT: This requirement covers 1.3 Document overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-6
+UID: DBDD-6
 STATUS: Draft
 TITLE: 2. Referenced documents
 STATEMENT: This requirement covers 2. Referenced documents.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-7
+UID: DBDD-7
 STATUS: Draft
 TITLE: 3. Database-wide design decisions
 STATEMENT: This requirement covers 3. Database-wide design decisions.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-8
+UID: DBDD-8
 STATUS: Draft
 TITLE: 4. Detailed design of the database
 STATEMENT: This requirement covers 4. Detailed design of the database.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-9
+UID: DBDD-9
 STATUS: Draft
 TITLE: 5. Detailed design of software units used for database access or manipulation
 STATEMENT: This requirement covers 5. Detailed design of software units used for database access or manipulation.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-10
+UID: DBDD-10
 STATUS: Draft
 TITLE: 6. Requirements traceability
 STATEMENT: This requirement covers 6. Requirements traceability.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-11
+UID: DBDD-11
 STATUS: Draft
 TITLE: 7. Notes
 STATEMENT: This requirement covers 7. Notes.

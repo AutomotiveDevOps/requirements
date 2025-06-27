@@ -2,14 +2,14 @@
 TITLE: Advanced StrictDoc Features Example
 
 [REQUIREMENT]
-UID: REQ-1
+UID: 02_-1
 STATUS: Draft
 TITLE: Advanced StrictDoc Features Example
 STATEMENT: This requirement covers Advanced StrictDoc Features Example.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: 02_-2
 STATUS: Draft
 TITLE: Accessibility Compliance
 STATEMENT: This requirement covers Accessibility Compliance.

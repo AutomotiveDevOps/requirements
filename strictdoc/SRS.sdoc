@@ -2,14 +2,14 @@
 TITLE: MIL-STD-498 SRS (Software Requirements Specification)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: SRS-1
 STATUS: Draft
 TITLE: MIL-STD-498 SRS (Software Requirements Specification)
 STATEMENT: This requirement covers MIL-STD-498 SRS (Software Requirements Specification).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: SRS-2
 STATUS: Draft
 TITLE: Authentication and Authorization
 STATEMENT: This requirement covers Authentication and Authorization.

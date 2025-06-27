@@ -2,126 +2,126 @@
 TITLE: MIL-STD-498 SCMP (Software Configuration Management Plan) - Military Quad Copter RTOS
 
 [REQUIREMENT]
-UID: REQ-1
+UID: SCM-1
 STATUS: Draft
 TITLE: MIL-STD-498 SCMP (Software Configuration Management Plan) - Military Quad Copter RTOS
 STATEMENT: This requirement covers MIL-STD-498 SCMP (Software Configuration Management Plan) - Military Quad Copter RTOS.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: SCM-2
 STATUS: Draft
 TITLE: 1. Scope
 STATEMENT: This requirement covers 1. Scope.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-3
+UID: SCM-3
 STATUS: Draft
 TITLE: 1.1 Identification
 STATEMENT: This requirement covers 1.1 Identification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-4
+UID: SCM-4
 STATUS: Draft
 TITLE: 1.2 System overview
 STATEMENT: This requirement covers 1.2 System overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-5
+UID: SCM-5
 STATUS: Draft
 TITLE: System Overview
 STATEMENT: This requirement covers System Overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-6
+UID: SCM-6
 STATUS: Draft
 TITLE: 1.3 Document overview
 STATEMENT: This requirement covers 1.3 Document overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-7
+UID: SCM-7
 STATUS: Draft
 TITLE: Document Structure
 STATEMENT: This requirement covers Document Structure.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-8
+UID: SCM-8
 STATUS: Draft
 TITLE: 2. Referenced documents
 STATEMENT: This requirement covers 2. Referenced documents.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-9
+UID: SCM-9
 STATUS: Draft
 TITLE: 3. Configuration management organization
 STATEMENT: This requirement covers 3. Configuration management organization.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-10
+UID: SCM-10
 STATUS: Draft
 TITLE: CM Procedures
 STATEMENT: This requirement covers CM Procedures.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-11
+UID: SCM-11
 STATUS: Draft
 TITLE: 4. Configuration identification
 STATEMENT: This requirement covers 4. Configuration identification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-12
+UID: SCM-12
 STATUS: Draft
 TITLE: Documentation Configuration Items
 STATEMENT: This requirement covers Documentation Configuration Items.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-13
+UID: SCM-13
 STATUS: Draft
 TITLE: 5. Configuration control
 STATEMENT: This requirement covers 5. Configuration control.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-14
+UID: SCM-14
 STATUS: Draft
 TITLE: Baseline Management
 STATEMENT: This requirement covers Baseline Management.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-15
+UID: SCM-15
 STATUS: Draft
 TITLE: 6. Configuration status accounting
 STATEMENT: This requirement covers 6. Configuration status accounting.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-16
+UID: SCM-16
 STATUS: Draft
 TITLE: Audit Procedures
 STATEMENT: This requirement covers Audit Procedures.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-17
+UID: SCM-17
 STATUS: Draft
 TITLE: 7. Notes
 STATEMENT: This requirement covers 7. Notes.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-18
+UID: SCM-18
 STATUS: Draft
 TITLE: Security Requirements
 STATEMENT: This requirement covers Security Requirements.

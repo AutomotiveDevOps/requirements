@@ -2,294 +2,294 @@
 TITLE: MIL-STD-498 SDD (Software Design Description) - Military Quad Copter RTOS
 
 [REQUIREMENT]
-UID: REQ-1
+UID: SDD-1
 STATUS: Draft
 TITLE: MIL-STD-498 SDD (Software Design Description) - Military Quad Copter RTOS
 STATEMENT: This requirement covers MIL-STD-498 SDD (Software Design Description) - Military Quad Copter RTOS.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: SDD-2
 STATUS: Draft
 TITLE: 1. Scope
 STATEMENT: This requirement covers 1. Scope.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-3
+UID: SDD-3
 STATUS: Draft
 TITLE: 1.1 Identification
 STATEMENT: This requirement covers 1.1 Identification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-4
+UID: SDD-4
 STATUS: Draft
 TITLE: Design Identification
 STATEMENT: This requirement covers Design Identification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-5
+UID: SDD-5
 STATUS: Draft
 TITLE: 1.2 System overview
 STATEMENT: This requirement covers 1.2 System overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-6
+UID: SDD-6
 STATUS: Draft
 TITLE: Design Overview
 STATEMENT: This requirement covers Design Overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-7
+UID: SDD-7
 STATUS: Draft
 TITLE: 2. Referenced documents
 STATEMENT: This requirement covers 2. Referenced documents.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-8
+UID: SDD-8
 STATUS: Draft
 TITLE: Design Standards
 STATEMENT: This requirement covers Design Standards.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-9
+UID: SDD-9
 STATUS: Draft
 TITLE: 3. CSCI-wide design decisions
 STATEMENT: This requirement covers 3. CSCI-wide design decisions.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-10
+UID: SDD-10
 STATUS: Draft
 TITLE: Fault Tolerance Design
 STATEMENT: This requirement covers Fault Tolerance Design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-11
+UID: SDD-11
 STATUS: Draft
 TITLE: 4. CSCI architectural design
 STATEMENT: This requirement covers 4. CSCI architectural design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-12
+UID: SDD-12
 STATUS: Draft
 TITLE: 4.1 Architecture Overview
 STATEMENT: This requirement covers 4.1 Architecture Overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-13
+UID: SDD-13
 STATUS: Draft
 TITLE: Component Architecture
 STATEMENT: This requirement covers Component Architecture.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-14
+UID: SDD-14
 STATUS: Draft
 TITLE: 4.2 Flight Control Component
 STATEMENT: This requirement covers 4.2 Flight Control Component.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-15
+UID: SDD-15
 STATUS: Draft
 TITLE: Navigation System
 STATEMENT: This requirement covers Navigation System.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-16
+UID: SDD-16
 STATUS: Draft
 TITLE: 4.3 Mission Management Component
 STATEMENT: This requirement covers 4.3 Mission Management Component.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-17
+UID: SDD-17
 STATUS: Draft
 TITLE: Payload Management
 STATEMENT: This requirement covers Payload Management.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-18
+UID: SDD-18
 STATUS: Draft
 TITLE: 4.4 Sensor Fusion Component
 STATEMENT: This requirement covers 4.4 Sensor Fusion Component.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-19
+UID: SDD-19
 STATUS: Draft
 TITLE: GPS-Denied Navigation
 STATEMENT: This requirement covers GPS-Denied Navigation.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-20
+UID: SDD-20
 STATUS: Draft
 TITLE: 4.5 Communication Component
 STATEMENT: This requirement covers 4.5 Communication Component.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-21
+UID: SDD-21
 STATUS: Draft
 TITLE: Network Management
 STATEMENT: This requirement covers Network Management.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-22
+UID: SDD-22
 STATUS: Draft
 TITLE: 4.6 Security Component
 STATEMENT: This requirement covers 4.6 Security Component.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-23
+UID: SDD-23
 STATUS: Draft
 TITLE: Data Protection
 STATEMENT: This requirement covers Data Protection.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-24
+UID: SDD-24
 STATUS: Draft
 TITLE: 4.7 Power Management Component
 STATEMENT: This requirement covers 4.7 Power Management Component.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-25
+UID: SDD-25
 STATUS: Draft
 TITLE: Power Distribution
 STATEMENT: This requirement covers Power Distribution.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-26
+UID: SDD-26
 STATUS: Draft
 TITLE: 5. CSCI detailed design
 STATEMENT: This requirement covers 5. CSCI detailed design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-27
+UID: SDD-27
 STATUS: Draft
 TITLE: 5.1 Flight Control Detailed Design
 STATEMENT: This requirement covers 5.1 Flight Control Detailed Design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-28
+UID: SDD-28
 STATUS: Draft
 TITLE: Motor Control
 STATEMENT: This requirement covers Motor Control.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-29
+UID: SDD-29
 STATUS: Draft
 TITLE: 5.2 Mission Management Detailed Design
 STATEMENT: This requirement covers 5.2 Mission Management Detailed Design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-30
+UID: SDD-30
 STATUS: Draft
 TITLE: Decision Making
 STATEMENT: This requirement covers Decision Making.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-31
+UID: SDD-31
 STATUS: Draft
 TITLE: 5.3 Sensor Fusion Detailed Design
 STATEMENT: This requirement covers 5.3 Sensor Fusion Detailed Design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-32
+UID: SDD-32
 STATUS: Draft
 TITLE: Point Cloud Processing
 STATEMENT: This requirement covers Point Cloud Processing.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-33
+UID: SDD-33
 STATUS: Draft
 TITLE: 6. CSCI data design
 STATEMENT: This requirement covers 6. CSCI data design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-34
+UID: SDD-34
 STATUS: Draft
 TITLE: Database Design
 STATEMENT: This requirement covers Database Design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-35
+UID: SDD-35
 STATUS: Draft
 TITLE: 7. CSCI interface design
 STATEMENT: This requirement covers 7. CSCI interface design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-36
+UID: SDD-36
 STATUS: Draft
 TITLE: External Interface Design
 STATEMENT: This requirement covers External Interface Design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-37
+UID: SDD-37
 STATUS: Draft
 TITLE: 8. CSCI resource usage
 STATEMENT: This requirement covers 8. CSCI resource usage.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-38
+UID: SDD-38
 STATUS: Draft
 TITLE: Processing Requirements
 STATEMENT: This requirement covers Processing Requirements.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-39
+UID: SDD-39
 STATUS: Draft
 TITLE: 9. CSCI requirements traceability
 STATEMENT: This requirement covers 9. CSCI requirements traceability.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-40
+UID: SDD-40
 STATUS: Draft
 TITLE: Design Traceability
 STATEMENT: This requirement covers Design Traceability.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-41
+UID: SDD-41
 STATUS: Draft
 TITLE: 10. Notes
 STATEMENT: This requirement covers 10. Notes.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-42
+UID: SDD-42
 STATUS: Draft
 TITLE: Design Documentation
 STATEMENT: This requirement covers Design Documentation.

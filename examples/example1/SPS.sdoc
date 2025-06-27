@@ -2,126 +2,126 @@
 TITLE: MIL-STD-498 SPS (Software Product Specification)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: SPS-1
 STATUS: Draft
 TITLE: MIL-STD-498 SPS (Software Product Specification)
 STATEMENT: This requirement covers MIL-STD-498 SPS (Software Product Specification).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: SPS-2
 STATUS: Draft
 TITLE: 1. Scope
 STATEMENT: This requirement covers 1. Scope.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-3
+UID: SPS-3
 STATUS: Draft
 TITLE: 1.1 Identification
 STATEMENT: This requirement covers 1.1 Identification.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-4
+UID: SPS-4
 STATUS: Draft
 TITLE: 1.2 System overview
 STATEMENT: This requirement covers 1.2 System overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-5
+UID: SPS-5
 STATUS: Draft
 TITLE: 1.3 Document overview
 STATEMENT: This requirement covers 1.3 Document overview.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-6
+UID: SPS-6
 STATUS: Draft
 TITLE: 2. Referenced documents
 STATEMENT: This requirement covers 2. Referenced documents.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-7
+UID: SPS-7
 STATUS: Draft
 TITLE: 3. Requirements
 STATEMENT: This requirement covers 3. Requirements.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-8
+UID: SPS-8
 STATUS: Draft
 TITLE: 3.1 Executable software
 STATEMENT: This requirement covers 3.1 Executable software.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-9
+UID: SPS-9
 STATUS: Draft
 TITLE: 3.2 Source files
 STATEMENT: This requirement covers 3.2 Source files.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-10
+UID: SPS-10
 STATUS: Draft
 TITLE: 3.3 Packaging requirements
 STATEMENT: This requirement covers 3.3 Packaging requirements.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-11
+UID: SPS-11
 STATUS: Draft
 TITLE: 4. Qualification provisions
 STATEMENT: This requirement covers 4. Qualification provisions.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-12
+UID: SPS-12
 STATUS: Draft
 TITLE: 5. Software support information
 STATEMENT: This requirement covers 5. Software support information.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-13
+UID: SPS-13
 STATUS: Draft
 TITLE: 5.1 "As built" software design
 STATEMENT: This requirement covers 5.1 "As built" software design.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-14
+UID: SPS-14
 STATUS: Draft
 TITLE: 5.2 Compilation/build procedures
 STATEMENT: This requirement covers 5.2 Compilation/build procedures.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-15
+UID: SPS-15
 STATUS: Draft
 TITLE: 5.3 Modification procedures
 STATEMENT: This requirement covers 5.3 Modification procedures.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-16
+UID: SPS-16
 STATUS: Draft
 TITLE: 5.4 Computer hardware resource utilization
 STATEMENT: This requirement covers 5.4 Computer hardware resource utilization.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-17
+UID: SPS-17
 STATUS: Draft
 TITLE: 6. Requirements traceability
 STATEMENT: This requirement covers 6. Requirements traceability.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-18
+UID: SPS-18
 STATUS: Draft
 TITLE: 7. Notes
 STATEMENT: This requirement covers 7. Notes.

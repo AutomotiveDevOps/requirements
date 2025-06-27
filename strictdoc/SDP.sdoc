@@ -2,14 +2,14 @@
 TITLE: MIL-STD-498 SDP (Software Development Plan)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: SDP-1
 STATUS: Draft
 TITLE: MIL-STD-498 SDP (Software Development Plan)
 STATEMENT: This requirement covers MIL-STD-498 SDP (Software Development Plan).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: SDP-2
 STATUS: Draft
 TITLE: Communication Plan
 STATEMENT: This requirement covers Communication Plan.

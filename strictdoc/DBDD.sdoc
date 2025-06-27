@@ -2,14 +2,14 @@
 TITLE: MIL-STD-498 DBDD (Database Design Description)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: DBDD-1
 STATUS: Draft
 TITLE: MIL-STD-498 DBDD (Database Design Description)
 STATEMENT: This requirement covers MIL-STD-498 DBDD (Database Design Description).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: DBDD-2
 STATUS: Draft
 TITLE: Performance Optimization
 STATEMENT: This requirement covers Performance Optimization.

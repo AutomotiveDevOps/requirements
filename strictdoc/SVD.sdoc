@@ -2,14 +2,14 @@
 TITLE: MIL-STD-498 SVD (Software Version Description)
 
 [REQUIREMENT]
-UID: REQ-1
+UID: SVD-1
 STATUS: Draft
 TITLE: MIL-STD-498 SVD (Software Version Description)
 STATEMENT: This requirement covers MIL-STD-498 SVD (Software Version Description).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-2
+UID: SVD-2
 STATUS: Draft
 TITLE: Deployment Instructions
 STATEMENT: This requirement covers Deployment Instructions.
