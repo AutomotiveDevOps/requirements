@@ -2,14 +2,14 @@
 TITLE: MIL-STD-498 STRP (Software Transition Plan)
 
 [REQUIREMENT]
-UID: STR-1
+UID: STRP-1
 STATUS: Draft
 TITLE: MIL-STD-498 STRP (Software Transition Plan)
 STATEMENT: This requirement covers MIL-STD-498 STRP (Software Transition Plan).
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: STR-2
+UID: STRP-2
 STATUS: Draft
 TITLE: Test Summary
 STATEMENT: This requirement covers Test Summary.
