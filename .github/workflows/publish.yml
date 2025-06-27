@@ -34,19 +34,36 @@ jobs:
           python -m pip install toml
           python -m pip install pygments
 
-      - name: Run Strict Doc
+      - name: Run Strict Doc for each directory separately
         run: |
-          # Build all StrictDoc documents from all .sdoc files in the project
+          # Create main docs directory
           mkdir -p docs
-          # Use relative paths to avoid absolute path resolution issues
-          strictdoc export --output-dir docs/ --config strictdoc.toml strictdoc/*.sdoc examples/example1/*.sdoc examples/example2/*.sdoc
+          
+          # Process each directory separately to avoid UID conflicts
+          echo "Processing examples/example1..."
+          cd examples/example1
+          strictdoc export *.sdoc --output-dir ../../docs/example1 --formats html --config strictdoc.toml
+          cd ../..
+          
+          echo "Processing examples/example2..."
+          cd examples/example2
+          strictdoc export *.sdoc --output-dir ../../docs/example2 --formats html --config strictdoc.toml
+          cd ../..
+          
+          echo "Processing strictdoc examples..."
+          cd strictdoc
+          strictdoc export *.sdoc --output-dir ../docs/strictdoc --formats html --config strictdoc.toml
+          cd ..
+          
+          echo "Processing root level files..."
+          strictdoc export *.sdoc --output-dir docs/root --formats html --config strictdoc.toml
 
       - name: Deploy to GitHub Pages
         uses: Cecilapp/GitHub-Pages-deploy@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          build_dir: docs/html
+          build_dir: docs
           email: autobotivedevops@domain.tld
           branch: gh-pages # optional
           jekyll: no       # optional

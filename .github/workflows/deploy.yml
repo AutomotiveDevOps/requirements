@@ -33,13 +33,18 @@ jobs:
       run: |
         cd examples/example2
         mkdir -p docs
-        mkdir -p docs/html/example2
-        # Generate basic HTML for existing documents
-        for file in *.sdoc; do
-          if [ -f "$file" ]; then
-            strictdoc export "$file" --output-dir docs --formats html --config strictdoc.toml
-          fi
-        done
+        strictdoc export *.sdoc --output-dir docs --formats html --config strictdoc.toml
+    
+    - name: Generate documentation for strictdoc examples
+      run: |
+        cd strictdoc
+        mkdir -p docs
+        strictdoc export *.sdoc --output-dir docs --formats html --config strictdoc.toml
+    
+    - name: Generate documentation for root level files
+      run: |
+        mkdir -p docs
+        strictdoc export *.sdoc --output-dir docs --formats html --config strictdoc.toml
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
