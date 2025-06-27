@@ -14,6 +14,41 @@ The ADAS Control Module is a safety-critical automotive system that provides dri
 
 ## Quick Start - Viewing the Documentation
 
+## 📖 View Documentation Online
+
+### GitHub Pages Links
+
+**Example 1 - ADAS Control Module (Complete MIL-STD-498 Set):**
+- 🌐 [Main Documentation Index](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/index.html)
+- 📋 [Software Requirements Specification (SRS)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/SRS.html)
+- 📋 [SRS Table View](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/SRS-TABLE.html)
+- 📋 [SRS Traceability Matrix](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/SRS-TRACE.html)
+- 📋 [SRS Deep Traceability](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/SRS-DEEP-TRACE.html)
+- 🏗️ [Software Design Description (SDD)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/SDD.html)
+- 🧪 [Software Test Plan (STP)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/STP.html)
+- 📊 [All Documents Index](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/example1/)
+
+**Example 2 - Military Quad Copter RTOS:**
+- 🌐 [Main Documentation Index](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/index.html)
+- 📋 [Software Requirements Specification (SRS)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/SRS.html)
+- 📋 [SRS Table View](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/SRS-TABLE.html)
+- 📋 [SRS Traceability Matrix](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/SRS-TRACE.html)
+- 📋 [SRS Deep Traceability](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/SRS-DEEP-TRACE.html)
+- 🏗️ [Software Design Description (SDD)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/SDD.html)
+- 🧪 [Software Test Plan (STP)](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/STP.html)
+- 📊 [All Documents Index](https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/example2/)
+
+**StrictDoc Examples (Official Distribution):**
+- 🌐 [Main Documentation Index](https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/index.html)
+- 📋 [Minimal Example](https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/strictdoc/00_minimal.html)
+- 📋 [Minimal with Sections](https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/strictdoc/01_minimal_sections.html)
+- 📋 [Advanced Features](https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/strictdoc/02_advanced_features.html)
+- 📊 [All Documents Index](https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/strictdoc/)
+
+> **Note:** Replace `YOUR_USERNAME` and `REPO_NAME` with your actual GitHub username and repository name.
+> If GitHub Pages is not enabled, you can view the files directly in the repository or build them locally.
+
+
 ### Option 1: View Online (Recommended)
 The HTML documentation is included in this repository and can be viewed directly:
 
@@ -44,8 +79,160 @@ npx serve .
 # Then open http://localhost:8000 in your browser
 ```
 
-### Option 3: GitHub Pages
-If this repository is hosted on GitHub, the HTML files can be viewed directly through GitHub Pages or by browsing the repository contents.
+### Option 3: GitHub Pages (Recommended for Sharing)
+
+### Enabling GitHub Pages
+
+To enable GitHub Pages for this repository:
+
+1. **Go to repository Settings** → **Pages**
+2. **Source**: Select "Deploy from a branch"
+3. **Branch**: Choose `main` (or your default branch)
+4. **Folder**: Select `/ (root)`
+5. **Click Save**
+
+After enabling, your documentation will be available at:
+`https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+The links above will work once GitHub Pages is enabled and deployed.
+
+
+
+### Enabling GitHub Pages
+
+To enable GitHub Pages for this repository:
+
+1. **Go to repository Settings** → **Pages**
+2. **Source**: Select "Deploy from a branch"
+3. **Branch**: Choose `main` (or your default branch)
+4. **Folder**: Select `/ (root)`
+5. **Click Save**
+
+After enabling, your documentation will be available at:
+`https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+The links above will work once GitHub Pages is enabled and deployed.
+
+If this repository is hosted on GitHub, the HTML files can be viewed directly through GitHub Pages:
+
+### Enabling GitHub Pages
+
+To enable GitHub Pages for this repository:
+
+1. **Go to repository Settings** → **Pages**
+2. **Source**: Select "Deploy from a branch"
+3. **Branch**: Choose `main` (or your default branch)
+4. **Folder**: Select `/ (root)`
+5. **Click Save**
+
+After enabling, your documentation will be available at:
+`https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+The links above will work once GitHub Pages is enabled and deployed.
+
+
+
+### Enabling GitHub Pages
+
+To enable GitHub Pages for this repository:
+
+1. **Go to repository Settings** → **Pages**
+2. **Source**: Select "Deploy from a branch"
+3. **Branch**: Choose `main` (or your default branch)
+4. **Folder**: Select `/ (root)`
+5. **Click Save**
+
+After enabling, your documentation will be available at:
+`https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+The links above will work once GitHub Pages is enabled and deployed.
+
+- **Example 1**: `https://YOUR_USERNAME.github.io/REPO_NAME/examples/example1/docs/html/index.html`
+
+### Enabling GitHub Pages
+
+To enable GitHub Pages for this repository:
+
+1. **Go to repository Settings** → **Pages**
+2. **Source**: Select "Deploy from a branch"
+3. **Branch**: Choose `main` (or your default branch)
+4. **Folder**: Select `/ (root)`
+5. **Click Save**
+
+After enabling, your documentation will be available at:
+`https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+The links above will work once GitHub Pages is enabled and deployed.
+
+- **Example 2**: `https://YOUR_USERNAME.github.io/REPO_NAME/examples/example2/docs/html/index.html`
+
+### Enabling GitHub Pages
+
+To enable GitHub Pages for this repository:
+
+1. **Go to repository Settings** → **Pages**
+2. **Source**: Select "Deploy from a branch"
+3. **Branch**: Choose `main` (or your default branch)
+4. **Folder**: Select `/ (root)`
+5. **Click Save**
+
+After enabling, your documentation will be available at:
+`https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+The links above will work once GitHub Pages is enabled and deployed.
+
+- **StrictDoc Examples**: `https://YOUR_USERNAME.github.io/REPO_NAME/strictdoc/docs/html/index.html`
+
+### Enabling GitHub Pages
+
+To enable GitHub Pages for this repository:
+
+1. **Go to repository Settings** → **Pages**
+2. **Source**: Select "Deploy from a branch"
+3. **Branch**: Choose `main` (or your default branch)
+4. **Folder**: Select `/ (root)`
+5. **Click Save**
+
+After enabling, your documentation will be available at:
+`https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+The links above will work once GitHub Pages is enabled and deployed.
+
+
+
+### Enabling GitHub Pages
+
+To enable GitHub Pages for this repository:
+
+1. **Go to repository Settings** → **Pages**
+2. **Source**: Select "Deploy from a branch"
+3. **Branch**: Choose `main` (or your default branch)
+4. **Folder**: Select `/ (root)`
+5. **Click Save**
+
+After enabling, your documentation will be available at:
+`https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+The links above will work once GitHub Pages is enabled and deployed.
+
+See the "GitHub Pages Links" section above for direct links to all documents.
+
+### Enabling GitHub Pages
+
+To enable GitHub Pages for this repository:
+
+1. **Go to repository Settings** → **Pages**
+2. **Source**: Select "Deploy from a branch"
+3. **Branch**: Choose `main` (or your default branch)
+4. **Folder**: Select `/ (root)`
+5. **Click Save**
+
+After enabling, your documentation will be available at:
+`https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+The links above will work once GitHub Pages is enabled and deployed.
+
+
 
 ## Building the Documentation
 
