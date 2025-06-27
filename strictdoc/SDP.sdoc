@@ -2,29 +2,16 @@
 TITLE: MIL-STD-498 SDP (Software Development Plan)
 
 [REQUIREMENT]
-UID: SDP-001
+UID: REQ-1
 STATUS: Draft
-TITLE: Development Process
-STATEMENT: The project shall follow agile development methodology with iterative delivery and continuous feedback.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+TITLE: MIL-STD-498 SDP (Software Development Plan)
+STATEMENT: This requirement covers MIL-STD-498 SDP (Software Development Plan).
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: SDP-002
-STATUS: Draft
-TITLE: Quality Assurance
-STATEMENT: The project shall implement comprehensive quality assurance processes including code reviews and testing.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: SDP-003
-STATUS: Draft
-TITLE: Risk Management
-STATEMENT: The project shall identify and mitigate risks through proactive planning and monitoring.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: SDP-004
+UID: REQ-2
 STATUS: Draft
 TITLE: Communication Plan
-STATEMENT: The project shall maintain regular communication with stakeholders through status reports and meetings.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+STATEMENT: This requirement covers Communication Plan.
+RATIONALE: Converted from original document structure.
+

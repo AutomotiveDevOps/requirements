@@ -2,29 +2,16 @@
 TITLE: MIL-STD-498 DBDD (Database Design Description)
 
 [REQUIREMENT]
-UID: DBDD-001
+UID: REQ-1
 STATUS: Draft
-TITLE: Database Design
-STATEMENT: The system shall use PostgreSQL database with normalized schema design and optimized queries.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+TITLE: MIL-STD-498 DBDD (Database Design Description)
+STATEMENT: This requirement covers MIL-STD-498 DBDD (Database Design Description).
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: DBDD-002
-STATUS: Draft
-TITLE: Data Models
-STATEMENT: The system shall implement comprehensive data models for satellite configurations, network topology, and operational data.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: DBDD-003
-STATUS: Draft
-TITLE: Data Integrity
-STATEMENT: The system shall enforce referential integrity, constraints, and validation rules for data consistency.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: DBDD-004
+UID: REQ-2
 STATUS: Draft
 TITLE: Performance Optimization
-STATEMENT: The system shall implement database indexing, query optimization, and connection pooling for optimal performance.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+STATEMENT: This requirement covers Performance Optimization.
+RATIONALE: Converted from original document structure.
+

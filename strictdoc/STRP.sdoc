@@ -2,29 +2,16 @@
 TITLE: MIL-STD-498 STRP (Software Transition Plan)
 
 [REQUIREMENT]
-UID: STRP-001
+UID: REQ-1
 STATUS: Draft
-TITLE: Software Test Report
-STATEMENT: The system shall generate comprehensive test reports documenting test results and coverage.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+TITLE: MIL-STD-498 STRP (Software Transition Plan)
+STATEMENT: This requirement covers MIL-STD-498 STRP (Software Transition Plan).
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: STRP-002
-STATUS: Draft
-TITLE: Test Metrics
-STATEMENT: The system shall track and report test metrics including pass/fail rates and coverage statistics.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: STRP-003
-STATUS: Draft
-TITLE: Defect Tracking
-STATEMENT: The system shall track and manage defects through resolution and verification.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: STRP-004
+UID: REQ-2
 STATUS: Draft
 TITLE: Test Summary
-STATEMENT: The system shall provide executive summaries of test results and recommendations.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+STATEMENT: This requirement covers Test Summary.
+RATIONALE: Converted from original document structure.
+

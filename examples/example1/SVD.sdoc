@@ -1,72 +1,108 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 SVD (Software Version Description)
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-1
+STATUS: Draft
+TITLE: MIL-STD-498 SVD (Software Version Description)
+STATEMENT: This requirement covers MIL-STD-498 SVD (Software Version Description).
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-2
+STATUS: Draft
 TITLE: 1. Scope
+STATEMENT: This requirement covers 1. Scope.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-3
+STATUS: Draft
 TITLE: 1.1 Identification
+STATEMENT: This requirement covers 1.1 Identification.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-4
+STATUS: Draft
 TITLE: 1.2 System overview
+STATEMENT: This requirement covers 1.2 System overview.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-5
+STATUS: Draft
 TITLE: 1.3 Document overview
+STATEMENT: This requirement covers 1.3 Document overview.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-6
+STATUS: Draft
 TITLE: 2. Referenced documents
+STATEMENT: This requirement covers 2. Referenced documents.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-7
+STATUS: Draft
 TITLE: 3. Version description
+STATEMENT: This requirement covers 3. Version description.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-8
+STATUS: Draft
 TITLE: 3.1 Inventory of materials released
+STATEMENT: This requirement covers 3.1 Inventory of materials released.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-9
+STATUS: Draft
 TITLE: 3.2 Inventory of software contents
+STATEMENT: This requirement covers 3.2 Inventory of software contents.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-10
+STATUS: Draft
 TITLE: 3.3 Changes installed
+STATEMENT: This requirement covers 3.3 Changes installed.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-11
+STATUS: Draft
 TITLE: 3.4 Adaptation data
+STATEMENT: This requirement covers 3.4 Adaptation data.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-12
+STATUS: Draft
 TITLE: 3.5 Related documents
+STATEMENT: This requirement covers 3.5 Related documents.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-13
+STATUS: Draft
 TITLE: 3.6 Installation instructions
+STATEMENT: This requirement covers 3.6 Installation instructions.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-14
+STATUS: Draft
 TITLE: 3.7 Possible problems and known errors
+STATEMENT: This requirement covers 3.7 Possible problems and known errors.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-15
+STATUS: Draft
 TITLE: 4. Notes
+STATEMENT: This requirement covers 4. Notes.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]

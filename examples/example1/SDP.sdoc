@@ -1,77 +1,115 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 SDP (Software Development Plan)
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-1
+STATUS: Draft
+TITLE: MIL-STD-498 SDP (Software Development Plan)
+STATEMENT: This requirement covers MIL-STD-498 SDP (Software Development Plan).
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-2
+STATUS: Draft
 TITLE: 1. Scope
+STATEMENT: This requirement covers 1. Scope.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-3
+STATUS: Draft
 TITLE: 1.1 Identification
+STATEMENT: This requirement covers 1.1 Identification.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-4
+STATUS: Draft
 TITLE: 1.2 System overview
+STATEMENT: This requirement covers 1.2 System overview.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-5
+STATUS: Draft
 TITLE: 1.3 Document overview
+STATEMENT: This requirement covers 1.3 Document overview.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-6
+STATUS: Draft
 TITLE: 1.4 Relationship to other plans
+STATEMENT: This requirement covers 1.4 Relationship to other plans.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-7
+STATUS: Draft
 TITLE: 2. Referenced documents
+STATEMENT: This requirement covers 2. Referenced documents.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-8
+STATUS: Draft
 TITLE: 3. Overview of required work
+STATEMENT: This requirement covers 3. Overview of required work.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-9
+STATUS: Draft
 TITLE: 4. Plans for performing general software development activities
+STATEMENT: This requirement covers 4. Plans for performing general software development activities.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-10
+STATUS: Draft
 TITLE: 4.1 Software development process
+STATEMENT: This requirement covers 4.1 Software development process.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-11
+STATUS: Draft
 TITLE: 4.2 General plans for software development
+STATEMENT: This requirement covers 4.2 General plans for software development.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-12
+STATUS: Draft
 TITLE: 5. Plans for performing detailed software development activities
+STATEMENT: This requirement covers 5. Plans for performing detailed software development activities.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-13
+STATUS: Draft
 TITLE: 5.1 Project planning and oversight
+STATEMENT: This requirement covers 5.1 Project planning and oversight.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-14
+STATUS: Draft
 TITLE: 6. Plans for performing integral activities
+STATEMENT: This requirement covers 6. Plans for performing integral activities.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-15
+STATUS: Draft
 TITLE: 7. Plans for performing supporting activities
+STATEMENT: This requirement covers 7. Plans for performing supporting activities.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-16
+STATUS: Draft
 TITLE: 8. Notes
+STATEMENT: This requirement covers 8. Notes.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]

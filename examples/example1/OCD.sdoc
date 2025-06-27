@@ -1,270 +1,339 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 OCD (Operational Concept Document)
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-1
+STATUS: Draft
+TITLE: MIL-STD-498 OCD (Operational Concept Document)
+STATEMENT: This requirement covers MIL-STD-498 OCD (Operational Concept Document).
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-2
+STATUS: Draft
 TITLE: 1. Scope
+STATEMENT: This requirement covers 1. Scope.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-3
+STATUS: Draft
 TITLE: 1.1 Identification
+STATEMENT: This requirement covers 1.1 Identification.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-001-EXAMPLE
+UID: REQ-4
+STATUS: Draft
 TITLE: Document Identification
-STATEMENT: This document shall be identified as the Operational Concept Document (OCD) for the Satellite Communication Management System (SCMS) project.
-RATIONALE: Proper document identification ensures traceability and configuration management.
+STATEMENT: This requirement covers Document Identification.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-5
+STATUS: Draft
 TITLE: 1.2 System overview
+STATEMENT: This requirement covers 1.2 System overview.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-002-EXAMPLE
+UID: REQ-6
+STATUS: Draft
 TITLE: System Overview
-STATEMENT: The Satellite Communication Management System (SCMS) shall provide comprehensive management and control of satellite communication networks, including real-time monitoring, automated routing, and security management.
-RATIONALE: A clear system overview establishes the foundation for all subsequent operational concepts and requirements.
+STATEMENT: This requirement covers System Overview.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-7
+STATUS: Draft
 TITLE: 1.3 Document overview
+STATEMENT: This requirement covers 1.3 Document overview.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-003-EXAMPLE
+UID: REQ-8
+STATUS: Draft
 TITLE: Document Structure
-STATEMENT: This document shall be organized into seven major sections covering scope, referenced documents, current system analysis, change justification, new system concept, operational scenarios, and impact summary.
-RATIONALE: Structured document organization facilitates understanding and review by stakeholders.
+STATEMENT: This requirement covers Document Structure.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-9
+STATUS: Draft
 TITLE: 2. Referenced documents
+STATEMENT: This requirement covers 2. Referenced documents.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-004-EXAMPLE
+UID: REQ-10
+STATUS: Draft
 TITLE: Reference Standards
-STATEMENT: The system shall comply with MIL-STD-498, IEEE 830, and ISO/IEC 25010 standards for software requirements and quality characteristics.
-RATIONALE: Compliance with established standards ensures system quality and interoperability.
+STATEMENT: This requirement covers Reference Standards.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-11
+STATUS: Draft
 TITLE: 3. Current system or situation
+STATEMENT: This requirement covers 3. Current system or situation.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-12
+STATUS: Draft
 TITLE: 3.1 Background, objectives, and scope
+STATEMENT: This requirement covers 3.1 Background, objectives, and scope.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-005-EXAMPLE
+UID: REQ-13
+STATUS: Draft
 TITLE: Current System Background
-STATEMENT: The current satellite communication infrastructure consists of legacy systems with manual configuration management, limited real-time monitoring capabilities, and fragmented security controls across multiple platforms.
-RATIONALE: Understanding current system limitations provides context for improvement requirements.
+STATEMENT: This requirement covers Current System Background.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-14
+STATUS: Draft
 TITLE: 3.2 Operational policies and constraints
+STATEMENT: This requirement covers 3.2 Operational policies and constraints.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-006-EXAMPLE
+UID: REQ-15
+STATUS: Draft
 TITLE: Operational Constraints
-STATEMENT: The system shall operate within Department of Defense (DoD) security policies, International Telecommunication Union (ITU) regulations, and Federal Communications Commission (FCC) spectrum allocation requirements.
-RATIONALE: Regulatory compliance is essential for satellite communication systems.
+STATEMENT: This requirement covers Operational Constraints.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-16
+STATUS: Draft
 TITLE: 3.3 Description of current system or situation
+STATEMENT: This requirement covers 3.3 Description of current system or situation.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-007-EXAMPLE
+UID: REQ-17
+STATUS: Draft
 TITLE: Current System Description
-STATEMENT: The existing system comprises three separate satellite networks with independent control systems, manual handoff procedures, and limited cross-network coordination capabilities.
-RATIONALE: Detailed current system description identifies specific areas for improvement.
+STATEMENT: This requirement covers Current System Description.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-18
+STATUS: Draft
 TITLE: 3.4 Users or involved personnel
+STATEMENT: This requirement covers 3.4 Users or involved personnel.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-008-EXAMPLE
+UID: REQ-19
+STATUS: Draft
 TITLE: User Community
-STATEMENT: The system shall support satellite network operators, communication engineers, security analysts, and system administrators across multiple military and civilian organizations.
-RATIONALE: Understanding user roles and responsibilities is critical for system design.
+STATEMENT: This requirement covers User Community.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-20
+STATUS: Draft
 TITLE: 3.5 Support concept
+STATEMENT: This requirement covers 3.5 Support concept.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-009-EXAMPLE
+UID: REQ-21
+STATUS: Draft
 TITLE: Current Support Concept
-STATEMENT: The current support concept relies on on-site technical personnel with specialized training on legacy systems, requiring 24/7 staffing at multiple locations.
-RATIONALE: Current support limitations drive requirements for improved automation and remote management.
+STATEMENT: This requirement covers Current Support Concept.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-22
+STATUS: Draft
 TITLE: 4. Justification for and nature of changes
+STATEMENT: This requirement covers 4. Justification for and nature of changes.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-23
+STATUS: Draft
 TITLE: 4.1 Justification for change
+STATEMENT: This requirement covers 4.1 Justification for change.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-010-EXAMPLE
+UID: REQ-24
+STATUS: Draft
 TITLE: Change Justification
-STATEMENT: The current system limitations in automation, security, and cross-network coordination justify the development of an integrated Satellite Communication Management System.
-RATIONALE: Clear justification ensures stakeholder buy-in and resource allocation.
+STATEMENT: This requirement covers Change Justification.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-25
+STATUS: Draft
 TITLE: 4.2 Description of needed changes
+STATEMENT: This requirement covers 4.2 Description of needed changes.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-011-EXAMPLE
+UID: REQ-26
+STATUS: Draft
 TITLE: Required Changes
-STATEMENT: The system shall implement automated network management, unified security controls, real-time monitoring and alerting, and integrated cross-network coordination capabilities.
-RATIONALE: Specific change requirements guide system design and implementation.
+STATEMENT: This requirement covers Required Changes.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-27
+STATUS: Draft
 TITLE: 4.3 Priorities among the changes
+STATEMENT: This requirement covers 4.3 Priorities among the changes.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-012-EXAMPLE
+UID: REQ-28
+STATUS: Draft
 TITLE: Change Priorities
-STATEMENT: Security enhancements shall have the highest priority, followed by automation improvements, monitoring capabilities, and cross-network coordination features.
-RATIONALE: Prioritization ensures critical capabilities are delivered first.
+STATEMENT: This requirement covers Change Priorities.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-29
+STATUS: Draft
 TITLE: 4.4 Changes considered but not included
+STATEMENT: This requirement covers 4.4 Changes considered but not included.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-013-EXAMPLE
+UID: REQ-30
+STATUS: Draft
 TITLE: Excluded Changes
-STATEMENT: Changes not included in this scope include complete replacement of existing satellite hardware, modification of orbital parameters, and integration with non-military communication systems.
-RATIONALE: Scope boundaries prevent project creep and maintain focus on achievable objectives.
+STATEMENT: This requirement covers Excluded Changes.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-31
+STATUS: Draft
 TITLE: 4.5 Assumptions and constraints
+STATEMENT: This requirement covers 4.5 Assumptions and constraints.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-014-EXAMPLE
+UID: REQ-32
+STATUS: Draft
 TITLE: System Assumptions
-STATEMENT: The system assumes continued availability of existing satellite infrastructure, stable regulatory environment, and availability of qualified personnel for system operation and maintenance.
-RATIONALE: Documented assumptions provide context for system design decisions.
+STATEMENT: This requirement covers System Assumptions.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-33
+STATUS: Draft
 TITLE: 5. Concept for a new or modified system
+STATEMENT: This requirement covers 5. Concept for a new or modified system.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-34
+STATUS: Draft
 TITLE: 5.1 Background, objectives, and scope
+STATEMENT: This requirement covers 5.1 Background, objectives, and scope.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-015-EXAMPLE
+UID: REQ-35
+STATUS: Draft
 TITLE: New System Objectives
-STATEMENT: The new system shall provide unified management of satellite communication networks with enhanced security, automation, and monitoring capabilities while maintaining backward compatibility with existing infrastructure.
-RATIONALE: Clear objectives guide system design and evaluation criteria.
+STATEMENT: This requirement covers New System Objectives.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-36
+STATUS: Draft
 TITLE: 5.2 Operational policies and constraints
+STATEMENT: This requirement covers 5.2 Operational policies and constraints.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-016-EXAMPLE
+UID: REQ-37
+STATUS: Draft
 TITLE: New System Policies
-STATEMENT: The new system shall implement role-based access control, automated security monitoring, and compliance with DoD cybersecurity requirements while maintaining operational flexibility.
-RATIONALE: Operational policies ensure system security and regulatory compliance.
+STATEMENT: This requirement covers New System Policies.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-38
+STATUS: Draft
 TITLE: 5.3 Description of the new or modified system
+STATEMENT: This requirement covers 5.3 Description of the new or modified system.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-017-EXAMPLE
+UID: REQ-39
+STATUS: Draft
 TITLE: New System Architecture
-STATEMENT: The new system shall implement a distributed architecture with centralized management, redundant control centers, automated failover capabilities, and secure communication protocols.
-RATIONALE: Robust architecture ensures system reliability and scalability.
+STATEMENT: This requirement covers New System Architecture.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-40
+STATUS: Draft
 TITLE: 5.4 Users/affected personnel
+STATEMENT: This requirement covers 5.4 Users/affected personnel.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-018-EXAMPLE
+UID: REQ-41
+STATUS: Draft
 TITLE: New User Roles
-STATEMENT: The new system shall support enhanced roles including system administrators, security analysts, network operators, and automated monitoring systems with appropriate access controls.
-RATIONALE: Defined user roles ensure proper system access and accountability.
+STATEMENT: This requirement covers New User Roles.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-42
+STATUS: Draft
 TITLE: 5.5 Support concept
+STATEMENT: This requirement covers 5.5 Support concept.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-019-EXAMPLE
+UID: REQ-43
+STATUS: Draft
 TITLE: New Support Concept
-STATEMENT: The new system shall implement remote monitoring and management capabilities, automated diagnostics, predictive maintenance, and reduced dependency on on-site technical personnel.
-RATIONALE: Improved support concept reduces operational costs and improves system availability.
+STATEMENT: This requirement covers New Support Concept.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-44
+STATUS: Draft
 TITLE: 6. Operational scenarios
+STATEMENT: This requirement covers 6. Operational scenarios.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-020-EXAMPLE
-TITLE: Normal Operations
-STATEMENT: During normal operations, the system shall automatically monitor satellite network health, manage traffic routing, and provide real-time status updates to authorized users.
-RATIONALE: Normal operational scenarios define baseline system behavior.
-
-[REQUIREMENT]
-UID: OCD-021-EXAMPLE
-TITLE: Emergency Operations
-STATEMENT: During emergency operations, the system shall automatically implement priority routing, activate backup communication channels, and provide enhanced monitoring and alerting capabilities.
-RATIONALE: Emergency scenarios ensure system reliability under critical conditions.
-
-[REQUIREMENT]
-UID: OCD-022-EXAMPLE
+UID: REQ-45
+STATUS: Draft
 TITLE: Maintenance Operations
-STATEMENT: During maintenance operations, the system shall support graceful degradation, automated failover to backup systems, and coordinated maintenance scheduling across multiple networks.
-RATIONALE: Maintenance scenarios ensure system availability during planned downtime.
-
-[[/SECTION]]
-
-[[SECTION]]
-TITLE: 7. Summary of impacts
-
-[[SECTION]]
-TITLE: 7.1 Operational impacts
+STATEMENT: This requirement covers Maintenance Operations.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: OCD-023-EXAMPLE
+UID: REQ-46
+STATUS: Draft
+TITLE: 7. Summary of impacts
+STATEMENT: This requirement covers 7. Summary of impacts.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-47
+STATUS: Draft
+TITLE: 7.1 Operational impacts
+STATEMENT: This requirement covers 7.1 Operational impacts.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-48
+STATUS: Draft
 TITLE: Operational Impact Assessment
-STATEMENT: The new system shall improve operational efficiency by 40%, reduce manual intervention requirements by 60%, and enhance security posture through automated monitoring and response capabilities.
-RATIONALE: Quantified impacts justify system investment and guide performance expectations.
+STATEMENT: This requirement covers Operational Impact Assessment.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]

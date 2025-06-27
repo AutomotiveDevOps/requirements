@@ -2,50 +2,16 @@
 TITLE: Advanced StrictDoc Features Example
 
 [REQUIREMENT]
-UID: REQ-001
+UID: REQ-1
 STATUS: Draft
-TAGS: security, authentication, mfa
-TITLE: System Authentication
-STATEMENT: The system shall provide secure user authentication using multi-factor authentication (MFA).
-RATIONALE: Security is critical for protecting user data and system integrity.
+TITLE: Advanced StrictDoc Features Example
+STATEMENT: This requirement covers Advanced StrictDoc Features Example.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: REQ-002
-STATUS: Approved
-TAGS: security, encryption, compliance
-TITLE: Data Encryption
-STATEMENT: All sensitive data shall be encrypted at rest and in transit using AES-256 encryption.
-RATIONALE: Data protection compliance and security best practices require encryption.
-
-[REQUIREMENT]
-UID: REQ-003
-STATUS: In Review
-TAGS: performance, api, user-experience
-TITLE: API Response Time
-STATEMENT: The API shall respond within 200ms for 95% of requests under normal load conditions.
-RATIONALE: User experience requires fast response times for interactive applications.
-
-[REQUIREMENT]
-UID: REQ-004
-STATUS: Approved
-TAGS: backup, disaster-recovery, data-protection
-TITLE: Database Backup
-STATEMENT: The system shall perform automated daily backups with point-in-time recovery capability.
-RATIONALE: Data protection and disaster recovery require reliable backup mechanisms.
-
-[REQUIREMENT]
-UID: REQ-005
+UID: REQ-2
 STATUS: Draft
-TAGS: ui, responsive, accessibility
-TITLE: Responsive Design
-STATEMENT: The user interface shall be responsive and work on devices with screen sizes from 320px to 1920px width.
-RATIONALE: Users access the system from various devices including mobile phones and desktop computers.
-
-[REQUIREMENT]
-UID: REQ-006
-STATUS: In Review
-TAGS: accessibility, compliance, wcag
 TITLE: Accessibility Compliance
-STATEMENT: The user interface shall comply with WCAG 2.1 AA standards for accessibility.
-RATIONALE: Ensuring accessibility for users with disabilities is both a legal requirement and good practice.
+STATEMENT: This requirement covers Accessibility Compliance.
+RATIONALE: Converted from original document structure.
 

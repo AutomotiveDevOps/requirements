@@ -2,29 +2,16 @@
 TITLE: MIL-STD-498 SVD (Software Version Description)
 
 [REQUIREMENT]
-UID: SVD-001
+UID: REQ-1
 STATUS: Draft
-TITLE: Software Version Description
-STATEMENT: The system shall maintain version control with clear identification of software releases.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+TITLE: MIL-STD-498 SVD (Software Version Description)
+STATEMENT: This requirement covers MIL-STD-498 SVD (Software Version Description).
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: SVD-002
-STATUS: Draft
-TITLE: Version Management
-STATEMENT: The system shall implement semantic versioning with major, minor, and patch version numbers.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: SVD-003
-STATUS: Draft
-TITLE: Release Notes
-STATEMENT: The system shall provide comprehensive release notes documenting changes and new features.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: SVD-004
+UID: REQ-2
 STATUS: Draft
 TITLE: Deployment Instructions
-STATEMENT: The system shall provide clear deployment instructions for each software version.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+STATEMENT: This requirement covers Deployment Instructions.
+RATIONALE: Converted from original document structure.
+

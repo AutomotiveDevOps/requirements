@@ -2,57 +2,16 @@
 TITLE: MIL-STD-498 IRS (Interface Requirements Specification)
 
 [REQUIREMENT]
-UID: IRS-001
+UID: REQ-1
 STATUS: Draft
-TITLE: User Interface Requirements
-STATEMENT: The system shall provide a web-based user interface accessible via standard web browsers (Chrome, Firefox, Safari, Edge) with responsive design for desktop and mobile devices.
-RATIONALE: Web-based interface ensures broad accessibility and reduces client installation requirements.
+TITLE: MIL-STD-498 IRS (Interface Requirements Specification)
+STATEMENT: This requirement covers MIL-STD-498 IRS (Interface Requirements Specification).
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: IRS-002
-STATUS: Draft
-TITLE: API Interface
-STATEMENT: The system shall provide RESTful API endpoints for external system integration with JSON data format and standard HTTP status codes.
-RATIONALE: RESTful API enables system integration and third-party application development.
-
-[REQUIREMENT]
-UID: IRS-003
-STATUS: Draft
-TITLE: Database Interface
-STATEMENT: The system shall interface with PostgreSQL database using secure connection protocols and support concurrent user access with transaction management.
-RATIONALE: Database interface ensures data persistence and integrity for system operations.
-
-[REQUIREMENT]
-UID: IRS-004
-STATUS: Draft
-TITLE: Authentication Interface
-STATEMENT: The system shall integrate with LDAP/Active Directory for user authentication and support multi-factor authentication (MFA) for enhanced security.
-RATIONALE: Authentication interface ensures secure access control and user management.
-
-[REQUIREMENT]
-UID: IRS-005
-STATUS: Draft
-TITLE: External System Integration
-STATEMENT: The system shall provide interfaces for integration with satellite communication systems, monitoring tools, and reporting systems via standardized protocols.
-RATIONALE: External system integration enables comprehensive system monitoring and data exchange.
-
-[REQUIREMENT]
-UID: IRS-006
-STATUS: Draft
-TITLE: Data Export Interface
-STATEMENT: The system shall support data export in multiple formats (CSV, JSON, XML) with configurable data fields and filtering options.
-RATIONALE: Data export interface enables reporting and data analysis capabilities.
-
-[REQUIREMENT]
-UID: IRS-007
-STATUS: Draft
-TITLE: Notification Interface
-STATEMENT: The system shall provide email and SMS notification interfaces for system alerts, status updates, and user communications.
-RATIONALE: Notification interface ensures timely communication of important system events.
-
-[REQUIREMENT]
-UID: IRS-008
+UID: REQ-2
 STATUS: Draft
 TITLE: Logging Interface
-STATEMENT: The system shall provide comprehensive logging interfaces for system events, user actions, and error tracking with configurable log levels.
-RATIONALE: Logging interface enables system monitoring, debugging, and audit trail maintenance.
+STATEMENT: This requirement covers Logging Interface.
+RATIONALE: Converted from original document structure.
+

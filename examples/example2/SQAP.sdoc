@@ -1,132 +1,129 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 SQAP (Software Quality Assurance Plan) - Military Quad Copter RTOS
-[[SECTION]]
+
+[REQUIREMENT]
+UID: REQ-1
+STATUS: Draft
+TITLE: MIL-STD-498 SQAP (Software Quality Assurance Plan) - Military Quad Copter RTOS
+STATEMENT: This requirement covers MIL-STD-498 SQAP (Software Quality Assurance Plan) - Military Quad Copter RTOS.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-2
+STATUS: Draft
 TITLE: 1. Scope
-[[SECTION]]
+STATEMENT: This requirement covers 1. Scope.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-3
+STATUS: Draft
 TITLE: 1.1 Identification
-[REFERENCE]
-TYPE: Document
-REF: SDP.sdoc
-DESC: See Software Development Plan for development processes.
-[REFERENCE]
-TYPE: Document
-REF: STP.sdoc
-DESC: See Software Test Plan for testing processes.
-[REFERENCE]
-TYPE: Document
-REF: SCMP.sdoc
-DESC: See Software Configuration Management Plan for configuration control.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers 1.1 Identification.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-4
+STATUS: Draft
 TITLE: 1.2 System overview
+STATEMENT: This requirement covers 1.2 System overview.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SQAP-001-MILUAV
+UID: REQ-5
+STATUS: Draft
 TITLE: System Overview
-STATEMENT: The Military Quad Copter RTOS requires comprehensive quality assurance for safety-critical, real-time, and secure military UAV operations.
-RATIONALE: System overview provides context for quality assurance.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers System Overview.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-6
+STATUS: Draft
 TITLE: 1.3 Document overview
+STATEMENT: This requirement covers 1.3 Document overview.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SQAP-002-MILUAV
+UID: REQ-7
+STATUS: Draft
 TITLE: Document Structure
-STATEMENT: This document covers quality assurance organization, referenced documents, quality assurance activities, and quality metrics per MIL-STD-498.
-RATIONALE: Structured documentation supports effective quality assurance.
-[[/SECTION]]
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Document Structure.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-8
+STATUS: Draft
 TITLE: 2. Referenced documents
-[REFERENCE]
-TYPE: Document
-REF: SDP.sdoc
-DESC: Software Development Plan
-[REFERENCE]
-TYPE: Document
-REF: STP.sdoc
-DESC: Software Test Plan
-[REFERENCE]
-TYPE: Document
-REF: SCMP.sdoc
-DESC: Software Configuration Management Plan
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers 2. Referenced documents.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-9
+STATUS: Draft
 TITLE: 3. Quality assurance organization
+STATEMENT: This requirement covers 3. Quality assurance organization.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SQAP-003-MILUAV
-TITLE: QA Organization
-STATEMENT: Quality assurance organization includes QA manager, QA engineers, independent test team, and quality control personnel with defined roles and responsibilities.
-RATIONALE: QA organization ensures effective quality assurance.
-[REQUIREMENT]
-UID: SQAP-004-MILUAV
-TITLE: QA Independence
-STATEMENT: Quality assurance activities shall be independent of development activities with separate reporting structure and authority for military software development.
-RATIONALE: QA independence ensures objective quality assessment.
-[REQUIREMENT]
-UID: SQAP-005-MILUAV
+UID: REQ-10
+STATUS: Draft
 TITLE: QA Authority
-STATEMENT: Quality assurance shall have authority to stop development, testing, or deployment activities when quality standards are not met for military systems.
-RATIONALE: QA authority ensures quality standards enforcement.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers QA Authority.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-11
+STATUS: Draft
 TITLE: 4. Quality assurance activities
+STATEMENT: This requirement covers 4. Quality assurance activities.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SQAP-006-MILUAV
-TITLE: Process Audits
-STATEMENT: Process audits include development process audits, testing process audits, and configuration management audits with compliance verification for military standards.
-RATIONALE: Process audits ensure process compliance and effectiveness.
-[REQUIREMENT]
-UID: SQAP-007-MILUAV
-TITLE: Product Audits
-STATEMENT: Product audits include requirements audits, design audits, code audits, and test audits with quality verification for military software.
-RATIONALE: Product audits ensure product quality and compliance.
-[REQUIREMENT]
-UID: SQAP-008-MILUAV
-TITLE: Quality Reviews
-STATEMENT: Quality reviews include peer reviews, technical reviews, and management reviews with documented findings and corrective actions.
-RATIONALE: Quality reviews ensure early defect detection and correction.
-[REQUIREMENT]
-UID: SQAP-009-MILUAV
+UID: REQ-12
+STATUS: Draft
 TITLE: Quality Testing
-STATEMENT: Quality testing includes unit testing, integration testing, system testing, and acceptance testing with quality metrics and defect tracking.
-RATIONALE: Quality testing ensures system reliability and performance.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Quality Testing.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-13
+STATUS: Draft
 TITLE: 5. Quality metrics
+STATEMENT: This requirement covers 5. Quality metrics.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SQAP-010-MILUAV
-TITLE: Defect Metrics
-STATEMENT: Defect metrics include defect density, defect severity, defect resolution time, and defect trends with automated tracking and reporting.
-RATIONALE: Defect metrics ensure quality measurement and improvement.
-[REQUIREMENT]
-UID: SQAP-011-MILUAV
-TITLE: Process Metrics
-STATEMENT: Process metrics include development productivity, test coverage, requirement stability, and schedule adherence with performance tracking.
-RATIONALE: Process metrics ensure process effectiveness and efficiency.
-[REQUIREMENT]
-UID: SQAP-012-MILUAV
+UID: REQ-14
+STATUS: Draft
 TITLE: Product Metrics
-STATEMENT: Product metrics include code complexity, performance benchmarks, security compliance, and reliability measures for military software.
-RATIONALE: Product metrics ensure product quality and performance.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Product Metrics.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-15
+STATUS: Draft
 TITLE: 6. Quality standards
+STATEMENT: This requirement covers 6. Quality standards.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SQAP-013-MILUAV
-TITLE: Military Standards
-STATEMENT: Quality standards shall comply with MIL-STD-498, MIL-STD-882, and other applicable military standards for software development and testing.
-RATIONALE: Military standards ensure compliance and interoperability.
-[REQUIREMENT]
-UID: SQAP-014-MILUAV
+UID: REQ-16
+STATUS: Draft
 TITLE: Industry Standards
-STATEMENT: Quality standards shall follow industry best practices including IEEE, ISO, and SEI CMMI standards for software quality assurance.
-RATIONALE: Industry standards ensure quality best practices.
-[[/SECTION]]
-[[SECTION]]
-TITLE: 7. Notes
+STATEMENT: This requirement covers Industry Standards.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SQAP-015-MILUAV
+UID: REQ-17
+STATUS: Draft
+TITLE: 7. Notes
+STATEMENT: This requirement covers 7. Notes.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-18
+STATUS: Draft
 TITLE: Continuous Improvement
-STATEMENT: Quality assurance shall include continuous improvement processes with lessons learned, best practices, and process optimization for military software development.
-RATIONALE: Continuous improvement ensures quality enhancement and efficiency.
-[[/SECTION]]
+STATEMENT: This requirement covers Continuous Improvement.
+RATIONALE: Converted from original document structure.
 

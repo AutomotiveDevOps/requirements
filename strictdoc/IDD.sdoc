@@ -2,29 +2,16 @@
 TITLE: MIL-STD-498 IDD (Interface Design Description)
 
 [REQUIREMENT]
-UID: IDD-001
+UID: REQ-1
 STATUS: Draft
-TITLE: Interface Design
-STATEMENT: The system shall provide RESTful API interfaces for external system integration.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+TITLE: MIL-STD-498 IDD (Interface Design Description)
+STATEMENT: This requirement covers MIL-STD-498 IDD (Interface Design Description).
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: IDD-002
-STATUS: Draft
-TITLE: User Interface
-STATEMENT: The system shall provide web-based user interfaces with responsive design and accessibility features.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: IDD-003
-STATUS: Draft
-TITLE: Data Interfaces
-STATEMENT: The system shall support multiple data formats including JSON, XML, and CSV for data exchange.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: IDD-004
+UID: REQ-2
 STATUS: Draft
 TITLE: Security Interfaces
-STATEMENT: The system shall implement secure authentication and authorization interfaces.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+STATEMENT: This requirement covers Security Interfaces.
+RATIONALE: Converted from original document structure.
+

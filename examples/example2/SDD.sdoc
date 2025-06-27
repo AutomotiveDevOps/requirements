@@ -1,270 +1,297 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 SDD (Software Design Description) - Military Quad Copter RTOS
-[[SECTION]]
+
+[REQUIREMENT]
+UID: REQ-1
+STATUS: Draft
+TITLE: MIL-STD-498 SDD (Software Design Description) - Military Quad Copter RTOS
+STATEMENT: This requirement covers MIL-STD-498 SDD (Software Design Description) - Military Quad Copter RTOS.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-2
+STATUS: Draft
 TITLE: 1. Scope
-[[SECTION]]
+STATEMENT: This requirement covers 1. Scope.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-3
+STATUS: Draft
 TITLE: 1.1 Identification
+STATEMENT: This requirement covers 1.1 Identification.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-001-MILUAV
+UID: REQ-4
+STATUS: Draft
 TITLE: Design Identification
-STATEMENT: This document shall describe the software design for the Military Quad Copter RTOS, including architecture, components, interfaces, and design decisions for autonomous military UAV operations.
-RATIONALE: Clear design identification ensures proper system development and maintenance.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Design Identification.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-5
+STATUS: Draft
 TITLE: 1.2 System overview
+STATEMENT: This requirement covers 1.2 System overview.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-002-MILUAV
+UID: REQ-6
+STATUS: Draft
 TITLE: Design Overview
-STATEMENT: The Military Quad Copter RTOS shall implement a modular, fault-tolerant architecture with real-time performance, secure communication, and autonomous operation capabilities for military UAV applications.
-RATIONALE: Design overview establishes the architectural foundation for system development.
-[[/SECTION]]
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Design Overview.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-7
+STATUS: Draft
 TITLE: 2. Referenced documents
+STATEMENT: This requirement covers 2. Referenced documents.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-003-MILUAV
+UID: REQ-8
+STATUS: Draft
 TITLE: Design Standards
-STATEMENT: The software design shall comply with MIL-STD-498, DO-178C Level A, MISRA C/C++, and military software architecture standards for safety-critical systems.
-RATIONALE: Design standards ensure software quality, safety, and maintainability.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Design Standards.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-9
+STATUS: Draft
 TITLE: 3. CSCI-wide design decisions
+STATEMENT: This requirement covers 3. CSCI-wide design decisions.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-004-MILUAV
-TITLE: Architecture Decision
-STATEMENT: The system shall implement a layered architecture with separation of concerns, including hardware abstraction layer, real-time kernel, middleware services, and application layer with clear interface boundaries.
-RATIONALE: Layered architecture enables modular development, testing, and maintenance.
-[REQUIREMENT]
-UID: SDD-005-MILUAV
-TITLE: Real-Time Design
-STATEMENT: The system shall implement priority-based preemptive scheduling with deterministic timing guarantees, interrupt handling, and real-time task management for critical flight control operations.
-RATIONALE: Real-time design ensures predictable system behavior and safety.
-[REQUIREMENT]
-UID: SDD-006-MILUAV
+UID: REQ-10
+STATUS: Draft
 TITLE: Fault Tolerance Design
-STATEMENT: The system shall implement triple-redundant critical components with voting mechanisms, automatic fault detection, isolation, and recovery procedures for high reliability operation.
-RATIONALE: Fault tolerance design ensures system reliability under adverse conditions.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Fault Tolerance Design.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-11
+STATUS: Draft
 TITLE: 4. CSCI architectural design
-[[SECTION]]
+STATEMENT: This requirement covers 4. CSCI architectural design.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-12
+STATUS: Draft
 TITLE: 4.1 Architecture Overview
+STATEMENT: This requirement covers 4.1 Architecture Overview.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-007-MILUAV
-TITLE: System Architecture
-STATEMENT: The system shall implement a distributed architecture with flight control computer, mission computer, communication computer, and sensor computer interconnected via high-speed data buses with redundant communication paths.
-RATIONALE: Distributed architecture provides fault isolation and system scalability.
-[REQUIREMENT]
-UID: SDD-008-MILUAV
+UID: REQ-13
+STATUS: Draft
 TITLE: Component Architecture
-STATEMENT: The system shall be organized into flight control, mission management, sensor fusion, communication, security, and power management components with well-defined interfaces and data flow.
-RATIONALE: Component architecture enables modular development and system integration.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Component Architecture.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-14
+STATUS: Draft
 TITLE: 4.2 Flight Control Component
+STATEMENT: This requirement covers 4.2 Flight Control Component.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-009-MILUAV
-TITLE: Flight Control Design
-STATEMENT: The flight control component shall implement PID-based control algorithms for attitude, altitude, and position control with adaptive gain scheduling and wind compensation for military operations.
-RATIONALE: Flight control design ensures stable and precise UAV operation.
-[REQUIREMENT]
-UID: SDD-010-MILUAV
-TITLE: Stabilization System
-STATEMENT: The stabilization system shall implement quaternion-based attitude estimation, Kalman filtering for sensor fusion, and adaptive control algorithms for robust flight performance.
-RATIONALE: Stabilization system provides accurate attitude control and sensor fusion.
-[REQUIREMENT]
-UID: SDD-011-MILUAV
+UID: REQ-15
+STATUS: Draft
 TITLE: Navigation System
-STATEMENT: The navigation system shall implement waypoint navigation, path planning, obstacle avoidance, and formation flying algorithms with real-time trajectory optimization.
-RATIONALE: Navigation system enables autonomous mission execution and collision avoidance.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Navigation System.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-16
+STATUS: Draft
 TITLE: 4.3 Mission Management Component
+STATEMENT: This requirement covers 4.3 Mission Management Component.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-012-MILUAV
-TITLE: Mission Planning
-STATEMENT: The mission planning component shall implement 3D route optimization, fuel management, payload configuration, and contingency planning with automatic mission adaptation capabilities.
-RATIONALE: Mission planning ensures efficient resource utilization and mission success.
-[REQUIREMENT]
-UID: SDD-013-MILUAV
-TITLE: Mission Execution
-STATEMENT: The mission execution component shall implement real-time mission monitoring, automatic decision-making, payload deployment, and mission abort procedures with safety interlocks.
-RATIONALE: Mission execution enables autonomous operation with human oversight.
-[REQUIREMENT]
-UID: SDD-014-MILUAV
+UID: REQ-17
+STATUS: Draft
 TITLE: Payload Management
-STATEMENT: The payload management component shall implement payload configuration, deployment control, data collection, and equipment health monitoring with automatic fault detection.
-RATIONALE: Payload management enables diverse mission capabilities and equipment utilization.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Payload Management.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-18
+STATUS: Draft
 TITLE: 4.4 Sensor Fusion Component
+STATEMENT: This requirement covers 4.4 Sensor Fusion Component.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-015-MILUAV
-TITLE: Multi-Sensor Fusion
-STATEMENT: The sensor fusion component shall implement Kalman filtering, particle filtering, and machine learning algorithms for combining data from GPS, INS, LIDAR, cameras, and environmental sensors.
-RATIONALE: Multi-sensor fusion provides robust navigation and environmental awareness.
-[REQUIREMENT]
-UID: SDD-016-MILUAV
-TITLE: Obstacle Detection
-STATEMENT: The obstacle detection component shall implement LIDAR point cloud processing, stereo vision algorithms, and radar signal processing for real-time obstacle detection and avoidance.
-RATIONALE: Obstacle detection ensures safe autonomous operation in complex environments.
-[REQUIREMENT]
-UID: SDD-017-MILUAV
+UID: REQ-19
+STATUS: Draft
 TITLE: GPS-Denied Navigation
-STATEMENT: The GPS-denied navigation component shall implement visual odometry, inertial navigation, and landmark recognition algorithms for operation in GPS-compromised environments.
-RATIONALE: GPS-denied navigation enables operations in challenging military environments.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers GPS-Denied Navigation.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-20
+STATUS: Draft
 TITLE: 4.5 Communication Component
+STATEMENT: This requirement covers 4.5 Communication Component.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-018-MILUAV
-TITLE: Secure Communication
-STATEMENT: The communication component shall implement AES-256 encryption, frequency hopping, spread spectrum techniques, and anti-jamming protocols for secure military communication.
-RATIONALE: Secure communication protects mission integrity and prevents hostile interference.
-[REQUIREMENT]
-UID: SDD-019-MILUAV
-TITLE: Video Processing
-STATEMENT: The video processing component shall implement H.264/H.265 encoding, adaptive bitrate control, and real-time video streaming with automatic quality adjustment and encryption.
-RATIONALE: Video processing enables real-time situational awareness for military operations.
-[REQUIREMENT]
-UID: SDD-020-MILUAV
+UID: REQ-21
+STATUS: Draft
 TITLE: Network Management
-STATEMENT: The network management component shall implement mesh networking, automatic routing, load balancing, and failover mechanisms for robust communication in dynamic environments.
-RATIONALE: Network management ensures reliable communication under varying conditions.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Network Management.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-22
+STATUS: Draft
 TITLE: 4.6 Security Component
+STATEMENT: This requirement covers 4.6 Security Component.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-021-MILUAV
-TITLE: Authentication System
-STATEMENT: The authentication system shall implement multi-factor authentication, role-based access control, secure session management, and automatic timeout mechanisms for military security requirements.
-RATIONALE: Authentication system ensures secure access control and system protection.
-[REQUIREMENT]
-UID: SDD-022-MILUAV
-TITLE: Threat Detection
-STATEMENT: The threat detection component shall implement intrusion detection, anomaly detection, and automatic response mechanisms for cyber and electronic warfare threats.
-RATIONALE: Threat detection enables proactive defense against hostile activities.
-[REQUIREMENT]
-UID: SDD-023-MILUAV
+UID: REQ-23
+STATUS: Draft
 TITLE: Data Protection
-STATEMENT: The data protection component shall implement encryption, secure key management, data integrity checking, and secure data erasure for sensitive military information.
-RATIONALE: Data protection ensures confidentiality and integrity of mission data.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Data Protection.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-24
+STATUS: Draft
 TITLE: 4.7 Power Management Component
+STATEMENT: This requirement covers 4.7 Power Management Component.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-024-MILUAV
-TITLE: Battery Management
-STATEMENT: The battery management component shall implement real-time monitoring, state-of-charge estimation, thermal management, and automatic low-battery protection for safe operation.
-RATIONALE: Battery management ensures safe and efficient power utilization.
-[REQUIREMENT]
-UID: SDD-025-MILUAV
+UID: REQ-25
+STATUS: Draft
 TITLE: Power Distribution
-STATEMENT: The power distribution component shall implement load balancing, fault detection, automatic load shedding, and redundant power paths for reliable system operation.
-RATIONALE: Power distribution ensures reliable power delivery under all conditions.
-[[/SECTION]]
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Power Distribution.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-26
+STATUS: Draft
 TITLE: 5. CSCI detailed design
-[[SECTION]]
+STATEMENT: This requirement covers 5. CSCI detailed design.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-27
+STATUS: Draft
 TITLE: 5.1 Flight Control Detailed Design
+STATEMENT: This requirement covers 5.1 Flight Control Detailed Design.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-026-MILUAV
-TITLE: PID Controller Design
-STATEMENT: The PID controller shall implement proportional, integral, and derivative control with anti-windup, gain scheduling, and adaptive tuning for optimal flight performance across operating conditions.
-RATIONALE: PID controller design ensures stable and responsive flight control.
-[REQUIREMENT]
-UID: SDD-027-MILUAV
-TITLE: Attitude Estimation
-STATEMENT: The attitude estimation shall implement quaternion-based algorithms with gyroscope, accelerometer, and magnetometer fusion using complementary and Kalman filtering techniques.
-RATIONALE: Attitude estimation provides accurate orientation information for flight control.
-[REQUIREMENT]
-UID: SDD-028-MILUAV
+UID: REQ-28
+STATUS: Draft
 TITLE: Motor Control
-STATEMENT: The motor control shall implement PWM-based speed control with current limiting, temperature monitoring, and fault detection for safe and efficient propulsion.
-RATIONALE: Motor control ensures reliable propulsion and system safety.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Motor Control.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-29
+STATUS: Draft
 TITLE: 5.2 Mission Management Detailed Design
+STATEMENT: This requirement covers 5.2 Mission Management Detailed Design.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-029-MILUAV
-TITLE: Route Planning
-STATEMENT: The route planning shall implement A* algorithm with 3D path optimization, obstacle avoidance, fuel efficiency, and mission constraints for optimal mission execution.
-RATIONALE: Route planning ensures efficient and safe mission execution.
-[REQUIREMENT]
-UID: SDD-030-MILUAV
+UID: REQ-30
+STATUS: Draft
 TITLE: Decision Making
-STATEMENT: The decision making shall implement rule-based and machine learning algorithms for autonomous decision-making with safety constraints and human oversight capabilities.
-RATIONALE: Decision making enables autonomous operation with safety guarantees.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Decision Making.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-31
+STATUS: Draft
 TITLE: 5.3 Sensor Fusion Detailed Design
+STATEMENT: This requirement covers 5.3 Sensor Fusion Detailed Design.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-031-MILUAV
-TITLE: Kalman Filter Design
-STATEMENT: The Kalman filter shall implement state estimation for position, velocity, and attitude with process and measurement noise modeling for optimal sensor fusion.
-RATIONALE: Kalman filter design provides optimal state estimation from multiple sensors.
-[REQUIREMENT]
-UID: SDD-032-MILUAV
+UID: REQ-32
+STATUS: Draft
 TITLE: Point Cloud Processing
-STATEMENT: The point cloud processing shall implement LIDAR data filtering, clustering, and obstacle detection algorithms with real-time performance for collision avoidance.
-RATIONALE: Point cloud processing enables accurate obstacle detection and avoidance.
-[[/SECTION]]
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Point Cloud Processing.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-33
+STATUS: Draft
 TITLE: 6. CSCI data design
+STATEMENT: This requirement covers 6. CSCI data design.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-033-MILUAV
-TITLE: Data Structure Design
-STATEMENT: The system shall implement efficient data structures for sensor data, mission parameters, flight logs, and communication messages with appropriate memory management and data integrity.
-RATIONALE: Data structure design ensures efficient system operation and data reliability.
-[REQUIREMENT]
-UID: SDD-034-MILUAV
+UID: REQ-34
+STATUS: Draft
 TITLE: Database Design
-STATEMENT: The system shall implement embedded database for mission data, configuration parameters, and system logs with automatic backup, encryption, and data retention policies.
-RATIONALE: Database design ensures data persistence and operational accountability.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Database Design.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-35
+STATUS: Draft
 TITLE: 7. CSCI interface design
+STATEMENT: This requirement covers 7. CSCI interface design.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-035-MILUAV
-TITLE: Internal Interface Design
-STATEMENT: The system shall implement well-defined internal interfaces between components using message passing, shared memory, and event-driven communication with proper synchronization and error handling.
-RATIONALE: Internal interface design ensures reliable component communication and system integration.
-[REQUIREMENT]
-UID: SDD-036-MILUAV
+UID: REQ-36
+STATUS: Draft
 TITLE: External Interface Design
-STATEMENT: The system shall implement standardized external interfaces for sensors, actuators, communication systems, and ground control stations with protocol compliance and security measures.
-RATIONALE: External interface design ensures system interoperability and security.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers External Interface Design.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-37
+STATUS: Draft
 TITLE: 8. CSCI resource usage
+STATEMENT: This requirement covers 8. CSCI resource usage.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-037-MILUAV
-TITLE: Memory Usage
-STATEMENT: The system shall operate within 512MB RAM and 2GB flash storage with efficient memory management, garbage collection, and memory leak prevention for reliable long-term operation.
-RATIONALE: Memory usage constraints ensure system reliability and predictable performance.
-[REQUIREMENT]
-UID: SDD-038-MILUAV
+UID: REQ-38
+STATUS: Draft
 TITLE: Processing Requirements
-STATEMENT: The system shall utilize less than 80% of dual-core ARM Cortex-R5 processor capacity under maximum load with proper task scheduling and load balancing.
-RATIONALE: Processing requirements ensure system responsiveness and real-time performance.
-[[/SECTION]]
-[[SECTION]]
+STATEMENT: This requirement covers Processing Requirements.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-39
+STATUS: Draft
 TITLE: 9. CSCI requirements traceability
+STATEMENT: This requirement covers 9. CSCI requirements traceability.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-039-MILUAV
+UID: REQ-40
+STATUS: Draft
 TITLE: Design Traceability
-STATEMENT: All design elements shall be traceable to software requirements with bidirectional traceability maintained throughout the design process for complete verification and validation.
-RATIONALE: Design traceability ensures complete requirements implementation and verification.
-[[/SECTION]]
-[[SECTION]]
-TITLE: 10. Notes
+STATEMENT: This requirement covers Design Traceability.
+RATIONALE: Converted from original document structure.
+
 [REQUIREMENT]
-UID: SDD-040-MILUAV
+UID: REQ-41
+STATUS: Draft
+TITLE: 10. Notes
+STATEMENT: This requirement covers 10. Notes.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-42
+STATUS: Draft
 TITLE: Design Documentation
-STATEMENT: All design decisions, architectural choices, and implementation details shall be documented with rationale, alternatives considered, and impact analysis for future maintenance and evolution.
-RATIONALE: Design documentation ensures maintainability and knowledge transfer.
-[[/SECTION]]
-[[/SECTION]]
+STATEMENT: This requirement covers Design Documentation.
+RATIONALE: Converted from original document structure.
 

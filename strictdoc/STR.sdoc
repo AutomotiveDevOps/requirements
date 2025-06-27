@@ -2,29 +2,16 @@
 TITLE: MIL-STD-498 STR (Software Test Report)
 
 [REQUIREMENT]
-UID: STR-001
+UID: REQ-1
 STATUS: Draft
-TITLE: Test Strategy
-STATEMENT: The system shall undergo comprehensive testing including unit, integration, system, and acceptance testing.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+TITLE: MIL-STD-498 STR (Software Test Report)
+STATEMENT: This requirement covers MIL-STD-498 STR (Software Test Report).
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: STR-002
-STATUS: Draft
-TITLE: Test Environment
-STATEMENT: The system shall be tested in environments that simulate production conditions.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: STR-003
-STATUS: Draft
-TITLE: Test Coverage
-STATEMENT: The system shall achieve minimum 90% code coverage and 100% requirement coverage.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: STR-004
+UID: REQ-2
 STATUS: Draft
 TITLE: Test Automation
-STATEMENT: The system shall support automated testing with continuous integration and deployment.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+STATEMENT: This requirement covers Test Automation.
+RATIONALE: Converted from original document structure.
+

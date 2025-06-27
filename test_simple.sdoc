@@ -1,22 +1,29 @@
 [DOCUMENT]
-TITLE: Test Document
+TITLE: Simple Test Document
 
 [REQUIREMENT]
 UID: REQ-1
 STATUS: Draft
-TITLE: Test Document
-STATEMENT: This requirement covers Test Document.
+TITLE: Simple Test Document
+STATEMENT: This requirement covers Simple Test Document.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
 UID: REQ-2
 STATUS: Draft
-TITLE: Test Section
-STATEMENT: This requirement covers Test Section.
+TITLE: 1. Scope
+STATEMENT: This requirement covers 1. Scope.
 RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
 UID: REQ-3
+STATUS: Draft
+TITLE: 1.1 Identification
+STATEMENT: This requirement covers 1.1 Identification.
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-4
 STATUS: Draft
 TITLE: Test Requirement
 STATEMENT: This requirement covers Test Requirement.

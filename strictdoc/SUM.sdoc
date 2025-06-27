@@ -1,89 +1,17 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 SUM (Software User Manual)
 
-
+[REQUIREMENT]
+UID: REQ-1
+STATUS: Draft
+TITLE: MIL-STD-498 SUM (Software User Manual)
+STATEMENT: This requirement covers MIL-STD-498 SUM (Software User Manual).
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: SUM-001
-TITLE: User Manual Identification
-STATEMENT: This document shall be identified as the Software User Manual (SUM) for the Satellite Communication Management System (SCMS), version 1.0.
-RATIONALE: Proper document identification ensures configuration management and user guidance.
-
-[REQUIREMENT]
-UID: SUM-002
-TITLE: System Overview
-STATEMENT: The SCMS provides comprehensive management and control of satellite communication networks through an intuitive web-based interface with role-based access control.
-RATIONALE: System overview helps users understand system capabilities and intended use.
-
-[REQUIREMENT]
-UID: SUM-003
-TITLE: Manual Structure
-STATEMENT: This manual shall be organized into sections covering installation, operation, maintenance, troubleshooting, and reference information for system users.
-RATIONALE: Structured organization facilitates user navigation and information retrieval.
-
-[REQUIREMENT]
-UID: SUM-004
-TITLE: Reference Documents
-STATEMENT: This manual shall reference system requirements, design documents, and operational procedures to provide comprehensive user guidance.
-RATIONALE: Reference documents ensure consistency with system specifications and procedures.
-
-[REQUIREMENT]
-UID: SUM-005
-TITLE: System Context
-STATEMENT: The SCMS operates within a distributed environment with multiple satellite networks, security controls, and integration with external communication systems.
-RATIONALE: System context helps users understand operational environment and dependencies.
-
-[REQUIREMENT]
-UID: SUM-006
-TITLE: Core Capabilities
-STATEMENT: The system provides satellite network management, real-time monitoring, security controls, traffic routing, and automated failover capabilities for communication networks.
-RATIONALE: Core capabilities define system functionality and user expectations.
-
-[REQUIREMENT]
-UID: SUM-007
-TITLE: System Limitations
-STATEMENT: The system requires continuous network connectivity, authorized user access, and compatible browser software for optimal operation.
-RATIONALE: System limitations help users understand operational constraints and requirements.
-
-[REQUIREMENT]
-UID: SUM-008
-TITLE: Access Requirements
-STATEMENT: Users shall access the system through secure web browsers with valid authentication credentials and appropriate role-based permissions.
-RATIONALE: Access requirements ensure system security and proper user authorization.
-
-[REQUIREMENT]
-UID: SUM-009
-TITLE: Interface Overview
-STATEMENT: The user interface shall provide intuitive navigation, role-based dashboards, real-time monitoring displays, and configuration tools for system management.
-RATIONALE: Interface overview helps users understand system layout and navigation.
-
-[REQUIREMENT]
-UID: SUM-010
-TITLE: Normal Operations
-STATEMENT: Normal operations include monitoring satellite networks, configuring routing parameters, managing user access, and reviewing system performance metrics.
-RATIONALE: Normal operations define standard system usage and user responsibilities.
-
-[REQUIREMENT]
-UID: SUM-011
-TITLE: Emergency Procedures
-STATEMENT: Emergency procedures shall include incident response, system failover, security incident handling, and communication with support personnel.
-RATIONALE: Emergency procedures ensure proper response to system issues and incidents.
-
-[REQUIREMENT]
-UID: SUM-012
-TITLE: Error Recovery
-STATEMENT: Error recovery procedures shall include system restart, configuration restoration, data recovery, and escalation to technical support when needed.
-RATIONALE: Error recovery procedures ensure system restoration and operational continuity.
-
-[REQUIREMENT]
-UID: SUM-013
-TITLE: System Messages
-STATEMENT: The system shall provide clear, informative messages for user actions, system events, error conditions, and operational status updates.
-RATIONALE: Clear system messages help users understand system behavior and respond appropriately.
-
-[REQUIREMENT]
-UID: SUM-014
+UID: REQ-2
+STATUS: Draft
 TITLE: User Notes
-STATEMENT: This user manual shall be maintained under configuration control with regular updates to reflect system changes and user feedback.
-RATIONALE: Document maintenance ensures user guidance accuracy and system alignment.
+STATEMENT: This requirement covers User Notes.
+RATIONALE: Converted from original document structure.
 

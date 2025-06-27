@@ -1,92 +1,136 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 STRP (Software Transition Plan)
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-1
+STATUS: Draft
+TITLE: MIL-STD-498 STRP (Software Transition Plan)
+STATEMENT: This requirement covers MIL-STD-498 STRP (Software Transition Plan).
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-2
+STATUS: Draft
 TITLE: 1. Scope
+STATEMENT: This requirement covers 1. Scope.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-3
+STATUS: Draft
 TITLE: 1.1 Identification
+STATEMENT: This requirement covers 1.1 Identification.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-4
+STATUS: Draft
 TITLE: 1.2 System overview
+STATEMENT: This requirement covers 1.2 System overview.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-5
+STATUS: Draft
 TITLE: 1.3 Document overview
+STATEMENT: This requirement covers 1.3 Document overview.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-6
+STATUS: Draft
 TITLE: 1.4 Relationship to other plans
+STATEMENT: This requirement covers 1.4 Relationship to other plans.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-7
+STATUS: Draft
 TITLE: 2. Referenced documents
+STATEMENT: This requirement covers 2. Referenced documents.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-8
+STATUS: Draft
 TITLE: 3. Software support resources
+STATEMENT: This requirement covers 3. Software support resources.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-9
+STATUS: Draft
 TITLE: 3.1 Facilities
+STATEMENT: This requirement covers 3.1 Facilities.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-10
+STATUS: Draft
 TITLE: 3.2 Hardware
+STATEMENT: This requirement covers 3.2 Hardware.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-11
+STATUS: Draft
 TITLE: 3.3 Software
+STATEMENT: This requirement covers 3.3 Software.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-12
+STATUS: Draft
 TITLE: 3.4 Other documentation
+STATEMENT: This requirement covers 3.4 Other documentation.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-13
+STATUS: Draft
 TITLE: 3.5 Personnel
+STATEMENT: This requirement covers 3.5 Personnel.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-14
+STATUS: Draft
 TITLE: 3.6 Other resources
+STATEMENT: This requirement covers 3.6 Other resources.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-15
+STATUS: Draft
 TITLE: 3.7 Interrelationship of components
+STATEMENT: This requirement covers 3.7 Interrelationship of components.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-16
+STATUS: Draft
 TITLE: 4. Recommended procedures
+STATEMENT: This requirement covers 4. Recommended procedures.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-17
+STATUS: Draft
 TITLE: 5. Training
+STATEMENT: This requirement covers 5. Training.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-18
+STATUS: Draft
 TITLE: 6. Anticipated areas of change
+STATEMENT: This requirement covers 6. Anticipated areas of change.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-19
+STATUS: Draft
 TITLE: 7. Transition planning
+STATEMENT: This requirement covers 7. Transition planning.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]

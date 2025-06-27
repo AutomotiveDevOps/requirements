@@ -2,57 +2,16 @@
 TITLE: MIL-STD-498 COM (Computer Operation Manual)
 
 [REQUIREMENT]
-UID: COM-001
+UID: REQ-1
 STATUS: Draft
-TITLE: System Startup Procedures
-STATEMENT: The system shall provide automated startup procedures with health checks, service initialization, and status reporting to ensure proper system operation.
-RATIONALE: Automated startup procedures ensure consistent system initialization and reduce operator errors.
+TITLE: MIL-STD-498 COM (Computer Operation Manual)
+STATEMENT: This requirement covers MIL-STD-498 COM (Computer Operation Manual).
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: COM-002
-STATUS: Draft
-TITLE: System Shutdown Procedures
-STATEMENT: The system shall provide graceful shutdown procedures with data preservation, service termination, and status reporting to ensure safe system shutdown.
-RATIONALE: Graceful shutdown procedures prevent data loss and system corruption.
-
-[REQUIREMENT]
-UID: COM-003
-STATUS: Draft
-TITLE: Daily Operations
-STATEMENT: The system shall support daily operational procedures including system monitoring, backup operations, log rotation, and performance optimization.
-RATIONALE: Daily operations ensure system reliability and optimal performance.
-
-[REQUIREMENT]
-UID: COM-004
-STATUS: Draft
-TITLE: Problem Handling
-STATEMENT: The system shall provide automated problem detection, alerting, and recovery procedures with manual intervention capabilities for complex issues.
-RATIONALE: Problem handling procedures ensure rapid incident response and system recovery.
-
-[REQUIREMENT]
-UID: COM-005
-STATUS: Draft
-TITLE: Diagnostic Features
-STATEMENT: The system shall provide comprehensive diagnostic tools including system health monitoring, performance analysis, and troubleshooting utilities.
-RATIONALE: Diagnostic features enable proactive system maintenance and rapid problem resolution.
-
-[REQUIREMENT]
-UID: COM-006
-STATUS: Draft
-TITLE: Backup and Recovery
-STATEMENT: The system shall support automated backup procedures with point-in-time recovery capabilities and disaster recovery planning.
-RATIONALE: Backup and recovery procedures ensure data protection and business continuity.
-
-[REQUIREMENT]
-UID: COM-007
-STATUS: Draft
-TITLE: Security Operations
-STATEMENT: The system shall support security monitoring, access control management, and incident response procedures for maintaining system security.
-RATIONALE: Security operations ensure system protection and compliance with security requirements.
-
-[REQUIREMENT]
-UID: COM-008
+UID: REQ-2
 STATUS: Draft
 TITLE: Performance Monitoring
-STATEMENT: The system shall provide real-time performance monitoring with capacity planning, resource utilization tracking, and optimization recommendations.
-RATIONALE: Performance monitoring ensures optimal system operation and capacity planning.
+STATEMENT: This requirement covers Performance Monitoring.
+RATIONALE: Converted from original document structure.
+

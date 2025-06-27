@@ -2,29 +2,16 @@
 TITLE: MIL-STD-498 STD (Software Test Description)
 
 [REQUIREMENT]
-UID: STD-001
+UID: REQ-1
 STATUS: Draft
-TITLE: Software Test Description
-STATEMENT: The system shall undergo comprehensive testing including functional, performance, and security testing.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+TITLE: MIL-STD-498 STD (Software Test Description)
+STATEMENT: This requirement covers MIL-STD-498 STD (Software Test Description).
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: STD-002
-STATUS: Draft
-TITLE: Test Procedures
-STATEMENT: The system shall follow standardized test procedures with documented test cases and expected results.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: STD-003
-STATUS: Draft
-TITLE: Test Data
-STATEMENT: The system shall use representative test data that simulates production conditions.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: STD-004
+UID: REQ-2
 STATUS: Draft
 TITLE: Test Tools
-STATEMENT: The system shall use automated testing tools for efficient test execution and reporting.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+STATEMENT: This requirement covers Test Tools.
+RATIONALE: Converted from original document structure.
+

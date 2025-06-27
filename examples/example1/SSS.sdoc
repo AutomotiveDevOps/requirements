@@ -1,142 +1,206 @@
 [DOCUMENT]
 TITLE: MIL-STD-498 SSS (System/Subsystem Specification)
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-1
+STATUS: Draft
+TITLE: MIL-STD-498 SSS (System/Subsystem Specification)
+STATEMENT: This requirement covers MIL-STD-498 SSS (System/Subsystem Specification).
+RATIONALE: Converted from original document structure.
+
+[REQUIREMENT]
+UID: REQ-2
+STATUS: Draft
 TITLE: 1. Scope
+STATEMENT: This requirement covers 1. Scope.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-3
+STATUS: Draft
 TITLE: 1.1 Identification
+STATEMENT: This requirement covers 1.1 Identification.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-4
+STATUS: Draft
 TITLE: 1.2 System overview
+STATEMENT: This requirement covers 1.2 System overview.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-5
+STATUS: Draft
 TITLE: 1.3 Document overview
+STATEMENT: This requirement covers 1.3 Document overview.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-6
+STATUS: Draft
 TITLE: 2. Referenced documents
+STATEMENT: This requirement covers 2. Referenced documents.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-7
+STATUS: Draft
 TITLE: 3. Requirements
+STATEMENT: This requirement covers 3. Requirements.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-8
+STATUS: Draft
 TITLE: 3.1 Required states and modes
+STATEMENT: This requirement covers 3.1 Required states and modes.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-9
+STATUS: Draft
 TITLE: 3.2 System capability requirements
+STATEMENT: This requirement covers 3.2 System capability requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-10
+STATUS: Draft
 TITLE: 3.3 System external interface requirements
+STATEMENT: This requirement covers 3.3 System external interface requirements.
+RATIONALE: Converted from original document structure.
 
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-11
+STATUS: Draft
 TITLE: 3.3.1 Interface identification and diagrams
+STATEMENT: This requirement covers 3.3.1 Interface identification and diagrams.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-12
+STATUS: Draft
 TITLE: 3.4 System internal interface requirements
+STATEMENT: This requirement covers 3.4 System internal interface requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-13
+STATUS: Draft
 TITLE: 3.5 System internal data requirements
+STATEMENT: This requirement covers 3.5 System internal data requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-14
+STATUS: Draft
 TITLE: 3.6 Adaptation requirements
+STATEMENT: This requirement covers 3.6 Adaptation requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-15
+STATUS: Draft
 TITLE: 3.7 Sizing and timing requirements
+STATEMENT: This requirement covers 3.7 Sizing and timing requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-16
+STATUS: Draft
 TITLE: 3.8 Safety requirements
+STATEMENT: This requirement covers 3.8 Safety requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-17
+STATUS: Draft
 TITLE: 3.9 Security and privacy requirements
+STATEMENT: This requirement covers 3.9 Security and privacy requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-18
+STATUS: Draft
 TITLE: 3.10 Environment requirements
+STATEMENT: This requirement covers 3.10 Environment requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-19
+STATUS: Draft
 TITLE: 3.11 Computer resource requirements
+STATEMENT: This requirement covers 3.11 Computer resource requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-20
+STATUS: Draft
 TITLE: 3.12 System quality factors
+STATEMENT: This requirement covers 3.12 System quality factors.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-21
+STATUS: Draft
 TITLE: 3.13 Design and implementation constraints
+STATEMENT: This requirement covers 3.13 Design and implementation constraints.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-22
+STATUS: Draft
 TITLE: 3.14 Personnel-related requirements
+STATEMENT: This requirement covers 3.14 Personnel-related requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-23
+STATUS: Draft
 TITLE: 3.15 Training-related requirements
+STATEMENT: This requirement covers 3.15 Training-related requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-24
+STATUS: Draft
 TITLE: 3.16 Logistics-related requirements
+STATEMENT: This requirement covers 3.16 Logistics-related requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-25
+STATUS: Draft
 TITLE: 3.17 Other requirements
+STATEMENT: This requirement covers 3.17 Other requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-26
+STATUS: Draft
 TITLE: 3.18 Packaging requirements
+STATEMENT: This requirement covers 3.18 Packaging requirements.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-27
+STATUS: Draft
 TITLE: 4. Qualification provisions
+STATEMENT: This requirement covers 4. Qualification provisions.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-28
+STATUS: Draft
 TITLE: 5. Requirements traceability
+STATEMENT: This requirement covers 5. Requirements traceability.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]
-
-[[SECTION]]
+[REQUIREMENT]
+UID: REQ-29
+STATUS: Draft
 TITLE: 6. Notes
+STATEMENT: This requirement covers 6. Notes.
+RATIONALE: Converted from original document structure.
 
-[[/SECTION]]

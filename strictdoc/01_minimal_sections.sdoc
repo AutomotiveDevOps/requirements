@@ -2,29 +2,16 @@
 TITLE: Minimal Example with Sections
 
 [REQUIREMENT]
-UID: 01_minimal_sections-001
+UID: REQ-1
 STATUS: Draft
-TITLE: General Requirement
-STATEMENT: The system shall meet the specified requirements for this document type.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+TITLE: Minimal Example with Sections
+STATEMENT: This requirement covers Minimal Example with Sections.
+RATIONALE: Converted from original document structure.
 
 [REQUIREMENT]
-UID: 01_minimal_sections-002
-STATUS: Draft
-TITLE: Document Compliance
-STATEMENT: The document shall comply with MIL-STD-498 standards and guidelines.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: 01_minimal_sections-003
-STATUS: Draft
-TITLE: Quality Assurance
-STATEMENT: The document shall undergo review and approval processes to ensure quality.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
-
-[REQUIREMENT]
-UID: 01_minimal_sections-004
+UID: REQ-2
 STATUS: Draft
 TITLE: Configuration Management
-STATEMENT: The document shall be maintained under configuration control with version tracking.
-RATIONALE: This requirement ensures proper system functionality and compliance with standards.
+STATEMENT: This requirement covers Configuration Management.
+RATIONALE: Converted from original document structure.
+
