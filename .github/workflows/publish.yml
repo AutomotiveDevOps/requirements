@@ -39,7 +39,8 @@ jobs:
           # Build all StrictDoc documents from all .sdoc files in the project
           mkdir -p docs
           mkdir -p .strictdoc_cache
-          strictdoc export --output-dir docs/ $(find . -type f -name '*.sdoc' | grep -v './venv/' | grep -v './docs/')
+          export STRICTDOC_CACHE_DIR="./.strictdoc_cache"
+          strictdoc export --output-dir docs/ --config strictdoc.toml $(find . -type f -name '*.sdoc' | grep -v './venv/' | grep -v './docs/')
 
       - name: Deploy to GitHub Pages
         uses: Cecilapp/GitHub-Pages-deploy@v3

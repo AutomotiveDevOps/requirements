@@ -1,0 +1,3 @@
+[project]
+title = "MIL-STD-498 Requirements Documentation - Example 1"
+cache_dir = "./.strictdoc_cache" 

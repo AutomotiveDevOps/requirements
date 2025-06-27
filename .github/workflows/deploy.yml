@@ -28,18 +28,20 @@ jobs:
         cd examples/example1
         mkdir -p docs
         mkdir -p .strictdoc_cache
-        strictdoc export . --output-dir docs --formats html
+        export STRICTDOC_CACHE_DIR="./.strictdoc_cache"
+        strictdoc export . --output-dir docs --formats html --config strictdoc.toml
     
     - name: Generate documentation for example2
       run: |
         cd examples/example2
         mkdir -p docs
         mkdir -p .strictdoc_cache
+        export STRICTDOC_CACHE_DIR="./.strictdoc_cache"
         mkdir -p docs/html/example2
         # Generate basic HTML for existing documents
         for file in *.sdoc; do
           if [ -f "$file" ]; then
-            strictdoc export "$file" --output-dir docs --formats html
+            strictdoc export "$file" --output-dir docs --formats html --config strictdoc.toml
           fi
         done
     
